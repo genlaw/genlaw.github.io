@@ -127,11 +127,9 @@ hr {
 }
 
 pre, code, kbd, samp {
-  color: #000;
   color: black;
   font-family: monospace, monospace;
   _font-family: 'courier new', monospace;
-  font-size: 0.98em;
 }
 
 pre {
@@ -367,4 +365,66 @@ a.footnote-ref {
 
 .footnote-ref sup::after {
   content: "]";
+}
+
+
+/* misc styling (opinionated I guess) */
+
+span.citation {
+  margin-inline-start: .25em;
+}
+
+#refs :target {
+  padding-left: .5em;
+  border-left: 3px solid #faa700;
+  text-indent: 0; /* undo hanging indent */
+  /* font-weight: bold; */
+}
+
+/* #organizer-list */
+
+#organizer-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+#organizer-list > * {
+  flex: 1;
+  flex-basis: 160px;
+}
+
+#organizer-list figcaption {
+  font-style: inherit;
+}
+
+#organizer-list p {
+  margin: 0.5em 0;
+}
+
+#organizer-list .title::after {
+  content: ", ";
+}
+
+#organizer-list .name {
+  font-weight: bold;
+}
+
+#organizer-list .email {
+  font-family: monospace;
+  font-style: normal;
+  text-decoration: none;
+}
+
+#organizer-list .blurb {
+  display: none;
+}
+
+#organizer-list .avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  object-position: top;
+  margin: .5em;
+  border-radius: 50%;
 }
