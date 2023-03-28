@@ -9,9 +9,9 @@ architectures, but on terabytes of scraped Flickr images, Wikipedia
 pages, Stack Overflow answers, and websites. That is, generative models
 ingest vast quantities of intellectual property (IP), which they can
 memorize and regurgitate
-verbatim [@extracting; @quantifying; @diffusion]. Several recently-filed
+verbatim[@extracting; @quantifying; @diffusion]. Several recently-filed
 lawsuits relate such memorization to copyright
-infringement [@midjourney; @feldman; @copilot; @stable-diffusion]. These
+infringement[@midjourney; @feldman; @copilot; @stable-diffusion]. These
 lawsuits will lead to policies and legal rulings that define our
 ability, as ML researchers and practitioners, to acquire training data,
 and our responsibilities towards data owners and curators. AI
@@ -27,7 +27,7 @@ of the legal issues at play. Beyond IP, the workshop will also address
 privacy and liability for dangerous, discriminatory, or misleading and
 manipulative outputs. Addressing these challenges requires collaboration
 between ML researchers and practitioners, data curators, HCI
-researchers, and legal experts [@cooper2022accountabiliy]. We will mix
+researchers, and legal experts[@cooper2022accountabiliy]. We will mix
 tutorial-style presentations from renowned experts in both ML and law
 with panel discussions where researchers in both disciplines can engage
 in semi-moderated conversation. We will solicit extended abstracts to
