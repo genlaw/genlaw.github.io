@@ -2,6 +2,8 @@
 title: "Generative AI + Law (GenLaw) '23"
 bibliography: references.bib
 nocite: "@*"
+link-citations: true
+lang: en-US
 ---
 
 Progress in generative AI depends not only on better model
