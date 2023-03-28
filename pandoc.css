@@ -128,6 +128,7 @@ hr {
 
 pre, code, kbd, samp {
   color: #000;
+  color: black;
   font-family: monospace, monospace;
   _font-family: 'courier new', monospace;
   font-size: 0.98em;
@@ -260,6 +261,7 @@ table td {
   h1, h2, h3, h4, h5, h6 { color: #aaa}
   a { color: rgb(10, 132, 255) }
   a:visited { color: rgb(132, 112, 255) }
+  pre, code, kbd, samp { color: inherit; }
 }
 
 @media only screen and (min-width: 768px) {
