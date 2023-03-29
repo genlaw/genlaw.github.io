@@ -85,7 +85,7 @@ in person, and 50 virtually.
   </figure>
 
   <figure>
-    <img class="avatar" src="images/fatemehsadat-300x300.jpg" alt="Fatemehsadat Mireshghallah">
+    <img class="avatar" src="images/fatemeh-300x300.jpg" alt="Fatemehsadat Mireshghallah">
     <figcaption>
       <p class="name">Fatemehsadat Mireshghallah</p>
       <p class="person">
@@ -172,7 +172,7 @@ in person, and 50 virtually.
   </figure>
 
   <figure>
-    <img class="avatar" src="images/deep-ganguli-300x300.jpg" alt="Deep Ganguli">
+    <img class="avatar" src="images/deep-300x300.jpg" alt="Deep Ganguli">
     <figcaption>
       <p class="name">Deep Ganguli</p>
       <p class="person">
