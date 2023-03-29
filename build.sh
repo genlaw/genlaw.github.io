@@ -7,6 +7,7 @@ pandoc -s \
     --citeproc \
     --bibliography references.bib \
     --output index.html \
+    -H header.html \
     index.md
 
 
