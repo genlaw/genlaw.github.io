@@ -1,4 +1,5 @@
-# Convert index.md to index.html
+# `./build.sh` will build all markdown files in the directory.
+# Alternatively, use `./build.sh filename` to build a specific file. 
 
 if [ $# -eq 0 ];
 then
@@ -12,7 +13,7 @@ for file in "${files[@]}"
 do
     filename="${file%.*}"
     echo "Compiling $filename"
-    
+
     pandoc -s \
         --from markdown \
         --to html \
