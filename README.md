@@ -10,6 +10,8 @@ This website is built into `index.html` from `index.md` and supporting files wit
 ./build.sh
 ```
 
+While we check in the build results, Github pages still needs to run an action to deploy the website to the github-pages "environment".
+
 ## Preview website
 
 ```bash
