@@ -114,7 +114,7 @@ in person, and 50 virtually.
   </figure>
 
   <figure>
-    <img class="avatar" src="images/james-grimmelmann-300x300.jpg" alt="James Grimmelmann">
+    <img class="avatar" src="images/james-300x300.jpg" alt="James Grimmelmann">
     <figcaption>
       <p class="name">James Grimmelmann</p>
       <p class="person">
