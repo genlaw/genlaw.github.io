@@ -391,7 +391,7 @@ span.citation {
 
 #organizer-list > * {
   flex: 1;
-  flex-basis: 160px;
+  flex-basis: 120px;
 }
 
 #organizer-list figcaption {
@@ -421,8 +421,8 @@ span.citation {
 }
 
 #organizer-list .avatar {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   object-position: top;
   margin: .5em;
