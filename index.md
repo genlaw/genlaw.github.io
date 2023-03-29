@@ -6,38 +6,18 @@ link-citations: true
 lang: en-US
 ---
 
-Progress in generative AI depends not only on better model
-architectures, but on terabytes of scraped Flickr images, Wikipedia
-pages, Stack Overflow answers, and websites. That is, generative models
-ingest vast quantities of intellectual property (IP), which they can
-memorize and regurgitate
-verbatim[@extracting; @quantifying; @diffusion]. Several recently-filed
-lawsuits relate such memorization to copyright
-infringement[@midjourney; @feldman; @copilot; @stable-diffusion]. These
-lawsuits will lead to policies and legal rulings that define our
-ability, as ML researchers and practitioners, to acquire training data,
-and our responsibilities towards data owners and curators. AI
-researchers will increasingly operate in a legal environment that is
-keenly interested in their work --- an environment that may require
-future research into model architectures that conform to legal
-requirements. As such, just as it is vital to inform courts and
-policymakers of the realities of AI work, ICML attendees must be well
-informed about law.
+Progress in generative AI depends not only on better model architectures, but on terabytes of scraped Flickr images, Wikipedia pages, Stack Overflow answers, and websites. 
 
-Our workshop will begin to build a comprehensive and precise synthesis
-of the legal issues at play. Beyond IP, the workshop will also address
-privacy and liability for dangerous, discriminatory, or misleading and
-manipulative outputs. Addressing these challenges requires collaboration
-between ML researchers and practitioners, data curators, HCI
-researchers, and legal experts[@cooper2022accountabiliy]. We will mix
-tutorial-style presentations from renowned experts in both ML and law
-with panel discussions where researchers in both disciplines can engage
-in semi-moderated conversation. We will solicit extended abstracts to
-encourage a diverse range of scholars to attend and present their work
-as posters and lightning talks. Based on enthusiasm and interest in
-soliciting speakers and PC members, as well as the recent explosion of
-general public interest in generative AI, we expect around 100 attendees
-in person, and 50 virtually.
+That is, generative models ingest vast quantities of intellectual property (IP), which they can memorize and regurgitate verbatim[@extracting; @quantifying; @diffusion]. Several recently-filed lawsuits relate such memorization to copyright infringement[@midjourney; @feldman; @copilot; @stable-diffusion]. These lawsuits will lead to policies and legal rulings that define our ability, as ML researchers and practitioners, to acquire training data, and our responsibilities towards data owners and curators. AI researchers will increasingly operate in a legal environment that is keenly interested in their work --- an environment that may require future research into model architectures that conform to legal requirements. As such, just as it is vital to inform courts and policymakers of the realities of AI work, ICML attendees must be well informed about law.
+
+Join us for a workshop bringing together experts in privacy, ML, policy, and law. 
+Addressing these challenges requires collaboration between ML researchers and practitioners, data curators, HCI researchers, and legal experts[@cooper2022accountabiliy].
+
+We will mix tutorial-style presentations from renowned experts in both ML and law with panel discussions where researchers in both disciplines can engage in semi-moderated conversation. 
+
+Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. 
+
+Please see our (*draft*) CFP, and submit an extended abstract on 
 
 
 ## Organizer Information {#organizer-information .unnumbered}
