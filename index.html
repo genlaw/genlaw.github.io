@@ -8,15 +8,10 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
     div.csl-bib-body { }
     div.csl-entry {
@@ -47,281 +42,144 @@
 <header id="title-block-header">
 <h1 class="title">Generative AI + Law (GenLaw) ’23</h1>
 </header>
-<p>Progress in generative AI depends not only on better model
-architectures, but on terabytes of scraped Flickr images, Wikipedia
-pages, Stack Overflow answers, and websites. That is, generative models
-ingest vast quantities of intellectual property (IP), which they can
-memorize and regurgitate verbatim<span class="citation"
-data-cites="extracting quantifying diffusion">(<a href="#ref-extracting"
-role="doc-biblioref">Carlini et al. 2021</a>, <a href="#ref-quantifying"
-role="doc-biblioref">2022</a>, <a href="#ref-diffusion"
-role="doc-biblioref">2023</a>)</span>. Several recently-filed lawsuits
-relate such memorization to copyright infringement<span class="citation"
-data-cites="midjourney feldman copilot stable-diffusion">(<a
-href="#ref-midjourney" role="doc-biblioref">Dobberstein 2023</a>; <a
-href="#ref-feldman" role="doc-biblioref">Feldman 2023</a>; <a
-href="#ref-copilot" role="doc-biblioref">Butterick 2022</a>, <a
-href="#ref-stable-diffusion" role="doc-biblioref">2023</a>)</span>.
-These lawsuits will lead to policies and legal rulings that define our
-ability, as ML researchers and practitioners, to acquire training data,
-and our responsibilities towards data owners and curators. AI
-researchers will increasingly operate in a legal environment that is
-keenly interested in their work — an environment that may require future
-research into model architectures that conform to legal requirements. As
-such, just as it is vital to inform courts and policymakers of the
-realities of AI work, ICML attendees must be well informed about
-law.</p>
-<p>Our workshop will begin to build a comprehensive and precise
-synthesis of the legal issues at play. Beyond IP, the workshop will also
-address privacy and liability for dangerous, discriminatory, or
-misleading and manipulative outputs. Addressing these challenges
-requires collaboration between ML researchers and practitioners, data
-curators, HCI researchers, and legal experts<span class="citation"
-data-cites="cooper2022accountabiliy">(<a
-href="#ref-cooper2022accountabiliy" role="doc-biblioref">Cooper et al.
-2022</a>)</span>. We will mix tutorial-style presentations from renowned
-experts in both ML and law with panel discussions where researchers in
-both disciplines can engage in semi-moderated conversation. We will
-solicit extended abstracts to encourage a diverse range of scholars to
-attend and present their work as posters and lightning talks. Based on
-enthusiasm and interest in soliciting speakers and PC members, as well
-as the recent explosion of general public interest in generative AI, we
-expect around 100 attendees in person, and 50 virtually.</p>
-<h2 class="unnumbered" id="organizer-information">Organizer
-Information</h2>
+<p>Progress in generative AI depends not only on better model architectures, but on terabytes of scraped Flickr images, Wikipedia pages, Stack Overflow answers, and websites. That is, generative models ingest vast quantities of intellectual property (IP), which they can memorize and regurgitate verbatim<span class="citation" data-cites="extracting quantifying diffusion">(<a href="#ref-extracting" role="doc-biblioref">Carlini et al. 2021</a>, <a href="#ref-quantifying" role="doc-biblioref">2022</a>, <a href="#ref-diffusion" role="doc-biblioref">2023</a>)</span>. Several recently-filed lawsuits relate such memorization to copyright infringement<span class="citation" data-cites="midjourney feldman copilot stable-diffusion">(<a href="#ref-midjourney" role="doc-biblioref">Dobberstein 2023</a>; <a href="#ref-feldman" role="doc-biblioref">Feldman 2023</a>; <a href="#ref-copilot" role="doc-biblioref">Butterick 2022</a>, <a href="#ref-stable-diffusion" role="doc-biblioref">2023</a>)</span>. These lawsuits will lead to policies and legal rulings that define our ability, as ML researchers and practitioners, to acquire training data, and our responsibilities towards data owners and curators. AI researchers will increasingly operate in a legal environment that is keenly interested in their work — an environment that may require future research into model architectures that conform to legal requirements. As such, just as it is vital to inform courts and policymakers of the realities of AI work, ICML attendees must be well informed about law.</p>
+<p>Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. Addressing these challenges requires collaboration between ML researchers and practitioners, data curators, HCI researchers, and legal experts<span class="citation" data-cites="cooper2022accountabiliy">(<a href="#ref-cooper2022accountabiliy" role="doc-biblioref">Cooper et al. 2022</a>)</span>. We will mix tutorial-style presentations from renowned experts in both ML and law with panel discussions where researchers in both disciplines can engage in semi-moderated conversation. We will solicit extended abstracts to encourage a diverse range of scholars to attend and present their work as posters and lightning talks. Based on enthusiasm and interest in soliciting speakers and PC members, as well as the recent explosion of general public interest in generative AI, we expect around 100 attendees in person, and 50 virtually.</p>
+<h2 class="unnumbered" id="organizer-information">Organizer Information</h2>
 <section id="organizer-list">
 <figure>
-<img class="avatar" alt="Katherine Lee" src="./images/katherine-300x400.png">
+<img class="avatar" alt="Katherine Lee" src="./images/katherine-300x300.jpg">
 <figcaption>
 <p class="name">
 Katherine Lee
 </p>
 <p class="person">
-<span class="title">Ph.D. Candidate</span> <span
-class="affiliation">Cornell University Department of Computer
-Science</span>
+<span class="title">Ph.D. Candidate</span> <span class="affiliation">Cornell University Department of Computer Science</span>
 </p>
 <a class="email" href="mailto:kate.lee168@gmail.com">kate.lee168@gmail.com</a>
 <p class="contact">
-<a class="website" href="https://katelee168.github.io">Website</a>
-<a class="publications" href="https://scholar.google.com/citations?user=bjdB4K8AAAAJ">Google
-Scholar</a>
+<a class="website" href="https://katelee168.github.io">Website</a> <a class="publications" href="https://scholar.google.com/citations?user=bjdB4K8AAAAJ">Google Scholar</a>
 </p>
 <p class="blurb">
-Katherine’s work has provided essential empirical evidence and
-measurement for grounding discussions around concerns that language
-models, like CoPilot, are infringing copyright, and about how language
-models can respect an individuals’ right to privacy and control of their
-data. Additionally, she has proposed methods of reducing memorization.
-Her work has received recognition at ACL and USENIX.
+Katherine’s work has provided essential empirical evidence and measurement for grounding discussions around concerns that language models, like CoPilot, are infringing copyright, and about how language models can respect an individuals’ right to privacy and control of their data. Additionally, she has proposed methods of reducing memorization. Her work has received recognition at ACL and USENIX.
 </p>
 </figcaption>
 </figure>
 <figure>
-<img class="avatar" src="images/cooper-300x400.png" alt="A. Feder Cooper">
+<img class="avatar" src="images/cooper-300x300.jpg" alt="A. Feder Cooper">
 <figcaption>
 <p class="name">
 A. Feder Cooper
 </p>
 <p class="person">
-<span class="title">Ph.D. Candidate</span> <span
-class="affiliation">Cornell University Department of Computer
-Science</span>
+<span class="title">Ph.D. Candidate</span> <span class="affiliation">Cornell University Department of Computer Science</span>
 </p>
 <a class="email" href="mailto:afc78@cornell.edu">afc78@cornell.edu</a>
 <p class="contact">
-<a class="website" href="https://cacioepe.pe">Website</a>
-<a class="publications" href="https://scholar.google.com/citations?user=xjVV6xgAAAAJ">Google
-Scholar</a>
+<a class="website" href="https://cacioepe.pe">Website</a> <a class="publications" href="https://scholar.google.com/citations?user=xjVV6xgAAAAJ">Google Scholar</a>
 </p>
 <p class="blurb">
-Cooper studies how to align the use of AI/ML with broader public values,
-and has published numerous papers at top ML conferences,
-interdisciplinary computing venues, and tech law review journals. Much
-of this work has been recognized with spotlight and contributed talk
-awards. Cooper has also been recognized as a Rising Star in EECS (MIT,
-2021). Since 2020, Cooper has been the Ph.D. student organizer for the
-MacArthur-funded Artificial Intelligence Policy and Practice initiative
-at Cornell, an interdisciplinary working group that studies the
-technical, social, and legal implications of AI technology.
+Cooper studies how to align the use of AI/ML with broader public values, and has published numerous papers at top ML conferences, interdisciplinary computing venues, and tech law review journals. Much of this work has been recognized with spotlight and contributed talk awards. Cooper has also been recognized as a Rising Star in EECS (MIT, 2021). Since 2020, Cooper has been the Ph.D. student organizer for the MacArthur-funded Artificial Intelligence Policy and Practice initiative at Cornell, an interdisciplinary working group that studies the technical, social, and legal implications of AI technology.
 </p>
 </figcaption>
 </figure>
 <figure>
-<img class="avatar" src="images/fatemehsadat-300x400.png" alt="Fatemehsadat Mireshghallah">
+<img class="avatar" src="images/fatemehsadat-300x300.jpg" alt="Fatemehsadat Mireshghallah">
 <figcaption>
 <p class="name">
 Fatemehsadat Mireshghallah
 </p>
 <p class="person">
-<span class="title">Ph.D. Candidate</span> <span class="affiliation">UC
-San Diego Computer Science and Engineering Department</span>
+<span class="title">Ph.D. Candidate</span> <span class="affiliation">UC San Diego Computer Science and Engineering Department</span>
 </p>
 <a class="email" href="mailto:f.mireshghallah@gmail.com">f.mireshghallah@gmail.com</a>
 <p class="contact">
-<a class="website" href="https://cseweb.ucsd.edu/~fmireshg">Website</a>
-<a class="publications" href="https://scholar.google.com/citations?user=WUCu45YAAAAJ">Google
-Scholar</a>
+<a class="website" href="https://cseweb.ucsd.edu/~fmireshg">Website</a> <a class="publications" href="https://scholar.google.com/citations?user=WUCu45YAAAAJ">Google Scholar</a>
 </p>
 <p class="blurb">
-Fatemeh’s research aims at understanding learning and memorization
-patterns in large language models, probing these models for safety
-issues (such as bias), and providing tools to limit their leakage of
-private information. She is a recipient of the National Center for Women
-&amp; IT (NCWIT) Collegiate award in 2020 for her work on
-privacy-preserving inference, a finalist for the Qualcomm Innovation
-Fellowship in 2021, and a recipient of the 2022 Rising Star in
-Adversarial ML award. She was a co-chair of the NAACL 2022 conference
-and has been a co-organizer for numerous successful workshops, including
-Distributed and Private ML (DPML) at ICLR 2021, Federated Learning for
-NLP (FL4NLP) at ACL 2022, Private NLP at NAACL 2022 and Widening NLP at
-EMNLP 2021 and 2022
+Fatemeh’s research aims at understanding learning and memorization patterns in large language models, probing these models for safety issues (such as bias), and providing tools to limit their leakage of private information. She is a recipient of the National Center for Women &amp; IT (NCWIT) Collegiate award in 2020 for her work on privacy-preserving inference, a finalist for the Qualcomm Innovation Fellowship in 2021, and a recipient of the 2022 Rising Star in Adversarial ML award. She was a co-chair of the NAACL 2022 conference and has been a co-organizer for numerous successful workshops, including Distributed and Private ML (DPML) at ICLR 2021, Federated Learning for NLP (FL4NLP) at ACL 2022, Private NLP at NAACL 2022 and Widening NLP at EMNLP 2021 and 2022
 </p>
 </figcaption>
 </figure>
 <figure>
-<img class="avatar" src="images/james-grimmelmann-300x400.png" alt="James Grimmelmann">
+<img class="avatar" src="images/james-grimmelmann-300x300.jpg" alt="James Grimmelmann">
 <figcaption>
 <p class="name">
 James Grimmelmann
 </p>
 <p class="person">
-<span class="title">Tessler Family Professor of Digital and Information
-Law</span> <span class="affiliation">Cornell Law School and Cornell
-Tech</span>
+<span class="title">Tessler Family Professor of Digital and Information Law</span> <span class="affiliation">Cornell Law School and Cornell Tech</span>
 </p>
 <a class="email" href="mailto:james.grimmelmann@cornell.edu">james.grimmelmann@cornell.edu</a>
 <p class="contact">
-<a class="website" href="https://james.grimmelmann.net">Website</a>
-<a class="publications" href="https://scholar.google.com/citations?user=u3QxA40AAAAJ">Google
-Scholar</a>
+<a class="website" href="https://james.grimmelmann.net">Website</a> <a class="publications" href="https://scholar.google.com/citations?user=u3QxA40AAAAJ">Google Scholar</a>
 </p>
 <p class="blurb">
-James Grimmelmann is the Tessler Family Professor of Digital and
-Information Law at Cornell Tech and Cornell Law School. He studies how
-laws regulating software affect freedom, wealth, and power. He helps
-lawyers and technologists understand each other, applying ideas from
-computer science to problems in law and vice versa. He is the author of
-the casebook Internet Law: Cases and Problems and of over fifty
-scholarly articles and essays on digital copyright, content moderation,
-search engine regulation, online governance, privacy on social networks,
-and other topics in computer and Internet law. He organized the D is for
-Digitize conference in 2009 on the copyright litigation over the Google
-Book Search project, the In re Books conference in 2012 on the legal and
-cultural future of books in the digital age, and the Speed conference in
-2018 on the implications of radical technology-induced acceleration for
-law, society, and policy.
+James Grimmelmann is the Tessler Family Professor of Digital and Information Law at Cornell Tech and Cornell Law School. He studies how laws regulating software affect freedom, wealth, and power. He helps lawyers and technologists understand each other, applying ideas from computer science to problems in law and vice versa. He is the author of the casebook Internet Law: Cases and Problems and of over fifty scholarly articles and essays on digital copyright, content moderation, search engine regulation, online governance, privacy on social networks, and other topics in computer and Internet law. He organized the D is for Digitize conference in 2009 on the copyright litigation over the Google Book Search project, the In re Books conference in 2012 on the legal and cultural future of books in the digital age, and the Speed conference in 2018 on the implications of radical technology-induced acceleration for law, society, and policy.
 </p>
 </figcaption>
 </figure>
 <figure>
-<img class="avatar" src="images/david-mimno-300x400.png" alt="David Mimno">
+<img class="avatar" src="images/mimno-300x300.jpg" alt="David Mimno">
 <figcaption>
 <p class="name">
 David Mimno
 </p>
 <p class="person">
-<span class="title">Associate Professor</span> <span
-class="affiliation">Cornell University Department of Information
-Science</span>
+<span class="title">Associate Professor</span> <span class="affiliation">Cornell University Department of Information Science</span>
 </p>
 <a class="email" href="mailto:mimno@cornell.edu">mimno@cornell.edu</a>
 <p class="contact">
-<a class="website" href="https://mimno.infosci.cornell.edu">Website</a>
-<a class="publications" href="https://scholar.google.com/citations?user=uBFV6SUAAAAJ&hl=en">Google
-Scholar</a>
+<a class="website" href="https://mimno.infosci.cornell.edu">Website</a> <a class="publications" href="https://scholar.google.com/citations?user=uBFV6SUAAAAJ&hl=en">Google Scholar</a>
 </p>
 <p class="blurb">
-David Mimno builds models and methodologies that empower researchers
-outside NLP to use language technology. He was general chair of the 2022
-Text As Data conference at Cornell Tech and organized a workshop on
-topic models at NeurIPS. His work spans from education to the
-development of advanced new language technology driven by the needs of
-non-expert users. He is chief developer of the popular Mallet toolkit
-and is currently co-PI on the NEH-sponsored BERT for Humanists project.
-His work has been supported by the Sloan foundation and NSF
+David Mimno builds models and methodologies that empower researchers outside NLP to use language technology. He was general chair of the 2022 Text As Data conference at Cornell Tech and organized a workshop on topic models at NeurIPS. His work spans from education to the development of advanced new language technology driven by the needs of non-expert users. He is chief developer of the popular Mallet toolkit and is currently co-PI on the NEH-sponsored BERT for Humanists project. His work has been supported by the Sloan foundation and NSF
 </p>
 </figcaption>
 </figure>
 <figure>
-<img class="avatar" src="images/deep-ganguli-300x400.png" alt="Deep Ganguli">
+<img class="avatar" src="images/deep-ganguli-300x300.jpg" alt="Deep Ganguli">
 <figcaption>
 <p class="name">
 Deep Ganguli
 </p>
 <p class="person">
-<span class="title">Research Scientist</span> <span
-class="affiliation">Anthropic</span>
+<span class="title">Research Scientist</span> <span class="affiliation">Anthropic</span>
 </p>
 <a class="email" href="mailto:deep@anthropic.com.edu">deep@anthropic.com.edu</a>
 <p class="contact">
-<a class="website" href="https://www.linkedin.com/in/dganguli">Website</a>
-<a class="publications" href="https://scholar.google.com/citations?user=rG3xW3UAAAAJ&hl=en">Google
-Scholar</a>
+<a class="website" href="https://www.linkedin.com/in/dganguli">Website</a> <a class="publications" href="https://scholar.google.com/citations?user=rG3xW3UAAAAJ&hl=en">Google Scholar</a>
 </p>
 <p class="blurb">
-Deep Ganguli leads the Societal Impacts team at Anthropic, which designs
-experiments to measure both the capabilities and harms of large language
-models. He is on the program committee at FAccT ’23, and was formerly
-the Research Director at the Stanford Institute for Human Centered AI
-where he designed several successful and well-attended multidisciplinary
-workshops aimed to bridge the gap between technologists and humanists.
-Prior to this he was a Science Program Officer at the Chan Zuckerberg
-initiative, where he designed numerous workshops and conferences aimed
-to bring together software engineers and neuroscientists to address
-pressing questions about neurodegenerative diseases.
+Deep Ganguli leads the Societal Impacts team at Anthropic, which designs experiments to measure both the capabilities and harms of large language models. He is on the program committee at FAccT ’23, and was formerly the Research Director at the Stanford Institute for Human Centered AI where he designed several successful and well-attended multidisciplinary workshops aimed to bridge the gap between technologists and humanists. Prior to this he was a Science Program Officer at the Chan Zuckerberg initiative, where he designed numerous workshops and conferences aimed to bring together software engineers and neuroscientists to address pressing questions about neurodegenerative diseases.
 </p>
 </figcaption>
 </figure>
 </section>
 <h2 id="references-heading">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent"
-role="doc-bibliography">
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-copilot" class="csl-entry" role="doc-biblioentry">
-Butterick, Matthew. 2022. <span>“<span class="nocase">Github CoPilot
-litigation</span>.”</span>
+Butterick, Matthew. 2022. <span>“<span class="nocase">Github CoPilot litigation</span>.”</span>
 </div>
 <div id="ref-stable-diffusion" class="csl-entry" role="doc-biblioentry">
-———. 2023. <span>“<span class="nocase">Stable Diffusion
-litigation</span>.”</span>
+———. 2023. <span>“<span class="nocase">Stable Diffusion litigation</span>.”</span>
 </div>
 <div id="ref-diffusion" class="csl-entry" role="doc-biblioentry">
-Carlini, Nicholas, Jamie Hayes, Milad Nasr, Matthew Jagielski, Vikash
-Sehwag, Florian Tramèr, Borja Balle, Daphne Ippolito, and Eric Wallace.
-2023. <span>“Extracting Training Data from Diffusion Models.”</span>
-arXiv. <a
-href="https://doi.org/10.48550/ARXIV.2301.13188">https://doi.org/10.48550/ARXIV.2301.13188</a>.
+Carlini, Nicholas, Jamie Hayes, Milad Nasr, Matthew Jagielski, Vikash Sehwag, Florian Tramèr, Borja Balle, Daphne Ippolito, and Eric Wallace. 2023. <span>“Extracting Training Data from Diffusion Models.”</span> arXiv. <a href="https://doi.org/10.48550/ARXIV.2301.13188">https://doi.org/10.48550/ARXIV.2301.13188</a>.
 </div>
 <div id="ref-quantifying" class="csl-entry" role="doc-biblioentry">
-Carlini, Nicholas, Daphne Ippolito, Matthew Jagielski, Katherine Lee,
-Florian Tramer, and Chiyuan Zhang. 2022. <span>“<span>Quantifying
-Memorization Across Neural Language Models</span>.”</span> arXiv. <a
-href="https://doi.org/10.48550/ARXIV.2202.07646">https://doi.org/10.48550/ARXIV.2202.07646</a>.
+Carlini, Nicholas, Daphne Ippolito, Matthew Jagielski, Katherine Lee, Florian Tramer, and Chiyuan Zhang. 2022. <span>“<span>Quantifying Memorization Across Neural Language Models</span>.”</span> arXiv. <a href="https://doi.org/10.48550/ARXIV.2202.07646">https://doi.org/10.48550/ARXIV.2202.07646</a>.
 </div>
 <div id="ref-extracting" class="csl-entry" role="doc-biblioentry">
-Carlini, Nicholas, Florian Tramèr, Eric Wallace, Matthew Jagielski,
-Ariel Herbert-Voss, Katherine Lee, Adam Roberts, et al. 2021.
-<span>“<span class="nocase">Extracting Training Data from Large Language
-Models</span>.”</span> In <em>30th USENIX Security Symposium (USENIX
-Security 21)</em>, 2633–50. USENIX Association. <a
-href="https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting">https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting</a>.
+Carlini, Nicholas, Florian Tramèr, Eric Wallace, Matthew Jagielski, Ariel Herbert-Voss, Katherine Lee, Adam Roberts, et al. 2021. <span>“<span class="nocase">Extracting Training Data from Large Language Models</span>.”</span> In <em>30th USENIX Security Symposium (USENIX Security 21)</em>, 2633–50. USENIX Association. <a href="https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting">https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting</a>.
 </div>
-<div id="ref-cooper2022accountabiliy" class="csl-entry"
-role="doc-biblioentry">
-Cooper, A. Feder, Emanuel Moss, Benjamin Laufer, and Helen Nissenbaum.
-2022. <span>“<span class="nocase">Accountability in an Algorithmic
-Society: Relationality, Responsibility, and Robustness in Machine
-Learning</span>.”</span> In, 864–76. FAccT ’22. New York, NY, USA:
-Association for Computing Machinery. <a
-href="https://doi.org/10.1145/3531146.3533150">https://doi.org/10.1145/3531146.3533150</a>.
+<div id="ref-cooper2022accountabiliy" class="csl-entry" role="doc-biblioentry">
+Cooper, A. Feder, Emanuel Moss, Benjamin Laufer, and Helen Nissenbaum. 2022. <span>“<span class="nocase">Accountability in an Algorithmic Society: Relationality, Responsibility, and Robustness in Machine Learning</span>.”</span> In, 864–76. FAccT ’22. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3531146.3533150">https://doi.org/10.1145/3531146.3533150</a>.
 </div>
 <div id="ref-midjourney" class="csl-entry" role="doc-biblioentry">
-Dobberstein, Laura. 2023. <span>“<span class="nocase">Midjourney,
-DeviantArt face lawsuit over AI-made art</span>.”</span>
+Dobberstein, Laura. 2023. <span>“<span class="nocase">Midjourney, DeviantArt face lawsuit over AI-made art</span>.”</span>
 </div>
 <div id="ref-feldman" class="csl-entry" role="doc-biblioentry">
-Feldman, Ella. 2023. <span>“<span>Are A.I. Image Generators Violating
-Copyright Laws?</span>”</span>
+Feldman, Ella. 2023. <span>“<span>Are A.I. Image Generators Violating Copyright Laws?</span>”</span>
 </div>
 </div>
 </body>

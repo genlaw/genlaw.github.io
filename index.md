@@ -44,7 +44,7 @@ in person, and 50 virtually.
 
 <section id="organizer-list">
   <figure>
-    <img class="avatar" alt="Katherine Lee" src="./images/katherine-300x400.png">
+    <img class="avatar" alt="Katherine Lee" src="./images/katherine-300x300.jpg">
     <figcaption>
       <p class="name">Katherine Lee</p>
       <p class="person">
@@ -66,7 +66,7 @@ in person, and 50 virtually.
   </figure>
 
   <figure>
-    <img class="avatar" src="images/cooper-300x400.png" alt="A. Feder Cooper">
+    <img class="avatar" src="images/cooper-300x300.jpg" alt="A. Feder Cooper">
     <figcaption>
       <p class="name">A. Feder Cooper</p>
       <p class="person">
@@ -79,18 +79,13 @@ in person, and 50 virtually.
         <a class="publications" href="https://scholar.google.com/citations?user=xjVV6xgAAAAJ">Google Scholar</a>
       </p>
       <p class="blurb">
-        Cooper studies how to align the use of AI/ML with broader public values, and has published numerous papers at
-        top ML conferences, interdisciplinary computing venues, and tech law review journals. Much of this work has been
-        recognized with spotlight and contributed talk awards. Cooper has also been recognized as a Rising Star in EECS
-        (MIT, 2021). Since 2020, Cooper has been the Ph.D. student organizer for the MacArthur-funded Artificial
-        Intelligence Policy and Practice initiative at Cornell, an interdisciplinary working group that studies the
-        technical, social, and legal implications of AI technology.
+        Cooper studies how to align the use of AI/ML with broader public values, and has published numerous papers at top ML conferences, interdisciplinary computing venues, and tech law review journals. Much of this work has been recognized with spotlight and contributed talk awards. Cooper has also been recognized as a Rising Star in EECS (MIT, 2021). Since 2020, Cooper has been the Ph.D. student organizer for the MacArthur-funded Artificial Intelligence Policy and Practice initiative at Cornell, an interdisciplinary working group that studies the technical, social, and legal implications of AI technology.
       </p>
     </figcaption>
   </figure>
 
   <figure>
-    <img class="avatar" src="images/fatemehsadat-300x400.png" alt="Fatemehsadat Mireshghallah">
+    <img class="avatar" src="images/fatemehsadat-300x300.jpg" alt="Fatemehsadat Mireshghallah">
     <figcaption>
       <p class="name">Fatemehsadat Mireshghallah</p>
       <p class="person">
@@ -119,7 +114,7 @@ in person, and 50 virtually.
   </figure>
 
   <figure>
-    <img class="avatar" src="images/james-grimmelmann-300x400.png" alt="James Grimmelmann">
+    <img class="avatar" src="images/james-grimmelmann-300x300.jpg" alt="James Grimmelmann">
     <figcaption>
       <p class="name">James Grimmelmann</p>
       <p class="person">
@@ -151,7 +146,7 @@ in person, and 50 virtually.
   </figure>
 
   <figure>
-    <img class="avatar" src="images/david-mimno-300x400.png" alt="David Mimno">
+    <img class="avatar" src="images/mimno-300x300.jpg" alt="David Mimno">
     <figcaption>
       <p class="name">David Mimno</p>
       <p class="person">
@@ -177,7 +172,7 @@ in person, and 50 virtually.
   </figure>
 
   <figure>
-    <img class="avatar" src="images/deep-ganguli-300x400.png" alt="Deep Ganguli">
+    <img class="avatar" src="images/deep-ganguli-300x300.jpg" alt="Deep Ganguli">
     <figcaption>
       <p class="name">Deep Ganguli</p>
       <p class="person">
