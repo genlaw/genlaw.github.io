@@ -1,14 +1,28 @@
 # Convert index.md to index.html
 
-pandoc -s \
-    --from markdown \
-    --to html \
-    --css pandoc.css \
-    --citeproc \
-    --bibliography references.bib \
-    --output index.html \
-    -H header.html \
-    index.md
+if [ $# -eq 0 ];
+then
+    files=( $(find "." -maxdepth 1 -name '*.md' ! -name 'README.md') )
+    # Print out the filenames in the array
+else
+    files=( $1 )
+fi
+
+for file in "${files[@]}"
+do
+    filename="${file%.*}"
+    echo "Compiling $filename"
+    
+    pandoc -s \
+        --from markdown \
+        --to html \
+        --css pandoc.css \
+        --citeproc \
+        --bibliography references.bib \
+        --output $filename.html \
+        -H header.html \
+        $filename.md
+done
 
 
 # former attempts
