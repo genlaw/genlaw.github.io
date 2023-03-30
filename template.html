@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$title$</title>
+    $if(css)$
+    <link rel="stylesheet" href="$css$">
+    $endif$
+
+    <!-- Google Analytics tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2ZW2ZM1M6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W2ZW2ZM1M6');
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html">GenLaw '23</a>
+        <nav>
+            <a href="cfp.html">CFP</a>
+            <a href="cfp.html">Schedule</a>
+            <a href="cfp.html">Resources</a>
+        </nav>
+    </header>
+    <main>
+        <h1>$title$</h1>
+        $body$
+    </main>
+    <footer>
+        <code>Generated with help from Pandoc, Ludwig, and ChatGPT</code>
+    </footer>
+</body>
+</html>

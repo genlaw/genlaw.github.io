@@ -1,6 +1,10 @@
 /*
  * I add this to html files generated with pandoc.
  */
+/* 
+ :root {
+  --fg: 
+ } */
 
 html {
   font-size: 100%;
@@ -9,15 +13,28 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
-  color: #444;
   font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
-  font-size: 16px;
+  color: #444;
+  background: #fefefe;
+  
+  /* in 2023 we prefer not to prescribe a font size afaik */
+  /* font-size: 16px; */
   line-height: 1.5;
-  padding: 2em;
+}
+
+header, main, footer {
+  padding: clamp(1rem, 4vmin, 3rem);
+}
+
+main {
   margin: auto;
   max-width: 42em;
-  background: #fefefe;
 }
 
 a {
@@ -82,6 +99,7 @@ h4, h5, h6 {
 }
 
 h1 {
+  margin-top: .25em;
   font-size: 2.5em;
 }
 
@@ -213,7 +231,6 @@ img {
 figure {
   display: block;
   text-align: center;
-  margin: 1em 0;
 }
 
 figure img {
@@ -260,12 +277,6 @@ table td {
   a { color: rgb(10, 132, 255) }
   a:visited { color: rgb(132, 112, 255) }
   pre, code, kbd, samp { color: inherit; }
-}
-
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
 }
 
 @media print {
@@ -374,6 +385,10 @@ span.citation {
   margin-inline-start: .25em;
 }
 
+#refs, #organizer-list {
+  margin-top: 1rem;
+}
+
 #refs :target {
   padding-left: .5em;
   border-left: 3px solid #faa700;
@@ -384,18 +399,21 @@ span.citation {
 /* #organizer-list */
 
 #organizer-list {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1rem;
 }
 
-#organizer-list > * {
-  flex: 1;
-  flex-basis: 120px;
+#organizer-list figure,
+#organizer-list figcaption {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 #organizer-list figcaption {
   font-style: inherit;
+  height: 100%;
 }
 
 #organizer-list p {
@@ -408,14 +426,30 @@ span.citation {
 
 #organizer-list .name {
   font-weight: bold;
+  font-size: 1.0625em;
 }
 
 #organizer-list .email {
+  margin-top: auto;
   font-family: monospace;
   font-style: normal;
   text-decoration: none;
 }
 
+#organizer-list .contact {
+  font-family: monospace;
+  display: flex;
+  gap: .25em;
+}
+
+#organizer-list .contact > * {
+  /* background-color: #06e; */
+  /* color: #eee; */
+  padding: .25em .5em;
+  text-decoration: none;
+  border-radius: 2px;
+  white-space: nowrap;
+}
 #organizer-list .blurb {
   display: none;
 }
@@ -427,4 +461,34 @@ span.citation {
   object-position: top;
   margin: .5em;
   border-radius: 50%;
+}
+
+/* header */
+
+header {
+  /* border-bottom: 1px solid #888; */
+  background-color: #dfdfdf;
+  display: flex;
+}
+header a {
+  text-decoration: none;
+}
+header nav {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+/* footer */
+footer {
+  /* margin-top: 4rem; */
+  opacity: .33;
+  font-size: 75%;
+  text-align: center;
+}
+
+/* References */
+
+.csl-entry {
+  margin-bottom: 1rem;;
 }

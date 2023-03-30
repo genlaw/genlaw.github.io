@@ -17,11 +17,11 @@ do
     pandoc -s \
         --from markdown \
         --to html \
-        --css pandoc.css \
+        --css styles.css \
         --citeproc \
         --bibliography references.bib \
+        --template template.html \
         --output $filename.html \
-        -H header.html \
         $filename.md
 done
 
