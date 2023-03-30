@@ -1,5 +1,5 @@
 ---
-title: "GenLaw: CFP '23"
+title: "GenLaw '23: CFP"
 lang: en-US
 ---
 

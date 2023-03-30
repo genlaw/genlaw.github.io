@@ -17,7 +17,7 @@ We will mix tutorial-style presentations from renowned experts in both ML and la
 
 Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. 
 
-Please see our (*draft*) CFP, and submit an extended abstract on 
+Please see our (*draft*) [CFP](https://genlaw.github.io/cfp.html) and submit an extended abstract by **5 June 2023, AoE**.
 
 
 ## Organizer Information {#organizer-information .unnumbered}
