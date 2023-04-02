@@ -187,7 +187,7 @@ Please see our (*draft*) [CFP](https://genlaw.github.io/cfp.html) and submit an 
         <span class="title">Research Scientist</span>
         <span class="affiliation">Anthropic</span>
       </p>
-      <a class="email" href="mailto:deep@anthropic.com.edu">deep@anthropic.com.edu</a>
+      <a class="email" href="mailto:deep@anthropic.com">deep@anthropic.com</a>
       <p class="contact">
         <a class="website" href="https://www.linkedin.com/in/dganguli">Website</a>
         <a class="publications" href="https://scholar.google.com/citations?user=rG3xW3UAAAAJ&hl=en">Google Scholar</a>
