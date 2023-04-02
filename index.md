@@ -6,16 +6,27 @@ link-citations: true
 lang: en-US
 ---
 
+Join us for a workshop bringing together experts in privacy, ML, policy, and law to discuss the intellectual property (IP) and privacy challenges that generative AI raises.
+
+
+
+
 Progress in generative AI depends not only on better model architectures, but on terabytes of scraped Flickr images, Wikipedia pages, Stack Overflow answers, and websites. 
+But, generative models ingest vast quantities of intellectual property (IP), which they can memorize and regurgitate verbatim[@extracting; @quantifying; @diffusion]. Several recently-filed lawsuits relate such memorization to copyright infringement[@midjourney; @feldman; @copilot; @stable-diffusion]. 
+These lawsuits will lead to policies and legal rulings that define our ability, as ML researchers and practitioners, to acquire training data, and our responsibilities towards data owners and curators. 
 
-That is, generative models ingest vast quantities of intellectual property (IP), which they can memorize and regurgitate verbatim[@extracting; @quantifying; @diffusion]. Several recently-filed lawsuits relate such memorization to copyright infringement[@midjourney; @feldman; @copilot; @stable-diffusion]. These lawsuits will lead to policies and legal rulings that define our ability, as ML researchers and practitioners, to acquire training data, and our responsibilities towards data owners and curators. AI researchers will increasingly operate in a legal environment that is keenly interested in their work --- an environment that may require future research into model architectures that conform to legal requirements. As such, just as it is vital to inform courts and policymakers of the realities of AI work, ICML attendees must be well informed about law.
+AI researchers will increasingly operate in a legal environment that is keenly interested in their work --- an environment that may require future research into model architectures that conform to legal requirements. 
+As such, just as it is vital to inform courts and policymakers of the realities of AI work, ICML attendees must be well informed about law.
+<!-- Addressing these challenges requires collaboration between ML researchers and practitioners, data curators, HCI researchers, and legal experts[@cooper2022accountabiliy]. -->
 
-Join us for a workshop bringing together experts in privacy, ML, policy, and law. 
-Addressing these challenges requires collaboration between ML researchers and practitioners, data curators, HCI researchers, and legal experts[@cooper2022accountabiliy].
 
-We will mix tutorial-style presentations from renowned experts in both ML and law with panel discussions where researchers in both disciplines can engage in semi-moderated conversation. 
+### Our Workshop
+
+Join us for a series of tutorials from renowned experts in both ML and law and panel discussions where researchers in both disciplines can engage in semi-moderated conversation. 
 
 Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. 
+
+### CFP
 
 Please see our (*draft*) [CFP](https://genlaw.github.io/cfp.html) and submit an extended abstract by **5 June 2023, AoE**.
 
