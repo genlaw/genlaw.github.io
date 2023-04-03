@@ -1,5 +1,5 @@
 ---
-title: "GenLaw '23: CFP"
+title: "GenLaw '23: **Draft** CFP"
 lang: en-US
 ---
 
@@ -14,7 +14,7 @@ Possible extended abstract formats include, but are not limited to, position pap
 * Evaluating models for, or developing ways to minimize, data leakages
 * Developing tooling for understanding the relationship between training data and generative model outputs.
 
-Accepted papers will present posters in-person or on Zoom. We will also accept other presentation formats, since scholarship from some disciplines may not be well-suited to posters. For alternative options, we will provide sample templates. Additionally, some submissions will be accepted for a 3-minute spotlight.
+Accepted papers will present posters in-person or on Zoom. We will also accept other presentation formats, since scholarship from some disciplines may not be well-suited to posters. For alternative options, we will provide sample templates. Additionally, some submissions will be accepted for a 3-minute spotlight. This workshop is **non-archival** to allow for future submission to other venues (any/all archival and non-archival workshops, journals, conferences, etc.). We will host all accepted papers on the website, unless requested not to do so by the authors.
 
 Please submit to OpenReview by **5 June 2023, AoE** [not yet open].
 
