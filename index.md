@@ -26,7 +26,7 @@ We're excited to share a series of tutorials from [renowned experts](schedule.ht
 
 Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. 
 
-### CFP
+## CFP
 
 <!-- Please see our (*draft*) [CFP](https://genlaw.github.io/cfp.html) and submit an extended abstract by **5 June 2023, AoE**. -->
 
@@ -43,15 +43,15 @@ Possible extended abstract formats include, but are not limited to, position pap
 
 Accepted papers will present posters in-person or on Zoom. We will also accept other presentation formats, since scholarship from some disciplines may not be well-suited to posters. For alternative options, we will provide sample templates. Additionally, some submissions will be accepted for a 3-minute spotlight. This workshop is **non-archival** to allow for future submission to other venues (any/all archival and non-archival workshops, journals, conferences, etc.). We will host all accepted papers on the website, unless requested not to do so by the authors.
 
-Please submit to OpenReview by **5 June 2023, AoE** [not yet open].
+Please submit to OpenReview by **4 May 2023, AoE** [not yet open]. The review form will contain a checkbox to indicate if there is at least one author that plans to attend GenLaw '23 and would need a visa to do so. We will prioritize reviewing submissions in this category, and will provide rolling acceptance/rejection decisions (up until 19 June 2023) in order to enable as much time as possible for the visa application process. 
 
 Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions) (excluding references, for which we allow up to 2 additional pages). 
 
-> ## Dates:
+> #### Dates:
 > 
-> Abstracts due: **5 June 2023, AoE**
+> Abstracts due: **4 May 2023, AoE**
 > 
-> Decisions released: **19 June 2023**
+> Rolling decisions, with final decisions released by: **19 June 2023**
 >
 > Workshop date: **TBD** (Either 28 or 29 July 2023)
 
