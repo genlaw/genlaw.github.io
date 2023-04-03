@@ -1,8 +1,5 @@
 ---
 title: "Generative AI + Law (GenLaw) '23"
-bibliography: references.bib
-nocite: "@*"
-link-citations: true
 lang: en-US
 ---
 
@@ -15,11 +12,11 @@ We are very excited to announce the inaugural Workshop on Generative AI and Law 
 ### About GenLaw
 
 Progress in generative AI depends not only on better model architectures, but on terabytes of scraped Flickr images, Wikipedia pages, Stack Overflow answers, and websites. 
-But, generative models ingest vast quantities of intellectual property (IP), which they can memorize and regurgitate verbatim[@extracting; @quantifying; @diffusion]. Several recently-filed lawsuits relate such memorization to copyright infringement[@midjourney; @feldman; @copilot; @stable-diffusion]. 
+But generative models ingest vast quantities of intellectual property (IP), which they can memorize and regurgitate verbatim. Several recently-filed lawsuits relate such memorization to copyright infringement. 
 These lawsuits will lead to policies and legal rulings that define our ability, as ML researchers and practitioners, to acquire training data, and our responsibilities towards data owners and curators. 
 
 AI researchers will increasingly operate in a legal environment that is keenly interested in their work --- an environment that may require future research into model architectures that conform to legal requirements. 
-As such, just as it is vital to inform courts and policymakers of the realities of AI work, ICML attendees must be well informed about law.
+Understanding the law and contributing to its development will enable us to create safer, better, and practically useful models.
 <!-- Addressing these challenges requires collaboration between ML researchers and practitioners, data curators, HCI researchers, and legal experts[@cooper2022accountabiliy]. -->
 
 
@@ -31,7 +28,32 @@ Our workshop will begin to build a comprehensive and precise synthesis of the le
 
 ### CFP
 
-Please see our (*draft*) [CFP](https://genlaw.github.io/cfp.html) and submit an extended abstract by **5 June 2023, AoE**.
+<!-- Please see our (*draft*) [CFP](https://genlaw.github.io/cfp.html) and submit an extended abstract by **5 June 2023, AoE**. -->
+
+The 1st Workshop on Generative AI and Law (GenLaw) is soliciting 1-2 page extended abstracts related to any topic pertaining to recent developments in generative AI/ML and its legal implications, with a particular focus on implications for intellectual property (IP) and privacy law.
+
+Possible extended abstract formats include, but are not limited to, position papers, preliminary technical results, and early-stage law review submissions, which should provide novel perspectives and findings at the intersection of law and generative AI. Potential topics include:
+
+* Clarifying open questions within your primary discipline, aimed at interdisciplinary communication
+* Highlighting industry-related challenges re: development and productization of generative models
+* Giving legal precision to specific problems presented by generative AI, such as analysis of upcoming lawsuits concerning Stable Diffusion or CoPilot 
+* Analyzing data collection and curation anti-patterns (and how to improve on them)
+* Evaluating models for, or developing ways to minimize, data leakages
+* Developing tooling for understanding the relationship between training data and generative model outputs.
+
+Accepted papers will present posters in-person or on Zoom. We will also accept other presentation formats, since scholarship from some disciplines may not be well-suited to posters. For alternative options, we will provide sample templates. Additionally, some submissions will be accepted for a 3-minute spotlight. This workshop is **non-archival** to allow for future submission to other venues (any/all archival and non-archival workshops, journals, conferences, etc.). We will host all accepted papers on the website, unless requested not to do so by the authors.
+
+Please submit to OpenReview by **5 June 2023, AoE** [not yet open].
+
+Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions) (excluding references, for which we allow up to 2 additional pages). 
+
+> ## Dates:
+> 
+> Abstracts due: **5 June 2023, AoE**
+> 
+> Decisions released: **19 June 2023**
+>
+> Workshop date: **TBD** (Either 28 or 29 July 2023)
 
 
 ## Organizer Information {#organizer-information .unnumbered}
@@ -214,6 +236,3 @@ Please see our (*draft*) [CFP](https://genlaw.github.io/cfp.html) and submit an 
 </section>
 
 
-## References {#references-heading}
-
-<div id="refs"></div>

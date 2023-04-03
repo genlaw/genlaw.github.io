@@ -20,7 +20,7 @@
         <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
         <a href="index.html">GenLaw '23</a>
         <nav>
-            <a href="cfp.html">CFP</a>
+            <a href="index.html#cfp">CFP</a>
             <a href="schedule.html">Schedule & Speakers</a>
             <a href="resources.html">Resources</a>
         </nav>
@@ -32,13 +32,32 @@
         <img class="avatar" alt="Robots reading on the beach, thanks to DALL-E" src="./images/beach-robots-300x300.jpg">
         </figure>
         <h3 id="about-genlaw">About GenLaw</h3>
-        <p>Progress in generative AI depends not only on better model architectures, but on terabytes of scraped Flickr images, Wikipedia pages, Stack Overflow answers, and websites. But, generative models ingest vast quantities of intellectual property (IP), which they can memorize and regurgitate verbatim<span class="citation" data-cites="extracting quantifying diffusion">(<a href="#ref-extracting" role="doc-biblioref">Carlini et al. 2021</a>, <a href="#ref-quantifying" role="doc-biblioref">2022</a>, <a href="#ref-diffusion" role="doc-biblioref">2023</a>)</span>. Several recently-filed lawsuits relate such memorization to copyright infringement<span class="citation" data-cites="midjourney feldman copilot stable-diffusion">(<a href="#ref-midjourney" role="doc-biblioref">Dobberstein 2023</a>; <a href="#ref-feldman" role="doc-biblioref">Feldman 2023</a>; <a href="#ref-copilot" role="doc-biblioref">Butterick 2022</a>, <a href="#ref-stable-diffusion" role="doc-biblioref">2023</a>)</span>. These lawsuits will lead to policies and legal rulings that define our ability, as ML researchers and practitioners, to acquire training data, and our responsibilities towards data owners and curators.</p>
-        <p>AI researchers will increasingly operate in a legal environment that is keenly interested in their work — an environment that may require future research into model architectures that conform to legal requirements. As such, just as it is vital to inform courts and policymakers of the realities of AI work, ICML attendees must be well informed about law. <!-- Addressing these challenges requires collaboration between ML researchers and practitioners, data curators, HCI researchers, and legal experts[@cooper2022accountabiliy]. --></p>
+        <p>Progress in generative AI depends not only on better model architectures, but on terabytes of scraped Flickr images, Wikipedia pages, Stack Overflow answers, and websites. But generative models ingest vast quantities of intellectual property (IP), which they can memorize and regurgitate verbatim. Several recently-filed lawsuits relate such memorization to copyright infringement. These lawsuits will lead to policies and legal rulings that define our ability, as ML researchers and practitioners, to acquire training data, and our responsibilities towards data owners and curators.</p>
+        <p>AI researchers will increasingly operate in a legal environment that is keenly interested in their work — an environment that may require future research into model architectures that conform to legal requirements. Understanding the law and contributing to its development will enable us to create safer, better, and practically useful models. <!-- Addressing these challenges requires collaboration between ML researchers and practitioners, data curators, HCI researchers, and legal experts[@cooper2022accountabiliy]. --></p>
         <h3 id="our-workshop">Our Workshop</h3>
         <p>We’re excited to share a series of tutorials from <a href="schedule.html">renowned experts</a> (to be announced soon!) in both ML and law and panel discussions, where researchers in both disciplines can engage in semi-moderated conversation.</p>
         <p>Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs.</p>
         <h3 id="cfp">CFP</h3>
-        <p>Please see our (<em>draft</em>) <a href="https://genlaw.github.io/cfp.html">CFP</a> and submit an extended abstract by <strong>5 June 2023, AoE</strong>.</p>
+        <!-- Please see our (*draft*) [CFP](https://genlaw.github.io/cfp.html) and submit an extended abstract by **5 June 2023, AoE**. -->
+        <p>The 1st Workshop on Generative AI and Law (GenLaw) is soliciting 1-2 page extended abstracts related to any topic pertaining to recent developments in generative AI/ML and its legal implications, with a particular focus on implications for intellectual property (IP) and privacy law.</p>
+        <p>Possible extended abstract formats include, but are not limited to, position papers, preliminary technical results, and early-stage law review submissions, which should provide novel perspectives and findings at the intersection of law and generative AI. Potential topics include:</p>
+        <ul>
+        <li>Clarifying open questions within your primary discipline, aimed at interdisciplinary communication</li>
+        <li>Highlighting industry-related challenges re: development and productization of generative models</li>
+        <li>Giving legal precision to specific problems presented by generative AI, such as analysis of upcoming lawsuits concerning Stable Diffusion or CoPilot</li>
+        <li>Analyzing data collection and curation anti-patterns (and how to improve on them)</li>
+        <li>Evaluating models for, or developing ways to minimize, data leakages</li>
+        <li>Developing tooling for understanding the relationship between training data and generative model outputs.</li>
+        </ul>
+        <p>Accepted papers will present posters in-person or on Zoom. We will also accept other presentation formats, since scholarship from some disciplines may not be well-suited to posters. For alternative options, we will provide sample templates. Additionally, some submissions will be accepted for a 3-minute spotlight. This workshop is <strong>non-archival</strong> to allow for future submission to other venues (any/all archival and non-archival workshops, journals, conferences, etc.). We will host all accepted papers on the website, unless requested not to do so by the authors.</p>
+        <p>Please submit to OpenReview by <strong>5 June 2023, AoE</strong> [not yet open].</p>
+        <p>Please anonymize your submission and respect a 2-page maximum using the <a href="https://icml.cc/Conferences/2023/StyleAuthorInstructions">ICML Template</a> (excluding references, for which we allow up to 2 additional pages).</p>
+        <blockquote>
+        <h2 id="dates">Dates:</h2>
+        <p>Abstracts due: <strong>5 June 2023, AoE</strong></p>
+        <p>Decisions released: <strong>19 June 2023</strong></p>
+        <p>Workshop date: <strong>TBD</strong> (Either 28 or 29 July 2023)</p>
+        </blockquote>
         <h2 class="unnumbered" id="organizer-information">Organizer Information</h2>
         <section id="organizer-list">
         <figure>
@@ -167,33 +186,6 @@
         </figcaption>
         </figure>
         </section>
-        <h2 id="references-heading">References</h2>
-        <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-        <div id="ref-copilot" class="csl-entry" role="doc-biblioentry">
-        Butterick, Matthew. 2022. <span>“<span class="nocase">Github CoPilot litigation</span>.”</span>
-        </div>
-        <div id="ref-stable-diffusion" class="csl-entry" role="doc-biblioentry">
-        ———. 2023. <span>“<span class="nocase">Stable Diffusion litigation</span>.”</span>
-        </div>
-        <div id="ref-diffusion" class="csl-entry" role="doc-biblioentry">
-        Carlini, Nicholas, Jamie Hayes, Milad Nasr, Matthew Jagielski, Vikash Sehwag, Florian Tramèr, Borja Balle, Daphne Ippolito, and Eric Wallace. 2023. <span>“Extracting Training Data from Diffusion Models.”</span> arXiv. <a href="https://doi.org/10.48550/ARXIV.2301.13188">https://doi.org/10.48550/ARXIV.2301.13188</a>.
-        </div>
-        <div id="ref-quantifying" class="csl-entry" role="doc-biblioentry">
-        Carlini, Nicholas, Daphne Ippolito, Matthew Jagielski, Katherine Lee, Florian Tramer, and Chiyuan Zhang. 2022. <span>“<span>Quantifying Memorization Across Neural Language Models</span>.”</span> arXiv. <a href="https://doi.org/10.48550/ARXIV.2202.07646">https://doi.org/10.48550/ARXIV.2202.07646</a>.
-        </div>
-        <div id="ref-extracting" class="csl-entry" role="doc-biblioentry">
-        Carlini, Nicholas, Florian Tramèr, Eric Wallace, Matthew Jagielski, Ariel Herbert-Voss, Katherine Lee, Adam Roberts, et al. 2021. <span>“<span class="nocase">Extracting Training Data from Large Language Models</span>.”</span> In <em>30th USENIX Security Symposium (USENIX Security 21)</em>, 2633–50. USENIX Association. <a href="https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting">https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting</a>.
-        </div>
-        <div id="ref-cooper2022accountabiliy" class="csl-entry" role="doc-biblioentry">
-        Cooper, A. Feder, Emanuel Moss, Benjamin Laufer, and Helen Nissenbaum. 2022. <span>“<span class="nocase">Accountability in an Algorithmic Society: Relationality, Responsibility, and Robustness in Machine Learning</span>.”</span> In, 864–76. FAccT ’22. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3531146.3533150">https://doi.org/10.1145/3531146.3533150</a>.
-        </div>
-        <div id="ref-midjourney" class="csl-entry" role="doc-biblioentry">
-        Dobberstein, Laura. 2023. <span>“<span class="nocase">Midjourney, DeviantArt face lawsuit over AI-made art</span>.”</span>
-        </div>
-        <div id="ref-feldman" class="csl-entry" role="doc-biblioentry">
-        Feldman, Ella. 2023. <span>“<span>Are A.I. Image Generators Violating Copyright Laws?</span>”</span>
-        </div>
-        </div>
     </main>
     <footer>
         <code>Generated with help from Pandoc, Ludwig, and ChatGPT</code>
