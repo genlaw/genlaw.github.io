@@ -6,10 +6,9 @@ link-citations: true
 lang: en-US
 ---
 
-Join us for a workshop bringing together experts in privacy, ML, policy, and law to discuss the intellectual property (IP) and privacy challenges that generative AI raises.
+We are very excited to announce the inaugural Workshop on Generative AI and Law (GenLaw '23)! Please join us at ICML '23, where we'll be bringing together experts in privacy, ML, policy, and law to discuss the intellectual property (IP) and privacy challenges that generative AI raises.
 
-
-
+### About GenLaw
 
 Progress in generative AI depends not only on better model architectures, but on terabytes of scraped Flickr images, Wikipedia pages, Stack Overflow answers, and websites. 
 But, generative models ingest vast quantities of intellectual property (IP), which they can memorize and regurgitate verbatim[@extracting; @quantifying; @diffusion]. Several recently-filed lawsuits relate such memorization to copyright infringement[@midjourney; @feldman; @copilot; @stable-diffusion]. 
@@ -22,7 +21,7 @@ As such, just as it is vital to inform courts and policymakers of the realities 
 
 ### Our Workshop
 
-Join us for a series of tutorials from renowned experts in both ML and law and panel discussions where researchers in both disciplines can engage in semi-moderated conversation. 
+Please join us for a series of tutorials from renowned experts (to be announced soon!) in both ML and law and panel discussions, where researchers in both disciplines can engage in semi-moderated conversation. 
 
 Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. 
 
@@ -70,7 +69,7 @@ Please see our (*draft*) [CFP](https://genlaw.github.io/cfp.html) and submit an 
         <a class="publications" href="https://scholar.google.com/citations?user=xjVV6xgAAAAJ">Google Scholar</a>
       </p>
       <p class="blurb">
-        Cooper studies how to align the use of AI/ML with broader public values, and has published numerous papers at top ML conferences, interdisciplinary computing venues, and tech law review journals. Much of this work has been recognized with spotlight and contributed talk awards. Cooper has also been recognized as a Rising Star in EECS (MIT, 2021). Since 2020, Cooper has been the Ph.D. student organizer for the MacArthur-funded Artificial Intelligence Policy and Practice initiative at Cornell, an interdisciplinary working group that studies the technical, social, and legal implications of AI technology.
+        Cooper studies how to make more reliable conclusions when using ML methods in practice. This work has thus-far focused on empirically motivated, theoretically grounded problems in Bayesian inference, model selection, and deep learning. Cooper has published numerous papers at top ML conferences, interdisciplinary computing venues, and tech law journals. Much of this work has been recognized with spotlight and contributed talk awards. Cooper has also been recognized as a Rising Star in EECS (MIT, 2021).
       </p>
     </figcaption>
   </figure>
