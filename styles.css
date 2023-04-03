@@ -88,6 +88,15 @@ img {
   max-width: 100%;
 }
 
+.avatar {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  margin: .5em;
+  border-radius: 50%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #111;
   line-height: 125%;

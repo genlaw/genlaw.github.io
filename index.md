@@ -6,7 +6,11 @@ link-citations: true
 lang: en-US
 ---
 
-We are very excited to announce the inaugural Workshop on Generative AI and Law (GenLaw '23)! Please join us at ICML '23, where we'll be bringing together experts in privacy, ML, policy, and law to discuss the intellectual property (IP) and privacy challenges that generative AI raises.
+We are very excited to announce the inaugural Workshop on Generative AI and Law (GenLaw '23)! Please join us in Honolulu, Hawai'i at [ICML '23](https://icml.cc/), where we'll be bringing together experts in privacy, ML, policy, and law to discuss the intellectual property (IP) and privacy challenges that generative AI raises.
+
+<figure>
+    <img class="avatar" alt="Robots reading on the beach, thanks to DALL-E" src="./images/beach-robots-300x300.jpg">
+  </figure>
 
 ### About GenLaw
 
@@ -21,7 +25,7 @@ As such, just as it is vital to inform courts and policymakers of the realities 
 
 ### Our Workshop
 
-Please join us for a series of tutorials from renowned experts (to be announced soon!) in both ML and law and panel discussions, where researchers in both disciplines can engage in semi-moderated conversation. 
+We're excited to share a series of tutorials from [renowned experts](schedule.html) (to be announced soon!) in both ML and law and panel discussions, where researchers in both disciplines can engage in semi-moderated conversation. 
 
 Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. 
 
