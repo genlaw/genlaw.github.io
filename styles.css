@@ -403,6 +403,7 @@ header, footer {
   /* border-bottom: 1px solid #888; */
   background-color: #dfdfdf;
   display: flex;
+  gap: 1rem;
 }
 header a {
   text-decoration: none;
