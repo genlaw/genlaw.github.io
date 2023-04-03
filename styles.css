@@ -443,7 +443,7 @@ footer > * {
   a { color: rgb(10, 132, 255) }
   a:visited { color: rgb(132, 112, 255) }
   pre, code, kbd, samp { color: inherit; }
-  header { background-color: #111; }
+  header, footer { background-color: #111; }
 }
 
 
