@@ -255,7 +255,8 @@ figcaption {
   margin: 0 0 .8em;
 }
 
-table {
+/* skipping default table styles */
+/* table {
   margin-bottom: 2em;
   border-bottom: 1px solid #ddd;
   border-right: 1px solid #ddd;
@@ -275,7 +276,7 @@ table td {
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
   vertical-align: top;
-}
+} */
 
 .author {
   font-size: 1.2em;
@@ -405,7 +406,8 @@ header, footer {
   display: flex;
   gap: 1rem;
 }
-header a {
+header a,
+footer a {
   text-decoration: none;
 }
 header nav {
@@ -433,6 +435,33 @@ footer > * {
 
 .csl-entry {
   margin-bottom: 1rem;;
+}
+
+/* Dates */
+
+.dates {
+  width: 100%;
+  margin-top: 1rem;
+  padding: .5rem;
+  border: 3px solid #888;
+}
+
+.dates tbody {
+  vertical-align: top;
+}
+
+.dates td {
+  padding: .25rem 0;
+}
+
+.dates p {margin: 0}
+
+.dates .time {
+  text-align: right;
+}
+
+.dates time {
+  font-weight: bold;
 }
 
 

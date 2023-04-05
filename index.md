@@ -47,13 +47,22 @@ Please submit to OpenReview by **4 May 2023, AoE** [not yet open]. The review fo
 
 Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions) (excluding references, for which we allow up to 2 additional pages). 
 
-> #### Dates:
-> 
-> Abstracts due: **4 May 2023, AoE**
-> 
-> Rolling decisions, with final decisions released by: **19 June 2023**
->
-> Workshop date: **TBD** (Either 28 or 29 July 2023)
+### Dates:
+
+<table class="dates">
+  <tr>
+    <td><p>Abstracts due:</p></td>
+    <td class="time"><time datetime="2023-05-04">4 May 2023</time></td>
+  </tr>
+  <tr>
+    <td><p>Rolling decisions, with final decisions released by:</p></td>
+    <td class="time"><time datetime="2023-06-19">19 June 2023</time></td>
+  </tr>
+  <tr>
+    <td><p>Workshop date:</p></td>
+    <td class="time"><time datetime="2023-07">TBD: 28 or 29 July 2023</time></td>
+  </tr>
+</table>
 
 
 ## Organizer Information {#organizer-information .unnumbered}
