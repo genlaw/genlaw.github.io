@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="415px" height="415px">
+    <title>Favicon</title>
+    <style>
+        @media (prefers-color-scheme: light) { 
+            #reading-robot { filter: none; } 
+        }
+        @media (prefers-color-scheme: dark) { 
+            #reading-robot { filter: invert(100%); } 
+        }
+    </style>
+    <g id="reading-robot" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="SvgjsPolygon1021" stroke="#000000" stroke-width="10" fill="#FFFFFF" stroke-linejoin="bevel" points="196 153 219 155 218.92593 181.631626 196.07407 181.631626"></polygon>
+        <polyline id="SvgjsPolyline1020" stroke="#000000" stroke-width="10" fill="#FFFFFF" stroke-linejoin="bevel" points="181.5 193.5 181.5 181.631626 233.5 181.631626 233.5 193.5"></polyline>
+        <polyline id="SvgjsPolyline1019" stroke="#000000" stroke-width="5" fill-opacity="0.85" fill="#FFFFFF" stroke-linejoin="bevel" points="206.5 200.631626 334.5 170.631626 334.5 180"></polyline>
+        <polyline id="SvgjsPolyline1018" stroke="#000000" stroke-width="8" fill-opacity="0.85" fill="#FFFFFF" stroke-linejoin="bevel" points="222.517668 206.45561 345.5 177.631626 345.5 370.631626 222.919602 399.361407"></polyline>
+        <polyline id="SvgjsPolyline1017" stroke="#000000" stroke-width="5" fill-opacity="0.85" fill="#FFFFFF" stroke-linejoin="bevel" transform="translate(147.250000, 186.631626) scale(-1, 1) translate(-147.250000, -186.631626) " points="83 201.631626 211 171.631626 211.5 180"></polyline>
+        <polyline id="SvgjsPolyline1016" stroke="#000000" stroke-width="8" fill-opacity="0.85" fill="#FFFFFF" stroke-linejoin="bevel" transform="translate(131.101236, 288.541925) scale(-1, 1) translate(-131.101236, -288.541925) " points="69.5 206.507205 192.702471 177.631626 192.702471 370.631626 69.7345878 399.452223"></polyline>
+        <rect id="SvgjsRect1015" stroke="#000000" stroke-width="8" fill-opacity="0.85" fill="#FFFFFF" stroke-linejoin="bevel" x="192.5" y="199.631626" width="30" height="204"></rect>
+        <rect id="SvgjsRect1014" stroke="#000000" stroke-width="10" fill="#FFFFFF" stroke-linejoin="bevel" transform="translate(69.500000, 242.631626) rotate(-10.000000) translate(-69.500000, -242.631626) " x="58.5" y="227.631626" width="22" height="30"></rect>
+        <rect id="SvgjsRect1013" stroke="#000000" stroke-width="10" fill="#FFFFFF" stroke-linejoin="bevel" transform="translate(345.500000, 242.631626) rotate(10.000000) translate(-345.500000, -242.631626) " x="334.5" y="227.631626" width="22" height="30"></rect>
+        <ellipse id="SvgjsEllipse1012" stroke="#000000" stroke-width="10" fill="#FFFFFF" stroke-linejoin="bevel" transform="translate(107.500000, 380.631626) rotate(-10.000000) translate(-107.500000, -380.631626) " cx="107.5" cy="380.631626" rx="16.8196721" ry="27"></ellipse>
+        <ellipse id="SvgjsEllipse1011" stroke="#000000" stroke-width="10" fill="#FFFFFF" stroke-linejoin="bevel" transform="translate(307.500000, 380.631626) rotate(10.000000) translate(-307.500000, -380.631626) " cx="307.5" cy="380.631626" rx="16.8196721" ry="27"></ellipse>
+        <g id="SvgjsG1010" transform="translate(210.750000, 84.566167) rotate(5.000000) translate(-210.750000, -84.566167) translate(85.621538, 15.500709)" stroke="#000000">
+            <rect id="SvgjsRect1009" stroke-width="10" fill="#FFFFFF" stroke-linejoin="bevel" x="25.878462" y="63.1309172" width="200" height="75"></rect>
+            <rect id="SvgjsRect1008" stroke-width="8" fill="#FFFFFF" stroke-linejoin="bevel" x="39.1353472" y="51.2070233" width="170" height="12"></rect>
+            <circle id="SvgjsCircle1007" stroke-width="8" cx="87.3043921" cy="100.630917" r="23.1481399"></circle>
+            <circle id="SvgjsCircle1006" stroke-width="8" cx="164.452532" cy="100.630917" r="23.1481399"></circle>
+            <rect id="SvgjsRect1005" stroke-width="10" fill="#FFFFFF" stroke-linejoin="bevel" x="225.878462" y="84.1309172" width="19" height="33"></rect>
+            <rect id="SvgjsRect1004" stroke-width="10" fill="#FFFFFF" stroke-linejoin="bevel" x="6.87846202" y="84.1309172" width="19" height="33"></rect>
+            <line x1="231.878462" y1="84.1309172" x2="243.878462" y2="18.1309172" id="SvgjsLine1003" stroke-width="10" stroke-linejoin="bevel"></line>
+            <line x1="7.87846202" y1="84.1309172" x2="19.878462" y2="18.1309172" id="SvgjsLine1002" stroke-width="10" stroke-linejoin="bevel" transform="translate(13.878462, 51.130917) scale(-1, 1) translate(-13.878462, -51.130917) "></line>
+            <ellipse id="SvgjsEllipse1001" stroke-width="10" stroke-linejoin="bevel" transform="translate(244.841684, 12.954644) rotate(10.000000) translate(-244.841684, -12.954644) " cx="244.841684" cy="12.954644" rx="4" ry="8.5"></ellipse>
+            <ellipse id="SvgjsEllipse1000" stroke-width="10" stroke-linejoin="bevel" transform="translate(5.415241, 9.065459) rotate(-10.000000) translate(-5.415241, -9.065459) " cx="5.41524052" cy="9.06545861" rx="4" ry="8.5"></ellipse>
+        </g>
+    </g>
+</svg>
