@@ -17,6 +17,7 @@ do
     pandoc -s \
         --from markdown \
         --to html \
+        --wrap none \
         --css styles.css \
         --citeproc \
         --bibliography references.bib \
