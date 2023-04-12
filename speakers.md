@@ -1,10 +1,11 @@
 ---
-title: "Speakers Preview"
+title: "Preview for speakers and panelists"
 lang: en-US
 ---
 
 <!-- no indentation so pandoc doesn't think this is code -->
 
+<h2 class="underlined">Speakers</h2>
 
 <ul class="speakers">
 <li>
@@ -50,7 +51,11 @@ href="https://www.law.berkeley.edu/our-faculty/faculty-profiles/pamela-samuelson
 <a class="button-a" href="http://www.gautamkamath.com/">Website</a>
 </div>
 </li>
+</ul>
 
+<h2 class="underlined">Panelists</h2>
+
+<ul class="speakers">
 <li>
 <img class="avatar" alt="Kristen Vaccaro" src="./images/speakers/kristen.jpeg">
 <div class="info">
