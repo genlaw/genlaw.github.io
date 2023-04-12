@@ -30,17 +30,6 @@ href="https://www.law.berkeley.edu/our-faculty/faculty-profiles/pamela-samuelson
 </li>
 
 <li>
-<img class="avatar" alt="Luis Villa" src="">
-<div class="info">
-<p class="bio">
-<span class="name">Luis Villa</span> is the co-founder and General Counsel of Tidelift, which provides tools,resources, and support for open-source projects. He is a long-time open-source attorney, who led the revision of the Mozilla Public License and served as Deputy General Counsel at the Wikimedia Foundation. He has written extensively on the copyright issues raised by generative AI.
-</p>
-<p class=""><em>panelist</em></p>
-<a class="button-a" href="https://lu.is/">Website</a>
-</div>
-</li>
-
-<li>
 <img class="avatar" alt="Nicholas Carlini" src="./images/speakers/nicholas.jpeg">
 <div class="info">
 <p class="bio">
@@ -68,8 +57,19 @@ href="https://www.law.berkeley.edu/our-faculty/faculty-profiles/pamela-samuelson
 <p class="bio">
 <span class="name">Kristen Vaccaro</span> is an Assistant Professor of Computer Science at UCSD. Using mixed methods, she designs decision-making systems that emphasize user agency and control, and explores questions of fairness, justice, and policy.
 </p>
-<p class="talk tentative">Notions of user privacy & generative models</p>
+<p class=""><em>panelist</em></p>
 <a class="button-a" href="http://kvaccaro.com/">Website</a>
+</div>
+</li>
+
+<li>
+<img class="avatar" alt="Luis Villa" src="">
+<div class="info">
+<p class="bio">
+<span class="name">Luis Villa</span> is the co-founder and General Counsel of Tidelift, which provides tools,resources, and support for open-source projects. He is a long-time open-source attorney, who led the revision of the Mozilla Public License and served as Deputy General Counsel at the Wikimedia Foundation. He has written extensively on the copyright issues raised by generative AI.
+</p>
+<p class=""><em>panelist</em></p>
+<a class="button-a" href="https://lu.is/">Website</a>
 </div>
 </li>
 </ul>
