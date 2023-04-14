@@ -89,8 +89,8 @@ img {
 }
 
 .avatar {
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   object-position: top;
   margin: .5em;
@@ -359,7 +359,7 @@ span.citation {
   content: ", ";
 }
 
-#organizer-list .name {
+.name {
   font-weight: bold;
   font-size: 1.0625em;
 }
@@ -464,6 +464,95 @@ footer > * {
   font-weight: bold;
 }
 
+/* Speakers */
+
+.speakers {
+  list-style: none;
+  padding-left: 0;
+}
+
+.speakers li {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.speakers .info {
+  flex: 1;
+  display: flex;
+  flex-basis: 30ch;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.speakers .avatar {
+  flex-shrink: 1;
+}
+
+.speakers .info p {
+  margin: 0;
+}
+
+/* .speakers .name::before {
+  content: "Speaker:";
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 75%;
+} */
+
+.speakers .name {
+  font-size: 1em;
+}
+
+.speakers .talk {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.speakers .talk::before {
+  display: block;
+  content: "Talk:";
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 75%;
+  opacity: .75;
+}
+
+.talk.tentative::after {
+  display: block;
+  content: "(tentative title)";
+  font-style: normal;
+  font-weight: normal;
+  opacity: .75;
+}
+
+.button-a,
+.contact > a {
+  padding: .25em .5em;
+  text-decoration: none;
+  border-radius: 2px;
+  white-space: nowrap;
+  background-color: #eee;
+}
+
+.button-a:hover,
+.contact > a:hover {
+  /* color: white; */
+  background-color: #ddd;
+}
+
+h2.underlined {
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #888;
+  margin-bottom: 1rem;
+}
+
 
 /* Dark Mode adjustments */
 
@@ -474,6 +563,8 @@ footer > * {
   a:visited { color: rgb(132, 112, 255) }
   pre, code, kbd, samp { color: inherit; }
   header, footer { background-color: #111; }
+  .button-a, .contact > a { background-color: #222; }
+  .button-a:hover, .contact > a:hover { background-color: #111; }
 }
 
 
