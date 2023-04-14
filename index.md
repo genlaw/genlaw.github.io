@@ -1,6 +1,7 @@
 ---
 title: "Generative AI + Law (GenLaw) '23"
 lang: en-US
+toc: false
 ---
 
 We are very excited to announce the inaugural Workshop on Generative AI and Law (GenLaw '23)! Please join us in Honolulu, Hawai'i at [ICML '23](https://icml.cc/), where we'll be bringing together experts in privacy, ML, policy, and law to discuss the intellectual property (IP) and privacy challenges that generative AI raises.

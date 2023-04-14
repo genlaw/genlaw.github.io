@@ -20,6 +20,7 @@ do
         --wrap none \
         --css styles.css \
         --citeproc \
+        --toc \
         --bibliography references.bib \
         --template template.html \
         --output $filename.html \
