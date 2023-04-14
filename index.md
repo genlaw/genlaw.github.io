@@ -244,6 +244,23 @@ Please anonymize your submission and respect a 2-page maximum using the [ICML Te
     </figcaption>
   </figure>
 
+  <figure>
+    <img class="avatar" src="images/ludwig.jpg" alt="Ludwig Schubert">
+    <figcaption>
+      <p class="name">Ludwig Schubert</p>
+      <p class="person">
+        <!-- <span class="title">Research Engineer</span> -->
+        <!-- <span class="affiliation">formerly OpenAI, Google Brain, Stanford University</span> -->
+      </p>
+      <a class="email" href="mailto:ludwig@cs.stanford.edu">ludwig@cs.stanford.edu</a>
+      <p class="contact">
+        <a class="website" href="https://schubert.io">Website</a>
+        <a class="publications" href="https://scholar.google.com/citations?user=npQ1IpkAAAAJ&hl=en">Google Scholar</a>
+      </p>
+      <p class="blurb"></p>
+    </figcaption>
+  </figure>
+
 
 </section>
 
