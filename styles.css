@@ -410,6 +410,10 @@ header a,
 footer a {
   text-decoration: none;
 }
+header a:visited,
+footer a:visited {
+  color: inherit;
+}
 header nav {
   margin-left: auto;
   display: flex;
@@ -565,14 +569,6 @@ main#resources .with-authors a {
 main#resources a.inline {
   display: inline;
 } */
-
-main#resources .with-authors a:not(.inline)::before {
-  content: "“";
-}
-
-main#resources .with-authors a:not(.inline)::after {
-  content: "”";
-}
 
 
 /* Dark Mode adjustments */
