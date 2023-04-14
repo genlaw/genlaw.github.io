@@ -404,7 +404,8 @@ header, footer {
   /* border-bottom: 1px solid #888; */
   background-color: #dfdfdf;
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: .5rem;
 }
 header a,
 footer a {
@@ -417,7 +418,10 @@ footer a:visited {
 header nav {
   margin-left: auto;
   display: flex;
-  gap: 1rem;
+  gap: inherit;
+}
+header img {
+  height: 1.5rem;
 }
 
 /* footer */
@@ -580,6 +584,7 @@ main#resources a.inline {
   a:visited { color: rgb(132, 112, 255) }
   pre, code, kbd, samp { color: inherit; }
   header, footer { background-color: #111; }
+  header img { filter: invert(100%); }
   .button-a, .contact > a { background-color: #222; }
   .button-a:hover, .contact > a:hover { background-color: #111; }
 }
