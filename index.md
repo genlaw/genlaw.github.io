@@ -29,6 +29,8 @@ Our workshop will begin to build a comprehensive and precise synthesis of the le
 
 ## CFP
 
+[→ Submit abstract to CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission/Index){.button-a .button-hero}
+
 <!-- Please see our (*draft*) [CFP](https://genlaw.github.io/cfp.html) and submit an extended abstract by **5 June 2023, AoE**. -->
 
 The 1st Workshop on Generative AI and Law (GenLaw) is soliciting 1-2 page extended abstracts related to any topic pertaining to recent developments in generative AI/ML and its legal implications, with a particular focus on implications for intellectual property (IP) and privacy law.
@@ -44,9 +46,9 @@ Possible extended abstract formats include, but are not limited to, position pap
 
 Accepted papers will present posters in-person or on Zoom. We will also accept other presentation formats, since scholarship from some disciplines may not be well-suited to posters. For alternative options, we will provide sample templates. Additionally, some submissions will be accepted for a 3-minute spotlight. This workshop is **non-archival** to allow for future submission to other venues (any/all archival and non-archival workshops, journals, conferences, etc.). We will host all accepted papers on the website, unless requested not to do so by the authors.
 
-Please submit to OpenReview by **4 May 2023, AoE** [not yet open]. The review form will contain a checkbox to indicate if there is at least one author that plans to attend GenLaw '23 and would need a visa to do so. We will prioritize reviewing submissions in this category, and will provide rolling acceptance/rejection decisions (up until 19 June 2023) in order to enable as much time as possible for the visa application process. 
+Please [submit to CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission/Index) by **4 May 2023, AoE**. The review form will contain a checkbox to indicate if there is at least one author that plans to attend GenLaw '23 and would need a visa to do so. We will prioritize reviewing submissions in this category, and will provide rolling acceptance/rejection decisions (up until 19 June 2023) in order to enable as much time as possible for the visa application process. 
 
-Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions) (excluding references, for which we allow up to 2 additional pages). 
+Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions). We allow up to 2 _additional_ pages for references.
 
 ### Dates:
 
