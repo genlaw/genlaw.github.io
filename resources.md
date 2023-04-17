@@ -43,6 +43,7 @@ main-id: resources
 * [A Primer in BERTology: What we know about how BERT works](https://arxiv.org/abs/2002.12327) by Anna Rogers, Olga Kovaleva, and Anna Rumshisky (2020)
 * [What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/) by Stephen Wolfram (2023)
 * [What Does it Mean for a Language Model to Preserve Privacy?](https://dl.acm.org/doi/fullHtml/10.1145/3531146.3534642) by  Hannah Brown, Katherine Lee, Fatemehsadat Mireshghallah, Reza Shokri, and Florian Tramèr (2022)
+* [Prompting Guide](https://www.promptingguide.ai/) by DAIR.AI (2022)
 
 ## Privacy
 
