@@ -45,7 +45,7 @@ main-id: resources
 * [What Does it Mean for a Language Model to Preserve Privacy?](https://dl.acm.org/doi/fullHtml/10.1145/3531146.3534642) by  Hannah Brown, Katherine Lee, Fatemehsadat Mireshghallah, Reza Shokri, and Florian Tramèr (2022)
 * [Prompting Guide](https://www.promptingguide.ai/) by DAIR.AI (2022)
 
-## Privacy
+## Privacy + Copyright
 
 ### Training data extraction
 * [Extracting Training Data from Large Language Models](https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting) by Nicholas Carlini, Florian Tramèr, Eric Wallace,  Matthew Jagielski, Ariel Herbert-Voss, Katherine Lee, Adam Roberts, Tom Brown, Dawn Song, Úlfar Erlingsson, Alina Oprea, and Colin Raffel (2021), [blog](https://bair.berkeley.edu/blog/2020/12/20/lmmem/){.inline}, [video](https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting){.inline}
