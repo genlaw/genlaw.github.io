@@ -10,6 +10,23 @@ We are very excited to announce the inaugural Workshop on Generative AI and Law 
     <img class="avatar" alt="Robots reading on the beach, thanks to DALL-E" src="./images/beach-robots-300x300.jpg">
   </figure>
 
+<!-- ### Dates: -->
+
+<table class="dates">
+  <tr>
+    <td><p>Abstracts due:</p></td>
+    <td class="time"><time datetime="2023-05-04">4 May 2023</time></td>
+  </tr>
+  <tr>
+    <td><p>Rolling decisions, with final decisions released by:</p></td>
+    <td class="time"><time datetime="2023-06-19">19 June 2023</time></td>
+  </tr>
+  <tr>
+    <td><p>Workshop date:</p></td>
+    <td class="time"><time datetime="2023-07">TBD: 28 or 29 July 2023</time></td>
+  </tr>
+</table>
+
 ### About GenLaw
 
 Progress in generative AI depends not only on better model architectures, but on terabytes of scraped Flickr images, Wikipedia pages, Stack Overflow answers, and websites. 
@@ -49,23 +66,6 @@ Accepted papers will present posters in-person or on Zoom. We will also accept o
 Please [submit to CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission/Index) by **4 May 2023, AoE**. The review form will contain a checkbox to indicate if there is at least one author that plans to attend GenLaw '23 and would need a visa to do so. We will prioritize reviewing submissions in this category, and will provide rolling acceptance/rejection decisions (up until 19 June 2023) in order to enable as much time as possible for the visa application process. 
 
 Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions). We allow up to 2 _additional_ pages for references.
-
-### Dates:
-
-<table class="dates">
-  <tr>
-    <td><p>Abstracts due:</p></td>
-    <td class="time"><time datetime="2023-05-04">4 May 2023</time></td>
-  </tr>
-  <tr>
-    <td><p>Rolling decisions, with final decisions released by:</p></td>
-    <td class="time"><time datetime="2023-06-19">19 June 2023</time></td>
-  </tr>
-  <tr>
-    <td><p>Workshop date:</p></td>
-    <td class="time"><time datetime="2023-07">TBD: 28 or 29 July 2023</time></td>
-  </tr>
-</table>
 
 
 ## Organizer Information {#organizer-information .unnumbered}
