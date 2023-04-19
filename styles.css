@@ -410,6 +410,7 @@ header, footer {
 header a,
 footer a {
   text-decoration: none;
+  margin-left: 0.5em;
 }
 header a:visited,
 footer a:visited {
