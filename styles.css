@@ -41,11 +41,11 @@ main {
 a {
   color: #06e;
   text-decoration: none;
-  text-decoration: underline;
 }
 
 a:visited {
-  color: #0b0080;
+  /*color: #0b0080;*/
+  color:  #6600CC;
 }
 
 a:hover {
@@ -101,6 +101,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #111;
   line-height: 125%;
   margin-top: 2em;
+  margin-bottom: 1em;
   font-weight: normal;
 }
 
@@ -221,8 +222,8 @@ dl {
 }
 
 dt {
-  font-weight: bold;
-  margin-bottom: .8em;
+  /*font-weight: bold;*/
+  margin-bottom: .1em;
 }
 
 dd {
@@ -398,6 +399,27 @@ span.citation {
   border-radius: 50%;
 }
 
+/* toc */
+#table-of-contents li {
+  list-style: none
+}
+#table-of-contents a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1100px) {
+  #table-of-contents {
+    position: fixed;
+    top: 50%;
+    left: 50px; /* Adjust this value to position the table of contents as needed */
+    width: 15%;
+    transform: translateY(-50%);
+    max-height: calc(100vh - 100px); /* Adjust this value if necessary to prevent the table of contents from extending beyond the bottom of the screen */
+    overflow-y: auto;
+  }
+}
+
+
 /* header */
 
 header, footer {
@@ -410,7 +432,6 @@ header, footer {
 header a,
 footer a {
   text-decoration: none;
-  margin-left: 0.5em;
 }
 header a:visited,
 footer a:visited {
@@ -450,7 +471,7 @@ footer > * {
 
 .dates {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: .5rem;
   border: 3px solid #888;
 }
