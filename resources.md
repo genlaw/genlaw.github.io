@@ -17,7 +17,7 @@ toc-title: ""
 
 [Fair Learning](https://texaslawreview.org/fair-learning/) by Mark A. Lemley and Bryan Casey (2021)
 
-[How Copyright Law Can Fix Artificial Intelligence's Implicit Bias Problem](https://digitalcommons.law.uw.edu/wlr/vol93/iss2/2) by Amanda Levendowski (2018)
+<!-- [How Copyright Law Can Fix Artificial Intelligence's Implicit Bias Problem](https://digitalcommons.law.uw.edu/wlr/vol93/iss2/2) by Amanda Levendowski (2018) -->
 
 [There’s No Such Thing as a Computer-Authored Work—And It's a Good Thing, Too](https://james.grimmelmann.net/files/articles/computer-authored-works.pdf) by James Grimmelmann (2016)
 
@@ -70,9 +70,9 @@ toc-title: ""
 <!-- [Diffusion models are autoencoders](https://sander.ai/2022/01/31/diffusion.html) by Sander Dieleman (2022) -->
 
 <!-- [Diffusion Models: A Practical Guide](https://scale.com/guides/diffusion-models-guide) by Vivek Muppalla and Sean Hendryx (2022) -->
-
+<!-- 
 [What are Diffusion Models](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) by Lilian Weng (2021)
-: A much more technical explanation of diffusion models.
+: A much more technical explanation of diffusion models. -->
 
 [Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://arxiv.org/abs/1503.03585) by Jascha Sohl-Dickstein, Eric A. Weiss, Niru Maheswaranathan, and Surya Ganguli (2015)
 : The original paper.
@@ -83,12 +83,14 @@ toc-title: ""
 
 [Variational Diffusion Models](https://arxiv.org/abs/2107.00630) by Diederik P. Kingma, Tim Salimans, Ben Poole, and Jonathan Ho (2021)
 
-[Score-Based Generative Modeling through Stochastic Differential Equations](https://arxiv.org/abs/2011.13456) by Yang Song, Jascha Sohl-Dickstein, Diederik P. Kingma, Abhishek Kumar, Stefano Ermon, and Ben Poole (2020)
+<!-- [Score-Based Generative Modeling through Stochastic Differential Equations](https://arxiv.org/abs/2011.13456) by Yang Song, Jascha Sohl-Dickstein, Diederik P. Kingma, Abhishek Kumar, Stefano Ermon, and Ben Poole (2020) -->
 
-[Diffusion language models](https://sander.ai/2023/01/09/diffusion-language.html) by Sander Dieleman (2023)
+<!-- [Diffusion language models](https://sander.ai/2023/01/09/diffusion-language.html) by Sander Dieleman (2023)
 : Blog post on using diffusion models for language modeling.
+ -->
 
 ## Training data extraction
+
 [Extracting Training Data from Large Language Models](https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting) by Nicholas Carlini, Florian Tramèr, Eric Wallace,  Matthew Jagielski, Ariel Herbert-Voss, Katherine Lee, Adam Roberts, Tom Brown, Dawn Song, Úlfar Erlingsson, Alina Oprea, and Colin Raffel (2021), [blog](https://bair.berkeley.edu/blog/2020/12/20/lmmem/){.inline}, [video](https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting){.inline}
 : Original paper showcasing extracting training data from large language models.
 
@@ -119,10 +121,10 @@ toc-title: ""
 
 [Auditing Differentially Private Machine Learning: How Private is Private SGD?](https://proceedings.neurips.cc/paper/2020/file/fc4ddc15f9f4b4b06ef7844d6bb53abf-Paper.pdf) by Matthew Jagielski, Jonathan Ullman, and Alina Oprea (2020)
 
-[Deep Learning with Differential Privacy](https://dl.acm.org/doi/abs/10.1145/2976749.2978318) by Martin Abadi, Andy Chu, Ian Goodfellow, H. Brendan McMahan, Ilya Mironov, Kunal Talwar, Li Zhang (2016)
+<!-- [Deep Learning with Differential Privacy](https://dl.acm.org/doi/abs/10.1145/2976749.2978318) by Martin Abadi, Andy Chu, Ian Goodfellow, H. Brendan McMahan, Ilya Mironov, Kunal Talwar, Li Zhang (2016)
 
 [Toward Training at ImageNet Scale with Differential Privacy](https://arxiv.org/abs/2201.12328) by Alexey Kurakin, Shuang Song, Steve Chien, Roxana Geambasu, Andreas Terzis, and Abhradeep Thakurta (2022)
-
+ -->
 [Considerations for Differentially Private Learning with Large-Scale Public Pretraining](https://arxiv.org/abs/2212.06470) by Florian Tramèr, Gautam Kamath, Nicholas Carlini (2022)
 : Privacy is hard. Publicly accessible data != public data. Differential privacy has limitations. Public data _looks_ different from private data in meaningful ways, but our benchmarks sometimes miss that.
 
@@ -136,8 +138,9 @@ toc-title: ""
 
 ## Ethics
 
-[Algorithms that remember: model inversion attacks and data protection law](https://royalsocietypublishing.org/doi/10.1098/rsta.2018.0083) by Michael Veale, Reuben Binns, and Lilian Edwards (2018)
-
+<!-- [Algorithms that remember: model inversion attacks and data protection law](https://royalsocietypublishing.org/doi/10.1098/rsta.2018.0083) by Michael Veale, Reuben Binns, and Lilian Edwards (2018)
+ -->
+ 
 [Ethical and social risks of harm from Language Models](https://arxiv.org/abs/2112.04359) by Laura Weidinger, John Mellor, Maribeth Rauh, Conor Griffin, Jonathan Uesato, Po-Sen Huang, Myra Cheng, Mia Glaese, Borja Balle, Atoosa Kasirzadeh, Zac Kenton, Sasha Brown, Will Hawkins, Tom Stepleton, Courtney Biles, Abeba Birhane, Julia Haas, Laura Rimell, Lisa Anne Hendricks, William Isaac, Sean Legassick, Geoffrey Irving, and Iason Gabriel (2021)
 
 [Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models](https://arxiv.org/abs/2102.02503) by Alex Tamkin, Miles Brundage, Jack Clark, and Deep Ganguli (2021)
