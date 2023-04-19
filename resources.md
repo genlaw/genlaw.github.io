@@ -42,7 +42,7 @@ toc-title: ""
 [Privacy As Intellectual Property?](https://people.ischool.berkeley.edu/~pam/papers/privasip_draft.pdf) by Pamela Samuelson (2000)
 
 [What Does it Mean for a Language Model to Preserve Privacy?](https://dl.acm.org/doi/fullHtml/10.1145/3531146.3534642) by  Hannah Brown, Katherine Lee, Fatemehsadat Mireshghallah, Reza Shokri, and Florian Tramèr (2022)
-: Language models use unstructured text data which means private information is nebulous and also unstructured
+: Language models use unstructured text data which means private information is nebulous and also unstructured.
 
 ## Language Models
 
@@ -98,7 +98,10 @@ toc-title: ""
 : Current best membership inference attack.
 
 [Label-Only Membership Inference Attacks](http://proceedings.mlr.press/v139/choquette-choo21a/choquette-choo21a.pdf) by Christopher A. Choquette-Choo, Florian Tramer, Nicholas Carlini, and Nicolas Papernot (2021)
-: Masking outputs does not prevent Membership Inference
+: Masking outputs does not prevent membership inference.
+
+[Understanding Membership Inferences on Well-Generalized Learning Models](https://arxiv.org/abs/1802.04889) by Yunhui Long, Vincent Bindschaedler, Lei Wang, Diyue Bu, Xiaofeng Wang, Haixu Tang, Carl A. Gunter, and Kai Chen
+: Outliers can be more vulnerable to membership inference
 
 ## Differential Privacy
 
@@ -109,8 +112,15 @@ toc-title: ""
 [Toward Training at ImageNet Scale with Differential Privacy](https://arxiv.org/abs/2201.12328) by Alexey Kurakin, Shuang Song, Steve Chien, Roxana Geambasu, Andreas Terzis, and Abhradeep Thakurta (2022)
 
 [Considerations for Differentially Private Learning with Large-Scale Public Pretraining](https://arxiv.org/abs/2212.06470) by Florian Tramèr, Gautam Kamath, Nicholas Carlini (2022)
+: Privacy is hard. Publicly accessible data != public data. Differential privacy has limitations. Public data _looks_ different from private data in meaningful ways, but our benchmarks sometimes miss that.
 
 [Training Text-to-Text Transformers with Privacy Guarantees](https://aclanthology.org/2022.findings-acl.171.pdf) by Natalia Ponomareva Jasmijn Bastings Sergei Vassilvitskii (2022)
+
+[How to DP-fy ML: A Practical Guide to Machine Learning with Differential Privacy](https://arxiv.org/abs/2303.00654) by Natalia Ponomareva, Hussein Hazimeh, Alex Kurakin, Zheng Xu, Carson Denison, H. Brendan McMahan, Sergei Vassilvitskii, Steve Chien, and Abhradeep Thakurta (2023)
+: Practical guide to implementing DP.
+
+[Multi-Epoch Matrix Factorization Mechanisms for Private Machine Learning](https://arxiv.org/abs/2211.06530) by Christopher A. Choquette-Choo, H. Brendan McMahan, Keith Rush, and Abhradeep Thakurta
+: State-of-the-art privacy mechanism.
 
 ## Ethics
 
