@@ -47,14 +47,19 @@ main-id: resources
 
 ## Interdisciplinary
 
+[What Does it Mean for a Language Model to Preserve Privacy?](https://dl.acm.org/doi/fullHtml/10.1145/3531146.3534642) by  Hannah Brown, Katherine Lee, Fatemehsadat Mireshghallah, Reza Shokri, and Florian Tramèr (2022)
+: Language models use unstructured text data which means private information is nebulous and also unstructured
 
 [Algorithms that remember: model inversion attacks and data protection law](https://royalsocietypublishing.org/doi/10.1098/rsta.2018.0083) by Michael Veale, Reuben Binns, and Lilian Edwards (2018)
+
+[Formalizing Human Ingenuity: A Quantitative Framework for Copyright Law's Substantial Similarity](https://arxiv.org/abs/2206.01230) by Sarah Scheffler, Eran Tromer, and Mayank Varia (2022)
+
+[Provable Copyright Protection for Generative Models](https://arxiv.org/abs/2302.10870) by Nikhil Vyas, Sham Kakade, and Boaz Barak (2023)
 
 [Ethical and social risks of harm from Language Models](https://arxiv.org/abs/2112.04359) by Laura Weidinger, John Mellor, Maribeth Rauh, Conor Griffin, Jonathan Uesato, Po-Sen Huang, Myra Cheng, Mia Glaese, Borja Balle, Atoosa Kasirzadeh, Zac Kenton, Sasha Brown, Will Hawkins, Tom Stepleton, Courtney Biles, Abeba Birhane, Julia Haas, Laura Rimell, Lisa Anne Hendricks, William Isaac, Sean Legassick, Geoffrey Irving, and Iason Gabriel (2021)
 
 [Accountability in an Algorithmic Society: Relationality, Responsibility, and Robustness in Machine Learning](https://arxiv.org/abs/2202.05338) by A. Feder Cooper, Emanuel Moss, Benjamin Laufer and Helen Nissenbaum (2022)
 
-[Provable Copyright Protection for Generative Models](https://arxiv.org/abs/2302.10870) by Nikhil Vyas, Sham Kakade, and Boaz Barak (2023)
 
 ## Technical
 
@@ -67,9 +72,6 @@ main-id: resources
 : A fairly comprehensive review of the BERT language models that create embeddings of text. 
 
 [What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/) by Stephen Wolfram (2023)
-
-[What Does it Mean for a Language Model to Preserve Privacy?](https://dl.acm.org/doi/fullHtml/10.1145/3531146.3534642) by  Hannah Brown, Katherine Lee, Fatemehsadat Mireshghallah, Reza Shokri, and Florian Tramèr (2022)
-: Language models use unstructured text data which means private information is nebulous and also unstructured
 
 [Prompting Guide](https://www.promptingguide.ai/) by DAIR.AI (2022)
 : Great guide on prompting
