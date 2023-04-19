@@ -46,7 +46,7 @@ Our workshop will begin to build a comprehensive and precise synthesis of the le
 
 ## CFP
 
-[→ Submit to CMT (Opening soon)](https://cmt3.research.microsoft.com/GenLaw2023/Submission/Index){.button-a .button-hero} 
+[→ Submit to CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission/Index){.button-a .button-hero} 
 
 <!-- Please see our (*draft*) [CFP](https://genlaw.github.io/cfp.html) and submit an extended abstract by **5 June 2023, AoE**. -->
 

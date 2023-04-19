@@ -163,3 +163,5 @@ toc-title: ""
 [Large Libel Models? Liability for AI Output](https://www2.law.ucla.edu/volokh/ailibel.pdf ) by Eugene Volokh (draft 2023)
 
 [Section 230 Won’t Protect ChatGPT](https://www.lawfareblog.com/section-230-wont-protect-chatgpt) by Matt Perault (2023)
+
+[OpenAI’s hunger for data is coming back to bite it](https://www.technologyreview.com/2023/04/19/1071789/openais-hunger-for-data-is-coming-back-to-bite-it/) by Melissa Heikkilä (2023)
