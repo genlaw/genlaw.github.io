@@ -2,6 +2,7 @@
 title: "GenLaw '23: Resources"
 lang: en-US
 main-id: resources
+toc-title: ""
 ---
 
 
