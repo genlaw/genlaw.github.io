@@ -62,8 +62,9 @@ toc-title: ""
 
 ## Diffusion Models
 
-[How diffusion models work: the math from scratch](https://theaisummer.com/diffusion-models/) by Sergios Karagiannakos, and Nikolas Adaloglouon (2022)
-: An intro-ish, technical, blog.
+[Diffusion language models](https://sander.ai/2023/01/09/diffusion-language.html) by Sander Dieleman (2023)
+
+[Diffusion models are autoencoders](https://sander.ai/2022/01/31/diffusion.html) by Sander Dieleman (2022)
 
 [Diffusion Models: A Practical Guide](https://scale.com/guides/diffusion-models-guide) by Vivek Muppalla and Sean Hendryx (2022)
 
@@ -73,8 +74,7 @@ toc-title: ""
 [Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://arxiv.org/abs/1503.03585) by Jascha Sohl-Dickstein, Eric A. Weiss, Niru Maheswaranathan, and Surya Ganguli (2015)
 : The original paper.
 
-[Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) by Jonathan Ho, Ajay Jain, Pieter Abbeel (2020)
-: The paper that made diffusion models _work_.
+[Generative Modeling by Estimating Gradients of the Data Distribution](https://arxiv.org/abs/1907.05600) by Yang Song, Stefano Ermon (2019)
 
 ## Training data extraction
 [Extracting Training Data from Large Language Models](https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting) by Nicholas Carlini, Florian Tramèr, Eric Wallace,  Matthew Jagielski, Ariel Herbert-Voss, Katherine Lee, Adam Roberts, Tom Brown, Dawn Song, Úlfar Erlingsson, Alina Oprea, and Colin Raffel (2021), [blog](https://bair.berkeley.edu/blog/2020/12/20/lmmem/){.inline}, [video](https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting){.inline}
@@ -98,6 +98,7 @@ toc-title: ""
 : Current best membership inference attack.
 
 [Label-Only Membership Inference Attacks](http://proceedings.mlr.press/v139/choquette-choo21a/choquette-choo21a.pdf) by Christopher A. Choquette-Choo, Florian Tramer, Nicholas Carlini, and Nicolas Papernot (2021)
+: Masking outputs does not prevent Membership Inference
 
 ## Differential Privacy
 
