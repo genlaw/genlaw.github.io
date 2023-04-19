@@ -403,7 +403,7 @@ span.citation {
 #table-of-contents{
     position: fixed;
     left: 0;
-    background:#CCC;
+    /*background:#CCC;*/
 }
 
 /* header */
