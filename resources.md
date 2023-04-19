@@ -64,11 +64,12 @@ toc-title: ""
 
 ## Diffusion Models
 
-[Diffusion language models](https://sander.ai/2023/01/09/diffusion-language.html) by Sander Dieleman (2023)
+[Tutorial on Denoising Diffusion-based Generative Modeling: Foundations and Applications](https://www.youtube.com/watch?v=cS6JQpEY9cs) by Karsten Kreis, Ruiqi Gao, and Arash Vahdat (2022)
+: Video tutorial on diffusion models.
 
-[Diffusion models are autoencoders](https://sander.ai/2022/01/31/diffusion.html) by Sander Dieleman (2022)
+<!-- [Diffusion models are autoencoders](https://sander.ai/2022/01/31/diffusion.html) by Sander Dieleman (2022) -->
 
-[Diffusion Models: A Practical Guide](https://scale.com/guides/diffusion-models-guide) by Vivek Muppalla and Sean Hendryx (2022)
+<!-- [Diffusion Models: A Practical Guide](https://scale.com/guides/diffusion-models-guide) by Vivek Muppalla and Sean Hendryx (2022) -->
 
 [What are Diffusion Models](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) by Lilian Weng (2021)
 : A much more technical explanation of diffusion models.
@@ -77,6 +78,15 @@ toc-title: ""
 : The original paper.
 
 [Generative Modeling by Estimating Gradients of the Data Distribution](https://arxiv.org/abs/1907.05600) by Yang Song, Stefano Ermon (2019)
+
+[Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) by Jonathan Ho, Ajay Jain, Pieter Abbeel (2020)
+
+[Variational Diffusion Models](https://arxiv.org/abs/2107.00630) by Diederik P. Kingma, Tim Salimans, Ben Poole, and Jonathan Ho (2021)
+
+[Score-Based Generative Modeling through Stochastic Differential Equations](https://arxiv.org/abs/2011.13456) by Yang Song, Jascha Sohl-Dickstein, Diederik P. Kingma, Abhishek Kumar, Stefano Ermon, and Ben Poole (2020)
+
+[Diffusion language models](https://sander.ai/2023/01/09/diffusion-language.html) by Sander Dieleman (2023)
+: Blog post on using diffusion models for language modeling.
 
 ## Training data extraction
 [Extracting Training Data from Large Language Models](https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting) by Nicholas Carlini, Florian Tramèr, Eric Wallace,  Matthew Jagielski, Ariel Herbert-Voss, Katherine Lee, Adam Roberts, Tom Brown, Dawn Song, Úlfar Erlingsson, Alina Oprea, and Colin Raffel (2021), [blog](https://bair.berkeley.edu/blog/2020/12/20/lmmem/){.inline}, [video](https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting){.inline}
