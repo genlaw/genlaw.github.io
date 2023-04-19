@@ -5,17 +5,7 @@ main-id: resources
 toc-title: ""
 ---
 
-
-## Legal
-
-### Ongoing litigation
-
-[Doe 1 et al. v. GitHub, Inc. et al.](https://githubcopilotlitigation.com/) GitHub Copilot class action lawsuit
-
-[Andersen et al. v. Stability AI Ltd. et al.](https://stablediffusionlitigation.com/) Stable Diffusion  class action lawsuit
-
-
-### Copyright
+## Intellectual Property
 
 [Artificial Intelligence’s Fair Use Crisis](https://www.bensobel.org/files/articles/41.1_Sobel-FINAL.pdf) by Ben Sobel (2017)
 
@@ -33,7 +23,11 @@ toc-title: ""
 
 [Resilient open commons](https://blog.tidelift.com/resilient-open-commons) by Luis Villa (2022)
 
-### Privacy
+[Formalizing Human Ingenuity: A Quantitative Framework for Copyright Law's Substantial Similarity](https://arxiv.org/abs/2206.01230) by Sarah Scheffler, Eran Tromer, and Mayank Varia (2022)
+
+[Provable Copyright Protection for Generative Models](https://arxiv.org/abs/2302.10870) by Nikhil Vyas, Sham Kakade, and Boaz Barak (2023)
+
+## Privacy
 
 [A taxonomy of privacy](https://scholarship.law.upenn.edu/cgi/viewcontent.cgi?article=1376&context=penn_law_review) by Daniel Solove (2006) 
 
@@ -47,41 +41,16 @@ toc-title: ""
 
 [Privacy As Intellectual Property?](https://people.ischool.berkeley.edu/~pam/papers/privasip_draft.pdf) by Pamela Samuelson (2000)
 
-### Other
-
-
-[Large Libel Models? Liability for AI Output](https://www2.law.ucla.edu/volokh/ailibel.pdf ) by Eugene Volokh (draft 2023)
-
-[Section 230 Won’t Protect ChatGPT](https://www.lawfareblog.com/section-230-wont-protect-chatgpt) by Matt Perault (2023)
-
-## Interdisciplinary
-
 [What Does it Mean for a Language Model to Preserve Privacy?](https://dl.acm.org/doi/fullHtml/10.1145/3531146.3534642) by  Hannah Brown, Katherine Lee, Fatemehsadat Mireshghallah, Reza Shokri, and Florian Tramèr (2022)
 : Language models use unstructured text data which means private information is nebulous and also unstructured
 
-[Algorithms that remember: model inversion attacks and data protection law](https://royalsocietypublishing.org/doi/10.1098/rsta.2018.0083) by Michael Veale, Reuben Binns, and Lilian Edwards (2018)
-
-[Formalizing Human Ingenuity: A Quantitative Framework for Copyright Law's Substantial Similarity](https://arxiv.org/abs/2206.01230) by Sarah Scheffler, Eran Tromer, and Mayank Varia (2022)
-
-[Provable Copyright Protection for Generative Models](https://arxiv.org/abs/2302.10870) by Nikhil Vyas, Sham Kakade, and Boaz Barak (2023)
-
-[Ethical and social risks of harm from Language Models](https://arxiv.org/abs/2112.04359) by Laura Weidinger, John Mellor, Maribeth Rauh, Conor Griffin, Jonathan Uesato, Po-Sen Huang, Myra Cheng, Mia Glaese, Borja Balle, Atoosa Kasirzadeh, Zac Kenton, Sasha Brown, Will Hawkins, Tom Stepleton, Courtney Biles, Abeba Birhane, Julia Haas, Laura Rimell, Lisa Anne Hendricks, William Isaac, Sean Legassick, Geoffrey Irving, and Iason Gabriel (2021)
-
-[Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models](https://arxiv.org/abs/2102.02503) by Alex Tamkin, Miles Brundage, Jack Clark, and Deep Ganguli (2021)
-
-[On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜](https://dl.acm.org/doi/10.1145/3442188.3445922) by Emily M. Bender, Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell (2021)
-
-[Accountability in an Algorithmic Society: Relationality, Responsibility, and Robustness in Machine Learning](https://arxiv.org/abs/2202.05338) by A. Feder Cooper, Emanuel Moss, Benjamin Laufer and Helen Nissenbaum (2022)
-
-[Contestability in Algorithmic Systems](https://dl.acm.org/doi/abs/10.1145/3311957.3359435) by Kristen Vaccaro, Karrie Karahalios, Deirdre K. Mulligan, Daniel Kluttz, and Tad Hirsch (2019)
-
-
-## Technical
-
-### Language Models
+## Language Models
 
 [Eight Things to Know about Large Language Models](https://arxiv.org/abs/2304.00612) by Sam Bowman (2023)
 : Good introduction to LMs
+
+[HuggingFace NLP Course](https://huggingface.co/course/chapter1/1) 
+: A more detailed set of tutorials on what NLP is, what Transformers are, and some more details about training/using language models.
 
 [A Primer in BERTology: What we know about how BERT works](https://arxiv.org/abs/2002.12327) by Anna Rogers, Olga Kovaleva, and Anna Rumshisky (2020)
 : A fairly comprehensive review of the BERT language models that create embeddings of text. 
@@ -89,7 +58,9 @@ toc-title: ""
 [Prompting Guide](https://www.promptingguide.ai/) by DAIR.AI (2022)
 : Great guide on prompting
 
-### Diffusion Models
+[BERT for Humanists](https://www.bertforhumanists.org/tutorials/) by Matt Wilkens, David Mimno, Melanie Walsh, and Rosamond Thalken (2022)
+
+## Diffusion Models
 
 [How diffusion models work: the math from scratch](https://theaisummer.com/diffusion-models/) by Sergios Karagiannakos, and Nikolas Adaloglouon (2022)
 : An intro-ish, technical, blog.
@@ -105,9 +76,7 @@ toc-title: ""
 [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) by Jonathan Ho, Ajay Jain, Pieter Abbeel (2020)
 : The paper that made diffusion models _work_.
 
-## Privacy + Copyright
-
-### Training data extraction
+## Training data extraction
 [Extracting Training Data from Large Language Models](https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting) by Nicholas Carlini, Florian Tramèr, Eric Wallace,  Matthew Jagielski, Ariel Herbert-Voss, Katherine Lee, Adam Roberts, Tom Brown, Dawn Song, Úlfar Erlingsson, Alina Oprea, and Colin Raffel (2021), [blog](https://bair.berkeley.edu/blog/2020/12/20/lmmem/){.inline}, [video](https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting){.inline}
 : Original paper showcasing extracting training data from large language models.
 
@@ -120,7 +89,7 @@ toc-title: ""
 [Extracting Training Data from Diffusion Models](https://arxiv.org/abs/2301.13188) by Nicholas Carlini, Jamie Hayes, Milad Nasr, Matthew Jagielski, Vikash Sehwag, Florian Tramèr, Borja Balle, Daphne Ippolito, and Eric Wallace (2023)
 : It's also possible to extract training data from diffusion models.
 
-### Membership Inference
+## Membership Inference
 
 [Membership Inference Attacks against Machine Learning Models](https://ieeexplore.ieee.org/abstract/document/7958568) by Reza Shokri, Marco Stronati, Congzheng Song, and Vitaly Shmatikov (2017)
 : First paper introducing the idea of membership inference.
@@ -130,7 +99,7 @@ toc-title: ""
 
 [Label-Only Membership Inference Attacks](http://proceedings.mlr.press/v139/choquette-choo21a/choquette-choo21a.pdf) by Christopher A. Choquette-Choo, Florian Tramer, Nicholas Carlini, and Nicolas Papernot (2021)
 
-### Differential Privacy
+## Differential Privacy
 
 [Auditing Differentially Private Machine Learning: How Private is Private SGD?](https://proceedings.neurips.cc/paper/2020/file/fc4ddc15f9f4b4b06ef7844d6bb53abf-Paper.pdf) by Matthew Jagielski, Jonathan Ullman, and Alina Oprea (2020)
 
@@ -142,9 +111,27 @@ toc-title: ""
 
 [Training Text-to-Text Transformers with Privacy Guarantees](https://aclanthology.org/2022.findings-acl.171.pdf) by Natalia Ponomareva Jasmijn Bastings Sergei Vassilvitskii (2022)
 
+## Ethics
+
+[Algorithms that remember: model inversion attacks and data protection law](https://royalsocietypublishing.org/doi/10.1098/rsta.2018.0083) by Michael Veale, Reuben Binns, and Lilian Edwards (2018)
+
+[Ethical and social risks of harm from Language Models](https://arxiv.org/abs/2112.04359) by Laura Weidinger, John Mellor, Maribeth Rauh, Conor Griffin, Jonathan Uesato, Po-Sen Huang, Myra Cheng, Mia Glaese, Borja Balle, Atoosa Kasirzadeh, Zac Kenton, Sasha Brown, Will Hawkins, Tom Stepleton, Courtney Biles, Abeba Birhane, Julia Haas, Laura Rimell, Lisa Anne Hendricks, William Isaac, Sean Legassick, Geoffrey Irving, and Iason Gabriel (2021)
+
+[Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models](https://arxiv.org/abs/2102.02503) by Alex Tamkin, Miles Brundage, Jack Clark, and Deep Ganguli (2021)
+
+[On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜](https://dl.acm.org/doi/10.1145/3442188.3445922) by Emily M. Bender, Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell (2021)
+
+[Accountability in an Algorithmic Society: Relationality, Responsibility, and Robustness in Machine Learning](https://arxiv.org/abs/2202.05338) by A. Feder Cooper, Emanuel Moss, Benjamin Laufer and Helen Nissenbaum (2022)
+
+[Contestability in Algorithmic Systems](https://dl.acm.org/doi/abs/10.1145/3311957.3359435) by Kristen Vaccaro, Karrie Karahalios, Deirdre K. Mulligan, Daniel Kluttz, and Tad Hirsch (2019)
+
+## Ongoing litigation
+
+[Doe 1 et al. v. GitHub, Inc. et al.](https://githubcopilotlitigation.com/) GitHub Copilot class action lawsuit
+
+[Andersen et al. v. Stability AI Ltd. et al.](https://stablediffusionlitigation.com/) Stable Diffusion  class action lawsuit
 
 ## In the news
-
 
 [Samsung workers made a major error by using ChatGPT](https://www.techradar.com/news/samsung-workers-leaked-company-secrets-by-using-chatgpt) by Lewis Maddison for _TechRadar_ (2023)
 
@@ -161,3 +148,7 @@ toc-title: ""
 [Copyright in generative deep learning](https://www.cambridge.org/core/journals/data-and-policy/article/copyright-in-generative-deep-learning/C401539FDF79A6AC6CEE8C5256508B5E) by Giorgio Franceschelli and Mirco Musolesi for _Data & Policy_ (2022)
 
 ['AI' at Bologna: The Hair-Raising Topic of 2023?](https://publishingperspectives.com/2023/03/ai-at-bologna-the-hair-raising-topic-of-2023/) by Porter Anderson for _Publishing Perspectives_ (2023)
+
+[Large Libel Models? Liability for AI Output](https://www2.law.ucla.edu/volokh/ailibel.pdf ) by Eugene Volokh (draft 2023)
+
+[Section 230 Won’t Protect ChatGPT](https://www.lawfareblog.com/section-230-wont-protect-chatgpt) by Matt Perault (2023)
