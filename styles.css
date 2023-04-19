@@ -41,11 +41,11 @@ main {
 a {
   color: #06e;
   text-decoration: none;
-  text-decoration: underline;
 }
 
 a:visited {
-  color: #0b0080;
+  /*color: #0b0080;*/
+  color:  #6600CC;
 }
 
 a:hover {
