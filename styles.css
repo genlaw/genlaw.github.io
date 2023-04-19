@@ -101,6 +101,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #111;
   line-height: 125%;
   margin-top: 2em;
+  margin-bottom: 1em;
   font-weight: normal;
 }
 
@@ -221,8 +222,8 @@ dl {
 }
 
 dt {
-  font-weight: bold;
-  margin-bottom: .8em;
+  /*font-weight: bold;*/
+  margin-bottom: .1em;
 }
 
 dd {
@@ -396,6 +397,13 @@ span.citation {
   object-position: top;
   margin: .5em;
   border-radius: 50%;
+}
+
+/* toc */
+#table-of-contents{
+    position: fixed;
+    left: 0;
+    background:#CCC;
 }
 
 /* header */
