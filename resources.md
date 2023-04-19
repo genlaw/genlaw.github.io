@@ -27,6 +27,8 @@ toc-title: ""
 
 [Provable Copyright Protection for Generative Models](https://arxiv.org/abs/2302.10870) by Nikhil Vyas, Sham Kakade, and Boaz Barak (2023)
 
+[Authors and Machines](https://scholarship.law.columbia.edu/cgi/viewcontent.cgi?article=3327&context=faculty_scholarship) by Jane Ginsburg and Luke Ali Budiarjo (2019)
+
 ## Privacy
 
 [A taxonomy of privacy](https://scholarship.law.upenn.edu/cgi/viewcontent.cgi?article=1376&context=penn_law_review) by Daniel Solove (2006) 
