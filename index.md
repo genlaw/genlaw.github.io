@@ -44,7 +44,7 @@ We're excited to share a series of tutorials from [renowned experts](schedule.ht
 
 Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. 
 
-## CFP
+## Call for Papers
 
 [→ Submit to CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission/Index){.button-a .button-hero} 
 
