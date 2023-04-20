@@ -49,7 +49,7 @@ toc-title: ""
 ## Language Models
 
 [Eight Things to Know about Large Language Models](https://arxiv.org/abs/2304.00612) by Sam Bowman (2023)
-: Good introduction to LMs
+: Good introduction to LMs.
 
 [HuggingFace NLP Course](https://huggingface.co/course/chapter1/1) 
 : A more detailed set of tutorials on what NLP is, what Transformers are, and some more details about training/using language models.
@@ -58,9 +58,9 @@ toc-title: ""
 : A fairly comprehensive review of the BERT language models that create embeddings of text. 
 
 [Prompting Guide](https://www.promptingguide.ai/) by DAIR.AI (2022)
-: Great guide on prompting
+: Great guide on prompting.
 
-[BERT for Humanists](https://www.bertforhumanists.org/tutorials/) by Matt Wilkens, David Mimno, Melanie Walsh, and Rosamond Thalken (2022)
+[BERT for Humanists](https://www.bertforhumanists.org/tutorials/) by Matt Wilkens, David Mimno, Melanie Walsh, Rosamond Thalken, and Maria Antoniak (2022)
 
 ## Diffusion Models
 
@@ -75,7 +75,7 @@ toc-title: ""
 : A much more technical explanation of diffusion models. -->
 
 [Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://arxiv.org/abs/1503.03585) by Jascha Sohl-Dickstein, Eric A. Weiss, Niru Maheswaranathan, and Surya Ganguli (2015)
-: The original paper.
+: The paper that introduced diffusion models. 
 
 [Generative Modeling by Estimating Gradients of the Data Distribution](https://arxiv.org/abs/1907.05600) by Yang Song, Stefano Ermon (2019)
 
@@ -115,7 +115,7 @@ toc-title: ""
 : Masking outputs does not prevent membership inference.
 
 [Understanding Membership Inferences on Well-Generalized Learning Models](https://arxiv.org/abs/1802.04889) by Yunhui Long, Vincent Bindschaedler, Lei Wang, Diyue Bu, Xiaofeng Wang, Haixu Tang, Carl A. Gunter, and Kai Chen
-: Outliers can be more vulnerable to membership inference
+: Outliers can be more vulnerable to membership inference.
 
 ## Differential Privacy
 
@@ -140,12 +140,12 @@ toc-title: ""
 
 <!-- [Algorithms that remember: model inversion attacks and data protection law](https://royalsocietypublishing.org/doi/10.1098/rsta.2018.0083) by Michael Veale, Reuben Binns, and Lilian Edwards (2018)
  -->
- 
-[Ethical and social risks of harm from Language Models](https://arxiv.org/abs/2112.04359) by Laura Weidinger, John Mellor, Maribeth Rauh, Conor Griffin, Jonathan Uesato, Po-Sen Huang, Myra Cheng, Mia Glaese, Borja Balle, Atoosa Kasirzadeh, Zac Kenton, Sasha Brown, Will Hawkins, Tom Stepleton, Courtney Biles, Abeba Birhane, Julia Haas, Laura Rimell, Lisa Anne Hendricks, William Isaac, Sean Legassick, Geoffrey Irving, and Iason Gabriel (2021)
+
+[On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜](https://dl.acm.org/doi/10.1145/3442188.3445922) by Emily M. Bender, Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell (2021)
 
 [Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models](https://arxiv.org/abs/2102.02503) by Alex Tamkin, Miles Brundage, Jack Clark, and Deep Ganguli (2021)
 
-[On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜](https://dl.acm.org/doi/10.1145/3442188.3445922) by Emily M. Bender, Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell (2021)
+[Ethical and social risks of harm from Language Models](https://arxiv.org/abs/2112.04359) by Laura Weidinger, John Mellor, Maribeth Rauh, Conor Griffin, Jonathan Uesato, Po-Sen Huang, Myra Cheng, Mia Glaese, Borja Balle, Atoosa Kasirzadeh, Zac Kenton, Sasha Brown, Will Hawkins, Tom Stepleton, Courtney Biles, Abeba Birhane, Julia Haas, Laura Rimell, Lisa Anne Hendricks, William Isaac, Sean Legassick, Geoffrey Irving, and Iason Gabriel (2021)
 
 [Accountability in an Algorithmic Society: Relationality, Responsibility, and Robustness in Machine Learning](https://arxiv.org/abs/2202.05338) by A. Feder Cooper, Emanuel Moss, Benjamin Laufer and Helen Nissenbaum (2022)
 
