@@ -23,7 +23,7 @@ We are very excited to announce the inaugural Workshop on Generative AI and Law 
   </tr>
   <tr>
     <td><p>Workshop date:</p></td>
-    <td class="time"><time datetime="2023-07">TBD: 28 or 29 July 2023</time></td>
+    <td class="time"><time datetime="2023-07">29 July 2023 (Ballroom B)</time></td>
   </tr>
 </table>
 
@@ -42,7 +42,7 @@ Understanding the law and contributing to its development will enable us to crea
 
 We're excited to share a series of tutorials from [renowned experts](schedule.html) (to be announced soon!) in both ML and law and panel discussions, where researchers in both disciplines can engage in semi-moderated conversation. 
 
-Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. 
+Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. It will take place on 29 July 2023, in Ballroom B. 
 
 ## Call for Papers
 
