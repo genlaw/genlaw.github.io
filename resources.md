@@ -61,6 +61,7 @@ toc-title: ""
 : Great guide on prompting.
 
 [BERT for Humanists](https://www.bertforhumanists.org/tutorials/) by Matt Wilkens, David Mimno, Melanie Walsh, Rosamond Thalken, and Maria Antoniak (2022)
+: Fantastic tutorial on language models, geared toward those that do not have a background in the area
 
 ## Diffusion Models
 
@@ -126,7 +127,7 @@ toc-title: ""
 [Toward Training at ImageNet Scale with Differential Privacy](https://arxiv.org/abs/2201.12328) by Alexey Kurakin, Shuang Song, Steve Chien, Roxana Geambasu, Andreas Terzis, and Abhradeep Thakurta (2022)
  -->
 [Considerations for Differentially Private Learning with Large-Scale Public Pretraining](https://arxiv.org/abs/2212.06470) by Florian Tramèr, Gautam Kamath, Nicholas Carlini (2022)
-: Privacy is hard. Publicly accessible data != public data. Differential privacy has limitations. Public data _looks_ different from private data in meaningful ways, but our benchmarks sometimes miss that.
+: Privacy is hard. Publicly accessible data is not the same as nor equivalent to public data. Differential privacy has limitations. Public data _looks_ different from private data in meaningful ways, but our benchmarks sometimes miss that.
 
 [Training Text-to-Text Transformers with Privacy Guarantees](https://aclanthology.org/2022.findings-acl.171.pdf) by Natalia Ponomareva Jasmijn Bastings Sergei Vassilvitskii (2022)
 
@@ -142,12 +143,14 @@ toc-title: ""
  -->
 
 [On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜](https://dl.acm.org/doi/10.1145/3442188.3445922) by Emily M. Bender, Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell (2021)
+: One of the earliest published works on possible harms in large language models
 
 [Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models](https://arxiv.org/abs/2102.02503) by Alex Tamkin, Miles Brundage, Jack Clark, and Deep Ganguli (2021)
 
 [Ethical and social risks of harm from Language Models](https://arxiv.org/abs/2112.04359) by Laura Weidinger, John Mellor, Maribeth Rauh, Conor Griffin, Jonathan Uesato, Po-Sen Huang, Myra Cheng, Mia Glaese, Borja Balle, Atoosa Kasirzadeh, Zac Kenton, Sasha Brown, Will Hawkins, Tom Stepleton, Courtney Biles, Abeba Birhane, Julia Haas, Laura Rimell, Lisa Anne Hendricks, William Isaac, Sean Legassick, Geoffrey Irving, and Iason Gabriel (2021)
 
 [Accountability in an Algorithmic Society: Relationality, Responsibility, and Robustness in Machine Learning](https://arxiv.org/abs/2202.05338) by A. Feder Cooper, Emanuel Moss, Benjamin Laufer and Helen Nissenbaum (2022)
+: A synthesized analysis of why accountability is so hard/elusive for AI/ML systems
 
 [Contestability in Algorithmic Systems](https://dl.acm.org/doi/abs/10.1145/3311957.3359435) by Kristen Vaccaro, Karrie Karahalios, Deirdre K. Mulligan, Daniel Kluttz, and Tad Hirsch (2019)
 
