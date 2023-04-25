@@ -54,11 +54,11 @@ toc-title: ""
 [HuggingFace NLP Course](https://huggingface.co/course/chapter1/1) 
 : A more detailed set of tutorials on what NLP is, what Transformers are, and some more details about training/using language models.
 
-[A Primer in BERTology: What we know about how BERT works](https://arxiv.org/abs/2002.12327) by Anna Rogers, Olga Kovaleva, and Anna Rumshisky (2020)
-: A fairly comprehensive review of the BERT language models that create embeddings of text. 
-
 [Prompting Guide](https://www.promptingguide.ai/) by DAIR.AI (2022)
 : Great guide on prompting.
+
+[A Primer in BERTology: What we know about how BERT works](https://arxiv.org/abs/2002.12327) by Anna Rogers, Olga Kovaleva, and Anna Rumshisky (2020)
+: A fairly comprehensive review of the BERT language models that create embeddings of text. 
 
 [BERT for Humanists](https://www.bertforhumanists.org/tutorials/) by Matt Wilkens, David Mimno, Melanie Walsh, Rosamond Thalken, and Maria Antoniak (2022)
 : Fantastic tutorial on language models, geared toward those that do not have a background in the area
@@ -103,6 +103,9 @@ toc-title: ""
 
 [Extracting Training Data from Diffusion Models](https://arxiv.org/abs/2301.13188) by Nicholas Carlini, Jamie Hayes, Milad Nasr, Matthew Jagielski, Vikash Sehwag, Florian Tramèr, Borja Balle, Daphne Ippolito, and Eric Wallace (2023)
 : It's also possible to extract training data from diffusion models.
+
+[Diffusion Art or Digital Forgery? Investigating Data Replication in Diffusion Models](https://arxiv.org/abs/2212.03860) by Gowthami Somepalli, Vasu Singla, Micah Goldblum, Jonas Geiping, and Tom Goldstein (2022)
+
 
 ## Membership Inference
 
