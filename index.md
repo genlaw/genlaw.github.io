@@ -68,7 +68,95 @@ Please [submit to CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission
 Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions). We allow up to 2 _additional_ pages for references.
 
 
-## Organizer Information {#organizer-information .unnumbered}
+## Speakers & Panelists {.underlined}
+
+<section id="organizer-list">
+  <figure>
+    <img class="avatar" alt="Pam Samuelson" src="./images/speakers/pam.jpeg" />
+    <figcaption>
+      <p class="name">Pam Samuelson</p>
+      <p class="person">
+        <span class="title">Distinguished Professor of Law and Information</span>
+        <span class="affiliation">University of California, Berkeley</span>
+      </p>
+      <p class="contact">
+        <a class="website" href="https://www.law.berkeley.edu/our-faculty/faculty-profiles/pamela-samuelson/#tab_profile">Website</a>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img class="avatar" alt="Mark Lemley" src="./images/speakers/mark.jpeg">
+    <figcaption>
+      <p class="name">Mark Lemley</p>
+      <p class="person">
+        <span class="title">Professor of Law</span>
+        <span class="affiliation">Stanford Law School</span>
+      </p>
+      <p class="contact">
+        <a class="button-a" href="https://law.stanford.edu/directory/mark-a-lemley/">Website</a>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img class="avatar" alt="Nicholas Carlini" src="./images/speakers/nicholas.jpeg">
+    <figcaption>
+      <p class="name">Nicholas Carlini</p>
+      <p class="person">
+        <span class="title">Research Scientist</span>
+        <span class="affiliation">Google Brain</span>
+      </p>
+      <p class="contact">
+        <a class="button-a" href="https://nicholas.carlini.com/">Website</a>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img class="avatar" alt="Gautam Kamath" src="./images/speakers/gautam.jpeg">
+    <figcaption>
+      <p class="name">Gautam Kamath</p>
+      <p class="person">
+        <span class="title">Assistant Professor</span>
+        <span class="affiliation">University of Waterloo</span>
+      </p>
+      <p class="contact">
+        <a class="button-a" href="http://www.gautamkamath.com/">Website</a>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img class="avatar" alt="Kristen Vaccaro" src="./images/speakers/kristen.jpeg">
+    <figcaption>
+      <p class="name">Kristen Vaccaro</p>
+      <p class="person">
+        <span class="title">Assistant Professor</span>
+        <span class="affiliation">University of California, San Diego</span>
+      </p>
+      <p class="contact">
+        <a class="button-a" href="http://kvaccaro.com/">Website</a>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img class="avatar" alt="Luis Villa" src="./images/speakers/luis.jpeg">
+    <figcaption>
+      <p class="name">Luis Villa</p>
+      <p class="person">
+        <span class="title">Co-founder and General Counsel</span>
+        <span class="affiliation">Tidelift</span>
+      </p>
+      <p class="contact">
+        <a class="button-a" href="https://lu.is/">Website</a>
+      </p>
+    </figcaption>
+  </figure>
+</section>
+
+## Organizer Information {#organizer-information .unnumbered .underlined}
 
 <section id="organizer-list">
   <figure>
@@ -163,7 +251,7 @@ Please anonymize your submission and respect a 2-page maximum using the [ICML Te
     <figcaption>
       <p class="name">James Grimmelmann</p>
       <p class="person">
-        <span class="title">Tessler Family Professor of Digital and Information Law</span>
+        <span class="title">Professor of Digital and Information Law</span>
         <span class="affiliation">Cornell Law School and Cornell Tech</span>
       </p>
       <a class="email" href="mailto:james.grimmelmann@cornell.edu">james.grimmelmann@cornell.edu</a>

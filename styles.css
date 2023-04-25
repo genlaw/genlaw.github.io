@@ -348,6 +348,7 @@ span.citation {
 }
 
 #organizer-list figcaption {
+  justify-content: space-between;
   font-style: inherit;
   height: 100%;
 }
@@ -356,8 +357,21 @@ span.citation {
   margin: 0.5em 0;
 }
 
-#organizer-list .title::after {
+/* #organizer-list .title::after {
   content: ", ";
+} */
+
+#organizer-list .title {
+  font-style: italic;
+}
+
+#organizer-list .title,
+#organizer-list .affiliation {
+  display: block;
+}
+
+#organizer-list .title + .affiliation {
+  margin-top: .25em;
 }
 
 .name {
