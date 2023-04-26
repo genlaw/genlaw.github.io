@@ -40,7 +40,7 @@ Understanding the law and contributing to its development will enable us to crea
 
 ### Our Workshop
 
-We're excited to share a series of tutorials from [renowned experts](schedule.html) (to be announced soon!) in both ML and law and panel discussions, where researchers in both disciplines can engage in semi-moderated conversation. 
+We're excited to share a series of tutorials from [renowned experts](index.html#speakers) in both ML and law and panel discussions, where researchers in both disciplines can engage in semi-moderated conversation. 
 
 Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. It will take place on 29 July 2023, in Ballroom B. 
 
@@ -68,7 +68,7 @@ Please [submit to CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission
 Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions). We allow up to 2 _additional_ pages for references.
 
 
-## Speakers & Panelists {.underlined}
+## <a name="speakers"></a>Speakers & Panelists {.underlined}
 
 <section id="organizer-list">
   <figure>
