@@ -44,7 +44,7 @@ We're excited to share a series of tutorials from [renowned experts](index.html#
 
 Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. It will take place on 29 July 2023, in Ballroom B. 
 
-## Call for Papers
+## Call for Papers {#cfp}
 
 [→ Submit to CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission/Index){.button-a .button-hero} 
 
