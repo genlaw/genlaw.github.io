@@ -200,9 +200,9 @@ Please anonymize your submission and respect a 2-page maximum using the [ICML Te
   </figure>
 
   <figure>
-    <img class="avatar" src="images/cooper-300x300.jpg" alt="A. Feder Cooper">
+    <img class="avatar" src="images/cooper-300x300.jpg" alt="Alison Feder Cooper">
     <figcaption>
-      <p class="name">A. Feder Cooper</p>
+      <p class="name">Alison Feder Cooper</p>
       <p class="person">
         <span class="title">Ph.D. Candidate</span>
         <span class="affiliation">Cornell University Department of Computer Science</span>
