@@ -374,3 +374,4 @@ Please anonymize your submission and respect a 2-page maximum using the [ICML Te
 
 Reach the organizers at: <a class="email" href="mailto:genlaw.org@gmail.com">genlaw.org@gmail.com</a>
 
+Or, join our mailing list at: [genlaw@groups.google.com](https://groups.google.com/g/genlaw)
