@@ -174,7 +174,6 @@ Please see our [reviewer guidelines](reviewer-guidelines.html) for more informat
       </p>
     </figcaption>
   </figure>
-</section>
 
   <figure>
     <img class="avatar" alt="Miles Brundage" src="./images/speakers/miles.jpeg">
