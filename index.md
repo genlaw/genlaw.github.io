@@ -176,6 +176,21 @@ Please see our [reviewer guidelines](reviewer-guidelines.html) for more informat
   </figure>
 </section>
 
+  <figure>
+    <img class="avatar" alt="Miles Brundage" src="./images/speakers/miles.jpeg">
+    <figcaption>
+      <p class="name">Miles Brundage</p>
+      <p class="person">
+        <span class="title">Head of Policy Research</span>
+        <span class="affiliation">OpenAI</span>
+      </p>
+      <p class="contact">
+        <a class="button-a" href="https://www.milesbrundage.com/">Website</a>
+      </p>
+    </figcaption>
+  </figure>
+</section>
+
 ## Organizer Information {#organizer-information .unnumbered .underlined}
 
 <section id="organizer-list">
