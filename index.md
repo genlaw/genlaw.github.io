@@ -85,6 +85,8 @@ Please [submit to CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission
 
 Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions). We allow up to 2 _additional_ pages for references.
 
+Please see our [reviewer guidelines](reviewer-guidelines.html) for more information.
+
 
 ## <a name="speakers"></a>Speakers & Panelists {.underlined}
 
