@@ -14,7 +14,7 @@ Reviews will consist of:
 2. A multiple choice question concerning alignment of the submission with the CFP
 3. 2-3 sentence critical review that addresses overall clarity, soundness/rigor, originality/novelty, and adequate treatment of related work. We provide more details on these considerations below:
     a. An abstract that submits a novel “big idea” nevertheless needs to have a sufficient level of detail to be able to evaluate its feasibility and relationship to prior work. The abstract should be well motivated with connections to prior work.
-    b. Well-written abstracts that build on prior work in a small way can be sound and clear, but may also be less original. We would still accept work that brings a good level of clarity to the discussion.
+    b. We will also accept abstracts that build on prior work in smaller ways, as long as they are well-written and sound. Bringing significant clarity to existing discussions can also be a useful contribution in its own right.
     c. We deliberately limited the number of pages of references to emphasize quality of engagement with existing work, rather than quantity, especially given that these are short papers. 
 4. A recommendation (accept, unsure, reject). This recommendation should be grounded in the critical review.
 5. If the recommendation is “accept”: 1 sentence on your favorite strength(s) about the submission. We will use this to highlight high-quality submissions on the website. Feel free to directly copy or repurpose language from the critical review.  
