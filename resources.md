@@ -51,6 +51,8 @@ toc-title: ""
 [Eight Things to Know about Large Language Models](https://arxiv.org/abs/2304.00612) by Sam Bowman (2023)
 : Good introduction to LMs.
 
+[A Very Gentle Introduction to Large Language Models without the Hype](https://mark-riedl.medium.com/a-very-gentle-introduction-to-large-language-models-without-the-hype-5f67941fa59e) by Mark Riedl (2023)
+
 [HuggingFace NLP Course](https://huggingface.co/course/chapter1/1) 
 : A more detailed set of tutorials on what NLP is, what Transformers are, and some more details about training/using language models.
 
