@@ -88,7 +88,7 @@ Please anonymize your submission and respect a 2-page maximum using the [ICML Te
 Please see our [reviewer guidelines](reviewer-guidelines.html) for more information.
 
 
-## <a name="speakers"></a>Speakers & Panelists {.underlined}
+## <a name="speakers"></a>Speakers, Panelists & Moderators {.underlined}
 
 <section id="organizer-list">
   <figure>
@@ -185,6 +185,20 @@ Please see our [reviewer guidelines](reviewer-guidelines.html) for more informat
       </p>
       <p class="contact">
         <a class="button-a" href="https://www.milesbrundage.com/">Website</a>
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img class="avatar" alt="Jack M. Balkin" src="./images/speakers/jack.jpeg">
+    <figcaption>
+      <p class="name">Jack M. Balkin</p>
+      <p class="person">
+        <span class="title">Professor</span>
+        <span class="affiliation">Yale Law School</span>
+      </p>
+      <p class="contact">
+        <a class="button-a" href="https://jackbalkin.yale.edu/">Website</a>
       </p>
     </figcaption>
   </figure>
