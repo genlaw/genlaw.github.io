@@ -83,7 +83,7 @@ Accepted papers will present posters in-person or on Zoom. We will also accept o
 
 Please [submit to CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission/Index). We will review submissions in a rolling fashion, in order to enable as much time as possible for the visa application process for authors who would need a visa to attend GenLaw '23 in person. **The submission window will begin 4 May 2023, AoE and end on 29 May 2023, AoE**, and the form will contain a checkbox to indicate if there is at least one author that plans to attend GenLaw ’23 and would need a visa to do so. If this category is applicable, please submit as early as possible to facilitate speedy review. We will prioritize reviewing submissions in this category, and will provide rolling acceptance/rejection decisions (up until 19 June 2023). 
 
-Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions). We allow up to 2 _additional_ pages for references.
+Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions). We allow up to 2 _additional_ pages for references. We will be using a double-blind review process.
 
 Please see our [reviewer guidelines](reviewer-guidelines.html) for more information.
 
