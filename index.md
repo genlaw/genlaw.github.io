@@ -230,9 +230,9 @@ Please see our [reviewer guidelines](reviewer-guidelines.html) for more informat
   </figure>
 
   <figure>
-    <img class="avatar" src="images/cooper-300x300.jpg" alt="Alison Feder Cooper">
+    <img class="avatar" src="images/cooper-300x300.jpg" alt="A. Feder Cooper">
     <figcaption>
-      <p class="name">Alison Feder Cooper</p>
+      <p class="name">A. Feder Cooper</p>
       <p class="person">
         <span class="title">Ph.D. Candidate</span>
         <span class="affiliation">Cornell University Department of Computer Science</span>
