@@ -83,12 +83,12 @@ Accepted papers will present posters in-person or on Zoom. We will also accept o
 
 Please [submit to CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission/Index). We will review submissions in a rolling fashion, in order to enable as much time as possible for the visa application process for authors who would need a visa to attend GenLaw '23 in person. **The submission window will begin 4 May 2023, AoE and end on 29 May 2023, AoE**, and the form will contain a checkbox to indicate if there is at least one author that plans to attend GenLaw ’23 and would need a visa to do so. If this category is applicable, please submit as early as possible to facilitate speedy review. We will prioritize reviewing submissions in this category, and will provide rolling acceptance/rejection decisions (up until 19 June 2023). 
 
-Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions). We allow up to 2 _additional_ pages for references.
+Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions). We allow up to 2 _additional_ pages for references. We will be using a double-blind review process.
 
 Please see our [reviewer guidelines](reviewer-guidelines.html) for more information.
 
 
-## <a name="speakers"></a>Speakers & Panelists {.underlined}
+## <a name="speakers"></a>Speakers, Panelists & Moderators {.underlined}
 
 <section id="organizer-list">
   <figure>
@@ -188,6 +188,20 @@ Please see our [reviewer guidelines](reviewer-guidelines.html) for more informat
       </p>
     </figcaption>
   </figure>
+
+  <figure>
+    <img class="avatar" alt="Jack M. Balkin" src="./images/speakers/jack.jpeg">
+    <figcaption>
+      <p class="name">Jack M. Balkin</p>
+      <p class="person">
+        <span class="title">Professor</span>
+        <span class="affiliation">Yale Law School</span>
+      </p>
+      <p class="contact">
+        <a class="button-a" href="https://jackbalkin.yale.edu/">Website</a>
+      </p>
+    </figcaption>
+  </figure>
 </section>
 
 ## Organizer Information {#organizer-information .unnumbered .underlined}
@@ -216,9 +230,9 @@ Please see our [reviewer guidelines](reviewer-guidelines.html) for more informat
   </figure>
 
   <figure>
-    <img class="avatar" src="images/cooper-300x300.jpg" alt="Alison Feder Cooper">
+    <img class="avatar" src="images/cooper-300x300.jpg" alt="A. Feder Cooper">
     <figcaption>
-      <p class="name">Alison Feder Cooper</p>
+      <p class="name">A. Feder Cooper</p>
       <p class="person">
         <span class="title">Ph.D. Candidate</span>
         <span class="affiliation">Cornell University Department of Computer Science</span>
