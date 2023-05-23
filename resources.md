@@ -171,6 +171,8 @@ toc-title: ""
 
 ## In the news
 
+[AI Ethics & Policy News](https://docs.google.com/spreadsheets/d/11Ps8ILDHH-vojJGyIx7CcaoB5l1mBRHy3OQAgWkm0W4/edit#gid=0) compiled by Casey Fiesler
+
 [Samsung workers made a major error by using ChatGPT](https://www.techradar.com/news/samsung-workers-leaked-company-secrets-by-using-chatgpt) by Lewis Maddison for _TechRadar_ (2023)
 
 [OpenAI threatened with landmark defamation lawsuit over ChatGPT false claims](https://arstechnica.com/tech-policy/2023/04/openai-may-be-sued-after-chatgpt-falsely-says-aussie-mayor-is-an-ex-con/) by Ashley Belanger for _Ars Technica_ (2023)
