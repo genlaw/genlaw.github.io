@@ -4,6 +4,7 @@ lang: en-US
 main-id: resources
 toc-title: ""
 ---
+<p style="text-align:right">Also see the [glossary](glossary.html)</p>
 
 ## Intellectual Property
 
@@ -66,6 +67,9 @@ toc-title: ""
 
 [BERT for Humanists](https://www.bertforhumanists.org/tutorials/) by Matt Wilkens, David Mimno, Melanie Walsh, Rosamond Thalken, and Maria Antoniak (2022)
 : Fantastic tutorial on language models, geared toward those that do not have a background in the area
+
+[The Practical Guides for Large Language Models](https://github.com/Mooler0410/LLMsPracticalGuide)
+
 
 ## Diffusion Models
 

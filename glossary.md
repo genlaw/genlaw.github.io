@@ -2,6 +2,7 @@
 title: "GenLaw: Glossary"
 tags: [machine learning, datasets, generative ai, artificial intelligence, copyright, privacy, law]
 ---
+<p style="text-align:right">Additional [resources](resources.html)</p>
 
 # Machine Learning and Artificial Intelligence
 ## Core Concepts in Machine Learning
@@ -168,13 +169,6 @@ A **tort** is a civil wrongdoing that causes harm or injury to another person or
 
 The **CCPA** is a California state law that provides consumers with the right to know what personal information businesses collect about them, the right to request their personal information be deleted, and the right to opt-out of sales of their personal information. The CCPA applies to all businesses that operate in California, as well as those outside of California that may transfer or process the personal information of California residents.
 
-# Additional Resources
-
-[The Practical Guides for Large Language Models](https://github.com/Mooler0410/LLMsPracticalGuide)
-
-[_Understanding Generative Artificial Intelligence and Its Relationship to Copyright_ ](https://www.cis.upenn.edu/~ccb/publications/understanding-generative-AI-and-its-relationship-to-copyright.pdf ) Written Testimony of Christopher Callison-Burch, Ph.D.
-
-[GenLaw: Resources](resources.html)
 
 <p style="text-align:right">Jun 1, 2023</p>
 <p style="text-align:right">Written by: [A. Feder Cooper](https://afedercooper.info/), [David Mimno](https://mimno.infosci.cornell.edu), [Madiha Z. Choksi](https://madihaz.com/), and [Katherine Lee](https://katelee168.github.io)</p>
