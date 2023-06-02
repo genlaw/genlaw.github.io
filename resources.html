@@ -34,21 +34,24 @@
         </nav>
     </header>
     <main id="resources">
-        <h1>GenLaw ’23: Resources</h1>
-                <div id="table-of-contents">
-            <ul>
-            <li><a href="#intellectual-property" id="toc-intellectual-property">Intellectual Property</a></li>
-            <li><a href="#privacy" id="toc-privacy">Privacy</a></li>
-            <li><a href="#language-models" id="toc-language-models">Language Models</a></li>
-            <li><a href="#diffusion-models" id="toc-diffusion-models">Diffusion Models</a></li>
-            <li><a href="#training-data-extraction" id="toc-training-data-extraction">Training data extraction</a></li>
-            <li><a href="#membership-inference" id="toc-membership-inference">Membership Inference</a></li>
-            <li><a href="#differential-privacy" id="toc-differential-privacy">Differential Privacy</a></li>
-            <li><a href="#ethics" id="toc-ethics">Ethics</a></li>
-            <li><a href="#ongoing-litigation" id="toc-ongoing-litigation">Ongoing litigation</a></li>
-            <li><a href="#in-the-news" id="toc-in-the-news">In the news</a></li>
-            </ul>
-        </div>
+                <aside class="sidebar-container">
+            <div class="sidebar" id="table-of-contents">
+                <ul>
+                <li><a href="#intellectual-property" id="toc-intellectual-property">Intellectual Property</a></li>
+                <li><a href="#privacy" id="toc-privacy">Privacy</a></li>
+                <li><a href="#language-models" id="toc-language-models">Language Models</a></li>
+                <li><a href="#diffusion-models" id="toc-diffusion-models">Diffusion Models</a></li>
+                <li><a href="#training-data-extraction" id="toc-training-data-extraction">Training data extraction</a></li>
+                <li><a href="#membership-inference" id="toc-membership-inference">Membership Inference</a></li>
+                <li><a href="#differential-privacy" id="toc-differential-privacy">Differential Privacy</a></li>
+                <li><a href="#ethics" id="toc-ethics">Ethics</a></li>
+                <li><a href="#ongoing-litigation" id="toc-ongoing-litigation">Ongoing litigation</a></li>
+                <li><a href="#in-the-news" id="toc-in-the-news">In the news</a></li>
+                </ul>
+            </div>
+        </aside>
+                <div id="content">
+            <h1>GenLaw ’23: Resources</h1>
             <p style="text-align:right">
             Also see the <a href="glossary.html">glossary</a>
             </p>
@@ -227,10 +230,40 @@
             <p><a href="https://www2.law.ucla.edu/volokh/ailibel.pdf">Large Libel Models? Liability for AI Output</a> by Eugene Volokh (draft 2023)</p>
             <p><a href="https://www.lawfareblog.com/section-230-wont-protect-chatgpt">Section 230 Won’t Protect ChatGPT</a> by Matt Perault (2023)</p>
             <p><a href="https://www.technologyreview.com/2023/04/19/1071789/openais-hunger-for-data-is-coming-back-to-bite-it/">OpenAI’s hunger for data is coming back to bite it</a> by Melissa Heikkilä (2023)</p>
+        </div>
     </main>
     <footer>
         <p style="white-space: nowrap;">GenLaw '23</p>
         <p class="colophon">Built with <a href="http://pandoc.org">Pandoc</a> and <a href="https://chat.openai.com/chat?model=gpt-4">ChatGPT</a> :)</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+           const toc = document.getElementById('table-of-contents');
+           if (toc == null) {
+            console.log('no toc');
+            return;
+           }
+           // hide all level 2 LIs until clicked
+           const level2LIs = toc.querySelectorAll('#table-of-contents > ul > li > ul > li');
+           level2LIs.forEach(li => {
+               const child_ul = li.querySelector('ul');
+               child_ul.style.display = 'none';
+
+               const triangle = document.createElement('span');
+               triangle.classList.add('triangle');
+               triangle.innerHTML = '&#9658;';
+               triangle.onclick = () => {
+                   if (child_ul.style.display == 'none') {
+                       child_ul.style.display = 'block';
+                       triangle.innerHTML = '&#9660;';
+                   } else {
+                       child_ul.style.display = 'none';
+                       triangle.innerHTML = '&#9658;';
+                   }
+               };
+               li.prepend(triangle);
+           });
+        });
+    </script>
 </body>
 </html>

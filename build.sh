@@ -14,20 +14,13 @@ do
     filename="${file%.*}"
     echo "Compiling $filename"
 
-    if [ "./glossary" = "$filename" ]; then
-        toc_flag=""
-        echo "No TOC for $filename"
-    else
-        toc_flag="--toc"
-    fi
-
     pandoc -s \
         --from markdown \
         --to html \
         --wrap none \
         --css styles.css \
         --citeproc \
-        $toc_flag \
+        --toc \
         --bibliography references.bib \
         --template template.html \
         --output $filename.html \

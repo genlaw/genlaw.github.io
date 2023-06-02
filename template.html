@@ -36,17 +36,50 @@
         </nav>
     </header>
     <main id="$main-id$">
-        <h1>$title$</h1>
         $if(toc)$
-        <div id="table-of-contents">
-            $toc$
-        </div>
+        <aside class="sidebar-container">
+            <div class="sidebar" id="table-of-contents">
+                $toc$
+            </div>
+        </aside>
         $endif$
-    $body$
+        <div id="content">
+            <h1>$title$</h1>
+            $body$
+        </div>
     </main>
     <footer>
         <p style="white-space: nowrap;">GenLaw '23</p>
         <p class="colophon">Built with <a href="http://pandoc.org">Pandoc</a> and <a href="https://chat.openai.com/chat?model=gpt-4">ChatGPT</a> :)</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+           const toc = document.getElementById('table-of-contents');
+           if (toc == null) {
+            console.log('no toc');
+            return;
+           }
+           // hide all level 2 LIs until clicked
+           const level2LIs = toc.querySelectorAll('#table-of-contents > ul > li > ul > li');
+           level2LIs.forEach(li => {
+               const child_ul = li.querySelector('ul');
+               child_ul.style.display = 'none';
+
+               const triangle = document.createElement('span');
+               triangle.classList.add('triangle');
+               triangle.innerHTML = '&#9658;';
+               triangle.onclick = () => {
+                   if (child_ul.style.display == 'none') {
+                       child_ul.style.display = 'block';
+                       triangle.innerHTML = '&#9660;';
+                   } else {
+                       child_ul.style.display = 'none';
+                       triangle.innerHTML = '&#9658;';
+                   }
+               };
+               li.prepend(triangle);
+           });
+        });
+    </script>
 </body>
 </html>

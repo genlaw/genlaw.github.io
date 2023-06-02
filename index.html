@@ -34,7 +34,8 @@
         </nav>
     </header>
     <main id="">
-        <h1>Generative AI + Law (GenLaw) ’23</h1>
+                <div id="content">
+            <h1>Generative AI + Law (GenLaw) ’23</h1>
             <p>We are very excited to announce the inaugural Workshop on Generative AI and Law (GenLaw ’23)! Please join us in Honolulu, Hawai’i at <a href="https://icml.cc/">ICML ’23</a>, where we’ll be bringing together experts in privacy, ML, policy, and law to discuss the intellectual property (IP) and privacy challenges that generative AI raises.</p>
             <figure>
             <img class="avatar" alt="Robots reading on the beach, thanks to DALL-E" src="./images/beach-robots-300x300.jpg">
@@ -377,10 +378,40 @@
             <h3 id="contact-us">Contact us</h3>
             <p>Reach the organizers at: <a class="email" href="mailto:genlaw.org@gmail.com">genlaw.org@gmail.com</a></p>
             <p>Or, join our mailing list at: <a href="https://groups.google.com/g/genlaw">genlaw@groups.google.com</a></p>
+        </div>
     </main>
     <footer>
         <p style="white-space: nowrap;">GenLaw '23</p>
         <p class="colophon">Built with <a href="http://pandoc.org">Pandoc</a> and <a href="https://chat.openai.com/chat?model=gpt-4">ChatGPT</a> :)</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+           const toc = document.getElementById('table-of-contents');
+           if (toc == null) {
+            console.log('no toc');
+            return;
+           }
+           // hide all level 2 LIs until clicked
+           const level2LIs = toc.querySelectorAll('#table-of-contents > ul > li > ul > li');
+           level2LIs.forEach(li => {
+               const child_ul = li.querySelector('ul');
+               child_ul.style.display = 'none';
+
+               const triangle = document.createElement('span');
+               triangle.classList.add('triangle');
+               triangle.innerHTML = '&#9658;';
+               triangle.onclick = () => {
+                   if (child_ul.style.display == 'none') {
+                       child_ul.style.display = 'block';
+                       triangle.innerHTML = '&#9660;';
+                   } else {
+                       child_ul.style.display = 'none';
+                       triangle.innerHTML = '&#9658;';
+                   }
+               };
+               li.prepend(triangle);
+           });
+        });
+    </script>
 </body>
 </html>
