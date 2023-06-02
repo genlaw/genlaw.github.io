@@ -16,22 +16,25 @@ A saved copy of a model's trained parameters is called a **checkpoint**. We migh
 
 ### Parameter / weight
 **Parameters** are numbers that define the specific behavior of a model. For example, a linear regression model that predicts the number of bicycle trips given temperature and rainfall might have three parameters: one representing the effect of temperature, one representing the effect of rainfall, and one additional **intercept** or **bias** parameter representing the baseline number of trips. Contemporary **neural network** models have millions to billions of parameters. The values of parameters are saved in files called **checkpoints**.
+
 ### Datasets and examples
 Machine learning **models** are usually defined as functions with optimizable **parameters** that produce an output for a given input. In order to find settings for numerical parameters, we need **examples** of input-output pairs. A collection of such input-output pairs is a **dataset**. 
 
 Datasets are often copied and reused for multiple projects because (a) they are expensive and time-consuming to produce and (b) reusing datasets makes it easier to compare new models and algorithms to existing methods (a process often called **benchmarking**). It is generally assumed that the individual examples in a dataset are not important except as representative **samples** from a **probability distribution** of input-output pairs, which  the model is likely to encounter when in  use. As such, **memorization** of specific input-output pairs is considered a failure, while **generalization** to the distribution (i.e., a trained model performing well on previously unseen examples from the same distribution) is considered success. 
 
-Datasets are often divided into **training** and **testing** portions to distinguish memorization from generalization. Commonly used datasets and sources include 
-Wikipedia
-Project Gutenberg
-Common Crawl
-The Pile
-C4
-ImageNet
-ROOTS
+Datasets are often divided into **training** and **testing** portions to distinguish memorization from generalization. Commonly used datasets and sources include: 
+
+* [Wikipedia](https://huggingface.co/datasets/wikipedia)
+* [Project Gutenberg](https://arxiv.org/abs/1812.08092v1)
+* [Common Crawl](https://commoncrawl.org/)
+* [The Pile](https://pile.eleuther.ai/)
+* [C4](https://github.com/allenai/allennlp/discussions/5056)
+* [ImageNet](https://www.image-net.org/)
+* [ROOTS](https://huggingface.co/papers/2303.03915)
 
 ### Neural network
 A neural network is a way of using simple, easy-to-learn relationships to model complex, difficult relationships. For example, if you can only draw straight lines, it is impossible to draw a circle. But if you _combine_ many straight lines you can draw something that looks like a curve. The model synthesizes multiple simple decisions by passing the input through a series of intermediate transformations. Many networks consist of **layers**, where the output of one layer is used as the input of the next layer. Each layer consists of a set of classifiers (**neurons**) that each performs a simple operation independently of one another. The outputs of all classifiers at layer _n_ are then passed to each classifier in layer _n+1_, and so forth. Each classifier in each layer has **parameters** that define how it responds to input.
+
 ### Architecture
 The design of a model is called its **architecture**. For a **neural network,** the design process requires making several decisions, e.g., the size of inputs that can be accepted, the number of layers, how many **parameters** per layer, how they are connected, and how we represent the intermediate state of the model as each layer transforms input to output. 
 
@@ -49,7 +52,8 @@ The process of setting the value of numeric **parameters** of a **model** based 
 
 ## Concepts in Generative AI
 ### Language model
-A language model (LM) is a type of **model** that takes a sequence of text as input and returns a numeric score as output. Many language models are designed to divide input into a **prefix** and a ** continuation**, where only the continuation is scored. A language model can be used to implement many tasks, such as autocomplete (given your current text, what are the three most likely next words?) or translation (which is more likely, "recognize speech" or "wreck a nice beach"?). Systems like ChatGPT take the user's input text as a prefix and then use the scores from a language model to generate a response one word at a time: After each word is selected, the system appends that word to the previous prefix to create a new prefix, which is then used to score candidates for the next word. Different types of language models have been studied for more than 100 years. Contemporary LMs are usually **neural networks**.
+A language model (LM) is a type of **model** that takes a sequence of text as input and returns a numeric score as output. Many language models are designed to divide input into a **prefix** and a **continuation**, where only the continuation is scored. A language model can be used to implement many tasks, such as autocomplete (given your current text, what are the three most likely next words?) or translation (which is more likely, "recognize speech" or "wreck a nice beach"?). Systems like ChatGPT take the user's input text as a prefix and then use the scores from a language model to generate a response one word at a time: After each word is selected, the system appends that word to the previous prefix to create a new prefix, which is then used to score candidates for the next word. Different types of language models have been studied for more than 100 years. Contemporary LMs are usually **neural networks**.
+
 ### Large language model
 This term has become popular as a way to refer to the current spate of language models that use the **Transformer architecture**. It does not have a specific technical definition, but usually implies a number of **parameters** on the order of hundreds of million or more (a number that has continually evolved).
 
@@ -60,6 +64,7 @@ A **diffusion model** is the model architecture behind models like Stable Diffus
 
 ### Transformer
 A **transformer** is a popular **model architecture** for image, text, and music applications and underlies models like ChatGPT, Bard, and MusicLM. An input (text or image) is broken into segments (word **tokens** or image patches) as a preprocessing step. These input segments are then passed through a series of layers that generate **vector representations** of the segments. What makes the transformer model distinct is that the strength of connection between segments is itself a learned behavior. The model has trainable parameters that determine how much **attention** to parts of the input.  Like the diffusion model, the transformer model is rewarded for reproducing a target training example exactly.
+
 ### Tokenization
 For language models, a common preprocessing step is to break documents into segments called **tokens**. For example, the input "I like ice cream." might be tokenized into ["I", "like", "ice", "cream", "."]. The tokens can then be mapped to entries in a **vocabulary** of strings that are recognized by a model. Each model family tends to share a vocabulary, which is optimized to represent a particular training corpus. Most current models use **subword tokenization** to handle words that would otherwise not be recognized. Therefore, a rare or misspelled word might be represented by multiple tokens. The number of tokens used to represent an input is important because it determines how large the effective input size of a model is.
 
@@ -67,11 +72,13 @@ For language models, a common preprocessing step is to break documents into segm
 Current protocols divide **training** into a common **pre-training** phase that results in a general-purpose or **foundation** model and an application-specific **fine-tuning** phase that adapts a pretrained model **checkpoint** to perform a desired task using additional data. This paradigm has become common over the last five years, especially as model architectures have become larger and larger. This is because, relative to pretraining, finetuning is fast and inexpensive: It is much cheaper to fine-tune an existing foundation model for a particular task than it is to always train a new model from scratch. 
 
 Because pretrained models are most useful if they provide a good basis for many distinct applications, model builders have a strong incentive to collect as much pre-training data from as many distinct sources as possible. Fine-tuning results in a completely new model checkpoint (potentially gigabytes of data that must be loaded and served separately from the original model), and requires hundreds to thousands of application-specific examples. 
+
 ### Multimodal
 Computers represent different ***modalities*** of input data in distinct ways, including text, images, and audio. Multimodal models are able to process inputs in multiple forms, for example by mapping both images and documents into a shared **embedding** representation or by generating a text caption from an image.
 
 ### Generation
 **Generative models** produce complex, human interpretable outputs such as full sentences or natural-looking images, called **generations.** More traditional , machine learning models are limited to ranges of numeric outputs (**regression**) or discrete output labels like “cat” and “dog” (**classification**). The process of producing generations is much more difficult: The vast majority of possible images just look like static, and even high-quality generations can reach an **uncanny valley** with subtly wrong details like seven-fingered hands. Note that in the 2000s, "generative" was used to describe a method for designing ML algorithms using Bayes rule; this is not the same meaning. 
+
 ### Hallucination
 Generative models are trained to produce outputs based on training data. But they don’t have explicit representations of facts or knowledge and sometimes generate unrealistic content, such as images of the pope wearing a puffy white coat or a hedgehog driving a train, or "bibliographies" consisting of research papers that do not exist. [It has become common](https://www.wsj.com/articles/hallucination-when-chatbots-and-people-see-what-isnt-there-91c6c88b?st=wns4rqlp2dl1ly5&reflink=desktopwebshare_permalink) to refer to such outputs as **hallucinations.**
 ### Reinforcement learning
@@ -113,6 +120,7 @@ Expression can build on prior expression. In some cases, a new piece of copyrigh
 ### Non-Expressive or Non-Consumptive
 
 Certain uses of copyrighted materials can be **non-expressive** or **non-consumptive**. In such cases, copyrighted material is used in a way that does not involve expressing or displaying original work to users. Some examples include text mining, building a search engine, or various forms of computational analyses.
+
 ### Patent
 A **patent** confers exclusive rights to inventors, granting them the authority to prevent others from making, using, or selling their inventions without permission. Patents create incentives for innovation by providing inventors with a time-based protection  from the filing date. To obtain a patent, inventions must be new, inventive, and industrially applicable. Creators apply for patents; their applications must contain **claims** that describe what is novel in the work. 
 
@@ -123,6 +131,7 @@ Patent **claims** are extremely precise statements that define the scope of prot
 ### Prior Art
 
 **Prior** art is evidence of existing knowledge or information that is publicly available before a certain date. Prior art is critical in adjudicating the novelty and nonobviousness of a new invention and may include other patents. Patent examiners search for prior art to determine the patentability of the claimed invention. Further, prior art informs the patents applicability and scope.
+
 ### Idea vs. Expression
 This **idea vs. expression** dichotomy gets at the distinction between underlying concepts (or ideas) conveyed by a work, and the specific, tangible manner in which those are expressed. An idea refers to an abstract concept or notion behind a creative work, and ideas are not subject to copyright protection. However, expressions as tangible manifestations, are.  Tangible fixed expressions of ideas can be words, music, code, or art. 
 
@@ -131,6 +140,7 @@ It is important to note that within copyright law, rights are granted to express
 ### License
 
 Legal permission or authorization granted by the rights holder to others. **License** agreements explicitly outline rights that are granted, as well as limitations, restrictions, and other provisions related to its scope, for example, duration. Licenses are common practice within the field of IP, and are commonly used in software, music, and film industries.
+
 ### Terms of Service
 **Terms of service (ToS)** refers to a contractual agreement between the IP owner and users of licenses that govern the use and access to the protected content. ToS outline rights, restrictions, and obligations involved. ToS may specify permitted uses, licensing terms, and how IP may be copied or distributed. ToS safeguard IP owners’ rights and ensure compliance with legal standards in the use of IP. 
 
@@ -156,12 +166,15 @@ A **privacy policy** consists of documents that outline how organizations collec
 **Anonymization** is the process of removing or modifying personal data in a way that it cannot be attributed to an identifiable individual. 
 ### Right to be forgotten
 **The right to be forgotten** grants individuals the ability to request the removal of their personal information from online platforms or search engine results. This principle is based on the notion that individuals should have control over their digital information and the ability to safeguard their privacy. 
+
 ### The General Data Protection Regulation (GDPR)
 The **GDPR** is a comprehensive data protection law implemented by the European Union in 2018. The GDPR governs the collection, use, storage, and protection of personal data for EU residents. The law sets out specific rights for individuals regarding their personal data such as the right to access, rectify, and delete their data, as well as the right to know how their data is being processed.
 
 Further, the GDPR imposes obligations on organizations such as businesses that handle personal data to ensure that proper data protection measures are in place and that consent is obtained for data processing. Non-compliance results in fines and penalties.
+
 ### Tort
 A **tort** is a civil wrongdoing that causes harm or injury to another person or their property. Tort law provides remedies and compensation to individuals who suffer harm as a result of someone else's actions or negligence. 
+
 ### Personally Identifiable Information (PII)
 **Personally Identifiable Information (PII)** refers to data that can be used to identify an individual. PII can include names, addresses, phone numbers, social security numbers, email addresses, financial information, and biometric data. PII is sensitive, and organizations that collect PII are required to implement appropriate measures, adhering to relevant data protection laws (such as the GDPR) to safeguard its confidentiality and integrity.
 
