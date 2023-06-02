@@ -446,6 +446,8 @@ header, footer {
 header a,
 footer a {
   text-decoration: none;
+}
+header a {
   padding-left: clamp(1rem, 2vmin, 3rem);
 }
 header a:visited,
