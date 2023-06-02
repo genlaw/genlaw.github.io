@@ -45,7 +45,7 @@ Many contemporary models appear in **families** that have similar architectures 
 An **algorithm** is a formal specification of a process. Machine learning uses algorithms for **training** models and for operating models on new data, e.g., for **inference.** In public discourse around social media, algorithm has come to refer to methods for **optimizing** the probability that a user will engage with a post; however, it is important to note that the process of simply sorting posts by date also requires an algorithm.
 
 ### Training
-The process of setting the value of numeric **parameters** of a **model** based on **data** is called **training**. A common **algorithm** for training neural network models is **stochastic gradient descent,** or SGD.. Training data sets are often too large to process all at once, so SGD operates on small **batches** of dozens to hundreds of **examples** at a time. For each example, the algorithm generates the model's output based on the current setting of the parameters and compares that output to the desired output from the training data (e.g. did we correctly choose the next word?). If the output did not match, the algorithm works backwards through the model's layers and modifies parameters so that the correct output becomes more likely. This process can be thought of as leaving "echoes" of the training examples encoded in the parameters of the model.
+The process of setting the value of numeric **parameters** of a **model** based on **data** is called **training**. A common **algorithm** for training neural network models is **stochastic gradient descent,** or SGD. Training data sets are often too large to process all at once, so SGD operates on small **batches** of dozens to hundreds of **examples** at a time. For each example, the algorithm generates the model's output based on the current setting of the parameters and compares that output to the desired output from the training data (e.g. did we correctly choose the next word?). If the output did not match, the algorithm works backwards through the model's layers and modifies parameters so that the correct output becomes more likely. This process can be thought of as leaving "echoes" of the training examples encoded in the parameters of the model.
 
 ### Hyperparameter
 **Parameters** are numbers in a model whose values are set during training. There are additional numbers that are _not_ learned that the model builder sets prior to training, which are often manually specified. Some of these are properties of the architecture, such as input length, internal dimension, and number of layers. Others determine the behavior of the training algorithm, such as the learning rate, which controls how much we update model parameters after each input/output training example. Such parameters are called **hyperparameters,** and they can have a big effect on the overall behavior of trained models. 
@@ -80,7 +80,8 @@ Computers represent different ***modalities*** of input data in distinct ways, i
 **Generative models** produce complex, human interpretable outputs such as full sentences or natural-looking images, called **generations.** More traditional , machine learning models are limited to ranges of numeric outputs (**regression**) or discrete output labels like “cat” and “dog” (**classification**). The process of producing generations is much more difficult: The vast majority of possible images just look like static, and even high-quality generations can reach an **uncanny valley** with subtly wrong details like seven-fingered hands. Note that in the 2000s, "generative" was used to describe a method for designing ML algorithms using Bayes rule; this is not the same meaning. 
 
 ### Hallucination
-Generative models are trained to produce outputs based on training data. But they don’t have explicit representations of facts or knowledge and sometimes generate unrealistic content, such as images of the pope wearing a puffy white coat or a hedgehog driving a train, or "bibliographies" consisting of research papers that do not exist. [It has become common](https://www.wsj.com/articles/hallucination-when-chatbots-and-people-see-what-isnt-there-91c6c88b?st=wns4rqlp2dl1ly5&reflink=desktopwebshare_permalink) to refer to such outputs as **hallucinations.**
+Generative models are trained to produce outputs based on training data. But they don’t have explicit representations of facts or knowledge and sometimes generate unrealistic content, such as images of the pope wearing a puffy white coat or a hedgehog driving a train, or "bibliographies" consisting of research papers that do not exist. [It has become common](https://www.wsj.com/articles/hallucination-when-chatbots-and-people-see-what-isnt-there-91c6c88b?st=wns4rqlp2dl1ly5&reflink=desktopwebshare_permalink) to refer to such outputs as **hallucinations**.
+
 ### Reinforcement learning
 Reinforcement learning is a method for incorporating feedback into systems. For some applications, solving a given  task requires finding an optimal policy or strategy, and feedback may only be available after many decisions have been made. For example, a chess system needs a function that decides between possible moves, but you may only find out whether a move was good many moves later when you either win or lose. 
 RL is currently being used to improve generation with responses to  **human feedback** about whether the generations were “good” or “useful.”
@@ -104,7 +105,7 @@ A set of laws that grant exclusive rights for creative and inventive works. IP l
 
 ### Copyright
 
-**Copyright** grants exclusive rights to creators of original works. For a work to be copyrightable, it must meet a certain criteria: (1) it must be original, and (2) it must possess a sufficient degree of creativity. Copyright does not protect facts or concepts, but expressions of those ideas fixed in a tangible medium (e.g., the idea for a movie, if not written down or recorded in some way, is typically not copyrightable; a screenplay is typically copyrightable). Copyright laws provide protections for various forms of creative expression, including, but not limited to literary works, artistic works, musical composition, movies, and software. 
+[**Copyright**](https://www.law.cornell.edu/uscode/text/17/102) grants exclusive rights to creators of original works. For a work to be copyrightable, it must meet a certain criteria: (1) it must be original, and (2) it must possess a sufficient degree of creativity. Copyright does not protect facts or concepts, but expressions of those ideas fixed in a tangible medium (e.g., the idea for a movie, if not written down or recorded in some way, is typically not copyrightable; a screenplay is typically copyrightable). Copyright laws provide protections for various forms of creative expression, including, but not limited to literary works, artistic works, musical composition, movies, and software. 
 
 ### Copyright Infringement
 
@@ -115,7 +116,7 @@ Copyright infringement occurs when someone uses, reproduces, distributes, perfor
 Expression can build on prior expression. In some cases, a new piece of copyrightable material may borrow or re-purpose material from prior work. If this new material creates something inventive, new, and substantially different from the original work, then it can be considered **transformative use** of the original work, as opposed to **infringing** on the original copyright owner’s exclusive rights. The new material may also be copyright eligible. Parody is one common type of transformative use.
 
 ### Fair Use
-**Fair use** is a legal concept that allows limited use of copyrighted materials without permission from the copyright owner. Typically, fair use applies to contexts such as teaching, research, and news reporting, and fair use analyses consider the purpose of use, scope, and the amount of material used.
+[**Fair use**](https://www.law.cornell.edu/uscode/text/17/107) is a legal concept that allows limited use of copyrighted materials without permission from the copyright owner. Typically, fair use applies to contexts such as teaching, research, and news reporting, and fair use analyses consider the purpose of use, scope, and the amount of material used.
 
 ### Non-Expressive or Non-Consumptive
 
@@ -164,11 +165,12 @@ A **privacy policy** consists of documents that outline how organizations collec
 ### Anonymization
 
 **Anonymization** is the process of removing or modifying personal data in a way that it cannot be attributed to an identifiable individual. 
+
 ### Right to be forgotten
 **The right to be forgotten** grants individuals the ability to request the removal of their personal information from online platforms or search engine results. This principle is based on the notion that individuals should have control over their digital information and the ability to safeguard their privacy. 
 
 ### The General Data Protection Regulation (GDPR)
-The **GDPR** is a comprehensive data protection law implemented by the European Union in 2018. The GDPR governs the collection, use, storage, and protection of personal data for EU residents. The law sets out specific rights for individuals regarding their personal data such as the right to access, rectify, and delete their data, as well as the right to know how their data is being processed.
+The [**GDPR**](https://gdpr-info.eu/) is a comprehensive data protection law implemented by the European Union in 2018. The GDPR governs the collection, use, storage, and protection of personal data for EU residents. The law sets out specific rights for individuals regarding their personal data such as the right to access, rectify, and delete their data, as well as the right to know how their data is being processed.
 
 Further, the GDPR imposes obligations on organizations such as businesses that handle personal data to ensure that proper data protection measures are in place and that consent is obtained for data processing. Non-compliance results in fines and penalties.
 
