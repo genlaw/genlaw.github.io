@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+    <title>GenLaw: Glossary</title>
+        <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Analytics tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2ZW2ZM1M6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W2ZW2ZM1M6');
+    </script>
+</head>
+<body>
+    <header>
+        <img src="/favicon.ico" alt="reading robot icon">
+        <a href="index.html" style="white-space: nowrap;">GenLaw '23</a>
+        <nav>
+            <a href="index.html#cfp">CFP</a>
+            <a href="index.html#speakers">Speakers</a>
+            <a href="resources.html">Resources</a>
+            <a href="index.html#contact-us">Contact</a>
+        </nav>
+    </header>
+    <main id="">
+        <h1>GenLaw: Glossary</h1>
+                <div id="table-of-contents">
+            <ul>
+            <li><a href="#machine-learning-and-artificial-intelligence" id="toc-machine-learning-and-artificial-intelligence">Machine Learning and Artificial Intelligence</a>
+            <ul>
+            <li><a href="#core-concepts-in-machine-learning" id="toc-core-concepts-in-machine-learning">Core Concepts in Machine Learning</a>
+            <ul>
+            <li><a href="#model" id="toc-model">Model</a></li>
+            <li><a href="#parameter-weight" id="toc-parameter-weight">Parameter / weight</a></li>
+            <li><a href="#neural-network" id="toc-neural-network">Neural network</a></li>
+            <li><a href="#algorithm" id="toc-algorithm">Algorithm</a></li>
+            <li><a href="#training" id="toc-training">Training</a></li>
+            <li><a href="#hyperparameter" id="toc-hyperparameter">Hyperparameter</a></li>
+            </ul></li>
+            <li><a href="#concepts-in-generative-ai" id="toc-concepts-in-generative-ai">Concepts in Generative AI</a>
+            <ul>
+            <li><a href="#language-model" id="toc-language-model">Language model</a></li>
+            <li><a href="#diffusion-model" id="toc-diffusion-model">Diffusion model</a></li>
+            <li><a href="#transformer" id="toc-transformer">Transformer</a></li>
+            <li><a href="#pre-training-fine-tuning-and-foundation-models" id="toc-pre-training-fine-tuning-and-foundation-models">Pre-training, Fine-tuning, and Foundation Models</a></li>
+            <li><a href="#generation" id="toc-generation">Generation</a></li>
+            <li><a href="#in-context-learning-zero-shot-few-shot" id="toc-in-context-learning-zero-shot-few-shot">In-context learning / zero-shot / few-shot</a></li>
+            <li><a href="#instruction-fine-tuning" id="toc-instruction-fine-tuning">Instruction fine-tuning</a></li>
+            </ul></li>
+            </ul></li>
+            <li><a href="#legal-concepts" id="toc-legal-concepts">Legal Concepts</a>
+            <ul>
+            <li><a href="#intellectual-property-ip" id="toc-intellectual-property-ip">Intellectual Property (IP)</a>
+            <ul>
+            <li><a href="#the-field-of-ip" id="toc-the-field-of-ip">The Field of IP</a></li>
+            <li><a href="#copyright" id="toc-copyright">Copyright</a></li>
+            <li><a href="#copyright-infringement" id="toc-copyright-infringement">Copyright Infringement</a></li>
+            <li><a href="#transformative-use" id="toc-transformative-use">Transformative Use</a></li>
+            <li><a href="#fair-use" id="toc-fair-use">Fair Use</a></li>
+            <li><a href="#non-expressive-or-non-consumptive" id="toc-non-expressive-or-non-consumptive">Non-Expressive or Non-Consumptive</a></li>
+            <li><a href="#claims" id="toc-claims">Claims</a></li>
+            <li><a href="#prior-art" id="toc-prior-art">Prior Art</a></li>
+            <li><a href="#license" id="toc-license">License</a></li>
+            <li><a href="#damages" id="toc-damages">Damages</a></li>
+            </ul></li>
+            <li><a href="#privacy" id="toc-privacy">Privacy</a>
+            <ul>
+            <li><a href="#privacy-violation" id="toc-privacy-violation">Privacy violation</a></li>
+            <li><a href="#consent" id="toc-consent">Consent</a></li>
+            <li><a href="#privacy-policy" id="toc-privacy-policy">Privacy Policy</a></li>
+            <li><a href="#anonymization" id="toc-anonymization">Anonymization</a></li>
+            <li><a href="#the-california-consumer-privacy-act-ccpa" id="toc-the-california-consumer-privacy-act-ccpa">The California Consumer Privacy Act (CCPA)</a></li>
+            </ul></li>
+            </ul></li>
+            <li><a href="#additional-resources" id="toc-additional-resources">Additional Resources</a></li>
+            </ul>
+        </div>
+            <h1 id="machine-learning-and-artificial-intelligence">Machine Learning and Artificial Intelligence</h1>
+            <h2 id="core-concepts-in-machine-learning">Core Concepts in Machine Learning</h2>
+            <h3 id="model">Model</h3>
+            <p>The core of contemporary machine learning is the idea of a <strong>model</strong>. A model is a mathematical tool that takes an <strong>input</strong> and produces an <strong>output</strong>. A simple example might be a model that tells you whether a temperature is above or below average for a specific location. In this case the input is a number (temperature) and the output is binary (above/below).</p>
+            <p>There could be many versions of this model depending on the location. The behavior of the model is therefore defined by an internal <strong>parameter</strong> (or, <strong>weight</strong>). In our temperature example, the model has one parameter, the average temperature for the location. The process for setting the value of the parameter for a specific version of the model is called <strong>training</strong>. In this case we might train a model for New York City by gathering historical temperature data and calculating the average. The process of gathering historical data is called <strong>data collection</strong>. The process of training — in this case, calculating the average — is an <strong>algorithm.</strong></p>
+            <p>A saved copy of a model’s trained parameters is called a <strong>checkpoint</strong>. We might save separate checkpoints for different cities or save new checkpoints for our NYC model if we retrain with new data. The process of applying the model to new inputs is called <strong>inference</strong>. To create an output for a temperature, we also apply an algorithm: subtract the parameter from the input, and return “above” if the difference is positive. A common type of model <strong>architecture</strong> is a <strong>neural network.</strong></p>
+            <h3 id="parameter-weight">Parameter / weight</h3>
+            <p><strong>Parameters</strong> are numbers that define the specific behavior of a model. For example, a linear regression model that predicts the number of bicycle trips given temperature and rainfall might have three parameters: one representing the effect of temperature, one representing the effect of rainfall, and one additional <strong>intercept</strong> or <strong>bias</strong> parameter representing the baseline number of trips. Contemporary <strong>neural network</strong> models have millions to billions of parameters. The values of parameters are saved in files called <strong>checkpoints</strong>. ### Datasets and examples Machine learning <strong>models</strong> are usually defined as functions with optimizable <strong>parameters</strong> that produce an output for a given input. In order to find settings for numerical parameters, we need <strong>examples</strong> of input-output pairs. A collection of such input-output pairs is a <strong>dataset</strong>.</p>
+            <p>Datasets are often copied and reused for multiple projects because (a) they are expensive and time-consuming to produce and (b) reusing datasets makes it easier to compare new models and algorithms to existing methods (a process often called <strong>benchmarking</strong>). It is generally assumed that the individual examples in a dataset are not important except as representative <strong>samples</strong> from a <strong>probability distribution</strong> of input-output pairs, which the model is likely to encounter when in use. As such, <strong>memorization</strong> of specific input-output pairs is considered a failure, while <strong>generalization</strong> to the distribution (i.e., a trained model performing well on previously unseen examples from the same distribution) is considered success.</p>
+            <p>Datasets are often divided into <strong>training</strong> and <strong>testing</strong> portions to distinguish memorization from generalization. Commonly used datasets and sources include Wikipedia Project Gutenberg Common Crawl The Pile C4 ImageNet ROOTS</p>
+            <h3 id="neural-network">Neural network</h3>
+            <p>A neural network is a way of using simple, easy-to-learn relationships to model complex, difficult relationships. For example, if you can only draw straight lines, it is impossible to draw a circle. But if you <em>combine</em> many straight lines you can draw something that looks like a curve. The model synthesizes multiple simple decisions by passing the input through a series of intermediate transformations. Many networks consist of <strong>layers</strong>, where the output of one layer is used as the input of the next layer. Each layer consists of a set of classifiers (<strong>neurons</strong>) that each performs a simple operation independently of one another. The outputs of all classifiers at layer <em>n</em> are then passed to each classifier in layer <em>n+1</em>, and so forth. Each classifier in each layer has <strong>parameters</strong> that define how it responds to input. ### Architecture The design of a model is called its <strong>architecture</strong>. For a <strong>neural network,</strong> the design process requires making several decisions, e.g., the size of inputs that can be accepted, the number of layers, how many <strong>parameters</strong> per layer, how they are connected, and how we represent the intermediate state of the model as each layer transforms input to output.</p>
+            <p>Many contemporary models appear in <strong>families</strong> that have similar architectures but differing scales, often referred to by the total number of parameters. For example, Meta released four sizes of the LLAMA family that differ only in the number of layers and size of intermediate <strong>vector representations</strong>. More layers and wider internal representations can improve the capability of a model, but can also increase the amount of time it takes to <strong>train</strong> the model or to do <strong>inference.</strong></p>
+            <h3 id="algorithm">Algorithm</h3>
+            <p>An <strong>algorithm</strong> is a formal specification of a process. Machine learning uses algorithms for <strong>training</strong> models and for operating models on new data, e.g., for <strong>inference.</strong> In public discourse around social media, algorithm has come to refer to methods for <strong>optimizing</strong> the probability that a user will engage with a post; however, it is important to note that the process of simply sorting posts by date also requires an algorithm.</p>
+            <h3 id="training">Training</h3>
+            <p>The process of setting the value of numeric <strong>parameters</strong> of a <strong>model</strong> based on <strong>data</strong> is called <strong>training</strong>. A common <strong>algorithm</strong> for training neural network models is <strong>stochastic gradient descent,</strong> or SGD.. Training data sets are often too large to process all at once, so SGD operates on small <strong>batches</strong> of dozens to hundreds of <strong>examples</strong> at a time. For each example, the algorithm generates the model’s output based on the current setting of the parameters and compares that output to the desired output from the training data (e.g. did we correctly choose the next word?). If the output did not match, the algorithm works backwards through the model’s layers and modifies parameters so that the correct output becomes more likely. This process can be thought of as leaving “echoes” of the training examples encoded in the parameters of the model.</p>
+            <h3 id="hyperparameter">Hyperparameter</h3>
+            <p><strong>Parameters</strong> are numbers in a model whose values are set during training. There are additional numbers that are <em>not</em> learned that the model builder sets prior to training, which are often manually specified. Some of these are properties of the architecture, such as input length, internal dimension, and number of layers. Others determine the behavior of the training algorithm, such as the learning rate, which controls how much we update model parameters after each input/output training example. Such parameters are called <strong>hyperparameters,</strong> and they can have a big effect on the overall behavior of trained models.</p>
+            <h2 id="concepts-in-generative-ai">Concepts in Generative AI</h2>
+            <h3 id="language-model">Language model</h3>
+            <p>A language model (LM) is a type of <strong>model</strong> that takes a sequence of text as input and returns a numeric score as output. Many language models are designed to divide input into a <strong>prefix</strong> and a ** continuation<strong>, where only the continuation is scored. A language model can be used to implement many tasks, such as autocomplete (given your current text, what are the three most likely next words?) or translation (which is more likely, “recognize speech” or “wreck a nice beach”?). Systems like ChatGPT take the user’s input text as a prefix and then use the scores from a language model to generate a response one word at a time: After each word is selected, the system appends that word to the previous prefix to create a new prefix, which is then used to score candidates for the next word. Different types of language models have been studied for more than 100 years. Contemporary LMs are usually </strong>neural networks<strong>. ### Large language model This term has become popular as a way to refer to the current spate of language models that use the </strong>Transformer architecture<strong>. It does not have a specific technical definition, but usually implies a number of </strong>parameters** on the order of hundreds of million or more (a number that has continually evolved).</p>
+            <h3 id="diffusion-model">Diffusion model</h3>
+            <p>A <strong>diffusion model</strong> is the model architecture behind models like Stable Diffusion. Diffusion models are commonly used for images and are trained to transform a noisy image into a target image (a given image from the training set). The noisy image is so noisy that it starts out as pure noise, and the training process will also reward the model for exactly reconstructing the target image.</p>
+            <h3 id="transformer">Transformer</h3>
+            <p>A <strong>transformer</strong> is a popular <strong>model architecture</strong> for image, text, and music applications and underlies models like ChatGPT, Bard, and MusicLM. An input (text or image) is broken into segments (word <strong>tokens</strong> or image patches) as a preprocessing step. These input segments are then passed through a series of layers that generate <strong>vector representations</strong> of the segments. What makes the transformer model distinct is that the strength of connection between segments is itself a learned behavior. The model has trainable parameters that determine how much <strong>attention</strong> to parts of the input. Like the diffusion model, the transformer model is rewarded for reproducing a target training example exactly. ### Tokenization For language models, a common preprocessing step is to break documents into segments called <strong>tokens</strong>. For example, the input “I like ice cream.” might be tokenized into [“I”, “like”, “ice”, “cream”, “.”]. The tokens can then be mapped to entries in a <strong>vocabulary</strong> of strings that are recognized by a model. Each model family tends to share a vocabulary, which is optimized to represent a particular training corpus. Most current models use <strong>subword tokenization</strong> to handle words that would otherwise not be recognized. Therefore, a rare or misspelled word might be represented by multiple tokens. The number of tokens used to represent an input is important because it determines how large the effective input size of a model is.</p>
+            <h3 id="pre-training-fine-tuning-and-foundation-models">Pre-training, Fine-tuning, and Foundation Models</h3>
+            <p>Current protocols divide <strong>training</strong> into a common <strong>pre-training</strong> phase that results in a general-purpose or <strong>foundation</strong> model and an application-specific <strong>fine-tuning</strong> phase that adapts a pretrained model <strong>checkpoint</strong> to perform a desired task using additional data. This paradigm has become common over the last five years, especially as model architectures have become larger and larger. This is because, relative to pretraining, finetuning is fast and inexpensive: It is much cheaper to fine-tune an existing foundation model for a particular task than it is to always train a new model from scratch.</p>
+            <p>Because pretrained models are most useful if they provide a good basis for many distinct applications, model builders have a strong incentive to collect as much pre-training data from as many distinct sources as possible. Fine-tuning results in a completely new model checkpoint (potentially gigabytes of data that must be loaded and served separately from the original model), and requires hundreds to thousands of application-specific examples. ### Multimodal Computers represent different <strong><em>modalities</em></strong> of input data in distinct ways, including text, images, and audio. Multimodal models are able to process inputs in multiple forms, for example by mapping both images and documents into a shared <strong>embedding</strong> representation or by generating a text caption from an image.</p>
+            <h3 id="generation">Generation</h3>
+            <p><strong>Generative models</strong> produce complex, human interpretable outputs such as full sentences or natural-looking images, called <strong>generations.</strong> More traditional , machine learning models are limited to ranges of numeric outputs (<strong>regression</strong>) or discrete output labels like “cat” and “dog” (<strong>classification</strong>). The process of producing generations is much more difficult: The vast majority of possible images just look like static, and even high-quality generations can reach an <strong>uncanny valley</strong> with subtly wrong details like seven-fingered hands. Note that in the 2000s, “generative” was used to describe a method for designing ML algorithms using Bayes rule; this is not the same meaning. ### Hallucination Generative models are trained to produce outputs based on training data. But they don’t have explicit representations of facts or knowledge and sometimes generate unrealistic content, such as images of the pope wearing a puffy white coat or a hedgehog driving a train, or “bibliographies” consisting of research papers that do not exist. <a href="https://www.wsj.com/articles/hallucination-when-chatbots-and-people-see-what-isnt-there-91c6c88b?st=wns4rqlp2dl1ly5&amp;reflink=desktopwebshare_permalink">It has become common</a> to refer to such outputs as <strong>hallucinations.</strong> ### Reinforcement learning Reinforcement learning is a method for incorporating feedback into systems. For some applications, solving a given task requires finding an optimal policy or strategy, and feedback may only be available after many decisions have been made. For example, a chess system needs a function that decides between possible moves, but you may only find out whether a move was good many moves later when you either win or lose. RL is currently being used to improve generation with responses to <strong>human feedback</strong> about whether the generations were “good” or “useful.”</p>
+            <h3 id="in-context-learning-zero-shot-few-shot">In-context learning / zero-shot / few-shot</h3>
+            <p>In many cases we can use <strong>pretrained models</strong> directly without creating new <strong>checkpoints</strong> through <strong>fine-tuning</strong>. This mode of use is important because it supports lightweight API-based access through a common deployed model. <strong>In-context learning</strong> involves creating an input or <strong>prompt</strong> to a model in a way that defines a desired output. Typically the input includes either <strong>instructions</strong> (a natural language description of the output) or a small number of <strong>examples</strong> of input-output pairs. <strong>Shot</strong> refers to these examples: <strong>zero-shot</strong> provides only instructions, <strong>two-shot</strong> provides two input-output pairs along with optional instructions, and so forth.</p>
+            <h3 id="instruction-fine-tuning">Instruction fine-tuning</h3>
+            <p><strong>Fine-tuning</strong> models to “follow instructions” has become an important special case with the popularity of ChatGPT. Examples of interactions in which someone makes a request and someone else follows those instructions are relatively rare on the internet compared to, for example, question / answer forums. As a result, such data sets are often constructed specifically for the purpose of language model finetuning, and may provide substantial practical benefits for commercial companies. Instruction finetuning can also take into account legal, ethical, or other normative constraints. Instruction finetuning can be critical in enabling <strong>zero-shot</strong> or <strong>few-shot</strong> use patterns.</p>
+            <h1 id="legal-concepts">Legal Concepts</h1>
+            <h2 id="intellectual-property-ip">Intellectual Property (IP)</h2>
+            <h3 id="the-field-of-ip">The Field of IP</h3>
+            <p>A set of laws that grant exclusive rights for creative and inventive works. IP laws protect and promote ideas by incentivizing innovation and protecting owners of inventions (e.g. written works, music, designs among others). Intellectual property laws include copyright, patents, trademarks and trade dress, trade secrets.</p>
+            <h3 id="copyright">Copyright</h3>
+            <p><strong>Copyright</strong> grants exclusive rights to creators of original works. For a work to be copyrightable, it must meet a certain criteria: (1) it must be original, and (2) it must possess a sufficient degree of creativity. Copyright does not protect facts or concepts, but expressions of those ideas fixed in a tangible medium (e.g., the idea for a movie, if not written down or recorded in some way, is typically not copyrightable; a screenplay is typically copyrightable). Copyright laws provide protections for various forms of creative expression, including, but not limited to literary works, artistic works, musical composition, movies, and software.</p>
+            <h3 id="copyright-infringement">Copyright Infringement</h3>
+            <p>Copyright infringement occurs when someone uses, reproduces, distributes, performs, or displays copyrighted materials without permission from the copyright owner. This act breaches the exclusive rights held by the copyright holder.</p>
+            <h3 id="transformative-use">Transformative Use</h3>
+            <p>Expression can build on prior expression. In some cases, a new piece of copyrightable material may borrow or re-purpose material from prior work. If this new material creates something inventive, new, and substantially different from the original work, then it can be considered <strong>transformative use</strong> of the original work, as opposed to <strong>infringing</strong> on the original copyright owner’s exclusive rights. The new material may also be copyright eligible. Parody is one common type of transformative use.</p>
+            <h3 id="fair-use">Fair Use</h3>
+            <p><strong>Fair use</strong> is a legal concept that allows limited use of copyrighted materials without permission from the copyright owner. Typically, fair use applies to contexts such as teaching, research, and news reporting, and fair use analyses consider the purpose of use, scope, and the amount of material used.</p>
+            <h3 id="non-expressive-or-non-consumptive">Non-Expressive or Non-Consumptive</h3>
+            <p>Certain uses of copyrighted materials can be <strong>non-expressive</strong> or <strong>non-consumptive</strong>. In such cases, copyrighted material is used in a way that does not involve expressing or displaying original work to users. Some examples include text mining, building a search engine, or various forms of computational analyses. ### Patent A <strong>patent</strong> confers exclusive rights to inventors, granting them the authority to prevent others from making, using, or selling their inventions without permission. Patents create incentives for innovation by providing inventors with a time-based protection from the filing date. To obtain a patent, inventions must be new, inventive, and industrially applicable. Creators apply for patents; their applications must contain <strong>claims</strong> that describe what is novel in the work.</p>
+            <h3 id="claims">Claims</h3>
+            <p>Patent <strong>claims</strong> are extremely precise statements that define the scope of protection within the patent. Patent claims are carefully written to be broad enough to encompass potential variations of the invention and specific enough to distinguish the invention from prior art.</p>
+            <h3 id="prior-art">Prior Art</h3>
+            <p><strong>Prior</strong> art is evidence of existing knowledge or information that is publicly available before a certain date. Prior art is critical in adjudicating the novelty and nonobviousness of a new invention and may include other patents. Patent examiners search for prior art to determine the patentability of the claimed invention. Further, prior art informs the patents applicability and scope. ### Idea vs. Expression This <strong>idea vs. expression</strong> dichotomy gets at the distinction between underlying concepts (or ideas) conveyed by a work, and the specific, tangible manner in which those are expressed. An idea refers to an abstract concept or notion behind a creative work, and ideas are not subject to copyright protection. However, expressions as tangible manifestations, are. Tangible fixed expressions of ideas can be words, music, code, or art.</p>
+            <p>It is important to note that within copyright law, rights are granted to expression of ideas, not ideas themselves (see <strong>copyright</strong> above).</p>
+            <h3 id="license">License</h3>
+            <p>Legal permission or authorization granted by the rights holder to others. <strong>License</strong> agreements explicitly outline rights that are granted, as well as limitations, restrictions, and other provisions related to its scope, for example, duration. Licenses are common practice within the field of IP, and are commonly used in software, music, and film industries. ### Terms of Service <strong>Terms of service (ToS)</strong> refers to a contractual agreement between the IP owner and users of licenses that govern the use and access to the protected content. ToS outline rights, restrictions, and obligations involved. ToS may specify permitted uses, licensing terms, and how IP may be copied or distributed. ToS safeguard IP owners’ rights and ensure compliance with legal standards in the use of IP.</p>
+            <h3 id="damages">Damages</h3>
+            <p><strong>Damages</strong> refers to financial compensation awarded to the owner of IP for harms and losses sustained as a result of IP infringement. When IP rights such as patents, copyright, or trademarks are violated, the owner of the IP may file a legal claim for damages. These can cover lost profits, reputational damage, or licensing fees.</p>
+            <h2 id="privacy">Privacy</h2>
+            <h3 id="privacy-violation">Privacy violation</h3>
+            <p>A <strong>privacy violation</strong> involves unauthorized or inappropriate intrusion into an individual’s personal information or activities. Privacy violations may occur in various forms from data breaches, surveillance, identity theft, or sharing personal or sensitive information without consent. These violations may lead to significant harm such as the loss of personal autonomy, reputational damage or financial loss.</p>
+            <h3 id="consent">Consent</h3>
+            <p><strong>Consent</strong> is the voluntary and informed agreement given by an individual for the collection, use, or disclosure of their personal information. In the context of data, consent often requires clear and specific communication about the purpose and use of collected data.</p>
+            <h3 id="privacy-policy">Privacy Policy</h3>
+            <p>A <strong>privacy policy</strong> consists of documents that outline how organizations collect, use, store, and protect personal information. Privacy policies are meant to inform individuals about their rights and the organization’s data processing practices.</p>
+            <h3 id="anonymization">Anonymization</h3>
+            <p><strong>Anonymization</strong> is the process of removing or modifying personal data in a way that it cannot be attributed to an identifiable individual. ### Right to be forgotten <strong>The right to be forgotten</strong> grants individuals the ability to request the removal of their personal information from online platforms or search engine results. This principle is based on the notion that individuals should have control over their digital information and the ability to safeguard their privacy. ### The General Data Protection Regulation (GDPR) The <strong>GDPR</strong> is a comprehensive data protection law implemented by the European Union in 2018. The GDPR governs the collection, use, storage, and protection of personal data for EU residents. The law sets out specific rights for individuals regarding their personal data such as the right to access, rectify, and delete their data, as well as the right to know how their data is being processed.</p>
+            <p>Further, the GDPR imposes obligations on organizations such as businesses that handle personal data to ensure that proper data protection measures are in place and that consent is obtained for data processing. Non-compliance results in fines and penalties. ### Tort A <strong>tort</strong> is a civil wrongdoing that causes harm or injury to another person or their property. Tort law provides remedies and compensation to individuals who suffer harm as a result of someone else’s actions or negligence. ### Personally Identifiable Information (PII) <strong>Personally Identifiable Information (PII)</strong> refers to data that can be used to identify an individual. PII can include names, addresses, phone numbers, social security numbers, email addresses, financial information, and biometric data. PII is sensitive, and organizations that collect PII are required to implement appropriate measures, adhering to relevant data protection laws (such as the GDPR) to safeguard its confidentiality and integrity.</p>
+            <h3 id="the-california-consumer-privacy-act-ccpa">The California Consumer Privacy Act (CCPA)</h3>
+            <p>The <strong>CCPA</strong> is a California state law that provides consumers with the right to know what personal information businesses collect about them, the right to request their personal information be deleted, and the right to opt-out of sales of their personal information. The CCPA applies to all businesses that operate in California, as well as those outside of California that may transfer or process the personal information of California residents.</p>
+            <h1 id="additional-resources">Additional Resources</h1>
+            <p><a href="https://github.com/Mooler0410/LLMsPracticalGuide">The Practical Guides for Large Language Models</a></p>
+            <p><a href="https://www.cis.upenn.edu/~ccb/publications/understanding-generative-AI-and-its-relationship-to-copyright.pdf"><em>Understanding Generative Artificial Intelligence and Its Relationship to Copyright</em></a> Written Testimony of Christopher Callison-Burch, Ph.D.</p>
+            <p style="text-align:right">
+            Jun 1, 2023
+            </p>
+            <p style="text-align:right">
+            Written by: <a href="https://afedercooper.info/">A. Feder Cooper</a>, <a href="https://mimno.infosci.cornell.edu">David Mimno</a>, <a href="https://madihaz.com/">Madiha Z. Choksi</a>, and <a href="https://katelee168.github.io">Katherine Lee</a>
+            </p>
+    </main>
+    <footer>
+        <p style="white-space: nowrap;">GenLaw '23</p>
+        <p class="colophon">Built with <a href="http://pandoc.org">Pandoc</a> and <a href="https://chat.openai.com/chat?model=gpt-4">ChatGPT</a> :)</p>
+    </footer>
+</body>
+</html>

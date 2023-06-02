@@ -171,4 +171,8 @@ The **CCPA** is a California state law that provides consumers with the right to
 # Additional Resources
 
 [The Practical Guides for Large Language Models](https://github.com/Mooler0410/LLMsPracticalGuide)
-[_Understanding Generative Artificial Intelligence and Its Relationship to Copyright_ Written Testimony of Christopher Callison-Burch, Ph.D.](https://www.cis.upenn.edu/~ccb/publications/understanding-generative-AI-and-its-relationship-to-copyright.pdf )
+
+[_Understanding Generative Artificial Intelligence and Its Relationship to Copyright_ ](https://www.cis.upenn.edu/~ccb/publications/understanding-generative-AI-and-its-relationship-to-copyright.pdf ) Written Testimony of Christopher Callison-Burch, Ph.D.
+
+<p style="text-align:right">Jun 1, 2023</p>
+<p style="text-align:right">Written by: [A. Feder Cooper](https://afedercooper.info/), [David Mimno](https://mimno.infosci.cornell.edu), [Madiha Z. Choksi](https://madihaz.com/), and [Katherine Lee](https://katelee168.github.io)</p>
