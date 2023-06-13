@@ -253,8 +253,8 @@ Please see our [reviewer guidelines](reviewer-guidelines.html) for more informat
     <figcaption>
       <p class="name">Fatemehsadat Mireshghallah</p>
       <p class="person">
-        <span class="title">Ph.D. Candidate</span>
-        <span class="affiliation">UC San Diego Computer Science and Engineering Department</span>
+        <span class="title">Post-Doctoral Researcher</span>
+        <span class="affiliation">University of Washington, Paul G. Allen Center for Computer Science and Engineering</span>
       </p>
       <a class="email" href="mailto:f.mireshghallah@gmail.com">f.mireshghallah@gmail.com</a>
       <p class="contact">
