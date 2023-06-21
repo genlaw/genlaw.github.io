@@ -19,7 +19,11 @@ We are very excited to announce the inaugural Workshop on Generative AI and Law 
   </tr>
   <tr>
     <td><p>Rolling decisions, with final decisions by:</p></td>
-    <td class="time"><time datetime="2023-06-19">19 June 2023</time></td>
+    <td class="time"><time datetime="2023-06-19">19 June 2023, AoE</time></td>
+  </tr>
+    <tr>
+    <td><p>Camera-ready deadline:</p></td>
+    <td class="time"><time datetime="2023-07-07">07 July 2023, AoE</time></td>
   </tr>
   <tr>
     <td><p>Workshop date:</p></td>
@@ -43,6 +47,26 @@ Understanding the law and contributing to its development will enable us to crea
 We're excited to share a series of tutorials from [renowned experts](index.html#speakers) in both ML and law and panel discussions, where researchers in both disciplines can engage in semi-moderated conversation. 
 
 Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. It will take place on 29 July 2023, in Ballroom B. 
+
+## Camera-ready instructions {#camera}
+
+**Camera Ready Deadline**: July 7th, AoE on [CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission/Index)
+
+All papers should use this LaTeX [template](https://www.overleaf.com/latex/templates/genlaw-workshop-icml-2023/fgqdwhyjcsfy) on Overleaf. If you are new to LaTeX or Overleaf and  run into issues using this template to prepare your final paper, please reach out to <a class="email" href="mailto:genlaw.org@gmail.com">genlaw.org@gmail.com</a> for assistance.
+
+Please incorporate the feedback from reviewers (and, if provided, meta-reviewers) in final paper versions. **We will allow one additional page of main text (3 pages total)** to accommodate these changes and author names. If you would like to include a 4th page of main text, please email the organizers to ask. We also allow for unlimited pages for citations and (optionally) an appendix. Please consult the [template](https://www.overleaf.com/latex/templates/genlaw-workshop-icml-2023/fgqdwhyjcsfy) for additional information.
+
+Please submit your camera-ready paper on CMT by July 7, AoE as a zip file containing  all related submission files (images, LaTeX files), including a PDF. 
+
+### Online paper hosting
+
+We are going to host the PDFs on the workshop website, and will also include a web-friendly HTML version (We will convert the raw LaTeX files to html). If authors do not wish for their paper to be included on the website, please email <a class="email" href="mailto:genlaw.org@gmail.com">genlaw.org@gmail.com</a> with: "Please do not host paper {Paper #} on the GenLaw website."
+
+### Poster session
+
+All accepted papers will be required to present at the workshop poster session. Since this is an interdisciplinary workshop, we are flexible on the format for poster presentation. 
+
+The main ICML conference offers a printing service at the venue for workshop posters. Unfortunately, the poster deadline for printing through the conference venue is July 23, 2023. Please see the ICML poster printing [page](https://icml.cc/posterprinting/) for more information. There will be other vendors in Honolulu who can print posters. Alternatively, posters could be printed in advance before you travel and brought to ICML.
 
 ## Call for Papers {#cfp}
 
@@ -86,7 +110,6 @@ Please [submit to CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission
 Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions). We allow up to 2 _additional_ pages for references. We will be using a double-blind review process.
 
 Please see our [reviewer guidelines](reviewer-guidelines.html) for more information.
-
 
 ## <a name="speakers"></a>Speakers, Panelists & Moderators {.underlined}
 
