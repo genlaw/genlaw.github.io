@@ -48,9 +48,11 @@ We're excited to share a series of tutorials from [renowned experts](index.html#
 
 Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. It will take place on 29 July 2023, in Ballroom B. 
 
-## Camera-ready instructions {#camera}
+## Camera-ready and attendance instructions {#camera}
 
 **Camera Ready Deadline**: July 7th, AoE on [CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission/Index)
+
+**ICML Workshops Registration**: All attendees must register for ICML workshops. Please register on this [page](https://icml.cc/Register2), where there are both in-person and virtual options at checkout.
 
 All papers should use this LaTeX [template](https://www.overleaf.com/latex/templates/genlaw-workshop-icml-2023/fgqdwhyjcsfy) on Overleaf. If you are new to LaTeX or Overleaf and  run into issues using this template to prepare your final paper, please reach out to <a class="email" href="mailto:genlaw.org@gmail.com">genlaw.org@gmail.com</a> for assistance.
 
