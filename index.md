@@ -405,3 +405,13 @@ Please see our [reviewer guidelines](reviewer-guidelines.html) for more informat
 Reach the organizers at: <a class="email" href="mailto:genlaw.org@gmail.com">genlaw.org@gmail.com</a>
 
 Or, join our mailing list at: [genlaw@groups.google.com](https://groups.google.com/g/genlaw)
+
+### GenLaw is grateful for support from the following sponsors:
+
+<div class="sponsor-container">
+  <img src="images/sponsors/google.png" alt="Google">
+  <img src="images/sponsors/schmidt.jpeg" alt="Schmidt Futures">
+  <img src="images/sponsors/openai.png" alt="OpenAI">
+  <img src="images/sponsors/anthropic.png" alt="Anthropic">
+  <img src="images/sponsors/cornell-law.jpeg" alt="Cornell Law">
+</div>

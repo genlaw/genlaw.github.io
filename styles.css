@@ -770,3 +770,15 @@ main#resources a.inline {
     page-break-after: avoid;
   }
 }
+
+.sponsor-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-container img {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+}
