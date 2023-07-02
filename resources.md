@@ -32,6 +32,8 @@ toc-title: ""
 
 [Authors and Machines](https://scholarship.law.columbia.edu/cgi/viewcontent.cgi?article=3327&context=faculty_scholarship) by Jane Ginsburg and Luke Ali Budiarjo (2019)
 
+[Allocating ownership rights in computer-generated works](https://people.ischool.berkeley.edu/~pam/papers/47UPittLRev1185.pdf) by Pamela Samuelson (1985)
+
 ## Privacy
 
 [A taxonomy of privacy](https://scholarship.law.upenn.edu/cgi/viewcontent.cgi?article=1376&context=penn_law_review) by Daniel Solove (2006) 
@@ -49,12 +51,18 @@ toc-title: ""
 [What Does it Mean for a Language Model to Preserve Privacy?](https://dl.acm.org/doi/fullHtml/10.1145/3531146.3534642) by  Hannah Brown, Katherine Lee, Fatemehsadat Mireshghallah, Reza Shokri, and Florian Tramèr (2022)
 : Language models use unstructured text data which means private information is nebulous and also unstructured.
 
+## Competition and Anti-Trust
+
+[Generative AI Raises Competition Concerns](https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2023/06/generative-ai-raises-competition-concerns) by the FTC Staff (2023)
+
 ## Language Models
 
 [Eight Things to Know about Large Language Models](https://arxiv.org/abs/2304.00612) by Sam Bowman (2023)
 : Good introduction to LMs.
 
 [A Very Gentle Introduction to Large Language Models without the Hype](https://mark-riedl.medium.com/a-very-gentle-introduction-to-large-language-models-without-the-hype-5f67941fa59e) by Mark Riedl (2023)
+
+[What are embeddings?](https://vickiboykis.com/what_are_embeddings/about.html) by Vicky Boykis (2023)
 
 [HuggingFace NLP Course](https://huggingface.co/course/chapter1/1) 
 : A more detailed set of tutorials on what NLP is, what Transformers are, and some more details about training/using language models.
@@ -153,7 +161,9 @@ toc-title: ""
 <!-- [Algorithms that remember: model inversion attacks and data protection law](https://royalsocietypublishing.org/doi/10.1098/rsta.2018.0083) by Michael Veale, Reuben Binns, and Lilian Edwards (2018)
  -->
 
-[Generating Harms: Generative AI's Impact and Path Forwards](https://epic.org/wp-content/uploads/2023/05/EPIC-Generative-AI-White-Paper-May2023.pdf) by Epic.org (May, 2023)
+[Using Large Language Models With Care](https://blog.allenai.org/using-large-language-models-with-care-eeb17b0aed27) by Maria Antoniak, Li Lucy, Maarten Sap, and Luca Soldaini (2023)
+
+[Generating Harms: Generative AI's Impact and Path Forwards](https://epic.org/wp-content/uploads/2023/05/EPIC-Generative-AI-White-Paper-May2023.pdf) by Epic.org (2023)
 
 [On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜](https://dl.acm.org/doi/10.1145/3442188.3445922) by Emily M. Bender, Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell (2021)
 : One of the earliest published works on possible harms in large language models
@@ -176,6 +186,12 @@ toc-title: ""
 ## In the news
 
 [AI Ethics & Policy News](https://docs.google.com/spreadsheets/d/11Ps8ILDHH-vojJGyIx7CcaoB5l1mBRHy3OQAgWkm0W4/edit#gid=0) compiled by Casey Fiesler
+
+[Adobe is so confident its Firefly generative AI won’t breach copyright that it’ll cover your legal bills](https://www.fastcompany.com/90906560/adobe-feels-so-confident-its-firefly-generative-ai-wont-breach-copyright-itll-cover-your-legal-bills) by Chris Stokel-Walker for _Fast Company_ (2023) 
+
+[Microsoft Is Bringing OpenAI’s GPT-4 AI model to US Government Agencies](https://www.bloomberg.com/news/articles/2023-06-07/microsoft-offers-powerful-openai-technology-to-us-government-cloud-customers) by Rachel Metz for _Bloomberg News_ (2023)
+
+[SAG-AFTRA National Board Unanimously Agrees To Send Authorization Vote To Members](https://www.sagaftra.org/sag-aftra-national-board-unanimously-agrees-send-authorization-vote-members) _SAG-AFTRA_ (2023)
 
 [Samsung workers made a major error by using ChatGPT](https://www.techradar.com/news/samsung-workers-leaked-company-secrets-by-using-chatgpt) by Lewis Maddison for _TechRadar_ (2023)
 
