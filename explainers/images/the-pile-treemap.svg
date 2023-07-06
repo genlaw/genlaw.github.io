@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1165px" height="692px" viewBox="0 0 1165 692" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        text {
+            fill: currentColor;
+            font-family: system-ui, "SFPro-Medium", "SF Pro", sans-serif;
+        }
+        .legend {
+            fill: inherit;
+            font-weight: 500;
+        }
+    </style>
+    <title>the-pile-treemap</title>
+    <g id="main">
+        <g id="datasets" transform="translate(0.000000, -5.000000)">
+            <g id="yellow" transform="translate(1037.000000, 368.000000)" fill="#F8BD01">
+                <rect id="Rectangle-Copy-17" x="20.5" y="0.5" width="107" height="103"></rect>
+                <rect id="Rectangle-Copy-18" x="20.5" y="105.5" width="57" height="107"></rect>
+                <rect id="Rectangle-Copy-20" x="20.5" y="214.5" width="52" height="80"></rect>
+                <rect id="Rectangle-Copy-21" x="74.5" y="214.5" width="53" height="80"></rect>
+                <rect id="Rectangle-Copy-19" x="79.5" y="105.5" width="48" height="107"></rect>
+                <text id="Dialogue" class="legend" font-size="24" letter-spacing="0.36510621">
+                    <tspan x="23.0984096" y="324">Dialogue</tspan>
+                </text>
+                <rect id="Rectangle-Copy-22" x="0" y="308.5" width="14" height="14" rx="4"></rect>
+            </g>
+            <g id="gray" transform="translate(835.000000, 368.000000)" fill="#A3A3A3">
+                <rect id="Rectangle-Copy-14" x="0.5" y="0.5" width="220" height="248"></rect>
+                <rect id="Rectangle-Copy-15" x="0.5" y="250.5" width="197" height="44"></rect>
+                <rect id="Rectangle-Copy-16" x="199.5" y="250.5" width="21" height="44"></rect>
+                <text id="Misc" class="legend" font-size="24" letter-spacing="0.36510621">
+                    <tspan x="27" y="322">Misc</tspan>
+                </text>
+                <rect id="Rectangle" x="7" y="306.5" width="14" height="14" rx="4"></rect>
+            </g>
+            <g id="orange" transform="translate(835.000000, 0.000000)" fill="#E4792A">
+                <rect id="Rectangle-Copy-11" x="0.5" y="34.5" width="329" height="267"></rect>
+                <rect id="Rectangle-Copy-12" x="0.5" y="303.5" width="242" height="63"></rect>
+                <rect id="Rectangle-Copy-13" x="244.5" y="303.5" width="85" height="63"></rect>
+                <text id="Prose" class="legend" font-size="24" letter-spacing="0.36510621">
+                    <tspan x="27" y="23">Prose</tspan>
+                </text>
+                <rect id="Rectangle" x="7" y="9" width="14" height="14" rx="4"></rect>
+            </g>
+            <g id="green" transform="translate(430.000000, 34.000000)" fill="#75AB41">
+                <rect id="Rectangle-Copy-7" x="0.5" y="0.5" width="403" height="327"></rect>
+                <rect id="Rectangle-Copy-8" x="0.5" y="329.5" width="240" height="299"></rect>
+                <rect id="Rectangle-Copy-9" x="242.5" y="329.5" width="161" height="230"></rect>
+                <rect id="Rectangle-Copy-10" x="242.5" y="561.5" width="161" height="67"></rect>
+                <text id="Internet" class="legend" font-size="24" letter-spacing="0.36510621">
+                    <tspan x="29" y="656">Internet</tspan>
+                </text>
+                <rect id="Rectangle" x="9" y="640.5" width="14" height="14" rx="4"></rect>
+            </g>
+            <g id="blue" transform="translate(0.000000, 34.000000)" fill="#436ed0">
+                <rect id="Rectangle" x="0.5" y="0.5" width="262" height="397"></rect>
+                <rect id="Rectangle-Copy-2" x="0.5" y="399.5" width="192" height="229"></rect>
+                <rect id="Rectangle-Copy-3" x="194.5" y="399.5" width="114" height="229"></rect>
+                <rect id="Rectangle-Copy-4" x="310.5" y="399.5" width="118" height="188"></rect>
+                <rect id="Rectangle-Copy-5" x="310.5" y="589.5" width="65" height="39"></rect>
+                <rect id="Rectangle-Copy-6" x="377.5" y="589.5" width="51" height="39"></rect>
+                <rect id="Rectangle-Copy" x="264.5" y="0.5" width="164" height="397"></rect>
+                <text id="Academic" class="legend" font-size="24" letter-spacing="0.36510621">
+                    <tspan x="31" y="656">Academic</tspan>
+                </text>
+                <rect id="Rectangle" x="11" y="640.5" width="14" height="14" rx="4"></rect>
+            </g>
+            <g id="labels" transform="translate(10.000000, 272.000000)" fill="var(--bg)" font-size="20" font-weight="400" letter-spacing="0.304255175">
+                <text id="PubMed-Central">
+                    <tspan x="0" y="149">PubMed Central</tspan>
+                </text>
+                <text id="FreeLaw">
+                    <tspan x="1" y="380">FreeLaw</tspan>
+                </text>
+                <text id="USPTO">
+                    <tspan x="193" y="380">USPTO</tspan>
+                </text>
+                <text id="PMA">
+                    <tspan x="310" y="339">PMA</tspan>
+                </text>
+                <text id="Phil">
+                    <tspan x="310" y="380">Phil</tspan>
+                </text>
+                <text id="NIH">
+                    <tspan x="376" y="380">NIH</tspan>
+                </text>
+                <text id="ArXiv">
+                    <tspan x="264" y="149">ArXiv</tspan>
+                </text>
+                <text id="Pile-CC">
+                    <tspan x="430" y="79">Pile-CC</tspan>
+                </text>
+                <text id="OpenWebText2">
+                    <tspan x="430" y="380">OpenWebText2</tspan>
+                </text>
+                <text id="StackExchange">
+                    <tspan x="672" y="312">StackExchange</tspan>
+                </text>
+                <text id="Github">
+                    <tspan x="836" y="333.5">Github</tspan>
+                </text>
+                <text id="DM-Math">
+                    <tspan x="839" y="380">DM Math</tspan>
+                </text>
+                <text id="Wikipedia">
+                    <tspan x="672" y="380">Wikipedia</tspan>
+                </text>
+                <text id="Bibliotik">
+                    <tspan x="836" y="19">Bibliotik</tspan>
+                </text>
+                <text id="PG-19">
+                    <tspan x="836" y="83.8">PG-19</tspan>
+                </text>
+                <text id="BC2">
+                    <tspan x="1080" y="83.8">BC2</tspan>
+                </text>
+                <text id="Subtitles">
+                    <tspan x="1058" y="189">Subtitles</tspan>
+                </text>
+                <text id="IRC">
+                    <tspan x="1058" y="298">IRC</tspan>
+                </text>
+                <text id="HN">
+                    <tspan x="1058" y="380">HN</tspan>
+                </text>
+                <text id="YT">
+                    <tspan x="1112" y="380">YT</tspan>
+                </text>
+                <text id="EP">
+                    <tspan x="1117" y="298">EP</tspan>
+                </text>
+            </g>
+        </g>
+        <!-- <text id="Composition-of-The-P" font-size="24" font-weight="400" letter-spacing="0.36510621">
+            <tspan x="9" y="18">Composition of The Pile by Category</tspan>
+        </text> -->
+    </g>
+</svg>
