@@ -3,7 +3,7 @@
 
 if [ $# -eq 0 ];
 then
-    files=( $(find "." -maxdepth 1 -name '*.md' ! -name 'README.md') )
+    files=( $(find "." -maxdepth 2 -name '*.md' ! -name 'README.md') )
     # Print out the filenames in the array
 else
     files=( $1 )
@@ -14,11 +14,19 @@ do
     filename="${file%.*}"
     echo "Compiling $filename"
 
+    DIR=$(dirname "$file")
+
+    if [[ "$DIR" != "." ]]; then
+        STYLE_FILE="./../styles.css"
+    else
+        STYLE_FILE="styles.css"
+    fi
+
     pandoc -s \
         --from markdown \
         --to html \
         --wrap none \
-        --css styles.css \
+        --css "$STYLE_FILE" \
         --citeproc \
         --toc \
         --bibliography references.bib \
