@@ -778,7 +778,7 @@ main#resources a.inline {
 }
 
 .sponsor-container img {
-  width: 100px;
-  height: auto;
+  width: auto;
+  height: 70px;
   margin: 10px;
 }
