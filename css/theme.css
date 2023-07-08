@@ -451,9 +451,15 @@ span.mark.purple, mark.purple { background-color: var(--highlight-purple); }
 .subtitle {
   margin-top: 0;
 }
-.author, .date {
+.author, .date, .citation {
   margin-top: 0;
   margin-bottom: 0;
+}
+.author {
+  min-width: 165px;
+}
+.date {
+  min-width: 100px;
 }
 .signoff {
   margin-top: calc(4 * var(--line-height));
