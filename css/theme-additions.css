@@ -68,8 +68,9 @@
   --h1-margin-bottom: 14px;
   --h2-font-size: 38px;
   --h2-line-height: 42px;
-  --h2-margin-top: 10px;
+  --h2-margin-top: 42px;
   --h2-margin-bottom: 14px;
+  --h3-margin-top: 0.5em;
 
   --background-color: white;  /* hsl(36, 5%, 96%); */
   --color-text: hsl(210, 31%, 5%);
@@ -114,10 +115,14 @@ h2 {
   font-style: italic;
 }
 
-h2,
-h3 {
+h2 {
   margin-top: 0;
   padding-top: var(--h2-margin-top);
+}
+
+h3 {
+  margin-top: 0;
+  padding-top: var(--h3-margin-top);
 }
 
 /* Figures */
