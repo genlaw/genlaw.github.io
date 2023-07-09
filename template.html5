@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc-markdown-css-theme" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+$if(description-meta)$
+  <meta name="description" content="$description-meta$" />
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+$for(css)$
+  <link rel="stylesheet" href="$css$" />
+$endfor$
+$if(math)$
+  $math$
+$endif$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+<!-- Google Analytics tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W2ZW2ZM1M6"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W2ZW2ZM1M6');
+</script>
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+
+<header>
+  <h1 class="title">$title$</h1>
+$if(subtitle)$
+  <p class="subtitle">$subtitle$</p>
+$endif$
+$if(skip_meta)$
+$else$
+<div class="metadata">
+$if(authors)$
+<div class="author">
+  <span class="label">Authors</span>
+  $for(authors)$
+    $if(authors.url)$
+      <a href="$authors.url$">$authors.name$</a>
+    $else$
+      <span>$authors.name$</span>
+    $endif$
+  $endfor$
+</div>
+$elseif(author)$
+  <div class="author">
+  <span class="label">Author</span>
+  $if(author-url)$
+    <a href="$author-url$">$author$</a>
+  $else$
+    <span>$author$</span>
+  $endif$
+  </div>
+$endif$
+$if(date)$
+<div class="date">
+  <span class="label">Published</span>
+  <time datetime="$date$">$date$</time>
+</div>
+$endif$
+$if(citation)$
+<div class="citation">
+  <span class="label">Citation</span>
+  $if(citation.arxiv)$
+  <a href=$citation.arxiv$>$citation.arxiv$</a>
+  $endif$
+  <div>
+    $citation.bib$
+  </div>
+</div>
+$endif$
+</div>
+$endif$
+
+</header>
+
+$if(toc)$
+<nav id="$idprefix$TOC" role="doc-toc">
+  $if(return-url)$
+  <a href="$return-url$">$if(return-text)$$return-text$$else$← Return$endif$</a><br>
+  $endif$
+  <input type="checkbox" id="contents">
+  <label for="contents">
+    <h4 id="toc-heading">
+      Contents
+      <svg id="toc-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.08926 3.16074C1.76382 2.83531 1.23618 2.83531 0.910744 3.16074C0.585307 3.48618 0.585307 4.01382 0.910744 4.33926L2.08926 3.16074ZM6 8.25L5.41074 8.83926C5.73618 9.16469 6.26382 9.16469 6.58926 8.83926L6 8.25ZM11.0893 4.33926C11.4147 4.01382 11.4147 3.48618 11.0893 3.16074C10.7638 2.83531 10.2362 2.83531 9.91074 3.16074L11.0893 4.33926ZM0.910744 4.33926L5.41074 8.83926L6.58926 7.66074L2.08926 3.16074L0.910744 4.33926ZM6.58926 8.83926L11.0893 4.33926L9.91074 3.16074L5.41074 7.66074L6.58926 8.83926Z" fill="currentColor"/>
+      </svg>
+    </h4>
+  </label>
+  $table-of-contents$
+</nav>
+$endif$
+
+<main id="main" class="$mainclass$">
+$body$
+</main>
+
+$if(return-url)$
+<footer>
+<p class="signoff">
+  <a href="$return-url$">$if(return-text)$$return-text$$else$← Return$endif$</a>
+</p>
+</footer>
+$endif$
+
+$if(include-after)$
+<script>
+$for(include-after)$
+$include-after$
+$endfor$
+</script>
+$endif$
+
+</body>
+</html>
