@@ -55,13 +55,13 @@ by Lydia Belkadi; Catherine Jasserand [[pdf](CameraReady/5.pdf)]
 
 ## Developing Methods for Identifying and Removing Copyrighted Content from Generative AI Models
 
-by Krishna Sri Ipsit Mantri; Nevasini NA Sasikumar
+by Krishna Sri Ipsit Mantri; Nevasini NA Sasikumar [[pdf](CameraReady/6.pdf)]
 
 : Recent progress in generative AI has enabled the automatic generation of human-like content, but models are often trained on data containing copyrighted information, raising legal questions. This abstract proposes developing methods to identify copyrighted content memorized by generative models systematically. By evaluating how closely generated content matches copyrighted training data, we could highlight potential copyright issues. We also propose techniques to target and remove memorized copyrighted information directly, potentially enabling the "copyright-free" use of pre-trained generative models.
 
 ## What can we learn from Data Leakage and Unlearning for Law?
 
-by Jaydeep Borkar
+by Jaydeep Borkar [[pdf](CameraReady/12.pdf)]
 
 : Large Language Models (LLMs) have a privacy concern because they memorize training data (including personally identifiable information (PII) like emails and phone numbers) and leak it during inference. A company can train an LLM on its domain-customized data which can potentially also include their users’ PII. In order to comply with privacy laws such as the “right to be forgotten”, the data points of users that are most vulnerable to extraction could be deleted. We find that once the most vulnerable points are deleted, a new set of points become vulnerable to extraction. So far, little attention has been given to understanding memorization for fine-tuned models. In this work, we also show that not only do fine-tuned models leak their training data but they also leak the pre-training data (and PII) memorized during the pre-training phase. The property of new data points becoming vulnerable to extraction after unlearning and leakage of pre training data through fine-tuned models can pose significant privacy and legal concerns for companies that use LLMs to offer services. We hope this work will start an interdisciplinary discussion within AI and law communities regarding the need for policies to tackle these issues.
 
@@ -109,7 +109,7 @@ by Xuandong Zhao; Lei Li; Yu-Xiang Wang [[pdf](CameraReady/28.pdf)]
 
 ## The Extractive-Abstractive  Axis: Measuring Content "Borrowing" in Generative Language Models
 
-by Nedelina Teneva
+by Nedelina Teneva [[pdf](CameraReady/31.pdf)]
 
 : Generative language models produce highly abstractive outputs by design, in contrast to extractive responses in search engines. Given this characteristic of LLMs and the resulting implications for content Licensing & Attribution, we propose the the so-called Extractive-Abstractive axis for benchmarking generative models and highlight the need for developing corresponding metrics, datasets and annotation guidelines. We limit our discussion to the text modality.
 
@@ -121,7 +121,7 @@ by Inyoung Cheong; Aylin Caliskan; Tadayoshi Kohno [[pdf](CameraReady/32.pdf)]
 
 ## Reclaiming the Digital Commons: A Public Data Trust for Training Data
 
-by Alan Chan; Herbie Bradley; Nitarshan Rajkumar
+by Alan Chan; Herbie Bradley; Nitarshan Rajkumar [[pdf](CameraReady/36.pdf)]
 
 : Democratization of AI means not only that people can freely use AI, but also that people can collectively decide how AI is to be used. The rapid pace of AI development and deployment currently leaves little room for collective control. Monopolized in the hands of private corporations, the development of the most capable foundation models has proceeded largely without public input. There is currently no implemented mechanism to account for their negative externalities like unemployment and the decay of the digital commons. In this work, we propose that a public data trust assert control over training data for foundation models. First, we argue in detail for the existence of such a trust. We also discuss feasibility and potential risks. Second, we detail a number of ways for a data trust to incentivize model developers to use training data only from the trust. We propose a mix of verification mechanisms, potential regulatory action, and positive incentives. We conclude by highlighting other potential benefits of our proposed data trust and connecting our work to ongoing efforts in data and compute governance.
 
@@ -133,7 +133,7 @@ by Nikon Rasumov-Rahe; Aditya Kuppa; Marc Voses [[pdf](CameraReady/37.pdf)]
 
 ## Compute and Antitrust: Regulatory implications of the AI hardware supply chain, from chip design to foundation model APIs
 
-by Haydn Belfield; Shin-Shin Hua
+by Haydn Belfield; Shin-Shin Hua [[pdf](CameraReady/40.pdf)]
 
 : We argue that the antitrust and regulatory literature to date has failed to pay sufficient attention to compute, despite compute being a key input to AI progress and services (especially with the advent of powerful new generative AI systems), the potentially substantial market power of companies in the supply chain, and the advantages of compute as a ‘unit’ of regulation in terms of detection and remedies. We explore potential topics of interest to competition law under merger control, abuse of dominance, state aid, and anti-competitive agreements (cartels and collusion). Major companies and states increasingly view the development of AI over the coming decades as core to their interests, due to its profound impact on economies, societies, and balance of power. If the rapid pace of AI progress is sustained over the long-term, these impacts could be transformative in scale. This potential market power and policy importance, particularly in the generative AI field, should make compute an area of significant interest to antitrust and other regulators.
 
