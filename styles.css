@@ -782,3 +782,19 @@ main#resources a.inline {
   height: 70px;
   margin: 10px;
 }
+
+table {
+  width: 80%;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 30%;
+  text-align: right;
+  padding-right: 5%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 65%;
+}

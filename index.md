@@ -48,6 +48,26 @@ We're excited to share a series of tutorials from [renowned experts](index.html#
 
 Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. It will take place on 29 July 2023, in Ballroom B. 
 
+## Schedule
+
+| Time          | Speaker                                                                                  |
+|---------------|------------------------------------------------------------------------------------------|
+| 9:00 - 9:15 AM | Welcome (Organizers)                                                                     |
+| 9:15 - 9:45 AM | [Pam Samuelson](https://www.law.berkeley.edu/our-faculty/faculty-profiles/pamela-samuelson/#tab_profile)                                                                            |
+| 9:45 - 10:05 AM| [Mark Lemley](https://law.stanford.edu/directory/mark-a-lemley/)                                                                              |
+| 10:05 - 10:40 AM | **Coffee**                                                                               |
+| 10:40 - 11:00 AM | [Miles Brundage](https://www.milesbrundage.com/)                                                                       |
+| 11:00 - 12:00 PM | *Panel on Intellectual Property*: [Pam Samuelson](https://www.law.berkeley.edu/our-faculty/faculty-profiles/pamela-samuelson/#tab_profile), [Mark Lemley](https://law.stanford.edu/directory/mark-a-lemley/), [Luis Villa](https://lu.is/), [Katherine Lee](https://katelee168.github.io) (Moderated by [Jack Balkin](https://jackbalkin.yale.edu/) and [A. Feder Cooper](https://afedercooper.info/)) |
+| 12:00 - 1:30 PM | **Lunch**                                                                                  |
+| 1:30 - 1:45 PM | [Jack Balkin](https://jackbalkin.yale.edu/)                                                                              |
+| 1:45 - 2:15 PM | **Spotlights**                                                                               |
+| 2:15 - 3:00 PM | **Posters**                                                                                  |
+| 3:00 - 3:30 PM | **Coffee**                                                                                    |
+| 3:30 - 3:45 PM | [Nicholas Carlini](https://nicholas.carlini.com/)                                                                       |
+| 3:45 - 4:00 PM | [Gautam Kamath](http://www.gautamkamath.com/)                                                                       |
+| 4:00 - 5:00 PM | *Panel on Privacy*: [Kristen Vaccaro](http://kvaccaro.com/), [Nicholas Carlini](https://nicholas.carlini.com/), [Miles Brundage](https://www.milesbrundage.com/), and [Jack Balkin](https://jackbalkin.yale.edu/) (Moderated by [Katherine Lee](https://katelee168.github.io) and [Deep Ganguli](https://www.linkedin.com/in/dganguli)) |
+
+
 ## Camera-ready and attendance instructions {#camera}
 
 **Camera Ready Deadline**: July 7th, AoE on [CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission/Index)
