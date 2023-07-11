@@ -1284,3 +1284,9 @@ table, figure, pre, img {
 .right {
   order: 2;
 }
+
+.highlight {
+  background-color: #C1E1C1;
+  /*color: white;*/
+  padding: 2px;
+}
