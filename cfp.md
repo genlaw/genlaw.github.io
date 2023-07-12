@@ -2,9 +2,10 @@
 title: "GenLaw '23: CFP, Camera-Ready Instructions, & Reviewer Guidelines"
 lang: en-US
 main-id: resources
----
+return-genlaw: true
+return-footer: true
 
-[→ Back to GenLaw](https://genlaw.github.io/)
+---
 
 ## Call for Papers {#cfp}
 
