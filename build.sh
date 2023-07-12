@@ -1,6 +1,6 @@
 # `./build.sh` will build all markdown files in the directory.
 # Alternatively, use `./build.sh filename` to build a specific file. 
-skip_list=('./cfp' './papers')
+skip_list=('./cfp' './papers' './glossary' '.resources')
 
 if [ $# -eq 0 ];
 then
