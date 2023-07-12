@@ -891,9 +891,16 @@ nav#TOC > input:checked + ul {
   }
 
   nav#TOC li {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+      white-space: normal;
+      overflow: visible;
+      text-overflow: clip;
+  }
+
+  nav#TOC li {
+    padding-bottom: 0.5em;
+  }
+  nav#TOC li > ul > li:not(:only-child) {
+    padding-bottom: 0;
   }
 
   nav#TOC code {
