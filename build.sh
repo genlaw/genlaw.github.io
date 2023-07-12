@@ -1,5 +1,6 @@
 # `./build.sh` will build all markdown files in the directory.
 # Alternatively, use `./build.sh filename` to build a specific file. 
+skip_list=('./cfp' './papers')
 
 if [ $# -eq 0 ];
 then
@@ -12,27 +13,31 @@ fi
 for file in "${files[@]}"
 do
     filename="${file%.*}"
-    echo "Compiling $filename"
+    # Check if the filename is in the skip_list
+    if [[ " ${skip_list[*]} " != *" $filename "* ]]; then
+        echo "Compiling $filename"
+        DIR=$(dirname "$file")
 
-    DIR=$(dirname "$file")
+        if [[ "$DIR" != "." ]]; then
+            STYLE_FILE="./../styles.css"
+        else
+            STYLE_FILE="styles.css"
+        fi
 
-    if [[ "$DIR" != "." ]]; then
-        STYLE_FILE="./../styles.css"
+        pandoc -s \
+            --from markdown \
+            --to html \
+            --wrap none \
+            --css "$STYLE_FILE" \
+            --citeproc \
+            --toc \
+            --bibliography references.bib \
+            --template template.html \
+            --output $filename.html \
+            $filename.md
     else
-        STYLE_FILE="styles.css"
+        echo "Skipping file: $filename"
     fi
-
-    pandoc -s \
-        --from markdown \
-        --to html \
-        --wrap none \
-        --css "$STYLE_FILE" \
-        --citeproc \
-        --toc \
-        --bibliography references.bib \
-        --template template.html \
-        --output $filename.html \
-        $filename.md
 done
 
 
