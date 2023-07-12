@@ -2,6 +2,7 @@
 title: "Generative AI + Law (GenLaw) '23: Accepted Papers"
 lang: en-US
 toc-title: "Accepted Papers"
+return-genlaw: true
 ---
 
 <p style="text-align:right">[Back to GenLaw ↩︎](https://genlaw.github.io/)</p>
