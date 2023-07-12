@@ -1,8 +1,9 @@
 ---
 title: "GenLaw: Glossary"
 tags: [machine learning, datasets, generative ai, artificial intelligence, copyright, privacy, law]
+return-genlaw: true
 ---
-<p style="text-align:right">Additional [resources](resources.html)</p>
+Also see the [resources](resources.html).
 
 # Machine Learning and Artificial Intelligence
 ## Core Concepts in Machine Learning

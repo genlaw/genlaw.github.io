@@ -3,8 +3,9 @@ title: "GenLaw '23: Resources"
 lang: en-US
 main-id: resources
 toc-title: ""
+return-genlaw: true
 ---
-<p style="text-align:right">Also see the [glossary](glossary.html)</p>
+Also see the [glossary](glossary.html).
 
 ## Intellectual Property
 
