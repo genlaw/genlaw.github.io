@@ -5,7 +5,7 @@ main-id: resources
 toc-title: ""
 return-genlaw: true
 ---
-Also see the [glossary](glossary.html).
+<p style="text-align:right">Also see the [glossary](glossary.html).</p>
 
 ## Intellectual Property
 

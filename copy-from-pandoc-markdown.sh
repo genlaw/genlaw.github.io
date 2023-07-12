@@ -14,7 +14,7 @@ done
 
 
 source_dir="/Users/katherine/Projects/pandoc-markdown-css-theme/docs/training-data/"
-destination_dir="/Users/katherine/Projects/genlaw.github.io/explainers"
+destination_dir="/Users/katherine/Projects/genlaw.github.io/explainers/"
 file_list=("index" "training-data")
 
 for filename in "${file_list[@]}"
@@ -32,8 +32,8 @@ file_list=("theme" "theme-additions")
 
 for filename in "${file_list[@]}"
 do
-    source_path="${source_dir}${filename}.html"
-    destination_path="${destination_dir}${filename}.html"
+    source_path="${source_dir}${filename}.css"
+    destination_path="${destination_dir}${filename}.css"
 
     cp "$source_path" "$destination_path" && echo "Copied: $filename"
 done

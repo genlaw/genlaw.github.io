@@ -116,15 +116,15 @@ $endif$
 
 <main id="main" class="$mainclass$">
   $if(return-genlaw)$
-    <p><a href="https://genlaw.github.io/">→ Back to GenLaw</a></p>
+      <p style="text-align:right"><a href="https://genlaw.github.io/">Back to GenLaw ↩︎</a></p>
   $endif$
 $body$
 </main>
 
-$if(return-url)$
+$if(return-footer)$
 <footer>
 <p class="signoff">
-  <a href="$return-url$">$if(return-text)$$return-text$$else$← Return$endif$</a>
+  <a href="https://genlaw.github.io/">← GenLaw</a>
 </p>
 </footer>
 $endif$

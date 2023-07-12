@@ -5,10 +5,10 @@
   <meta name="generator" content="pandoc-markdown-css-theme" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="dcterms.date" content="2023-07-10" />
-  <title>The Devil is In the Training Data</title>
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/skylighting-paper-theme.css" />
-  <link rel="stylesheet" href="../css/theme-additions.css" />
+  <title>The Devil is in the Training Data</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/skylighting-paper-theme.css" />
+  <link rel="stylesheet" href="css/theme-additions.css" />
 <!-- Google Analytics tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2ZW2ZM1M6"></script>
 <script>
@@ -49,8 +49,8 @@
     <input type="checkbox" id="contents">
   <label for="contents">
     <h4 id="toc-heading">
-      Contents
-      <svg id="toc-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              Contents
+            <svg id="toc-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2.08926 3.16074C1.76382 2.83531 1.23618 2.83531 0.910744 3.16074C0.585307 3.48618 0.585307 4.01382 0.910744 4.33926L2.08926 3.16074ZM6 8.25L5.41074 8.83926C5.73618 9.16469 6.26382 9.16469 6.58926 8.83926L6 8.25ZM11.0893 4.33926C11.4147 4.01382 11.4147 3.48618 11.0893 3.16074C10.7638 2.83531 10.2362 2.83531 9.91074 3.16074L11.0893 4.33926ZM0.910744 4.33926L5.41074 8.83926L6.58926 7.66074L2.08926 3.16074L0.910744 4.33926ZM6.58926 8.83926L11.0893 4.33926L9.91074 3.16074L5.41074 7.66074L6.58926 8.83926Z" fill="currentColor"/>
       </svg>
     </h4>
@@ -74,8 +74,10 @@
   </ul>
 </nav>
 
+
 <main id="main" class="">
-<p>The process of training contemporary generative models requires vast quantities of <em>training data</em>. Dataset creators and curators make extensive decisions about how much and which data to include in a training dataset. These choices directly and significantly shape a model’s outputs (a.k.a. <em>generations</em>), including the model’s capacity to learn concepts and produce novel content.</p>
+        <p style="text-align:right"><a href="https://genlaw.github.io/">Back to GenLaw ↩︎</a></p>
+  <p>The process of training contemporary generative models requires vast quantities of <em>training data</em>. Dataset creators and curators make extensive decisions about how much and which data to include in a training dataset. These choices directly and significantly shape a model’s outputs (a.k.a. <em>generations</em>), including the model’s capacity to learn concepts and produce novel content.</p>
 <p>Given the sheer amount of training data required to produce high-quality generative models, it’s impossible for a creator to thoroughly understand the nuances of every example in a training dataset. It’s impossible for them to interact with each item in the dataset, nor can they know exactly the content, source, and context of each item in the dataset.<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">For this reason, <a href="https://dl.acm.org/doi/10.1145/3442188.3445922">Bender, et. al., 2021</a> argues that datasets should only be as large as is possible to document.<br />
 <br />
 </span></span> As a result, not only do their curatorial choices affect generation quality, they can also have unintended consequences that implicate legal concerns.<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">We should couch this by saying that training dataset design is the <em>current</em> most important set of choices for which model creators have to deal with training-data-based legal concerns. Other models under development are trying to reduce these risks by attributing generations to specific examples in the data, by adding noise to obscure individual data points (i.e., differential privacy), or by limiting the scope of a model to an application where copyright and privacy are less of a concern (e.g., Disney training a model on screenplays for which its own all of the relevant copyrights).<br />
@@ -272,9 +274,6 @@ Est-ce French? Is this l’anglais? (Source: “Looking at Magritte I” by C. B
 Next: Copyright [coming soon] →
 </div>
 </div>
-<!-- <div style="text-align:left">[Back ↩︎](https://genlaw.github.io/explainers)</div>
-<p style="text-align:right">Next: Copyright [coming soon] →</p>
- -->
 </main>
 
 
