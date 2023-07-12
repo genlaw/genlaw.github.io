@@ -1290,3 +1290,40 @@ table, figure, pre, img {
   /*color: white;*/
   padding: 2px;
 }
+
+/* Buttons */
+
+.button-a,
+.contact > a {
+  padding: .25em .5em;
+  text-decoration: none;
+  border-radius: 2px;
+  white-space: nowrap;
+  background-color: #eee;
+}
+
+.button-a:hover,
+.contact > a:hover {
+  /* color: white; */
+  background-color: #ddd;
+}
+
+a.button-hero,
+a.button-hero:visited {
+  display: block;
+  max-width: max-content;
+  margin-right: auto;
+  padding: .75em 1.5em;
+  /* border-color: #06e; */
+  /* border: 3px solid #06e; */
+  /* border-radius: .5em; */
+  /* color: white; */
+  text-align: center;
+}
+
+a.button-hero:hover,
+a.button-hero:visited:hover {
+  color: white;
+  background-color: #06e;
+  /* box-shadow: 0 .25rem .5rem hsla(0, 0%, 0%, .33); */
+}
