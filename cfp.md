@@ -4,6 +4,8 @@ lang: en-US
 main-id: resources
 ---
 
+[→ Back to GenLaw](https://genlaw.github.io/)
+
 ## Call for Papers {#cfp}
 
 [→ Submit to CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission/Index){.button-a .button-hero} 
@@ -45,7 +47,7 @@ Please [submit to CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission
 
 Please anonymize your submission and respect a 2-page maximum using the [ICML Template](https://icml.cc/Conferences/2023/StyleAuthorInstructions). We allow up to 2 _additional_ pages for references. We will be using a double-blind review process.
 
-Please see our [reviewer guidelines](reviewer-guidelines.html) for more information.
+Please see our [reviewer guidelines](#reviewer-guidelines) for more information.
 
 ## Camera-ready and attendance instructions {#camera}
 
