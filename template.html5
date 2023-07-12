@@ -99,7 +99,11 @@ $if(toc)$
   <input type="checkbox" id="contents">
   <label for="contents">
     <h4 id="toc-heading">
-      Contents
+      $if(toc-title)$
+        $toc-title$
+      $else$
+        Contents
+      $endif$
       <svg id="toc-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2.08926 3.16074C1.76382 2.83531 1.23618 2.83531 0.910744 3.16074C0.585307 3.48618 0.585307 4.01382 0.910744 4.33926L2.08926 3.16074ZM6 8.25L5.41074 8.83926C5.73618 9.16469 6.26382 9.16469 6.58926 8.83926L6 8.25ZM11.0893 4.33926C11.4147 4.01382 11.4147 3.48618 11.0893 3.16074C10.7638 2.83531 10.2362 2.83531 9.91074 3.16074L11.0893 4.33926ZM0.910744 4.33926L5.41074 8.83926L6.58926 7.66074L2.08926 3.16074L0.910744 4.33926ZM6.58926 8.83926L11.0893 4.33926L9.91074 3.16074L5.41074 7.66074L6.58926 8.83926Z" fill="currentColor"/>
       </svg>
@@ -109,7 +113,11 @@ $if(toc)$
 </nav>
 $endif$
 
+
 <main id="main" class="$mainclass$">
+  $if(return-genlaw)$
+    <p><a href="https://genlaw.github.io/">→ Back to GenLaw</a></p>
+  $endif$
 $body$
 </main>
 
