@@ -14,16 +14,16 @@ do
 done
 
 
-source_dir="/Users/katherine/Projects/pandoc-markdown-css-theme/docs/training-data/"
+source_dir="/Users/katherine/Projects/pandoc-markdown-css-theme/docs/training-data/explainers/"
 destination_dir="/Users/katherine/Projects/genlaw.github.io/explainers/"
-file_list=("index" "training-data")
 
-for filename in "${file_list[@]}"
+for file in "$source_dir"/*;
 do
-    source_path="${source_dir}${filename}.html"
-    destination_path="${destination_dir}${filename}.html"
+    filename=$(basename "$file")
+    source_path="${source_dir}${filename}"
+    destination_path="${destination_dir}${filename}"
 
-    cp "$source_path" "$destination_path" && echo "Copied: $filename.html"
+    cp -r "$source_path" "$destination_path" && echo "Copied: $filename"
 done
 
 # Copy md
@@ -36,20 +36,21 @@ do
     source_path="${source_dir}${filename}.md"
     destination_path="${destination_dir}${filename}.md"
 
-    cp "$source_path" "$destination_path" && echo "Copied: $filename.md"
+    cp -r "$source_path" "$destination_path" && echo "Copied: $filename.md"
 done
 
 
-source_dir="/Users/katherine/Projects/pandoc-markdown-css-theme/src/training-data/"
+source_dir="/Users/katherine/Projects/pandoc-markdown-css-theme/src/training-data/explainers/"
 destination_dir="/Users/katherine/Projects/genlaw.github.io/explainers/"
-file_list=("index" "training-data")
 
-for filename in "${file_list[@]}"
+for file in "$source_dir"/*;
 do
-    source_path="${source_dir}${filename}.md"
-    destination_path="${destination_dir}${filename}.md"
+    filename=$(basename "$file")
+    source_path="${source_dir}${filename}"
+    destination_path="${destination_dir}${filename}"
 
-    cp "$source_path" "$destination_path" && echo "Copied: $filename.md"
+    cp "$source_path" "$destination_path" && echo "Copied: $filename"
+
 done
 
 # Copy CSS

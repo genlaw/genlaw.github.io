@@ -78,6 +78,9 @@ $endif$
 $if(citation)$
 <div class="citation">
   <span class="label">Citation</span>
+    $if(citation.pdf)$
+  <a href=$citation.pdf$>Read as pdf.</a>
+  $endif$
   $if(citation.arxiv)$
   <a href=$citation.arxiv$>$citation.arxiv$</a>
   $endif$
