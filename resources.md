@@ -181,6 +181,8 @@ return-footer: true
 
 ## Ongoing litigation
 
+[Master List of lawsuits v. AI, ChatGPT, OpenAI, Microsoft, Meta, Midjourney & other AI cos.](https://chatgptiseatingtheworld.com/2023/07/14/master-list-of-lawsuits-v-ai-chatgpt-openai-microsoft-meta-midjourney-other-ai-cos/) compiled by Chat GPT Is Eating the World
+<!-- 
 [Clarkson, et al. v. OpenAI, et al.](https://clarksonlawfirm.com/wp-content/uploads/2023/06/0001.-2023.06.28-OpenAI-Complaint.pdf) OpenAI class action lawsuit (scraping)
 
 [Paul Tremblay and Mona Awad v. OpenAI, et al.](https://torrentfreak.com/images/authors-vs-openai.pdf) OpenAI class action lawsuit (copyright infringement)
@@ -188,6 +190,7 @@ return-footer: true
 [Doe 1, et al. v. GitHub, Inc., et al.](https://githubcopilotlitigation.com/) GitHub Copilot class action lawsuit
 
 [Andersen, et al. v. Stability AI Ltd., et al.](https://stablediffusionlitigation.com/) Stable Diffusion  class action lawsuit
+ -->
 
 ## In the news
 
