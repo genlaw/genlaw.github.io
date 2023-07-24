@@ -66,7 +66,7 @@ A **diffusion model** is the model architecture behind models like Stable Diffus
 
 
 ### Transformer
-A **transformer** is a popular **model architecture** for image, text, and music applications and underlies models like ChatGPT, Bard, and MusicLM. An input (text or image) is broken into segments (word **tokens** or image patches) as a preprocessing step. These input segments are then passed through a series of layers that generate **vector representations** of the segments. What makes the transformer model distinct is that the strength of connection between segments is itself a learned behavior. The model has trainable parameters that determine how much **attention** to parts of the input.  Like the diffusion model, the transformer model is rewarded for reproducing a target training example exactly.
+A **transformer** is a popular **model architecture** for image, text, and music applications and underlies models like ChatGPT, Bard, and MusicLM. An input (text or image) is broken into segments (word **tokens** or image patches) as a preprocessing step. These input segments are then passed through a series of layers that generate **vector representations** of the segments. What makes the transformer model distinct is that the strength of connection between segments is itself a learned behavior. The model has trainable parameters that determine how much **attention** is paid to parts of the input.  Like the diffusion model, the transformer model is rewarded for reproducing a target training example exactly.
 
 ### Tokenization
 For language models, a common preprocessing step is to break documents into segments called **tokens**. For example, the input "I like ice cream." might be tokenized into ["I", "like", "ice", "cream", "."]. The tokens can then be mapped to entries in a **vocabulary** of strings that are recognized by a model. Each model family tends to share a vocabulary, which is optimized to represent a particular training corpus. Most current models use **subword tokenization** to handle words that would otherwise not be recognized. Therefore, a rare or misspelled word might be represented by multiple tokens. The number of tokens used to represent an input is important because it determines how large the effective input size of a model is.
@@ -87,7 +87,7 @@ Generative models are trained to produce outputs based on training data. But the
 
 ### Reinforcement learning
 Reinforcement learning is a method for incorporating feedback into systems. For some applications, solving a given  task requires finding an optimal policy or strategy, and feedback may only be available after many decisions have been made. For example, a chess system needs a function that decides between possible moves, but you may only find out whether a move was good many moves later when you either win or lose. 
-RL is currently being used to improve generation with responses to  **human feedback** about whether the generations were “good” or “useful.”
+RL incorporates  **human feedback** about whether the generations were “good” or “useful” to improve generation.
 
 ### In-context learning / zero-shot / few-shot
 
@@ -104,11 +104,11 @@ In many cases we can use **pretrained models** directly without creating new **c
 
 ### The Field of IP
 
-A set of laws that grant exclusive rights for creative and inventive works. IP laws protect and promote ideas by incentivizing innovation and protecting owners of inventions (e.g. written works, music, designs among others). Intellectual property laws include copyright, patents, trademarks and trade dress, trade secrets. 
+A set of laws that grant exclusive rights for creative and inventive works. IP laws protect and promote ideas by incentivizing innovation and protecting owners of inventions (e.g. written works, music, designs, among others). Intellectual property laws include copyright, patents, trademarks and trade dress, and trade secrets. 
 
 ### Copyright
 
-[**Copyright**](https://www.law.cornell.edu/uscode/text/17/102) grants exclusive rights to creators of original works. For a work to be copyrightable, it must meet a certain criteria: (1) it must be original, and (2) it must possess a sufficient degree of creativity. Copyright does not protect facts or concepts, but expressions of those ideas fixed in a tangible medium (e.g., the idea for a movie, if not written down or recorded in some way, is typically not copyrightable; a screenplay is typically copyrightable). Copyright laws provide protections for various forms of creative expression, including, but not limited to literary works, artistic works, musical composition, movies, and software. 
+[**Copyright**](https://www.law.cornell.edu/uscode/text/17/102) grants exclusive rights to creators of original works. For a work to be copyrightable, it must meet a certain criteria: (1) it must be original, and (2) it must possess a sufficient degree of creativity. Copyright does not protect facts or concepts, but expressions of those ideas fixed in a tangible medium (e.g., the idea for a movie, if not written down or recorded in some way, is typically not copyrightable; a screenplay is typically copyrightable). Copyright laws provide protections for various forms of creative expression, including, but not limited to, literary works, artistic works, musical composition, movies, and software. 
 
 ### Copyright Infringement
 
@@ -134,10 +134,10 @@ Patent **claims** are extremely precise statements that define the scope of prot
 
 ### Prior Art
 
-**Prior** art is evidence of existing knowledge or information that is publicly available before a certain date. Prior art is critical in adjudicating the novelty and nonobviousness of a new invention and may include other patents. Patent examiners search for prior art to determine the patentability of the claimed invention. Further, prior art informs the patents applicability and scope.
+**Prior** art is evidence of existing knowledge or information that is publicly available before a certain date. Prior art is critical in adjudicating the novelty and nonobviousness of a new invention and may include other patents. Patent examiners search for prior art to determine the patentability of the claimed invention. Further, prior art informs the patent's applicability and scope.
 
 ### Idea vs. Expression
-This **idea vs. expression** dichotomy gets at the distinction between underlying concepts (or ideas) conveyed by a work, and the specific, tangible manner in which those are expressed. An idea refers to an abstract concept or notion behind a creative work, and ideas are not subject to copyright protection. However, expressions as tangible manifestations, are.  Tangible fixed expressions of ideas can be words, music, code, or art. 
+This **idea vs. expression** dichotomy gets at the distinction between underlying concepts (or ideas) conveyed by a work, and the specific, tangible manner in which those are expressed. An idea refers to an abstract concept or notion behind a creative work, and ideas are not subject to copyright protection. However, expressions, as tangible manifestations, are.  Tangible fixed expressions of ideas can be words, music, code, or art. 
 
 It is important to note that within copyright law, rights are granted to expression of ideas, not ideas themselves (see **copyright** above). 
 
@@ -155,7 +155,7 @@ Legal permission or authorization granted by the rights holder to others. **Lice
 
 ### Privacy violation
 
-A **privacy violation** involves unauthorized or inappropriate intrusion into an individual’s personal information or activities. Privacy violations may occur in various forms from data breaches, surveillance, identity theft, or sharing personal or sensitive information without consent. These violations may lead to significant harm such as the loss of personal autonomy, reputational damage or financial loss. 
+A **privacy violation** involves unauthorized or inappropriate intrusion into an individual’s personal information or activities. Privacy violations may occur in various forms from data breaches, surveillance, identity theft, or sharing personal or sensitive information without consent. These violations may lead to significant harm such as the loss of personal autonomy, reputational damage, or financial loss. 
 
 ### Consent
 
