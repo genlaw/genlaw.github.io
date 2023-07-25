@@ -66,7 +66,7 @@ Our workshop will begin to build a comprehensive and precise synthesis of the le
 | 2:15 - 3:00 PM | **Posters**                                                                                  |
 | 3:00 - 3:30 PM | **Coffee**                                                                                    |
 | 3:30 - 3:45 PM | [Nicholas Carlini](https://nicholas.carlini.com/), "A Brief Introduction to Machine Learning & Memorization"                                                                        |
-| 3:45 - 4:00 PM | [Gautam Kamath](http://www.gautamkamath.com/)                                                                       |
+| 3:45 - 4:00 PM | [Gautam Kamath](http://www.gautamkamath.com/), TBD                                                                       |
 | 4:00 - 5:00 PM | *Panel on Privacy*: [Kristen Vaccaro](http://kvaccaro.com/), [Nicholas Carlini](https://nicholas.carlini.com/), [Miles Brundage](https://www.milesbrundage.com/), and [Jack Balkin](https://jackbalkin.yale.edu/) (Moderated by [Katherine Lee](https://katelee168.github.io) and [Deep Ganguli](https://www.linkedin.com/in/dganguli)) |
 
 
