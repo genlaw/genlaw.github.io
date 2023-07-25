@@ -74,7 +74,7 @@ by Ayse Gizem Yasar; Andrew Chong; Evan Dong; Thomas Krendl Gilbert; Sarah Hladi
 
 ## How can we manage the risks and liabilities associated with legal translation in the age of machine translation and generative AI?
 
-by Argyri Panezi; John O Shea
+by Argyri Panezi; John O Shea [[pdf](CameraReady/16.pdf)]
 
 : The paper analyses the case of legal translation through the lens of legal liability, also touching upon copyright and professional rules. We explore what it means to advance legal translation in a legal and ethical manner with the aim of supporting, not suffocating, the human expert in the centre of the process.
 
