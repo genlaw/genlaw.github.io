@@ -78,7 +78,7 @@ Our workshop will begin to build a comprehensive and precise synthesis of the le
   <figure>
     <img class="avatar" alt="Pamela Samuelson" src="./images/speakers/pam.jpeg" />
     <figcaption>
-      <p class="name">Pam Samuelson</p>
+      <p class="name">Pamela Samuelson</p>
       <p class="person">
         <span class="title">Distinguished Professor of Law and Information</span>
         <span class="affiliation">University of California, Berkeley</span>
