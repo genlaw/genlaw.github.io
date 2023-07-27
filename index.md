@@ -16,16 +16,8 @@ Read our introductory, explainers [here](explainers/index.html) on the copyright
 
 <table class="dates">
   <tr>
-    <td><p>Rolling abstract submission deadline:</p></td>
-    <td class="time"><time datetime="2023-05-04">4 May 2023, AoE -- 29 May 2023, AoE</time></td>
-  </tr>
-  <tr>
-    <td><p>Rolling decisions, with final decisions by:</p></td>
-    <td class="time"><time datetime="2023-06-19">19 June 2023, AoE</time></td>
-  </tr>
-    <tr>
-    <td><p>Camera-ready deadline:</p></td>
-    <td class="time"><time datetime="2023-07-07">07 July 2023, AoE</time></td>
+    <td><p>Virtual Poster Session:</p></td>
+    <td class="time"><time datetime="2023-07">28 July 2023 on [Gather Town](https://app.gather.town/app/iwrwqzVQw3d6zjKk/GenLaw%20Poster%20Session) at 8 AM HT or 2 PM ET</time></td>
   </tr>
   <tr>
     <td><p>Workshop date:</p></td>
@@ -51,6 +43,8 @@ We're excited to share a series of tutorials from [renowned experts](index.html#
 Our workshop will begin to build a comprehensive and precise synthesis of the legal issues at play. Beyond IP, the workshop will also address privacy and liability for dangerous, discriminatory, or misleading and manipulative outputs. It will take place on 29 July 2023, in Ballroom B. 
 
 ## Schedule
+
+**Virtual poster session**: 28 July 2023 on [Gather Town](https://app.gather.town/app/iwrwqzVQw3d6zjKk/GenLaw%20Poster%20Session) at 8 AM HT or 2 PM ET
 
 | Time          | Speaker                                                                                  |
 |---------------|------------------------------------------------------------------------------------------|
