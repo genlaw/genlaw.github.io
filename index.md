@@ -17,7 +17,7 @@ Read our introductory, explainers [here](explainers/index.html) on the copyright
 <table class="dates">
   <tr>
     <td><p>Virtual Poster Session:</p></td>
-    <td class="time"><time datetime="2023-07">28 July 2023 on [Gather Town](https://app.gather.town/app/iwrwqzVQw3d6zjKk/GenLaw%20Poster%20Session) at 8 AM HT or 2 PM ET</time></td>
+    <td class="time"><time datetime="2023-07">28 July 2023 on [Gather Town](https://app.gather.town/app/iwrwqzVQw3d6zjKk/GenLaw%20Poster%20Session) at 8 - 9 AM HT or 2 - 3 PM ET</time></td>
   </tr>
   <tr>
     <td><p>Workshop date:</p></td>
