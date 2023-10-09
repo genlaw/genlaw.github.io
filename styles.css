@@ -487,8 +487,8 @@ header, footer {
   background-color: #dfdfdf;
   display: flex;
   align-items: center;
-  gap: .5rem;
-  height: 60px;
+  column-gap: .5rem;
+  /* height: 60px; */
 
   position: relative;
   z-index: 1;
@@ -505,9 +505,12 @@ footer a:visited {
   color: inherit;
 }
 header nav {
+  text-align: right;
   margin-left: auto;
   display: flex;
+  flex-wrap: wrap;
   gap: inherit;
+  align-items: flex-end;
 }
 header img {
   height: 1.5rem;
@@ -783,18 +786,83 @@ main#resources a.inline {
   margin: 10px;
 }
 
-table {
-  width: 80%;
+#schedule-table {
+  font-variant-numeric: lining-nums;
+  /* border-collapse: separate; */
+  /* border-spacing: 0 10px; */
+  line-height: 1.4;
 }
 
-th:nth-child(1),
-td:nth-child(1) {
-  width: 30%;
+#schedule-table td {
+  vertical-align: baseline;
+}
+
+/* #schedule-table tbody td strong {
+  line-height: 2.5rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+} */
+
+#schedule-table tbody td > strong {
+  display: block;
+  /* font-weight: normal; */
+  /* line-height: 1.3; */
+}
+
+
+#schedule-table tbody td > em {
+  line-height: 2.25;
+}
+
+#schedule-table tr:has(td > em) {
+  opacity: .75;
+}
+
+
+#schedule-table th:nth-child(1) {
+  font-weight: normal;
+  position: relative;
+  left: 1rem;
+}
+
+#schedule-table td:nth-child(1),
+#schedule-table td:nth-child(2) {
+  /* the times (10:00) */
   text-align: right;
-  padding-right: 5%;
+  /* white-space: nowrap; */
+  padding-right: .5rem;
+  /* font-family: monospace; */
 }
 
-th:nth-child(2),
-td:nth-child(2) {
-  width: 65%;
+/* #schedule-table td:nth-child(3) { */
+  /* position: relative; */
+  /* left: -.25rem; */
+/* } */
+
+#schedule-table td:nth-child(3) {
+  /* the am/pm indicators */
+  position: relative;
+  left: -.6125rem;
+  opacity: .67;
+} 
+
+/* #schedule-table td:nth-child(2) { */
+  /* rightnost of the time columns */
+  /* position: relative; */
+  /* left: 1px; */
+/* } */
+
+#schedule-table td:nth-child(-2) {
+  /* rightnost of the time columns */
+  padding-right: .5rem;
 }
+
+#schedule-table td:not(:last-child) {
+  font-family: monospace;
+}
+
+/* #schedule-table th:nth-child(-1),
+#schedule-table td:nth-child(-1) {
+  width: 65%;
+} */
+

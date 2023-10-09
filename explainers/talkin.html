@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc-markdown-css-theme" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-10-15" />
+  <title>Talkin’ ’Bout AI Generation: Copyright and the Generative-AI Supply Chain (blog)</title>
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/skylighting-paper-theme.css" />
+  <link rel="stylesheet" href="../css/theme-additions.css" />
+<!-- Google Analytics tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W2ZW2ZM1M6"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W2ZW2ZM1M6');
+</script>
+</head>
+<body>
+
+<header>
+  <h1 class="title">Talkin’ ’Bout AI Generation: Copyright and the Generative-AI Supply Chain (blog)</h1>
+<div class="metadata">
+<div class="author">
+  <span class="label">Authors</span>
+            <a href="https://katelee168.github.io/">Katherine Lee*</a>
+                <a href="https://afedercooper.info/">A. Feder Cooper*</a>
+                <a href="https://james.grimmelmann.net/">James Grimmelmann*</a>
+      </div>
+<div class="date">
+  <span class="label">Published</span>
+  <time datetime="October 15, 2023">October 15, 2023</time>
+</div>
+<div class="citation">
+  <span class="label">Citation</span>
+        <div>
+    Katherine Lee, A. Feder Cooper, and James Grimmelmann. “<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551">Talkin’ ’Bout AI Generation: Copyright and the Generative-AI Supply Chain</a>”. July 2023. (to appear, Journal of the Copyright Society)
+  </div>
+</div>
+</div>
+
+</header>
+
+<nav id="TOC" role="doc-toc">
+    <input type="checkbox" id="contents">
+  <label for="contents">
+    <h4 id="toc-heading">
+              Contents
+            <svg id="toc-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.08926 3.16074C1.76382 2.83531 1.23618 2.83531 0.910744 3.16074C0.585307 3.48618 0.585307 4.01382 0.910744 4.33926L2.08926 3.16074ZM6 8.25L5.41074 8.83926C5.73618 9.16469 6.26382 9.16469 6.58926 8.83926L6 8.25ZM11.0893 4.33926C11.4147 4.01382 11.4147 3.48618 11.0893 3.16074C10.7638 2.83531 10.2362 2.83531 9.91074 3.16074L11.0893 4.33926ZM0.910744 4.33926L5.41074 8.83926L6.58926 7.66074L2.08926 3.16074L0.910744 4.33926ZM6.58926 8.83926L11.0893 4.33926L9.91074 3.16074L5.41074 7.66074L6.58926 8.83926Z" fill="currentColor"/>
+      </svg>
+    </h4>
+  </label>
+  <ul>
+  <li><a href="#the-blog-post" id="toc-the-blog-post">The Blog Post</a></li>
+  <li><a href="#introduction" id="toc-introduction">Introduction</a></li>
+  <li><a href="#systems" id="toc-systems">A Note on Generative-AI <em>Systems</em></a></li>
+  <li><a href="#supplychain" id="toc-supplychain">The Generative-AI Supply Chain</a>
+  <ul>
+  <li><a href="#creativeworks" id="toc-creativeworks">1. The Creation of Expressive Works</a></li>
+  <li><a href="#datacreation" id="toc-datacreation">2. Data Creation</a></li>
+  <li><a href="#candc" id="toc-candc">3. Dataset Collection and Curations</a></li>
+  <li><a href="#pretraining" id="toc-pretraining">4. Model (Pre-)Training</a></li>
+  <li><a href="#finetuning" id="toc-finetuning">5. Model Fine-Tuning</a></li>
+  <li><a href="#deployment" id="toc-deployment">6. Model Release and System Deployment</a></li>
+  <li><a href="#generation" id="toc-generation">7. Generation</a></li>
+  <li><a href="#alignment" id="toc-alignment">8. Model Alignment</a></li>
+  </ul></li>
+  <li><a href="#copyright" id="toc-copyright">Copyright</a>
+  <ul>
+  <li><a href="#substantial-similarity-and-generation" id="toc-substantial-similarity-and-generation">Substantial Similarity and Generation</a></li>
+  </ul></li>
+  <li><a href="#whichway" id="toc-whichway">Which Way from Here?</a>
+  <ul>
+  <li><a href="#copyright-touches-every-part-of-the-generative-ai-supply-chain" id="toc-copyright-touches-every-part-of-the-generative-ai-supply-chain">1. Copyright touches every part of the generative-AI supply chain</a></li>
+  <li><a href="#copyright-concerns-cannot-be-localized-to-a-single-link-in-the-supply-chain" id="toc-copyright-concerns-cannot-be-localized-to-a-single-link-in-the-supply-chain">2. Copyright concerns cannot be localized to a single link in the supply chain</a></li>
+  <li><a href="#design-choices-matter" id="toc-design-choices-matter">3. Design choices matter</a></li>
+  <li><a href="#fair-use-is-not-a-silver-bullet" id="toc-fair-use-is-not-a-silver-bullet">4. Fair use is not a silver bullet</a></li>
+  <li><a href="#the-ordinary-business-of-copyright-law-still-matters" id="toc-the-ordinary-business-of-copyright-law-still-matters">5. The ordinary business of copyright law still matters</a></li>
+  <li><a href="#analogies-can-be-misleading" id="toc-analogies-can-be-misleading">6. Analogies can be misleading</a></li>
+  </ul></li>
+  <li><a href="#concluding-thoughts" id="toc-concluding-thoughts">Concluding Thoughts</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements">Acknowledgements</a></li>
+  </ul>
+</nav>
+
+
+<main id="main" class="">
+        <p style="text-align:right"><a href="https://genlaw.github.io/">Back to GenLaw ↩︎</a></p>
+  <h2 id="the-blog-post">The Blog Post</h2>
+<p>We recently posted a (very long) law-review article about copyright and generative AI. We’re very excited to announce that the piece has been accepted for publication at the <a href="https://copyrightsociety.org/journal-entries/">Journal of the Copyright Society (JCS)</a>,<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">Forthcoming in print, 2024<br />
+<br />
+</span></span> the premier publication venue for copyright scholars and practitioners!</p>
+<p>Here, we’d like to provide a bit of a shorter version highlighting what we term the <strong>generative-AI supply chain</strong>, and how this supply-chain framework helps expose the (very many) places where generative AI touches on copyright considerations. As a concrete example, we detail issues of <a href="#similarity">substantial similarity</a> and the <a href="#generation">generation</a> stage of the supply chain. We then showcase our article’s main <a href="#whichway">takeaways</a>.</p>
+<p>We believe that copyright is a fantastic case study for stepping through the complexities of evaluating and using generative-AI systems in all sorts of contexts. So, while our piece specifically engages with the nuts and bolts of US copyright law, we write our supply-chain framing to be more broadly applicable.</p>
+<p>One of our big goals is that this framing helps promote the development of better, more useful systems — especially as an increasing number of actors and stakeholders start using (or have their works used for training) generative-AI applications. Somewhat more modestly, we also hope this blog post gives a flavor of the longer piece, and will sufficiently pique your interest to go read <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551">it</a>.</p>
+<h2 id="introduction">Introduction</h2>
+<p>We begin by asking the question, “Does generative AI infringe copyright?” This is an urgent question, and, while it’s simple to state, it’s difficult to answer for two reasons. First, “generative AI” is not just one product from one company. It’s a catch-all name for a massive ecosystem of loosely related technologies. These systems behave differently and raise different legal issues. Second, copyright law is notoriously complicated, and <a href="#systems">generative-AI systems</a> manage to touch on a great many corners of it. They raise issues of authorship, similarity, direct and indirect liability, safe harbors, licensing, and fair use, among much else. These issues cannot be analyzed in isolation, because there are connections everywhere.</p>
+<p>In our full <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551">article</a>, we aim to bring order to the chaos. To do so, we introduce the <a href="#supplychain"><strong>generative-AI supply chain</strong></a>: an interconnected set of eight stages that transform training data into generations (Figure <a href="#fig:supply-chain">1</a>). These stages are:</p>
+<ol type="1">
+<li><a href="#creativeworks">production of creative works</a></li>
+<li><a href="#datacreation">conversion of creative works into quantified data</a></li>
+<li><a href="#candc">creation and curation of training datasets</a></li>
+<li><a href="#pretraining">base model (pre-)training</a></li>
+<li><a href="#finetuning">model fine-tuning</a> to adapt to a specific problem domain</li>
+<li><a href="#deployment">model release or deployment</a> within a software system</li>
+<li><a href="#generation">generation</a></li>
+<li><a href="#alignment">alignment</a>, i.e., adjusting the model and system to advance goals (such as helpfulness, safety, legal compliance)</li>
+</ol>
+<p>The supply chain is not a simple cascade from data to generations. Instead, each stage is regularly adjusted to better meet the needs of the others.</p>
+<p>Breaking down generative AI into these constituent stages reveals all of the places at which companies and users make choices that have <a href="#copyright">copyright consequences</a>. It enables us to trace the effects of upstream technical designs on downstream uses, and to assess who in these complicated sociotechnical systems bears responsibility for infringement when it happens. Because we engage so closely with the technology of generative AI, we are able to shed more light on the copyright questions. We identify the key decisions that courts will need to make as they grapple with these issues, and point out the consequences that would likely flow from different liability regimes.<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">Unfortunately, we omit the (extensive) footnotes that we include in the full article. It feels wrong, but it’s necessary for this format.<br />
+<br />
+</span></span></p>
+<h2 id="systems">A Note on Generative-AI <em>Systems</em></h2>
+<p>One of our introductory interventions is to emphasize that there is a difference between generative-AI <em>models</em> and generative-AI <em>systems</em>. Most users of generative AI do not interact with a model directly. Instead, they use an interface to a system, in which the model is just one of several embedded, inter-operating components. For example, OpenAI hosts various ways to access its latest GPT models. <a href="https://chat.openai.com/">ChatGPT</a> is a user interface, where the priced version is currently built on top of the GPT-4 model architecture. OpenAI also has a <a href="https://openai.com/blog/introducing-chatgpt-and-whisper-apis">developer API</a>, which serves as an interface for programmers to access different models. There are additional components behind each of these interfaces, including possibly (according to rumor) as many as sixteen GPT-4 models, to which different prompts are routed. As another example, consider <a href="https://stability.ai/stable-diffusion">Stable Diffusion</a>, an open-source model for producing image generations. Most users do not interact directly with the Stable Diffusion model; rather, they typically access a version that is embedded in a larger system operated by Stability AI, which has multiple components, including a web-based application called <a href="https://beta.dreamstudio.ai/">DreamStudio</a>. In our <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551">article</a>, we focus on generative-AI systems, rather than generative-AI models, to highlight how models are just one (however, important) component of an entire system. This focus is particularly important when we introduce our framing of the generative-AI supply chain.</p>
+<h2 id="supplychain">The Generative-AI Supply Chain</h2>
+<p>In the article, we provide some preliminary details on machine learning (ML) and generative AI. But here, we assume introductory familiarity with both and delve right into our discussion. To begin, we note that one of the big enablers of today’s generative-AI <a href="#systems">systems</a> is scale. Notably, scale complicates <em>what</em> technical and creative artifacts are produced, <em>when</em> these artifacts are produced and stored, and <em>who</em> exactly is involved in the production process. In turn, these considerations are important for how we reason about copyright implications: <em>what</em> is potentially an infringing artifact, <em>when</em> in the production process it is possible for infringement to occur, and <em>who</em> is potentially an infringing actor.</p>
+<p>We introduce the <strong>generative-AI supply chain</strong> as a way to provide some structure for reasoning about these considerations. We conceive of there being eight stages, illustrated in Figure <a href="#fig:supply-chain">1</a>: 1) <a href="#creativeworks">production of creative works</a>, 2) <a href="#datacreation">conversion of creative works into quantified data</a>, 3) <a href="#candc">creation and curation of training datasets</a>, 4) <a href="#pretraining">base model (pre-)training</a>, 5) <a href="#finetuning">model fine-tuning</a>, 6) <a href="#deployment">model release or deployment</a> within a software system, 7) <a href="#generation">generation</a>, and 8) <a href="#alignment">alignment</a>. Each stage gathers inputs from prior stage(s) and hands off outputs to subsequent stage(s), which we indicate with (sometimes bidirectional) arrows. The connections between these supply-chain stages are complicated. In some cases, one stage clearly precedes another (e.g., model pre-training necessarily precedes model fine-tuning), but, for other cases, there are many different possible ways stages can interact and may involve different actors. We highlight some of this complexity below, and provide significantly more detail in the full <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551">article</a>.</p>
+<figure style="text-align:center" id="fig:supply-chain">
+<img src="images/supply-chain-horizontal.png" alt="The generative-AI supply chain." />
+<figcaption>
+<strong>Figure 1:</strong> The generative AI supply chain. 1) <a href="#creativeworks">production of creative works</a>, 2) <a href="#datacreation">conversion of creative works into quantified data</a>, 3) <a href="#candc">creation and curation of training datasets</a>, 4) <a href="#pretraining">base model (pre-)training</a>, 5) <a href="#finetuning">model fine-tuning</a>, 6) <a href="#deployment">model release or deployment</a> within a software system, 7) <a href="#generation">generation</a>, and 8) <a href="#alignment">alignment</a>. Different stages are connected to each other, handing off outputs from one stage as inputs to another. The creation of expressive works and data creation pre-date the advent of today’s generative-AI systems (indicated by a dotted line). There are many possible ways to connect the other six stages. System deployment, model alignment, and generation tend to happen in concert (indicated by the dotted box).
+</figcaption>
+</figure>
+<h3 id="creativeworks">1. The Creation of Expressive Works</h3>
+<p>Artists, writers, coders, and other creators produce expressive works. Generative-AI systems do, too; but state-of-the-art systems are only able to do so because their models have been trained on data derived from pre-existing creative works. It is worth remembering that, historically, the production of most creative works has had nothing to do with ML. Painters have composed canvases, writers have penned articles, etc. without considering how their works might be taken up by automated processes. Nevertheless, these works can be transformed into quantified data objects that can serve as inputs for ML. They can be easily posted on the Internet and have circulated widely, making them accessible for the development of generative-AI systems. Thus, authors and their works are a part of the generative-AI supply chain—whether they would like to be or not (Figure <a href="#fig:supply-chain">1</a>, stage 1).</p>
+<h3 id="datacreation">2. Data Creation</h3>
+<p>Original expressive works are distinct from their datafied counterparts. <strong>Data examples</strong> are constructed to be computer-readable, such as the JPEG encoding of a photograph. For the most part, the transformation of creative content to data formats predates generative AI (Figure <a href="#fig:supply-chain">1</a>, stage 2), but all state-of-the-art generative-AI systems depend on it. Text-to-text generation models are trained on digitized text, text-to-image models are trained on both text and images, text-to-music models are trained on text and audio files, and so on. This is an important point because works that have been transformed into data have been fixed in a tangible medium of expression, and therefore are subject to copyright. In turn, generative-AI systems are often trained on data that includes copyrighted expression. The GitHub Copilot system involves models trained on copyrighted code, ChatGPT’s underlying models are trained on text scraped from the web, Stability AI’s Stable Diffusion is trained on text and images, and so on. For the most part, it is the copyright owners of these datafied individual works who are the potential plaintiffs in an infringement suit against actors at other stages of the supply chain.</p>
+<h3 id="candc">3. Dataset Collection and Curations</h3>
+<p>The training process for cutting-edge generative-AI models requires vast quantities of data. Dataset creators often meet this need by scraping the Internet. This process involves numerous <a href="https://genlaw.github.io/explainers/training-data.html">curatorial choices</a>, including filtering out material that creators do not want to include, such as “toxic speech.” Thus, dataset creators are also necessarily curators.</p>
+<p>With respect to the generative-AI supply chain, there are several points worth highlighting (Figure <a href="#fig:supply-chain">1</a>, stage 3). First, while dataset creation and curation can be carried out by the same entities that train generative-AI models, it is common for them to be split across different actors. The Stable Diffusion model, for example, is trained on images from datasets curated by LAION, a organization. It is necessary, therefore, to consider the liability of dataset creators separately from the liability of model trainers.</p>
+<p>Second, dataset curation will frequently involve “the collection and assembling of preexisting materials or of data that are selected, coordinated, or arranged in such a way that the resulting work as a whole constitutes an original work of authorship” (<a href="https://www.law.cornell.edu/uscode/text/17/101">17 U.S.C. § 101</a>). Thus, training datasets can themselves be copyrighted; copying of the dataset as a whole without permission could constitute infringement, separate and apart from infringement on the underlying works.</p>
+<p>Third, while a few datasets include metadata on the provenance of their data examples, many do not. Provenance makes it easier to answer questions about the sources a model was trained on, which can be relevant to infringement analysis. It also bears on the ease with which specific material can be located, and if necessary removed, from a dataset. However, the use of web-scraping to collect generative-AI training datasets makes provenance difficult to track. Even if a dataset creator releases the dataset itself under a license, this does not guarantee that the works in the dataset are appropriately licensed, as is currently up for debate with the LAION-5B dataset.</p>
+<h3 id="pretraining">4. Model (Pre-)Training</h3>
+<p>Following the collection and curation of training datasets, it is possible to train a generative-AI <strong>model</strong>. A model trainer (Figure <a href="#fig:supply-chain">1</a>, stage 4) selects a training dataset, a model architecture, a training algorithm, and a seed value for the random choices made during the training. The process of transforming these inputs into a trained model is expensive. It requires a substantial investment of multiple resources: time, data storage, and compute. For example, BLOOM (a 176-billion-parameter open-source model from HuggingFace) was trained for 3.5 months, on 1.6 terabytes of text, using 384 GPUs; it cost an estimated $2-5 million. Altogether, the dollar cost can range from six to eight figures.</p>
+<p>The output of the training process is typically called a <strong>pre-trained model</strong> or <strong>base model</strong>. A base model has many possible futures. It could sit idly in memory, collecting figurative dust. The model could be uploaded to a public server, allowing others to download it and use it however they want. The model could be integrated into a system and <a href="#deployment">deployed</a> as a public-facing application, which others could use directly to produce <a href="#generation">generations</a>. Or, the model could be further modified by the initial model trainer, by another actor at the same organization, or, if made publicly available, a different actor from a different organization. That is, another actor could take the model parameters and use them as the input to do additional training with new or modified data.</p>
+<p>This possibility of future further training of a base model is why this stage of the supply chain is most often referred to as <strong><em>pre</em>-training</strong>, and why a base model is similarly often called a <strong>pre-trained model</strong>. Such additional training of the base model is called <strong>fine-tuning</strong>.</p>
+<h3 id="finetuning">5. Model Fine-Tuning</h3>
+<p>Base models trained on large-scale, web-scraped datasets are not typically optimized to apply specialized domains of knowledge. For example, an English text-to-text base model may be able to capture general English-language semantics, but not able to reliably apply detailed scientific information about molecular biology.</p>
+<p>This is where fine-tuning comes in (Figure <a href="#fig:supply-chain">1</a>, stage 5). Fine-tuning is the process of modifying a pre-existing model and making it better along some dimension of interest. This process often involves training on additional data that is more aligned with the specific goals. If we think of training as transforming data into a model, fine-tuning transforms a model into another model. Even though fine-tuning and pre-training are both just training, they are run with different inputs. This ultimately makes the trajectories and outputs of their respective training processes very different. To add more precision to our previous statement: fine-tuning transforms a model into another model, while incorporating more data.</p>
+<h4 id="forks-in-the-supply-chain"><em>Forks in the supply chain</em></h4>
+<p>Prior to fine-tuning, there is a fork in the generative-AI supply chain, with respect to the possible futures of the base model after pre-training (stage 4). One does not have to fine-tune at all. They could take the output base model from pre-training, and use this model directly as the input for system deployment (stage 6), generation (stage 7), or model alignment (stage 8). Alternatively, it is possible to perform multiple separate passes of fine-tuning — to take an already-fine-tuned model, and use it as the input for another run of fine-tuning on another dataset.</p>
+<p>For each possibility, there can be different actors involved. Sometimes, the creator of a model also fine-tunes it. Google’s Codey models (for code generation) are fine-tuned versions of Google’s PaLM 2 model. In other cases, when a model’s parameters are publicly released (as Meta has done with its Llama family of models), others can take the model and independently fine-tune them for particular applications. A Llama fine-tuner could release their model publicly, which in turn could be fine-tuned by another party. To use a copyright analogy, a fine-tuned model is a derivative of the model from which it was fine-tuned; a repeatedly fine-tuned model is a derivative of the (chain of) fine-tuned model(s) from which it was fine-tuned.</p>
+<p>It’s helpful to make the base-/fine-tuned model distinction because different parties may have different knowledge of, control over, and intentions toward choices like which data is used for training and how the resulting trained model will, in turn, be put to use. A base-model creator, for example, may attempt to train the model to avoid generating copyright-infringing material. However, if that model is publicly released, someone else may attempt to fine-tune the model to remove these anti-infringement guardrails. A full copyright analysis may require treating them differently and analyzing their conduct in relation to each other.</p>
+<h3 id="deployment">6. Model Release and System Deployment</h3>
+<p>It’s possible to release a model or deploy it as part of a larger software system, use the model to produce <a href="#generation">generations</a>, or to take the model and further alter or refine it via model <a href="#alignment">alignment</a> techniques. In brief, there is a complicated interrelationship between the deployment, generation, and alignment stages. They can happen in different orders, in different combinations, and at different times for different generative-AI systems. For purely expository purposes, we present them one at a time, starting with model release and system deployment (Figure <a href="#fig:supply-chain">1</a>, stage 6).</p>
+<p>External-facing services can be deployed in a variety of forms, and do <em>not</em> typically include the ability to change the model’s parameters. They can be browser-based user applications (e.g., ChatGPT, Midjourney, DreamStudio), or public (but not necessarily free) APIs for developers (e.g., GPT models, <a href="https://cohere.com/">Cohere</a>). Some model trainers provide a combination of release and deployment options. For example, DreamStudio is a web-based user interface built on top of services hosted by Stability AI; the DreamStudio application gives external users access to a generative-AI system that contains the open-source Stable Diffusion model, which Stability AI also makes available for direct download.</p>
+<p>These deployment methods offer varying degrees of customization and control on the part of the deployer and the user. Typically, model trainers and owners maintain the most control over models deployed through hosted services and the least over models released as model parameters. By embedding a model within a larger system, they can imbue it with additional behaviors. APIs and web applications allow deployers to filter a model’s inputs or outputs. For example, <a href="https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-for-individuals">GitHub Copilot</a> expressly states that it uses “filters to block offensive words in the prompts and avoid producing suggestions in sensitive contexts.” Unfortunately, output filtering is an imperfect process.</p>
+<h3 id="generation">7. Generation</h3>
+<p>Generative-AI models produce output <strong>generations</strong> in response to input <strong>prompts</strong>. Users can affect generations in a few ways. First, there is the prompt itself. Some prompts, like “a big dog”, are simple and generic. Others, such as “a big dog facing left wearing a spacesuit in a bleak lunar landscape with the earth rising as an oil painting in the style of Paul Cezanne”, are more detailed. Second, users choose a deployed system (which embeds an implicit choice of model). For example, a user that wants to perform text-to-image generation on a browser-based interface needs to select between <a href="https://ideogram.ai/">Ideogram</a>, <a href="https://openai.com/dall-e-2">DALL·E-2</a>, <a href="https://www.midjourney.com/">Midjourney</a>, and other publicly available text-to-image applications that could perform this task. Users may also revise their prompt to attempt to create generations that more closely align with their goals. And, third, there is randomness in each generation. It is typical, for example, for image applications to produce four candidate generations. DALL·E-2, Midjourney, and Ideogram all do this.</p>
+<figure style="text-align:center" id="fig:cat-generation">
+<img src="images/cat-generation.png" alt="Multiple generations of ``cat in a red and white striped hat'' " />
+<figcaption>
+<strong>Figure 2:</strong> Images of <code>"cat in a red and white striped hat"</code> generated by the authors with <a href="https://ideogram.ai/">Ideogram</a>. Running the model (𝑓) multiple times on the same input can generate different outputs.
+</figcaption>
+</figure>
+<p>In our <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551">article</a>, we show that characterizing the relationship between the user and the chosen deployed system is one of the critical choice points in a copyright-infringement analysis. There are at least three ways the relationship could be described:</p>
+<ul>
+<li>The user actively drives the generation through choice of prompt, and the system passively responds. In this view, the user is potentially a direct infringer, but the application is like a web host, ISP, or other neutral technological provider.</li>
+<li>The system is active and the user passive. In this view, the user is like a viewer of an infringing broadcast, or the unwitting buyer of a pirated copy of a book. Primary copyright responsibility lies with the deployed system, and possibly with others further upstream in the generative-AI supply chain.</li>
+<li>The user and system are active partners in generating infringing outputs. In this view, the user is like a patron who commissions a copy of a painting; the system is like the artist who executes it. They have a shared goal of creating an infringing work.</li>
+</ul>
+<p>We argue that there is no universally correct characterization. Which of these three is the best fit for a particular act of generation will depend on the system, the prompt, how the system is marketed, and how users can interact with the system’s interfaces.</p>
+<h4 id="forks-in-the-supply-chain-1"><em>Forks in the supply chain</em></h4>
+<p>Generations may also feed back into dataset collection. While it is not universal, it is common to use generations as training data for generative-AI models. In this case, generation serves simultaneously as the creation of expressive works (i.e., stage 1) and data creation (i.e., stage 2), and generations can become inputs to dataset collection and curation processes (i.e., stage 3), which we indicate with an arrow in Figure <a href="#fig:supply-chain">1</a>. In the full article, we discuss how this potential circularity also has implications for copyright.</p>
+<h3 id="alignment">8. Model Alignment</h3>
+<p>The generative-AI supply chain does not end at generation. As discussed above, model trainers try to improve models during both <a href="#pretraining">pre-training</a> and <a href="#finetuning">fine-tuning</a> the base model. Both of these base model modifications are coarse: They make adjustments to the dataset and algorithm, and do not explicitly incorporate information into the model about whether specific generations are “good” or “bad,” according to user preferences.</p>
+<p>There is a whole area of research, called <strong>model alignment</strong>, that attempts to meet this need. The overarching aim of model alignment is to align model outputs with specific generation preferences (see Figure <a href="#fig:supply-chain">1</a>, stage 8). Currently, the most popular alignment technique is called <strong>reinforcement learning with human feedback (RLHF)</strong>. As the name suggests, RLHF combines collected human feedback data with a (reinforcement learning) algorithm in order to update the model.</p>
+<p>Human feedback data can take a variety of forms, which include user ratings of generations. For example, such ratings can be collected by including thumbs-up and thumbs-down buttons in the application user interface, which are intended to query feedback about the system’s output generation. In turn, the reinforcement learning algorithm uses these ratings to adjust the model — to encourage more “thumbs-up” generations and fewer “thumbs-down” ones. Future training and alignment on the model may include both the inputted prompt and the generation in addition to the feedback provided. As discussed in the prior section, user-supplied prompts may include copyrighted content created by either the user themselves or by another party.</p>
+<p>Most generative-AI companies begin model alignment prior to <a href="#deployment">deployment or release</a>. In this respect, model alignment complements other techniques, like input-prompt and output-generation <a href="#generation">filtering</a>.</p>
+<h2 id="copyright">Copyright</h2>
+<p>In the <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551">article</a> we discuss how the supply chain interacts with numerous aspects of United States copyright doctrine. We touch on authorship, exclusive rights, substantial similarity, proving copying, direct and indirect infringement, and paracopyright considerations. With respect to defenses against infringement, we discuss the DMCA Section 512 safe harbors, fair use, express and implied licenses. We also discuss possibilities for remedies.</p>
+<p>Here, we first give some very preliminaries about copyright. Then, as an example of our analysis, here we go into detail on substantial similarity and generation (Figure <a href="#fig:supply-chain">1</a>, stage 7). In the article, we touch on all relevant aspects of the <a href="#supplychain">supply chain</a> for each of the copyright concerns listed above.</p>
+<h3 id="substantial-similarity-and-generation">Substantial Similarity and Generation</h3>
+<p>In this post, we aren’t going to get into the details of copyright doctrine (we defer to the paper). Instead, we’ll just note that US copyright applies to original, human-authored, original works fixed in a “tangible medium of expression” (<a href="https://www.law.cornell.edu/uscode/text/17/102">17 U.S.C. § 102(a)</a>). “Original, as the term is used in copyright, means only that the work was independently created by the author (as opposed to copied from other works), and that it possesses at least some minimal degree of creativity.”<span class="sidenote-wrapper"><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote">Feist Publ’ns v. Rural Tel. Serv. Co., 499 U.S. 340, 345 (1991)<br />
+<br />
+</span></span>. Fixation is satisfied when the work is embodied in a tangible object in a way that is “sufficiently permanent or stable to permit it to be perceived, reproduced, or otherwise communicated for a period of more than transitory duration” (<a href="https://www.law.cornell.edu/uscode/text/17/101">17 U.S.C. § 101</a>). Copyrightable subject matter explicitly includes “literary works” (e.g. poems, novels, FAQs, and fanfic), “musical works” (e.g., sheet music and MIDI files)272 “pictorial . . . works” (e.g. photographs), “audiovisual works” (e.g., Hollywood movies and home-recorded TikToks), “sound recordings” (e.g., pop songs and live comedy recordings), and more (<a href="https://www.law.cornell.edu/uscode/text/17/102">17 U.S.C. § 102(a)(2,5,6,7)</a>) .</p>
+<p>In lawsuits about copyright infringement, courts evaluate if a defendant has engaged in conduct that violates the copyright owner’s exclusive rights (e.g., reproducing or publicly distributing content that contains the copyrighted material). In these evaluations, one important consideration is <strong>substantial similarity</strong> between the copyrighted work and the alleged infringing work in question.</p>
+<p>Substantial similarity is a qualitative, factual, and frustrating question. Two works are substantially similar when “the ordinary observer, unless he set out to detect the disparities, would be disposed to overlook them, and regard their aesthetic appeal as the same”<span class="sidenote-wrapper"><label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote">Peter Pan Fabrics, Inc. v. Martin Weiner Corp., 274 F.2d 487, 489 (2d Cir. 1960) (Hand, J.)<br />
+<br />
+</span></span>. A common test is a “holistic, subjective comparison of the works to determine whether they are substantially similar in total concept and feel”<span class="sidenote-wrapper"><label for="sn-4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-4" class="margin-toggle"/><span class="sidenote">Rentmeester v. Nike, Inc., 883 F.3d 1111, 1118 (9th Cir. 2018)<br />
+<br />
+</span></span>. This is not a standard that can be reduced to a simple formula that can easily be applied across different works and genres.</p>
+<p>Some generations are nearly identical to a work in the model’s training data (i.e., memorized, see Figure <a href="#fig:memorization">3</a>). They are substantially similar to that work. Other generations are very dissimilar from every work in the training data. In the second case, there is no substantial similarity, because infringement is assessed on a work-by-work basis. Although it is in some sense based on all of the works in the training dataset, it does not infringe on any of them. The hardest case is when an output is similar to a work in the training data in some ways, but dis- similar from it in other ways. This case is likely to arise in practice precisely because it lies in between the two extremes of memorized generations and original generations. Somewhere between them lies the murky frontier between infringing and non-infringing generations.</p>
+<figure style="text-align:center;width=90%" id="fig:memorization">
+<center>
+<img src="images/image-memorization.png" alt="Example of a memorized training image. " style="width:55%;display:inline-block;text-align:center"> <img src="images/text-memorization.png" alt="Example of a memorized text training data. " style="width:34%;display:inline-block;text-align:center">
+</center>
+<figcaption>
+<strong>Figure 3:</strong> <strong>Left:</strong> An example of a memorized image in Stable Diffusion, taken from Carlini et al., <a href="https://arxiv.org/abs/2301.13188">Extracting Training Data from Diffusion Models</a> (2023). <strong>Right:</strong> An example of a memorized text snippet in GPT-2, taken from Carlini et al., <a href="https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting">Extracting Training Data from Large Language Models</a> (2021).
+</figcaption>
+</figure>
+<p>It is hard to make sweeping statements. Whether a particular generation is substantially similar is ultimately a jury question requiring assessment of audiences’ subjective responses to the works. Generative AI will produce cases requiring this lay assessment; it is impossible to anticipate in advance how lay juries will react to all of the possible variations. So, we will assume that lay audiences would say that some generations will infringe, but that it will not be possible to perfectly predict which ones.</p>
+<figure style="text-align:center" id="fig:beagles">
+<img src="images/the-beagles.jpeg" alt="The Beagles: Image generated from Ideogram." style="width:50%;display:inline-block;text-align:center"/>
+<figcaption>
+<strong>Figure 4:</strong> <code>"4 cartoon Snoopy beagles walking across a crosswalk, ink illustration in the style of a cartoon illustration cel, the Beatles, dark background with vintage accents, background text: “The Beagles”"</code>. Generated by the authors on Ideogram, adapted from an anonymous prompt on the Ideogram website.
+</figcaption>
+</figure>
+<p>Even if complete answers are impossible, there are some interesting questions worth considering. As Matthew Sag observes, certain characters are so common in training datasets that models have “a latent concept [of them] that is readily identifiable and easily extracted.”<span class="sidenote-wrapper"><label for="sn-5" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-5" class="margin-toggle"/><span class="sidenote">Matthew Sag, Copyright Safety for Generative AI, Hous. L. Rev. (forthcoming).<br />
+<br />
+</span></span> For example, prompting Midjourney and Stable Diffusion with “snoopy” produces recognizable images of Snoopy the cartoon beagle.</p>
+<figure style="text-align:center" id="fig:dorothea">
+<img src="images/vaderaccident.png" alt="Generations from DALL·E-3 that look like Darth Vader" style="width:80%;display:inline-block;text-align:center"/>
+<figcaption>
+<strong>Figure 5:</strong> Generations from DALL·E-3 by Twitter user daft_ai of <code>”Darth Vader bike accident in Telford”</code>.
+</figcaption>
+</figure>
+<p>Characters are a special case in copyright; some cases relax the rule that infringement is measured on a work-by-work basis, instead measuring the similarity of the defendant’s character to one who appears in multiple works owned by the plaintiff. But the “Snoopy effect” is not confined to characters. Some works are simply so prevalent in training datasets that models memorize them. As an uncopyrighted example, Van Gogh’s <em>Starry Night</em> is easy to replicate using Midjourney; Sag’s paper includes a replication of Banksy’s <em>Girl with Balloon</em>. This looks like substantial similarity.</p>
+<p>A variation of the Snoopy effect arises when a model learns an artist’s recognizable <em>style</em>. ChatGPT can be prompted to write rhyming technical directions in the style of Dr. Seuss; DALL·E-2 can be prompted to generate photorealistic portraits of nonexistent people in the style of Dorothea Lang (Figure <a href="#fig:dorothea">6</a>). As with characters, these outputs have similarities that span a body of source works, even if they are not close to any one source work. The proper doctrinal treatment of style is a difficult question.</p>
+<figure style="text-align:center" id="fig:dorothea">
+<img src="images/dorothea-lange.png" alt="'Photographs' in the style of Dorothea Lange" style="width:80%;display:inline-block;text-align:center"/>
+<figcaption>
+<strong>Figure 6:</strong> “Photographs” in the style of Dorothea Lange, generated by Michael Green using DALL·E-2.
+</figcaption>
+</figure>
+<p>The Snoopy effect can also be triggered without explicit prompting. The archaeologist generated in Figure <a href="#id:indiana-jones">7-left</a> features a dark-haired male character with stubble, wearing a brown jacket and white shirt, with a pouch slung across his shoulder. These are features associated with Indiana Jones, but neither the features nor “indiana jones” appear in the prompt. Some caselaw holds that such similarities are enough for infringement when the character is iconic enough.</p>
+<figure style="text-align:center;width=100%">
+<center>
+<img src="images/archaeologist-hires.png" alt=" " style="width:40%;display:inline-block;text-align:center" id="fig:indiana-jones"> <img src="images/ice-princess.png" alt="" style="width:40%;display:inline-block;text-align:center" id="fig:ice-princess">
+</center>
+<figcaption>
+<strong>Figure 7:</strong> <strong>Left:</strong> <code>"an adventurous archaeologist with a whip and a fedora"</code>, generated by the authors using Midjourney. <strong>Right:</strong> <code>"ice princess"</code>, generated by the authors using Midjourney.
+</figcaption>
+</figure>
+<p>Other copyright doctrines, however, may limit infringement in Snoopy-effect cases. One of them is <em>scènes à faire</em>: creative elements that are common in a genre cannot serve as the basis of infringement. For example, prompting Midjourney with “ice princess” produces portraits of women in shades of blue and white with flowing hair and ice crystals (Figure <a href="#fig:ice-princess">7-right</a>). Similarities to Elsa from <em>Frozen</em> could arise simply because these are standard tropes of wintry glamor. Some of them may now be tropes because of the <em>Frozen</em> movies, but they are still uncopyrightable ideas, rather than protectable expression.</p>
+<p>We note that not all similarity is infringing. Some similarities arise for innocent reasons. The defendant and the plaintiff might both have copied from a common predecessor work, and resemble each other because they both resemble the work they were based on. The similarities might consist entirely of accurate depictions of the same preexisting thing, like Grand Central Station.</p>
+<h2 id="whichway">Which Way from Here?</h2>
+<p>The generative-AI supply chain is extremely complex. So is copyright law. Putting the two of them together multiplies the intricacy, which we explore in detail in the full <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551">article</a>. Two unsettling conclusions follow.</p>
+<p>First, because of the complexity of the supply chain, it is not possible to make accurate sweeping statements about the copyright legality of generative AI. Too much depends on the details of specific systems. All the pieces matter, from the curatorial choices in the training dataset, to the training algorithm, to the deployment environment, to the prompt supplied by the user. Courts will have to work through these details in numerous lawsuits and develop doctrines to distinguish among different systems and uses.</p>
+<p>Second, because of the complexity of copyright law, there is enormous play in the joints. Substantial similarity, fair use, and other doctrinal areas all have open-ended tests that can reach different results depending on the facts a court emphasizes and the conclusions it draws. This complexity gives courts the flexibility to deal with variations in the supply chain. Paradoxically, it also gives courts the freedom to reach any of several different plausible conclusions about a generative-AI system.</p>
+<p>In the article, we discuss ways that courts might use their discretion to apply copyright law to generative AI. We cover possible outcomes of no liability, liability for generations only, notice and removal, and infringing models. We then discuss some of the considerations that courts should keep in mind.</p>
+<p>Here, we limit ourselves to discussing these considerations. In keeping with our bottom line — the generative-AI supply chain is too complicated to make sweeping rules prematurely — we offer a few general observations about the overall shape of copyright and generative AI that courts and policymakers should keep in mind as they proceed.</p>
+<h3 id="copyright-touches-every-part-of-the-generative-ai-supply-chain">1. Copyright touches every part of the generative-AI supply chain</h3>
+<p>Every stage from training data to alignment (including user inputs) can make use of copyrighted works. Generative AI also raises many other legal issues: Can a generative-AI system commit defamation? Can a generative-AI system do legal work and should they be allowed to? But these issues pertain to outputs of a generative-AI system — copyright pervades every step of the process.</p>
+<h3 id="copyright-concerns-cannot-be-localized-to-a-single-link-in-the-supply-chain">2. Copyright concerns cannot be localized to a single link in the supply chain</h3>
+<p>Decisions made by one actor can affect the copyright liability of another actor far away in the supply chain. Whether an output looks like Snoopy or like a generic beagle depends on what images were collected in a dataset, which model architecture and training algorithms are used, how trained models are fine-tuned and aligned, how models are embedded in deployed services, what the user prompts with, etc. Every single one of these steps could be under the control of a different person.</p>
+<h3 id="design-choices-matter">3. Design choices matter</h3>
+<p>There are obvious choices throughout the generative-AI supply chain that could implicate copyright: whether to train on licensed or unlicensed data at all (which can affect downstream risks, such as producing generations that are substantially similar to copyright works); and how to respond to notices that a system is producing potentially infringing generations (which, in turn, can affect upstream risks, if generated content is used for future training), etc.</p>
+<p>But subtler model training and architectural choices matter, too. Different settings on a training algorithm can affect how much the resulting model will memorize specific works. Different deployment environments can affect whether users have enough control over a prompt to steer a system towards infringing outputs. Copyright law will have to engage with these choices — as will AI policy.</p>
+<figure style="text-align:center" id="fig:calvin">
+<img src="images/calvin-and-hobbes.jpeg" alt="Screenshot of ChatGPT showing a user circumventing a mechanism for preventing copyrighted works from being outputted. " style="width:56%;display:inline-block;text-align:center"/> <img src="images/calvin-and-hobbes-2.png" alt="The successfully generated works" style="width:43%;display:inline-block;text-align:center"/>
+<figcaption>
+<strong>Figure 8:</strong> <strong>Left:</strong> Screenshot of ChatGPT showing a user circumventing a mechanism for preventing copyrighted works from being outputted. Image from <a href="https://twitter.com/venturetwins/status/1710321733184667985/photo/1">@venturetwins</a> on Twitter (originally from Reddit). <strong>Right:</strong> Screenshot of the tweet containing a successfully generated work with Calvin and Hobbes.
+</figcaption>
+</figure>
+<h3 id="fair-use-is-not-a-silver-bullet">4. Fair use is not a silver bullet</h3>
+<p>For a time, it seemed that training and using AI models would often constitute fair use (there are countless other deployed AI/ML systems that pre-date generative AI). In such a world, AI development is generally a low-risk activity, at least from a copyright perspective. Yes, training datasets and models and systems may all include large quantities of copyrighted works — but those works will never be shown to users. For example, in prediction systems, users see outputs like classifications (e.g., whether an input image is a dog or a cat) or numerical values (e.g., how many ice cream cones a store expected to sell on July 1st).<br />
+Outputs like these have not been treated as expressive. Generative AI, however, scrambles this assumption. The serious possibility that some generations will infringe means that the fair-use analysis at every previous stage of the supply chain is up for grabs again.</p>
+<h3 id="the-ordinary-business-of-copyright-law-still-matters">5. The ordinary business of copyright law still matters</h3>
+<p>Courts will need to make old-fashioned, retail judgments about individual works — e.g., how much does this image resemble Elsa in particular, rather than tropes of fantasy princesses? Courts must leave themselves room to continue making these retail judgments on a case-by- case basis, responding to the specific facts before them, just as they always have. Perhaps eventually as society comes to understand what uses generative AI can be put to and with what consequences, it will reconsider the very fundamentals of copyright law. But until that day, we must live with the copyright system we have. And that system cannot function unless courts are able to say that some generative-AI systems and generations infringe, and others do not.</p>
+<h3 id="analogies-can-be-misleading">6. Analogies can be misleading</h3>
+<p>There are a lot of analogies for generative AI bouncing around. For example, a generative-AI model or system is like a search engine, or like a website, or like a library, or like an author, or like any number of other people and things that copyright has a well-developed framework for dealing with. These analogies are useful, but we wish to warn against treating any of them as definitive. As we have seen, generative AI is and can consist of many things. It is also literally a generative technology: it can be put to an amazingly wide variety of uses. And one of the things about generative technologies is that they cause convergence. Precisely because they can emulate many other technologies, they blur the boundaries between things that were formerly distinct. Generative AI can be like a search engine, and also like a website, a library, an author, and so on — but it is not exclusively nor always so. Prematurely accepting one of these analogies to the exclusion of the others would mean ignoring numerous relevant similarities — precisely the opposite of what good analogical reasoning is supposed to do.</p>
+<h2 id="concluding-thoughts">Concluding Thoughts</h2>
+<p>We hope you enjoyed this brief tour of our article, and that it’s left you inclined to read the longer version (including the notes therein). In the full paper, we take care to spend the necessary space on ML and generative AI preliminaries (what’s new and what’s not-so-new for generative AI). This enables us to go into greater detail about particular interesting cases for copyright law (e.g., implications for diffusion-based image generation user interfaces and the display right).</p>
+<p>We hope that our work provides clarity and useful framing for many of the big, unfolding conversations happening around generative AI — in legal scholarship, tech policy, labor strikes, the courtroom, and more.</p>
+<p>Please don’t hesitate to reach out if you have any questions: genlaw.org@gmail.com, or reach the authors directly.</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>Our thanks to the organizers and participants of the <a href="https://genlaw.github.io/">Generative AI + Law</a> workshop, and to Jack M. Balkin, Aislinn Black, Miles Brundage, Christopher Callison-Burch, Nicholas Carlini, Madiha Zahrah Choksi, Christopher A. Choquette-Choo, Christopher De Sa, Fernando Delgado, Jonathan Frankle, Deep Ganguli, Daphne Ippolito, Matthew Jagielski, Gautam Kamath, Mark Lemley, David Mimno, Niloofar Mireshghallah, Milad Nasr, Pamela Samuelson, Ludwig Schubert, Andrew F. Sellars, Florian Tramèr, Kristen Vaccaro, and Luis Villa.</p>
+</main>
+
+<footer>
+<p class="signoff">
+  <a href="https://genlaw.github.io/">← GenLaw</a>
+</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Non-essential if user has JavaScript off. Just hides TOC button on scroll.
+    const nav = document.querySelector("nav");
+    let lastScrollTop = 0;
+    const min_diff_px = 32;
+    
+    function didScroll() {
+        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (currentScrollTop < lastScrollTop) {
+            nav.classList.add("scrolled-up");
+            nav.classList.remove("scrolled-down");
+            lastScrollTop = currentScrollTop;
+        } else if (currentScrollTop > lastScrollTop + min_diff_px) {
+            nav.classList.remove("scrolled-up");
+            nav.classList.add("scrolled-down");
+            lastScrollTop = currentScrollTop;
+        }
+    }
+
+    window.addEventListener("scroll", didScroll);
+});
+  
+document.addEventListener("DOMContentLoaded", function () {
+    const headings = document.querySelectorAll('main h1, main h2, main h3, main h4');
+
+    function handleIntersection(entries) {
+        //  IntersectionObserver's entries are ordered by their position in the DOM tree
+        const topmostEntry = entries.find(entry => entry.isIntersecting);
+        console.log(topmostEntry)
+        if (!topmostEntry) return;
+
+        const tocElementId = 'toc-' + topmostEntry.target.id;
+        const tocElement = document.getElementById(tocElementId);
+        if (!tocElement) return;
+
+        const otherTocElements = document.querySelectorAll('.active');
+        otherTocElements.forEach(el => el.classList.remove('active'));
+        tocElement.classList.add('active');
+    }
+
+    // root: null -> entire browser viewport
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.8
+    };
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    headings.forEach(heading => {
+        observer.observe(heading);
+    });
+
+    // Manually trigger the IntersectionObserver callback for the initial state
+    const initialEntries = Array.from(headings).map(heading => ({
+        isIntersecting: heading.getBoundingClientRect().top < window.innerHeight && heading.getBoundingClientRect().bottom > 0,
+        target: heading
+    }));
+    handleIntersection(initialEntries);
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const nav_anchors = document.querySelectorAll('nav a');
+    const contents_checkbox = document.getElementById('contents');
+  
+    nav_anchors.forEach(anchor => {
+      anchor.addEventListener('click', function(event) {
+        // Do not stop normal functionality of the anchor tag
+        // event.preventDefault();
+  
+        // Uncheck the input with id "contents"
+        if (contents_checkbox && contents_checkbox.type === 'checkbox') {
+          contents_checkbox.checked = false;
+        }
+      });
+    });
+  });
+  
+document.addEventListener('DOMContentLoaded', () => {
+  const headings = document.querySelectorAll('main h1[id], main h2[id], main h3[id], main h4[id], main h5[id], main h6[id]');
+
+  headings.forEach(heading => {
+    heading.addEventListener('click', event => {
+      const target = event.target;
+
+      if (target.tagName.toLowerCase().startsWith('h') && target.hasAttribute('id')) {
+        const headingId = target.getAttribute('id');
+        const url = new URL(window.location.href);
+        url.hash = headingId;
+
+        navigator.clipboard.writeText(url.toString())
+          .then(() => {
+            console.log('Heading URL copied to clipboard:', url.toString());
+            target.classList.add('copy-success');
+            target.setAttribute('title', 'Copied URL to clipboard! ✅');
+            setTimeout(() => {
+              target.classList.remove('copy-success');
+              target.removeAttribute('title');
+            }, 3000);
+
+          })
+          .catch(err => {
+            console.error('Failed to copy the heading URL:', err);
+            target.classList.add('copy-error');
+            target.setAttribute('title', 'Failed to copy URL! ❌');
+            setTimeout(() => {
+              target.classList.remove('copy-error');
+              target.removeAttribute('title');
+            }, 3000);
+
+          });
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

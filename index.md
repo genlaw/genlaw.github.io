@@ -16,12 +16,11 @@ Read our introductory, explainers [here](explainers/index.html) on the copyright
 
 <table class="dates">
   <tr>
-    <td><p>Virtual Poster Session:</p></td>
-    <td class="time"><time datetime="2023-07">28 July 2023 on [Gather Town](https://app.gather.town/app/iwrwqzVQw3d6zjKk/GenLaw%20Poster%20Session) at 8 - 9 AM HT or 2 - 3 PM ET</time></td>
-  </tr>
-  <tr>
     <td><p>Workshop date:</p></td>
-    <td class="time"><time datetime="2023-07">29 July 2023 (Ballroom B)</time></td>
+    <td class="time"><p><time datetime="2023-07">29 July 2023 (Ballroom B)</time></p>
+  <p>[Livestream](https://www.youtube.com/watch?v=5j4U2UzJWfI) </p>
+  <p>[Liveblog](https://3d.laboratorium.net/2023-07-29-genlaw)</p>
+  <p>"Talkin' 'Bout AI Generation: Copyright and the Generative-AI Supply Chain". July 2023. (to appear, Journal of the Copyright Society) [[ssrn](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551)][[blog](https://genlaw.github.io/explainers/talkin.html)]</p>
   </tr>
 </table>
 
@@ -44,27 +43,28 @@ Our workshop will begin to build a comprehensive and precise synthesis of the le
 
 ## Schedule
 
-**Virtual poster session**: 28 July 2023 on [Gather Town](https://app.gather.town/app/iwrwqzVQw3d6zjKk/GenLaw%20Poster%20Session) at 8 AM HT or 2 PM ET
+**Virtual poster session**: 28 July 2023 on [Gather Town](https://app.gather.town/app/iwrwqzVQw3d6zjKk/GenLaw%20Poster%20Session) at 8 am HT or 2 pm ET
 
-| Time          | Speaker                                                                                  |
-|---------------|------------------------------------------------------------------------------------------|
-| 9:00 - 9:15 AM | Welcome (Organizers)                                                                     |
-| 9:15 - 9:45 AM | [Pamela Samuelson](https://www.law.berkeley.edu/our-faculty/faculty-profiles/pamela-samuelson/#tab_profile), "Some Nonobvious Observation About Copyright’s Scope For Generative AI Developers"                                                                            |
-| 9:45 - 10:05 AM| [Mark Lemley](https://law.stanford.edu/directory/mark-a-lemley/), "Is Training AI Copyright Infringement?"                                                                              |
-| 10:05 - 10:40 AM | **Coffee**                                                                               |
-| 10:40 - 11:00 AM | [Miles Brundage](https://www.milesbrundage.com/), "Where and when does the law fit into AI development and deployment?"                                                                       |
-| 11:00 - 12:00 PM | *Panel on Intellectual Property*: [Pamela Samuelson](https://www.law.berkeley.edu/our-faculty/faculty-profiles/pamela-samuelson/#tab_profile), [Mark Lemley](https://law.stanford.edu/directory/mark-a-lemley/), [Luis Villa](https://lu.is/), [Katherine Lee](https://katelee168.github.io) (Moderated by [Jack Balkin](https://jackbalkin.yale.edu/) and [A. Feder Cooper](https://afedercooper.info/)) |
-| 12:00 - 1:30 PM | **Lunch**                                                                                  |
-| 1:30 - 1:45 PM | [Jack Balkin](https://jackbalkin.yale.edu/), "Artificial Intelligence and the First Amendment"                                                                              |
-| 1:45 - 2:15 PM | **Spotlights**                                                                               |
-| 2:15 - 3:00 PM | **Posters**                                                                                  |
-| 3:00 - 3:30 PM | **Coffee**                                                                                    |
-| 3:30 - 3:45 PM | [Nicholas Carlini](https://nicholas.carlini.com/), "A Brief Introduction to Machine Learning & Memorization"                                                                        |
-| 3:45 - 4:00 PM | [Gautam Kamath](http://www.gautamkamath.com/), "What does Differential Privacy have to do with Copyright?"                                                                       |
-| 4:00 - 5:00 PM | *Panel on Privacy*: [Kristen Vaccaro](http://kvaccaro.com/), [Nicholas Carlini](https://nicholas.carlini.com/), [Miles Brundage](https://www.milesbrundage.com/), [Gautam Kamath](http://www.gautamkamath.com/), and [Jack Balkin](https://jackbalkin.yale.edu/) (Moderated by [Katherine Lee](https://katelee168.github.io) and [Deep Ganguli](https://www.linkedin.com/in/dganguli)) |
+<div id="schedule-table">
+|       |       |    |                                                                                |
+|-------|-------|----|------------------------------------------------------------------------------------------|
+|  9:00 |  9:15 | am | **Welcome** [Organizers](#organizer-information)
+|  9:15 |  9:45 | am | **"Some Nonobvious Observation About Copyright’s Scope For Generative AI Developers"** [Pamela Samuelson](https://www.law.berkeley.edu/our-faculty/faculty-profiles/pamela-samuelson/#tab_profile)                                                                            |
+|  9:45 | 10:05 | am | **"Is Training AI Copyright Infringement?"** [Mark Lemley](https://law.stanford.edu/directory/mark-a-lemley/)                                                                              |
+| 10:05 | 10:40 | am | _Coffee_                                                                               
+| 10:40 | 11:00 | am | **"Where and when does the law fit into AI development and deployment?"** [Miles Brundage](https://www.milesbrundage.com/)                                                                       |
+| 11:00 | 12:00 | pm | **Panel on Intellectual Property** [Pamela Samuelson](https://www.law.berkeley.edu/our-faculty/faculty-profiles/pamela-samuelson/#tab_profile), [Mark Lemley](https://law.stanford.edu/directory/mark-a-lemley/), [Luis Villa](https://lu.is/), [Katherine Lee](https://katelee168.github.io) (Moderated by [Jack Balkin](https://jackbalkin.yale.edu/) and [A. Feder Cooper](https://afedercooper.info/)) |
+| 12:00 |  1:30 | pm | _Lunch_                                                                                  |
+|  1:30 |  1:45 | pm | **"Artificial Intelligence and the First amendment"** [Jack Balkin](https://jackbalkin.yale.edu/)                                                                              |
+|  1:45 |  2:15 | pm | **Spotlights**                                                                               |
+|  2:15 |  3:00 | pm | **Posters**                                                                                  |
+|  3:00 |  3:30 | pm | _Coffee_                                                                                    |
+|  3:30 |  3:45 | pm | **"A Brief Introduction to Machine Learning & Memorization"** [Nicholas Carlini](https://nicholas.carlini.com/)                                                                        |
+|  3:45 |  4:00 | pm | **"What does Differential Privacy have to do with Copyright?"** [Gautam Kamath](http://www.gautamkamath.com/)                                                                       |
+|  4:00 |  5:00 | pm | **Panel on Privacy** [Kristen Vaccaro](http://kvaccaro.com/), [Nicholas Carlini](https://nicholas.carlini.com/), [Miles Brundage](https://www.milesbrundage.com/), [Gautam Kamath](http://www.gautamkamath.com/), and [Jack Balkin](https://jackbalkin.yale.edu/) (Moderated by [Katherine Lee](https://katelee168.github.io) and [Deep Ganguli](https://www.linkedin.com/in/dganguli)) |
+</div>
 
-
-
+_Times refer to local time. (HT, UTC-10:00)_
 
 ## <a name="speakers"></a>Speakers, Panelists & Moderators {.underlined}
 
@@ -249,7 +249,7 @@ Our workshop will begin to build a comprehensive and precise synthesis of the le
         and a recipient of the 2022 Rising Star in Adversarial ML award. She was
         a co-chair of the NAACL 2022 conference and has been a co-organizer for
         numerous successful workshops, including Distributed and Private ML
-        (DPML) at ICLR 2021, Federated Learning for NLP (FL4NLP) at ACL 2022,
+        (DpmL) at ICLR 2021, Federated Learning for NLP (FL4NLP) at ACL 2022,
         Private NLP at NAACL 2022 and Widening NLP at EMNLP 2021 and 2022
       </p>
     </figcaption>
