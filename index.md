@@ -227,20 +227,20 @@ _Times refer to local time. (HT, UTC-10:00)_
   </figure>
 
   <figure>
-    <img class="avatar" src="images/fatemeh-300x300.jpg" alt="Fatemehsadat Mireshghallah">
+    <img class="avatar" src="images/niloofar-300x300.jpg" alt="Niloofar Mireshghallah">
     <figcaption>
-      <p class="name">Fatemehsadat Mireshghallah</p>
+      <p class="name">Niloofar Mireshghallah</p>
       <p class="person">
         <span class="title">Post-Doctoral Researcher</span>
         <span class="affiliation">University of Washington, Paul G. Allen Center for Computer Science and Engineering</span>
       </p>
-      <a class="email" href="mailto:f.mireshghallah@gmail.com">f.mireshghallah@gmail.com</a>
+      <a class="email" href="mailto:niloofar@cs.washington.edu">niloofar@cs.washington.edu</a>
       <p class="contact">
-        <a class="website" href="https://cseweb.ucsd.edu/~fmireshg">Website</a>
+        <a class="website" href="https://cseweb.ucsd.edu/~fmireshg/">Website</a>
         <a class="publications" href="https://scholar.google.com/citations?user=WUCu45YAAAAJ">Google Scholar</a>
       </p>
       <p class="blurb">
-        Fatemeh's research aims at understanding learning and memorization
+        Niloofar's research aims at understanding learning and memorization
         patterns in large language models, probing these models for safety
         issues (such as bias), and providing tools to limit their leakage of
         private information. She is a recipient of the National Center for Women
