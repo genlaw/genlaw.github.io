@@ -134,7 +134,7 @@
   }
 }
 
-*, *:after, *:before {
+*, *:after, *:before, h4 ~ * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -1351,4 +1351,46 @@ dd {
 
 dd:last-child {
   margin-bottom: 0;
+}
+
+/* Night mode */
+.image-container:before {
+  content: '';
+  display: block;
+  background-image: url("day_image.jpg");
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+}
+
+/* Night Image */
+.image-container:after {
+  content: '';
+  display: block;
+  background-image: url("night_image.jpg");
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+  opacity: 0; /* Initially hidden */
+}
+
+/* Show the night image when checkbox is checked */
+input[type="checkbox"]:checked + .image-container:after {
+  opacity: 1;
+}
+
+
+/* avatar */
+.avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: top;
+  margin: .5em;
+  border-radius: 50%;
+}
+
+
+#refs div {
+    padding-bottom: 1.25em; /* Adjust the value as needed */
 }

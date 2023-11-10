@@ -71,3 +71,8 @@ source_path="/Users/katherine/Projects/pandoc-markdown-css-theme/template.html5"
 destination_path="/Users/katherine/Projects/genlaw.github.io/template.html5"
 cp "$source_path" "$destination_path" && echo "Copied: template.html5"
 
+# Copy references
+source_path="/Users/katherine/Projects/pandoc-markdown-css-theme/src/training-data/references.bib"
+destination_path="/Users/katherine/Projects/genlaw.github.io/references.bib"
+cp "$source_path" "$destination_path" && echo "Copied: references.bib"
+
