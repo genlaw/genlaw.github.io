@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc-markdown-css-theme" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Report of the 1st Workshop on Generative AI and Law</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/skylighting-paper-theme.css" />
+  <link rel="stylesheet" href="css/theme-additions.css" />
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+<!-- Google Analytics tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W2ZW2ZM1M6"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W2ZW2ZM1M6');
+</script>
+</head>
+<body>
+
+<header>
+  <h1 class="title"><span class="roman">Report of the 1st Workshop on Generative AI and Law</span></h1>
+<div class="metadata">
+<div class="author">
+  <span class="label">Authors</span>
+            <span>A. Feder Cooper*<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, Katherine Lee*, James Grimmelmann*, Daphne Ippolito*, Christopher Callison-Burch, Christopher A. Choquette-Choo, Niloofar Mireshghallah, Miles Brundage, David Mimno, Madiha Zahrah Choksi, Jack M. Balkin, Nicholas Carlini, Christopher De Sa, Jonathan Frankle, Deep Ganguli, Bryant Gipson, Andres Guadamuz, Swee Leng Harris, Abigail Z. Jacobs, Elizabeth Joh, Gautam Kamath, Mark Lemley, Cass Matthews, Christine McLeavey, Corynne McSherry, Milad Nasr, Paul Ohm, Adam Roberts, Tom Rubin, Pamela Samuelson, Ludwig Schubert, Kristen Vaccaro, Luis Villa, Felix Wu, Elana Zeide</span>
+      </div>
+
+<div class="readon">
+  <span class="label">Read:</span>
+    <a href=https://genlaw.github.io/2023-report.pdf>[pdf]</a>
+      <a href=https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4634513>[ssrn]</a>
+      <a href=arxiv.org/placeholder>[arxiv]</a>
+  </div>
+</div>
+
+</header>
+
+<nav id="TOC" role="doc-toc">
+    <input type="checkbox" id="contents">
+  <label for="contents">
+    <h4 id="toc-heading">
+              Contents
+            <svg id="toc-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.08926 3.16074C1.76382 2.83531 1.23618 2.83531 0.910744 3.16074C0.585307 3.48618 0.585307 4.01382 0.910744 4.33926L2.08926 3.16074ZM6 8.25L5.41074 8.83926C5.73618 9.16469 6.26382 9.16469 6.58926 8.83926L6 8.25ZM11.0893 4.33926C11.4147 4.01382 11.4147 3.48618 11.0893 3.16074C10.7638 2.83531 10.2362 2.83531 9.91074 3.16074L11.0893 4.33926ZM0.910744 4.33926L5.41074 8.83926L6.58926 7.66074L2.08926 3.16074L0.910744 4.33926ZM6.58926 8.83926L11.0893 4.33926L9.91074 3.16074L5.41074 7.66074L6.58926 8.83926Z" fill="currentColor"/>
+      </svg>
+    </h4>
+  </label>
+  <ul>
+  <li><a href="#sec:intro" id="toc-sec:intro">1. Introduction</a></li>
+  <li><a href="#sec:vision" id="toc-sec:vision">2. The Impact of Generative AI on Law</a></li>
+  <li><a href="#sec:knowledge" id="toc-sec:knowledge">3. Developing a Shared Knowledge Base</a>
+  <ul>
+  <li><a href="#sec:glossary" id="toc-sec:glossary">3.1 Identifying and Defining Terms</a></li>
+  <li><a href="#sec:metaphors" id="toc-sec:metaphors">3.2 Crafting Useful Metaphors</a></li>
+  <li><a href="#sec:business" id="toc-sec:business">3.3 Understanding Evolving Business Models</a></li>
+  </ul></li>
+  <li><a href="#sec:challenges" id="toc-sec:challenges">4. Pinpointing Unique Aspects of Generative AI</a>
+  <ul>
+  <li><a href="#sec:openended" id="toc-sec:openended">4.1 The Transition to Very Flexible Generative Models</a></li>
+  <li><a href="#sec:dividing" id="toc-sec:dividing">4.2 Developments in the Training Pipeline: Pre-Training and Fine-Tuning</a></li>
+  <li><a href="#sec:system" id="toc-sec:system">4.3 Generative-AI Systems and the Supply Chain</a></li>
+  <li><a href="#sec:scale" id="toc-sec:scale">4.4 The Massive Scale of Generative-AI Models</a></li>
+  </ul></li>
+  <li><a href="#sec:taxonomy" id="toc-sec:taxonomy">5. A Preliminary Taxonomy of Legal Issues</a>
+  <ul>
+  <li><a href="#sec:torts" id="toc-sec:torts">5.1 Intent</a></li>
+  <li><a href="#sec:privacy" id="toc-sec:privacy">5.2 Privacy</a></li>
+  <li><a href="#sec:badinformation" id="toc-sec:badinformation">5.3 Misinformation and Disinformation</a></li>
+  <li><a href="#sec:ip" id="toc-sec:ip">5.4 Intellectual Property</a></li>
+  </ul></li>
+  <li><a href="#sec:agenda" id="toc-sec:agenda">6. Toward a Long-Term Research Agenda</a>
+  <ul>
+  <li><a href="#centralization-and-decentralization" id="toc-centralization-and-decentralization">6.1 Centralization and Decentralization</a></li>
+  <li><a href="#rules-standards-reasonableness-and-best-practices" id="toc-rules-standards-reasonableness-and-best-practices">6.2 Rules, Standards, Reasonableness, and Best Practices</a></li>
+  <li><a href="#sec:unlearning" id="toc-sec:unlearning">6.3 Notice and Takedown <span class="math inline">\neq</span> Machine Unlearning</a></li>
+  <li><a href="#sec:eval" id="toc-sec:eval">6.4 Evaluation Metrics</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion">7. Conclusion and the Future of GenLaw</a></li>
+  <li><a href="#references" id="toc-references">References</a></li>
+  </ul>
+</nav>
+
+
+<main id="main" class="">
+        <p style="text-align:right"><a href="https://genlaw.github.io/">Back to GenLaw ↩︎</a></p>
+  <h1 id="sec:intro">1. Introduction</h1>
+<p>The inaugural Generative AI and Law (GenLaw) workshop took place on July 29th and 30th, in Honolulu, Hawai’i, where it was co-located with the 40th International Conference on Machine Learning (ICML). The workshop was organized in response to the intense interest in (and scrutiny of) recent public advancements in generative-AI technology. The primary goal was to bring together experts in machine learning (ML) and law to discuss the legal challenges that generative-AI technology raises. To promote concrete and focused discussions, we chose to make intellectual property (IP) and privacy the principal legal topics of the first workshop. Other significant topics discussed included free speech, products liability, and transparency. For this first workshop, most discussion was limited to considerations of U.S. law.</p>
+<p>The workshop was convened over two days. The first day (July 29th) was a public session held as part of ICML, consisting of keynote lectures, panel discussions, lightning talks, and a poster session, all dealing with research issues at the intersection of Generative AI and law. The second day (July 30th), was held off-site, at which approximately forty participants conducted a series of roundtable discussions to dig deeper into significant issues identified on the first day.</p>
+<p>This report reflects the takeaways from the roundtable discussions. They are organized into five broad headings, reflecting the participants’ consensus about the most urgently needed contributions to the research area of Generative AI and law:</p>
+<ol type="1">
+<li>A high-level statement about why Generative AI is both immensely significant and immensely challenging for law (Section <a href="#sec:vision">2</a>);</li>
+<li>The beginnings of a shared knowledge base that provides a common conceptual language for experts across disciplines (Section <a href="#sec:knowledge">3</a>);</li>
+<li>Clarification of the unique capabilities and issues of generative-AI systems, setting them in relation to the broader landscape of artificial-intelligence and machine-learning technologies (Section <a href="#sec:challenges">4</a>);</li>
+<li>An initial taxonomy of the legal issues at play (Section <a href="#sec:taxonomy">5</a>); and,</li>
+<li>A concrete research agenda to promote collaboration and progress on emerging issues at the intersection of Generative AI and law (Section <a href="#sec:agenda">6</a>).</li>
+</ol>
+<p>To best serve these ends, this report does not delve into the technical details of specific generative-AI systems, the legal details of complaints and lawsuits involving those systems, or policy proposals for regulators. Our intended audience is scholars and practitioners who are already interested in engaging with issues at the intersection of Generative AI and law, for example, ML researchers who have familiarity with some of the ongoing lawsuits regarding Generative AI, and lawyers who have familiarity with terms like “large language model.” We focus our attention on synthesizing reflections from the workshop to highlight key issues that need to be addressed for successful research progress in this emerging and fundamentally interdisciplinary area.</p>
+<h1 id="sec:vision">2. The Impact of Generative AI on Law</h1>
+<p>Generative AI is “generative” because it generates text, images, audio, or other types of output. But it is also “generative” in the sense of Jonathan Zittrain’s theory of generative technologies: it has the “capacity to produce unanticipated change through unfiltered contributions from broad and varied audiences” <span class="citation" data-cites="zittrainfuture">(Zittrain 2008)</span>. As a result, generative-AI systems will be both immensely societally significant — too significant for governments to ignore or to delay dealing with — and present an immensely broad range of legal issues. To see why, it is useful to consider <span class="citation" data-cites="zittrainfuture">Zittrain (2008)</span>’s five dimensions of generativity:</p>
+<p><em>A technology provides leverage when it makes difficult tasks easier.</em> Generative AI is widely recognized for its use in creativity; programming; retrieving and synthesizing complex bodies of knowledge; and automating repetitive tasks. <em>A technology is adaptable when it can be applied to a wide range of uses.</em> Generative AI is celebrated for its adaptability. It has been applied to programming, painting, language translation, drug discovery, fiction, educational testing, graphic design, and much more. <em>A technology is easy to master when users without specialized training can readily adopt and adapt it.</em> While some generative-AI methodologies, such as model pre-training, still require technical skills, the ability to use chat-style, interactive, natural-language prompting to control generative-AI systems greatly reduces the difficulty of adoption. Users without programming or ML backgrounds have been able to use Generative AI for numerous tasks. <em>A technology is accessible when there are few barriers to its use.</em> Cost is the most obvious barrier, but other barriers can include regulation, secrecy, and linguistic limits. The creation of cutting-edge generative-AI models from scratch requires enormous inputs of data, compute, and human expertise — currently limiting model creation to a handful of institutions — but services allowing inference with these models are widely available to the public. These services are inexpensive for users making small numbers of queries, and they tend to operate close to real-time, making generative outputs (at least appear) low-cost to produce, in terms of time. <em>A technology is transferable when changes in it can easily be conveyed to others.</em> Once pre-trained or fine-tuned, generative-AI models can be easily shared, prompts and prompting techniques are trivially easy to describe, and systems built around generative-AI models can be made broadly available at increasingly low effort and cost.</p>
+<p>In short, Generative AI hits the generativity jackpot. It provides enormous leverage across a wide range of tasks, is readily built on by a huge range of users, and facilitates rapid iterative improvement as those users share their innovations with each other.</p>
+<p><span class="citation" data-cites="zittrainfuture">Zittrain (2008)</span>’s two examples of supremely generative technologies from 2008 are computers and the Internet. Generative AI seems likely to be a third. No other technology of the last two decades even comes close. Regulators and legal scholars should expect that Generative AI will raise legal and policy challenges that are comparable in scope, scale, and complexity to those raised by computers and the Internet.</p>
+<p>The Internet-law analogy also provides guidance on how technologists and lawyers can approach this shared challenge. They must have a common vocabulary so that their contributions are mutually intelligible (Section <a href="#sec:knowledge">3</a>). Lawyers must have a sufficient foundation of technical understanding to be able to apply their expertise in law accurately (Section <a href="#sec:challenges">4</a>). Technologists, for their part, must have a sufficient foundation of legal knowledge to identify legally significant technical interventions (Section <a href="#sec:taxonomy">5</a>). And both groups need a common research agenda to collaborate and iterate rapidly on effective projects that advance a shared understanding how Generative AI and the legal system interact (Section <a href="#sec:agenda">6</a>). The aim of this report is to lay down a starting framework for these tasks.</p>
+<h1 id="sec:knowledge">3. Developing a Shared Knowledge Base</h1>
+<p>It became apparent over the course of the GenLaw roundtable discussions that some commonly used terms have different meanings in machine learning and in law. Sometimes, both groups have been working to develop deep understandings of important but hard-to-capture concepts. The term <em>privacy</em> is a prominent such example. Technologists’ formal definitions (such as <a href="glossary.html#differential-privacy"><strong>differential privacy</strong></a>) do not always encompass the wide range of interests protected by privacy law; similarly, it can be hard to put the holistic definitions used by legal scholars into computationally tractable forms that can be deployed in actual systems.<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">The U.S. Census has sparked debate over its use of <a href="glossary.html#differential-privacy"><strong>differential privacy</strong></a>: a technique that provides strong theoretical guarantees of privacy preservation. Critics question whether or not the definition of privacy reflected in differential privacy accords with the census’s broader goals of privacy preservation. Differential privacy is also sometimes used in Generative AI, though it is context-dependent whether its definition of “privacy” is meaningful for generative-AI applications <span class="citation" data-cites="brown2022privacy">(Brown et al. 2022)</span>.<br />
+<br />
+</span></span> These communication barriers are real, but, as was clear during GenLaw, the two communities have generally understood that they mean something different by “privacy” and have read each others’ work with a working understanding of these differences in mind.</p>
+<p>We also observed, however, that there are also various types of misunderstandings in terminology across disciplines. At GenLaw, some terms were used in different ways because members of one community did not even realize a loosely-defined term in their community was a term of art in the other, or because the meaning they assumed a term had was subtly different from how it was actually used in writing. These conflicting definitions and translation gaps hampered our ability to collaborate on assessing emerging issues. For example, technologists use the term <a href="glossary.html#pre-training-and-fine-tuning"><strong>pre-training</strong></a> to refer to an early, general-purpose phase of the model training process, but legal scholars assumed that the term referred to a <a href="glossary.html#data-curation-and-pre-processing"><strong>data preparation stage</strong></a> prior to and independent of training. Similarly, many technologists were not aware of the importance of <a href="glossary.html#harm"><strong>harms</strong></a> as a specific and consequential concept in law, rather than a general, non-specific notion of unfavorable outcomes. We found our way to common understandings only over the course of our conversations, and often only after many false starts.</p>
+<p>Thus, first and foremost, we need to have a shared understanding of baseline concepts in both Generative AI and law. Even when it is not possible to pin down terms with complete precision, it is important to have clarity about which terms are ambiguous or overloaded. We believe that there three significant ways that computer scientists and legal scholars can contribute to creating this shared understanding:</p>
+<ol type="1">
+<li>They can build <strong>glossaries</strong> of definitions of important terms in machine learning and law, which can serve both as textbooks and as references (Section <a href="#sec:glossary">3.1</a>). Throughout this piece, glossary terms are hyperlinked to the corresponding <a href="glossary.html">glossary</a> entry.</li>
+<li>They can develop well-crafted <strong>metaphors</strong> to clarify complex concepts across disciplinary boundaries. Even imperfect metaphors are useful, as they can serve to highlight where concepts in Generative AI deviate from intuitions that draw on more traditional examples (Section <a href="#sec:metaphors">3.2</a>).</li>
+<li>They can <strong>keep current</strong> with the state of the art, and help others to do so. This does not just mean the fundamentals of machine learning and Generative AI (although these are certainly important). It also means being alert to the plethora of ways that generative-AI systems are be deployed in practice, and the commonalities and differences between these systems (Section <a href="#sec:business">3.3</a>).</li>
+</ol>
+<h2 id="sec:glossary">3.1 Identifying and Defining Terms</h2>
+<p>The GenLaw organizers and participants have collaborated to create an initial <a href="glossary.html">glossary</a> of important terms at the intersection of law and Generative AI. The glossary has two primary goals.</p>
+<p>First, it identifies terms of art with technical or multiple meanings. Both law and machine learning commonly give specific, technical definitions to words that also have general, colloquial meanings, such as “attention” or “harm.”<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">See the entry for <a href="glossary.html#attention"><strong>attention</strong></a> in the glossary for the machine-learning definition.<br />
+<br />
+</span></span> Sometimes, the redefinition runs the other way, when a technical term has taken on a broader meaning in society at large. To technologists, an <a href="glossary.html#algorithm"><strong>algorithm</strong></a> is simply a precise rule for carrying out a procedure, but the term has come to be popularly associated with specific technologies for ranking social media posts based on expected interest. The words “goal” and “objective” are sometimes used interchangeably in English, but <a href="glossary.html#objective"><strong>objective</strong></a> is a term of art in machine learning, describing a mathematical function used during training. On the other hand, “goal” does not have an agree-upon technical definition. In machine learning, it is typically used colloquially to describe our overarching desire for model behaviors, which cannot be written directly in math.</p>
+<p>Second, the glossary provides succinct definitions of the most critical concepts for a non-expert in either law or ML (or both). These definitions are <em>not</em> intended to cover the full complexity of a concept or term from the expert perspective. For example, one could write volumes on privacy.<span class="sidenote-wrapper"><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote">And many have, arguably for thousands of years, which is why we do not attempt a definition of privacy in the <a href="glossary.html">glossary</a>.<br />
+<br />
+</span></span> Our purpose here is simply to show technologists that there is more to privacy than removing <a href="glossary.html#personally-identifiable-information-(pii)"><strong>personally identifiable information (PII)</strong></a>.</p>
+<p>The glossary is offered as a starting point, not a finish line. The field is in flux; its terminology will evolve as new technologies and controversies emerge. We will host and update this glossary on the GenLaw website.<span class="sidenote-wrapper"><label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote">See <a href="https://genlaw.github.io/glossary.html" class="uri">https://genlaw.github.io/glossary.html</a>.<br />
+<br />
+</span></span> We hope that these definitions will serve as a baseline for more effective communication across disciplines about emerging issues.</p>
+<h2 id="sec:metaphors">3.2 Crafting Useful Metaphors</h2>
+<p>Well-chosen metaphors can provide a useful mental model for thinking through complex concepts. Metaphors are also widely used in both machine learning and law. For machine-learning practitioners, these metaphors can also be sources of inspiration; the idea of an “artificial neural network” was inspired by the biology of neurons in the human brain <span class="citation" data-cites="boers1993biological">(Boers et al. 1993)</span>. Analogy and metaphor are central to legal rhetoric <span class="citation" data-cites="solove2001metaphor">(Solove 2001)</span>; they provide a rational framework for thinking through the relevant similarities and differences between cases. Metaphors, however, can also simplify and distort; nevertheless, understanding the ways that a metaphor fails to correctly describe a concept can still be instructive in helping to clarify one’s thinking.</p>
+<p>At the GenLaw workshop, we discussed instructive metaphors for Generative AI extensively. We give two examples from this discussion here (anthropomorphism and memorization) and describe additional ones <a href="metaphors.html">here</a>.</p>
+<p>Metaphorical anthropomorphism is the personification of a non-human entity; it applies metaphors that compare the entity’s traits to human characteristics, emotions, and behaviors. Machine-learning practitioners commonly use terms that anthropomorphize machine-learning models, for example, saying models “learn,” “respond,” “memorize,” or “hallucinate.” Such metaphors can lead people to conclude that a machine-learning system is completing such actions using the same mechanisms and thought processes that a human would. However, while practitioners may sometimes be inspired in their designs by biological phenomena (e.g., <a href="glossary.html#neural-network"><strong>neural networks</strong></a> contain “neurons” that “fire” analogously to those in the human brain), they by and large do not mean that machine-learning models “learn” or “memorize” in exactly the same way that humans complete these actions. Instead, these should be considered terms of art — perhaps inspired by human actions, but grounded in technical definitions that bear little resemblance to human mechanisms.</p>
+<p>Some within the GenLaw community have advocated for using different terms to describe these processes — ones that do not elicit such strong comparisons to human behavior <span class="citation" data-cites="cooper2022accountability">(Cooper et al. 2022 and citations therein)</span>. However, until we have better terms, understanding when a term is indeed a term of art, and the ways that it is inspired by (but not equivalent to) colloquial understandings, will remain a critical part of any interdisciplinary endeavour.</p>
+<p>The terms <a href="glossary.html#memorization"><strong>memorization</strong></a> and <a href="glossary.html#regurgitation"><strong>regurgitation</strong></a> are very common in the machine-learning literature. Roughly speaking, memorization and regurgitation can be treated interchangeably. They both signify when a machine-learning model encodes details from its training data, such it is capable of generating outputs that closely resemble its training data.<span class="sidenote-wrapper"><label for="sn-4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-4" class="margin-toggle"/><span class="sidenote">Some differentiate “memorization” and “regurgitation,” with regurgitation referring to a model’s ability to output its training data (via generation) and memorization referring to a model <em>containing</em> a perfect copy of its training data (regardless of whether or not it is regurgitated). In practice, the two terms are commonly used interchangeably.<br />
+<br />
+</span></span> The machine-learning experts who coined these terms created precise definitions that can be translated into quantified metrics; these definitions refer to specific ways to measure the amount of memorization (as it is technically definition) present in a model or its outputs <span class="citation" data-cites="carlini2023quantifying ippolito2023preventing anil2023palm kudugunta2023madlad">(Carlini, Ippolito, et al. 2023; Ippolito et al. 2023; Anil et al. 2023; Kudugunta et al. 2023)</span>.</p>
+<p>Unfortunately, the connection to the colloquial meanings of these words can cause confusion. Some outside of the machine-learning community misinterpet “Generative AI memorization” to include functionality that goes beyond what machine-learning practitioners are actually measuring with their precise definitions. One such example is discussions around text-to-image generative models “memorizing” an artist’s style <span class="citation" data-cites="newyorker-stealing">(Chayka 2023)</span>. While measuring stylistic similarity is an active area of machine-learning research <span class="citation" data-cites="casper2023measuring">(Casper et al. 2023)</span>, it is <em>not</em> equivalent to <a href="glossary.html#memorization"><strong>memorization</strong></a> in the technical sense of the word.</p>
+<p>Other misunderstandings can arise due to the fact that “memorization” and “regurgitation” are imperfect analogies for the underlying processes that machine-learning scientists are measuring. People deliberately memorize; for example, an actor will actively commit a script to memory. In contrast, models do not deliberately memorize; the training examples that end up memorized by a model were not treated any differently during training than the ones that were not memorized.<span class="sidenote-wrapper"><label for="sn-5" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-5" class="margin-toggle"/><span class="sidenote">Models are trained using an <a href="glossary.html#objective"><strong>objective function</strong></a> that <a href="glossary.html#loss"><strong>rewards</strong></a> the model for producing data that looks similar to the training data during the training phase. However, the <em>goal</em> of model training is not to reproduce the training data, so other techniques, such as regularization or alignment are used to help a model <a href="glossary.html#generalization"><strong>generalize</strong></a>. See Section <a href="#sec:glossary">3.1</a> for a discussion on “goal” versus <a href="glossary.html#objective"><strong>objective</strong></a> in machine learning.<br />
+<br />
+</span></span> Importantly, humans distinguish between memorizing (which has intentionality) and “remembering” (when a detail is recalled without the intent to memorize it). Generative-AI models have no such distinction. For humans, it is how we personally feel about a thought, action, or vocalization that leads us to call it “memorized.” But for models, which lack intent or feeling, <a href="glossary.html#memorization"><strong>memorization</strong></a> is merely a property assigned to their outputs and <a href="glossary.html#weights"><strong>weights</strong></a> through technical definitions.</p>
+<h2 id="sec:business">3.3 Understanding Evolving Business Models</h2>
+<p>Developing glossaries and metaphors can help with staying current about generative-AI technology, but they do not necessarily capture all of the different ways that generative-AI functionality can be put to use in practice. To understand real-world uses, it is also important to have a working understanding of different generative-AI production processes.</p>
+<p>There are a variety of evolving business models that have yet to solidify into definitive patterns. In this uncertain environment, myths and folk wisdom can proliferate. Real, current information about business models can be very useful for understanding who is involved in the production, maintenance, and use of different parts of generative-AI systems. Business models prove useful for appreciating the quantity and diversity of actors (not just technologies) that enable generative-AI functionality.</p>
+<p>We highlight four patterns from discussion at GenLaw:</p>
+<ol type="1">
+<li><p><strong>Business-to-consumer (B2C) hosted services</strong>: Several companies have released direct-to-consumer applications and <a href="glossary.html#application-programming-interface-(api)"><strong>application programming interfaces (APIs)</strong></a> for producing generations. For example, on the large end of the spectrum, there are chatbots powered by main players in language modeling (e.g., OpenAI’s ChatGPT, Anthropic’s Claude, Google’s Bard, etc.). There are also smaller companies that have released similar tools (e.g., Midjourney’s <span class="citation" data-cites="midjourney">(Midjourney 2023)</span> or Ideogram’s <span class="citation" data-cites="ideogram">(Ideogram.AI 2023)</span> text-to-image generation applications). These companies provide a mix of entry points to their systems and models, including user interfaces and APIs, often offered via subscription-based services. Typically, the systems and models developed by these companies are hosted in proprietary services; users can access these services to produce generations but, with some notable exceptions (e.g., fine-tuning APIs), cannot directly alter or interact with the models embedded within them.</p></li>
+<li><p><strong>Business-to-business (B2B) integration with hosted services</strong>: Other business models allow for businesses to integrate generative-AI functionality into their products either via direct partnership/integration or through the use of <a href="glossary.html#application-programming-interface-(api)"><strong>APIs</strong></a>. For example, ChatGPT functionality is integrated into Microsoft Bing search (via a close partnership between Microsoft and OpenAI). Poe is developed based on a partnership between Anthropic and Quora <span class="citation" data-cites="poe">(Anthropic 2023)</span>.<span class="sidenote-wrapper"><label for="sn-6" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-6" class="margin-toggle"/><span class="sidenote">We cannot tell from press releases whether Poe also uses the API or if their partnership is of a different nature. Often, we will not be able to tell the nature of the business relationship (unless disclosed publicly) between corporate partners.<br />
+<br />
+</span></span> In other cases, companies develop generative-AI products by becoming corporate customers of generative-AI-company APIs, as opposed to bespoke business partners. These types of business relationships can either lead to developing new features for existing products, or new products altogether.</p></li>
+<li><p><strong>Products derived from open models and datasets</strong>: The business models discussed above depend on <a href="glossary.html#closed-software"><strong>proprietary systems</strong></a>, <a href="glossary.html#closed-model"><strong>models</strong></a>, and/or <a href="glossary.html#closed-dataset"><strong>datasets</strong></a>. Other options include (or directly rely on) <a href="glossary.html#open-software"><strong>open-source software</strong></a>, <a href="glossary.html#open-model"><strong>models</strong></a>, and <a href="glossary.html#open-dataset"><strong>datasets</strong></a>, which can be downloaded and put to use (e.g., training new models or fine-tuning existing model <a href="glossary.html#checkpoint"><strong>checkpoints</strong></a>). Some companies operate distinctly (or partially) with open-source product offerings, such as some versions of Stable Diffusion <span class="citation" data-cites="rombach2022diffusion">(Rombach et al. 2022)</span> offered by Stability AI <span class="citation" data-cites="stability">(Stability AI 2023)</span>. Others operate in a mixed fashion, for example, individuals can openly download Meta’s Llama-model family (the different models’ <a href="glossary.html#weights"><strong>weights</strong></a>), but the details of the training data are closed <span class="citation" data-cites="llama2">(Touvron et al. 2023)</span>.</p></li>
+<li><p><strong>Companies that operate at specific points in the generative-AI supply chain</strong>: Any link (or subset of links) in the <a href="glossary.html#supply-chain"><strong>supply chain</strong></a> <span class="citation" data-cites="lee2023talkin">(K. Lee, Cooper, and Grimmelmann 2023)</span> could potentially become a site of specific business engagement with generative-AI technology. For those interested in issues at the intersection of Generative AI and law, it will be important not only to be familiar with the roles and scope of companies in these areas, but also how they interact and inter-operate. We provide three examples below of emerging sites of business engagement.</p>
+<ul>
+<li><em>Datasets</em>: There may be companies that engage only with the dataset collection and curation aspects of Generative AI (similar to how data brokers function in other industries). Scale AI <span class="citation" data-cites="scaleai">(Scale AI 2023)</span> is one such company that works on data <a href="glossary.html#examples"><strong>example</strong></a> annotation for generative-AI training datasets.</li>
+<li><em>Training diagnostics</em>: There are some companies that handle aspects of data analysis and diagnostics for generative-AI-model training dynamics, like Weights &amp; Biases <span class="citation" data-cites="weights-biases">(Weights &amp; Biases 2023)</span>.</li>
+<li><em>Training and deployment</em>: While it is generally tremendously costly to train and deploy large generative-AI models, advancements in open-source technology and at smaller companies (in both software and hardware) have helped make training custom models more efficient and affordable. There are now several companies that develop solutions for bespoke model training and serving, such as MosaicML (acquired by DataBricks) <span class="citation" data-cites="mosaic">(MosaicML 2023)</span> and Together AI <span class="citation" data-cites="together">(Together AI 2023)</span>.</li>
+</ul></li>
+</ol>
+<p>We defer additional discussion of <a href="glossary.html#open-software"><strong>open</strong></a>- vs. <a href="glossary.html#closed-software"><strong>closed</strong></a>-source software to the <a href="glossary.html#open-vs-closed">glossary</a>. The important point that we want to highlight here is that there are many ways that generative-AI models may be integrated into software systems, and that there are many different types of business models associated with the training and use of these models. This landscape is likely to continue to evolve as new business players enter the field.</p>
+<h1 id="sec:challenges">4. Pinpointing Unique Aspects of Generative AI</h1>
+<p>During the roundtable discussions, the legal scholars and practitioners had a recurring question for the machine-learning experts in the room: What’s so special about Generative AI? Clearly, the outputs created by Generative AI today are better than anything we have seen before, but what is the “magic” that makes this the case? It became clear that answering this question, even just in broad strokes, could be useful for providing more precise analysis of the legal issues at play (Section <a href="#sec:taxonomy">5</a>). In this section, we summarize three aspects of Generative AI for which it can be productive to consider recent developments in AI as meaningfully novel or different in comparison to past technology. These include (1) the transition from training models to perform narrowly-defined tasks to training them for open-ended ones (Section <a href="#sec:openended">4.1</a>), (2) the role of the modern <a href="glossary.html#pre-training-and-fine-tuning"><strong>training data</strong></a> (Section <a href="#sec:dividing">4.2</a>) and generative-AI pipelines (Section <a href="#sec:system">4.3</a>) and (3) how the scaling up of pre-existing techniques has enabled the quality and variety we see in generations today (Section <a href="#sec:scale">4.4</a>)</p>
+<h2 id="sec:openended">4.1 The Transition to Very Flexible Generative Models</h2>
+<p>In the past, machine-learning models tended to be trained to perform narrowly defined discriminative tasks, such as labeling an image according to the class of object it depicts <span class="citation" data-cites="deng2012mnist deng2009imagenet">(L. Deng 2012; J. Deng et al. 2009)</span> or classifying the sentiment of a sentence as positive or negative <span class="citation" data-cites="kiritchenko2014sentiment">(Kiritchenko, Zhu, and Mohammad 2014)</span>. Modern generative-AI models change this paradigm in two ways.<span class="sidenote-wrapper"><label for="sn-7" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-7" class="margin-toggle"/><span class="sidenote">For a longer summary of this transition from task-specific, discriminative models to generative models in Generative AI, see Parts I.A and I.B of <span class="citation" data-cites="lee2023talkin">K. Lee, Cooper, and Grimmelmann (2023)</span>.<br />
+<br />
+</span></span></p>
+<p>First, there has been a shift from discriminative models, which have simple outputs like a class label (e.g., <code>dog</code> or <code>cat</code> for an image classifier), to generative models, which output complex content, such as entire images or paragraphs of text (e.g., given the input of <code>cat</code>, outputting a novel image of a cat, sampling from the near-infinite space of reasonable cat images it could create) <span class="citation" data-cites="lee2023talkin">(K. Lee, Cooper, and Grimmelmann 2023, pt. I.A)</span>.<span class="sidenote-wrapper"><label for="sn-8" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-8" class="margin-toggle"/><span class="sidenote">As we discuss at the top of Section <a href="#sec:taxonomy">5</a>, today’s generative-AI models are used to solve both discriminative tasks (e.g., sentiment classification) and generative tasks that result in expressive content (e.g., producing paragraphs of text).<br />
+<br />
+</span></span></p>
+<p>Second, there has been a shift toward using single, general-purpose models to solve many different tasks, rather than employing a model customized to each task we would like to perform. Even a few years ago, it was common to take a <a href="glossary.html#base-model"><strong>base model</strong></a> and <a href="glossary.html#fine-tuning"><strong>fine-tune</strong></a> it once per each task domain. This would, for example, result in one model that specializes in sentiment classification, another which specializes in automatic summarization, another in part-of-speech tagging, and so on. Many state-of-the-art systems today handle a wide variety of tasks using a single model.<span class="sidenote-wrapper"><label for="sn-9" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-9" class="margin-toggle"/><span class="sidenote">It is rumored that the models underlying ChatGPT are actually an <em>ensemble</em> of on the order of <span class="math inline">10</span> expert models, in which different types of requests get routed to specific experts. Nevertheless, if true, these experts are still more flexible than task-specific models from the past.<br />
+<br />
+</span></span></p>
+<p>These models are able to do all sorts of things. In Section <a href="#sec:vision">2</a>, we discuss how Generative AI is a generative technology, in the sense of Jonathan Zittrain’s theory of generativity <span class="citation" data-cites="zittrainfuture">(Zittrain 2008)</span>. The scaling up of Generative AI (Section <a href="#sec:scale">4.4</a>) has facilitated generativity across a wide range of applications and modalities, not just in the text-to-text and text-to-image applications that are most commonly reported on in the news. As a non-exhaustive list, this scaling has enabled huge breakthroughs in image captioning <span class="citation" data-cites="li2023blip2">(Li et al. 2023)</span>, music generation <span class="citation" data-cites="agostinelli2023musiclm">(Agostinelli et al. 2023)</span>, speech generation <span class="citation" data-cites="le2023voicebox">(Le et al. 2023)</span> and transcription <span class="citation" data-cites="radford2022whisper">(Radford et al. 2022)</span>, tools for lowering the barrier to learning to program <span class="citation" data-cites="yilmaz2023coding">(Yilmaz and Karaoglan Yilmaz 2023)</span>, and research questions in the physical sciences (including on protein folding, drug design, and materials science) <span class="citation" data-cites="corso2023diffdock">(Corso et al. 2023)</span>.</p>
+<h2 id="sec:dividing">4.2 Developments in the Training Pipeline: Pre-Training and Fine-Tuning</h2>
+<p>Machine-learning models are <a href="glossary.html#training"><strong>trained</strong></a> on a <a href="glossary.html#datasets"><strong>training dataset</strong></a> of <a href="glossary.html#examples"><strong>examples</strong></a> of the task that the <a href="glossary.html#model"><strong>model</strong></a> is supposed to be able to accomplish. The nature of these training datasets has changed drastically over the years, leading to the capabilities seen in generative-AI systems today <span class="citation" data-cites="lee2023explainers">(K. Lee et al. 2023)</span>. In particular, we have seen a shift toward multi-stage training pipelines, in which models are first trained on large (but possibly lower-quality) datasets to create a <a href="glossary.html#base-model"><strong>base model</strong></a> and then progressively trained on smaller, more-curated datasets that better align with the model creators’ goals.</p>
+<p>Typically, a base model is constructed by training on an enormous, often web-scraped dataset, which instills a “base” of knowledge about the world within the model. This step is called <a href="glossary.html#pre-training-and-fine-tuning"><strong>pre-training</strong></a> because it is the training that occurs before the final training of the model. As described by <span class="citation" data-cites="CallisonBurch_2023">Callison-Burch (2023)</span> in his testimony to the U.S. House of Representatives Judiciary Committee, during pre-training, models learn underlying patterns from their input data. When pre-training on large-scale data that has a wide variety of information content, base models capture abundant, “general-knowledge” information. For example, <a href="glossary.html#large-language-model-(llm)"><strong>large language models (LLMs)</strong></a> learn syntax and semantics, facts (and fictions) about the world, and opinions, which can be used to produce summaries and perform limited reasoning tasks; image-generation models learn to produce different shapes and objects, which can be composed together in coherent scenes.<span class="sidenote-wrapper"><label for="sn-10" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-10" class="margin-toggle"/><span class="sidenote">Though, notably, not a collage! See the <a href="metaphors.html#collage">metaphors</a> for a discussion of why the metaphor (Section <a href="#sec:metaphors">3.2</a>) of a <a href="#metaphor:Generations%20are%20collages."><strong>collage</strong></a> for generative-AI outputs can be misleading.<br />
+<br />
+</span></span> Pre-training gives these models the unprecedented flexibility to generate all sorts of outputs through synthesizing information in the input training data.</p>
+<p>This flexibility allows <a href="glossary.html#base-model"><strong>base models</strong></a> to be re-used in a variety of ways. For example, to adapt it to more specific tasks and domains, one can further train (i.e., <a href="glossary.html#pre-training-and-fine-tuning"><strong>fine-tune</strong></a>) the base model on domain-specific data (e.g., legal texts and case documents) to specialize the model’s behavior (e.g., performing better at legal document summarization). Alternatively, one might fine-tune the base model to understand a dialog-like format (as ChatGPT has done <span class="citation" data-cites="chatgpt">(OpenAI 2022)</span>). Pre-training is very expensive, which means it only happens once (or a small handful of times),<span class="sidenote-wrapper"><label for="sn-11" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-11" class="margin-toggle"/><span class="sidenote">It can cost millions of dollars to train a <a href="glossary.html#large-language-model-(llm)"><strong>large language model</strong></a> <span class="citation" data-cites="bloom bloom-training lee2023talkin">(BigScience 2022; Bekman 2022; K. Lee, Cooper, and Grimmelmann 2023)</span>.<br />
+<br />
+</span></span> but subsequent fine-tuning tends to be much faster (due to the smaller size of the datasets involved), so it can more tractably occur many times.</p>
+<p>Despite our discussion above of what is unique about <a href="glossary.html#pre-training-and-fine-tuning"><strong>pre-training and fine-tuning</strong></a>, it is worth emphasizing that this division is not well-defined. It is predominantly an artifact of choices made regarding training, rather than an essential aspect of the training process. Both pre-training and fine-tuning are just training (though perhaps configured differently). The reasons we differentiate between these two stages have to do with how large-scale model training is done in practice; the distinction is only meaningful because researchers frequently choose to divide stages of training along these lines (in turn, ascribing meaning to this division). For example, one actor in the <a href="glossary.html#supply-chain"><strong>supply chain</strong></a> may release a pre-trained model, a different actor may fine-tune that model and release it as well, and a third actor may fine-tune the already fine-tuned model <span class="citation" data-cites="lee2023talkin">(K. Lee, Cooper, and Grimmelmann 2023)</span>.<span class="sidenote-wrapper"><label for="sn-12" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-12" class="margin-toggle"/><span class="sidenote">Is the third model fine-tuned from a pre-trained model, or a fine-tuned model? This is all just semantics.<br />
+<br />
+</span></span> Additionally, researchers frame concrete research questions specifically for pre-training or fine-tuning <span class="citation" data-cites="longpre2023pretrainers">(Longpre et al. 2023 e.g.)</span>.</p>
+<p>During the GenLaw roundtable discussions, it became apparent that legal experts shared some misconceptions about the roles of pre-training and fine-tuning, and that it is therefore important for machine-learning researchers to emphasize the influence of pre-training on generative-AI model capabilities. Additionally, we re-emphasize our note from the top of Section <a href="#sec:knowledge">3</a> that pre-training is <em>training</em>, and not a data preparation stage.</p>
+<h2 id="sec:system">4.3 Generative-AI Systems and the Supply Chain</h2>
+<p>There are numerous decisions and intervention points throughout the system, which extend to elements beyond choices in pre-training and fine-tuning. Since many actors can be involved in the generative-AI <a href="glossary.html#supply-chain"><strong>supply chain</strong></a>, and decisions made in one part of the supply chain can impact other parts of the supply chain, it can be useful to identify each intervention and decision point and think about them in concert. We defer to <span class="citation" data-cites="lee2023talkin">K. Lee, Cooper, and Grimmelmann (2023, pt. I.C)</span> for detailed discussion of the supply chain and the numerous stages, actors, and design choices that it involves.</p>
+<p>These choices affect the quality of the model, both in terms of its characteristics/capabilities and the model’s consequent effectiveness. For example, consider the intervention point at which the training data is chosen. Creating a training dataset requires answering questions like: (1) which data examples should be included in the training dataset; (2) where will the data be stored (e.g., on whose servers); (3) for how long will the data be retained; (4) where will the resulting trained model be deployed, etc?<span class="sidenote-wrapper"><label for="sn-13" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-13" class="margin-toggle"/><span class="sidenote">For more on choices in training data, see Chapter 1: The Devil is in the Training data from <span class="citation" data-cites="lee2023explainers">K. Lee et al. (2023)</span><br />
+<br />
+</span></span> Choices made about where the model will be deployed can affect what training data can be used. A model training on private user data has a very different privacy-risk profile if such a model were never to leave the user’s personal device, compared to if it is be shared across many users’ devices.</p>
+<p>Not all design choices are about models and how they are trained. Models are embedded within overarching systems, which consist of many component pieces that both individually and together reflect the outcomes of relevant sociotechnical design decisions <span class="citation" data-cites="cooper2021eaamo cooper2022arpa gpt4-systemcard milesblog">(Cooper, Levy, and De Sa 2021; Cooper and Vidan 2022; OpenAI 2023b; Brundage et al. 2022)</span>. There are numerous other intervention points throughout the supply chain, which involve systems-level choices <span class="citation" data-cites="lee2023talkin">(K. Lee, Cooper, and Grimmelmann 2023)</span>. Such intervention points include prompt input filters, generation output filters, rate limiting (e.g., how many prompts a user can supply in a given time window to a system), access controls, terms of use, use-case policies for APIs,<span class="sidenote-wrapper"><label for="sn-14" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-14" class="margin-toggle"/><span class="sidenote">Google, Anthropic, OpenAI, and Cohere all have such policies.<br />
+<br />
+</span></span> user interface (UI) and experience (UX) design (e.g., to guard against over-reliance on generative-AI systems), and so on <span class="citation" data-cites="gpt4-systemcard copilot-safety-filter milesblog">(OpenAI 2023b; GitHub 2023; Brundage et al. 2022)</span>. Each of these involve design decisions that can have their own legal implications.</p>
+<h2 id="sec:scale">4.4 The Massive Scale of Generative-AI Models</h2>
+<p>Ultimately, the capacity to facilitate “magical,” flexible, open-ended functionality with Generative AI (Section <a href="#sec:openended">4.1</a>) comes from the massive scale at which generative-AI models are trained <span class="citation" data-cites="smith2023convnets">(Smith et al. 2023)</span>. State-of-the-art models today are an order of magnitude larger and trained on significantly more data than the biggest models from five years ago.</p>
+<p>Techniques for <a href="glossary.html#scale"><strong>scaling up</strong></a> models have demonstrated a uniquely important role in unlocking generative-AI capabilities. This includes research into more efficient <a href="glossary.html#architecture"><strong>neural architectures</strong></a> and better machine-learning systems for handling model training and inference at scale <span class="citation" data-cites="ratner2019mlsys">(Ratner et al. 2019)</span>. For example, many experts have studied methods for collecting and curating massive, web-scraped datasets <span class="citation" data-cites="lee2023explainers">(K. Lee et al. 2023 e.g.)</span>, as well as the “emergent behaviors” of models trained at such such large scales <span class="citation" data-cites="wei2023emergent">(Wei et al. 2022 e.g.)</span>.</p>
+<p>In spite of these changes, it is worth noting that many techniques used in Generative AI today are not new. Language models, for example, have existed since at least the 1980s <span class="citation" data-cites="rosenfeld2000two">(Rosenfeld 2000)</span>. The difference is that, in recent years, we have figured out how to scale these techniques tremendously (e.g., modern <a href="glossary.html#large-language-model-(llm)"><strong>language models</strong></a> use <a href="glossary.html#context-window"><strong>context windows</strong></a> of thousands of input tokens, compared to the 5 to 10 input tokens used by language models in the early 2000s). We defer to machine-learning experts to provide more specific details on the methodologies and outcomes of scaling.<span class="sidenote-wrapper"><label for="sn-15" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-15" class="margin-toggle"/><span class="sidenote">Part II.B of <span class="citation" data-cites="lee2023talkin">K. Lee, Cooper, and Grimmelmann (2023)</span> has useful discussion and citations on this topic.<br />
+<br />
+</span></span></p>
+<p>Finally, one of the implications of scale is that machine-learning practitioners are training fewer state-of-the art models today than were being trained in the past. When models were small relative to available computing resources, it was common to re-train a machine-learning system several times, changing <a href="glossary.html#hyperparameter"><strong>hyperparameters</strong></a> or other configuration details to find the best-quality model. Today’s model scale means the cost of training <em>just one</em> state-of-the-art model can be hundreds of thousands or even millions of dollars <span class="citation" data-cites="bloom bloom-training lee2023talkin">(BigScience 2022; Bekman 2022; K. Lee, Cooper, and Grimmelmann 2023)</span>, This further incentivizes the push toward general-purpose models described in Section <a href="#sec:openended">4.1</a>.</p>
+<h1 id="sec:taxonomy">5. A Preliminary Taxonomy of Legal Issues</h1>
+<p>One significant outcome of the GenLaw discussions was progress toward a taxonomy of the legal issues that Generative AI raises. We say “progress toward” because the initial analysis presented here is very much an interim contribution as part of an ongoing project. The GenLaw workshop was explicitly scoped to privacy and <a href="glossary.html#the-field-of-intellectual-property-(ip)"><strong>intellectual property (IP)</strong></a> issues, so this analysis should be considered non-exhaustive, and the omission of other topics is not a judgment that they are unimportant. Further, we note that not all capabilities, consequences, risks, and harms of Generative AI are <em>legal</em> in nature, so this taxonomy is not a complete guide to generative-AI policy. Other reports have made significant attempts to catalog such concerns <span class="citation" data-cites="epic">(Fergusson et al. 2023 e.g.)</span>. We instead focus on highlighting the ways in which specifically legal issues may arise.</p>
+<p>We begin with an important high-level point: Generative AI inherits essentially <em>all</em> of the issues of AI/ML technology more generally. This is so because Generative AI can be used to perform a large and increasing number of tasks for which these other types of ML systems have been used. For example, instead of using a purpose-built sentiment-analysis model, one might simply prompt an <a href="glossary.html#large-language-model-(llm)"><strong>LLM</strong></a> with labeled examples of text and ask it to classify text of interest; one could use a trained LLM to answer questions with “yes” or “no” answers (i.e., to perform classification). The resulting classifications may or may not be as reliable as ones from a purpose-built model, but insofar as one is using a machine-learning model in both cases, any legal issues raised by the purpose-built model are also present with the LLM.</p>
+<p>Further, any crime or tort that involves communication could potentially be conducted using a generative-AI system. One could use an LLM to write the text used for fraud, blackmail, defamation, or spam, or use an image-generation system to produce deepfakes, obscene content, or false advertisements. Almost any speech-related legal issue is likely to arise in some fashion in connection with Generative AI.</p>
+<p>With these broader observations in mind, in the remainder of this section we discuss four legal areas that will need to deal with Generative AI: intention in torts and criminal law (Section <a href="#sec:torts">5.1</a>), privacy (Section <a href="#sec:privacy">5.2</a>), misinformation and disinformation (Section <a href="#sec:badinformation">5.3</a>), and intellectual property (Section <a href="#sec:ip">5.4</a>).</p>
+<h2 id="sec:torts">5.1 Intent</h2>
+<p>Numerous aspects of law turn on an actor’s intention. For example, in criminal law, the defendant’s “criminal intent” (<em>mens rea</em>), not just the act and its resulting <a href="glossary.html#harm"><strong>harms</strong></a>, is often an element of a crime <span class="citation" data-cites="mensrea">(Institute 2023)</span>. Intent is not a universal requirement. Some crimes and torts are “strict liability” (e.g., a manufacturer is liable for physical harm caused by a defective product regardless of whether they intended that harm, which they almost always did not). But where intent is required, a defendant’s lack of wrongful intent means they cannot be convicted or held liable. For example, fraud is an intentional tort and crime. A defendant who speaks falsely but honestly to the best of their knowledge does not commit fraud.</p>
+<p>Generative AI will force us to rethink the role of intent in the law. In contrast to most prior types of ML systems,<span class="sidenote-wrapper"><label for="sn-16" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-16" class="margin-toggle"/><span class="sidenote">Highly autonomous vehicles are another such example, but currently remain in relatively limited use <span class="citation" data-cites="cooper2022avs">(Cooper and Levy 2022)</span>.<br />
+<br />
+</span></span> Generative AI can cause harms that are similar to those brought about by human actors but <em>without</em> human intention. For example, an LLM might emit false and derogatory claims about a third party – claims that would constitute defamation if they had been made by a human <span class="citation" data-cites="volokh2023llms">(Volokh 2023)</span>.</p>
+<p>There is unlikely to be a simple across-the-board answer as to how the “intent” of a generative-AI system should be measured, in part because the legal system uses intention in so many ways and so many places. Consider an example from a GenLaw discussion. One participant noted that it may be useful to move to a <em>respondeat superior</em> model — a legal doctrine (often used in <a href="glossary.html#tort"><strong>tort</strong></a> law) that ascribes the legal responsibility of an employee to their employer (if the tort or other wrongful conduct was conducted within the scope of employment). For this kind of liability model, one could treat the generative-AI system as the “employee,” and then ascribe responsibility for harm to the “employer” – i.e., the user. Such an approach appears to sidestep the need to deal with intent; <em>respondeat superior</em> is strict liability as to the employer. However, another participant noted that in the usual application of <em>respondeat superior</em>, there is still an embedded notion of intention. That is because the employee’s intentions are still relevant in determining whether a tort has been committed at all; only if there has can liability then also be placed on the employer. This is not to say that <em>respondeat superior</em> has no role to play, only that it does not avoid difficult questions of intent.</p>
+<p>Another line of discussion at GenLaw concerned whether these difficulties might lead to a greater focus on the human recipients of generative-AI outputs. Some authors, for example, have argued that the rise of AI systems creates a world of “intentionless free speech” in which communications should be assessed purely based on their utility to the listener <span class="citation" data-cites="collins2018robotica">(Collins and Skover 2018)</span>. Such a framework helps establish clearly a First Amendment basis for a right <em>to use</em> Generative AI. But it also raises difficult questions about how to protect users <em>from</em> Generative AI in cases of false or harmful outputs. These issues will cut across many legal areas.</p>
+<h2 id="sec:privacy">5.2 Privacy</h2>
+<p>As discussed above (Section <a href="#sec:knowledge">3</a>), “privacy” is a notoriously difficult term to define. Different disciplines rely on different definitions that simplify the concept in different ways, which can make it very difficult to communicate about privacy across fields. In particular, computer science and law are known to operate using very different notions of privacy.<span class="sidenote-wrapper"><label for="sn-17" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-17" class="margin-toggle"/><span class="sidenote">Even subfields vary greatly. Cryptographers use different conceptions of “privacy” than ML researchers; decisional privacy in constitutional law is very different than data privacy in technology law.<br />
+<br />
+</span></span></p>
+<p>For example, in many subfields of computer science, it is common to employ definitions of privacy based on mathematical formalisms that are computationally tractable (often <a href="glossary.html#differential-privacy"><strong>differential privacy</strong></a>). In contrast, privacy in the law is often defined contextually, based on social norms and reasonable expectations. It is typically necessary to first identify which norms are at play in a given context, after which it is then possible to determine if those norms have been violated (and what to do about it). Such definitions of privacy are fundamentally nuanced; they resist quantification. The tensions between legal and computer-science approaches to privacy are a source of communication challenges. At GenLaw, one of the legal experts provided a useful intuition for this tension: Computer scientists often want to be able to quantify policy, including policy for handling privacy concerns; in the law, the mere desire to quantify complex concepts like privacy can itself be the source of significant problems.</p>
+<p>Despite these difficulties, it is still important to be able to reason about privacy (and when it is <a href="glossary.html#privacy-violation"><strong>violated</strong></a>) in both computing and law. This is not a new problem: it has been a source of significant practical and research challenges for essentially as long as computers have been in use. As long as <a href="glossary.html#personally-identifiable-information-(pii)"><strong>personally identifiable information (PII)</strong></a> like addresses and phone numbers has been stored on computers, there have been risks that such information could be seen or leveraged by others who otherwise would not have had access. Since the introduction of machine-learning methods to software systems, it has become possible to predict user behavior and personal preferences (sometimes with high fidelity); in turn, having access to such arguably private information has opened up the possibility to develop software that relies on this information to guide or manipulate user behavior. We understand how difficult these privacy challenges are only because of decades of research in law and computer science. Legal scholars have articulated the real-world <a href="glossary.html#harm"><strong>harms</strong></a> that people can suffer from through misuse of “private” information; computer scientists have demonstrated real-world attack vectors through which “private” information can be leaked.</p>
+<p>Generative AI is poised to make these privacy challenges even harder. As noted above (Section <a href="#sec:scale">4.4</a>), in contrast to prior machine-learning models, generative-AI models are typically trained on large-scale web-scraped datasets. These datasets can contain all sorts of private information (e.g., <a href="glossary.html#personally-identifiable-information-(pii)"><strong>PII</strong></a>) <span class="citation" data-cites="brown2022privacy">(Brown et al. 2022)</span>, which in turn can be memorized and then leaked in <a href="glossary.html#generation"><strong>generations</strong></a> <span class="citation" data-cites="carlini2023extracting">(Carlini, Hayes, et al. 2023)</span>. A traditional search engine only locates individual data points, but a generative-AI model could link together information in novel ways that reveal sensitive information about individuals. Adversarially designed <a href="glossary.html#prompt"><strong>prompts</strong></a> can extract other sensitive information, such as internal instructions used within chatbots <span class="citation" data-cites="edwards2023leak">(Edwards 2023)</span>.<span class="sidenote-wrapper"><label for="sn-18" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-18" class="margin-toggle"/><span class="sidenote">This is potentially also a trade-secret issue (Section <a href="#sec:ip">5.4</a>), depending on the nature of the information leaked.<br />
+<br />
+</span></span></p>
+<h2 id="sec:badinformation">5.3 Misinformation and Disinformation</h2>
+<p>Generative AI can be used to produce plausible-seeming but false content at scale. As such, it may be a significant source of misinformation, and amplify the speech of actors engaged in disinformation campaigns.<span class="sidenote-wrapper"><label for="sn-19" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-19" class="margin-toggle"/><span class="sidenote">By misinformation, we mean material that is false or misleading, regardless of the intent behind it. In contrast, disinformation consists of deliberately false or misleading material, often with the purpose of manipulating human behavior.<br />
+<br />
+</span></span> These capabilities will present issues in any area of law that prohibits false speech — from lies about people to lies about products to lies about elections. They will also challenge the assumptions of areas of law that tolerate false speech out of the belief that such speech will be comparatively rare and easy to counter. Taken together, these include a wide variety of legal topics, including defamation, national security, impersonation, bad (or, in regulated contexts, illegal) advice, over-reliance <span class="citation" data-cites="milesblog">(Brundage et al. 2022)</span>, amplification, spear-phishing, spam, elections, consumer-protection law (e.g., addiction, deception, false advertising, products liability), deepfakes, and much else.</p>
+<p>From a misinformation perspective, generative-AI models are very sensitive to their <a href="glossary.html#datasets"><strong>training data</strong></a>, which may itself include misinformation or disinformation. For example, in August of this year, it was discovered that a book about mushroom foraging, which was produced with the assistance of an <a href="glossary.html#large-language-model-(llm)"><strong>LLM</strong></a>, contained misinformation about which mushrooms are poisonous (likely due to inaccurate information learned from the data on which the LLM was trained) <span class="citation" data-cites="404mushroom">(Cole 2023)</span>. Similarly, it appears that LLMs are subject to <em>sycophancy</em>, where a model answers subjective questions in a way that flatters their user’s stated beliefs, and <em>sandbagging</em>, where models are more likely to endorse common misconceptions when their user appears to be less educated” <span class="citation" data-cites="bowman2023eight perez2022discovering">(Bowman 2023; Perez et al. 2022)</span>.</p>
+<p>From a disinformation perspective, models can be used to deliberately <a href="glossary.html#generation"><strong>generate</strong></a> persuasive but false content scraped from the Internet. But they can also be deliberately manipulated through adversarially selected <a href="glossary.html#pre-training-and-fine-tuning"><strong>fine-tuning</strong></a> data or through <a href="glossary.html#alignment"><strong>alignment</strong></a>. These processes could be used to skew models to deliberately produce misleading content.</p>
+<p>One point raised by legal scholars at GenLaw is that generated disinformation about individuals (e.g., deepfakes) will potentially contribute to new types of defamation-related harms. Other experts, particularly those with a privacy background in computing, questioned whether such harms could also be classified as intimate privacy violations <span class="citation" data-cites="citron2022privacy">(Citron and Solove 2022)</span>. In many respects, the harms caused by sufficiently convincing forgeries are very similar to those caused by truthful revelations <span class="citation" data-cites="zipursky2023tort">(Zipursky and Goldberg 2023)</span>. Indeed, this is something that Generative AI seems well-positioned to enable: large-scale, inexpensive production of believable deepfakes that use a person’s likeness, and depict fake intimate acts or convey fake intimate information <span class="citation" data-cites="maiberg2023aiporn deepfakehs">(Maiberg 2023; Rubin 2023)</span>.</p>
+<p>In response, lawyers with expertise in defamation said they believed that this would likely not constitute a cognizable <em>privacy</em> <a href="glossary.html#harm"><strong>harm</strong></a> under the law, although it would still be actionable as defamation or false light. In turn, this response raised questions about whether Generative AI could create new types of harms that blur current conceptions of disinformation and privacy harms.</p>
+<h2 id="sec:ip">5.4 Intellectual Property</h2>
+<p>Naturally, given the recent spate of lawsuits about <a href="glossary.html#copyright"><strong>copyright</strong></a> and Generative AI (as well as the stated thematic focus for the first GenLaw Workshop), <a href="glossary.html#the-field-of-intellectual-property-(ip)"><strong>IP</strong></a> was a frequent topic for emerging legal issues. It has also been one of the first generative-AI subjects explored in detail by scholars, <span class="citation" data-cites="lee2023talkin sag2023safety samuelson CallisonBurch_2023 vyas2023provable">(K. Lee, Cooper, and Grimmelmann 2023; Sag 2023; Samuelson 2023; Callison-Burch 2023; Vyas, Kakade, and Barak 2023 e.g.)</span>, and we leave discussion of the doctrinal details to their work. Instead, we focus here on a few high-level observations about current and impending IP issues — many of which also have applications beyond IP.</p>
+<ul>
+<li><p><em>Volition</em>: Human volition plays an important and subtle role in defining IP infringement. For example, copyright infringement normally requires that a human <em>intentionally made</em> a copy of a protected work, but not that the human was consciously aware that they were infringing. Generative-AI systems may occasionally produce outputs that look like duplicates of the training data. Some participants at GenLaw were concerned that it may be easy to deflect the role of human-made design choices (Section <a href="#sec:dividing">4.2</a>) by making such choices seem “internal” to the system (when, in fact, such choices are typically not foregone conclusions or strict technical requirements <span class="citation" data-cites="cooper2022accountability">(Cooper et al. 2022)</span>). Since “purely internal” copies tend to be fair use, such deflection could serve as a copyright liability shield. Legal experts will need to contend with this possibility in their analysis of generative-AI systems.<span class="sidenote-wrapper"><label for="sn-20" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-20" class="margin-toggle"/><span class="sidenote">For a more general treatment of “scapegoating the system,” see <span class="citation" data-cites="cooper2022accountability">Cooper et al. (2022)</span>. Its opposite, in which a human is held wholly responsible for a harm caused by a technical system, is the “moral crumple zone,” described in <span class="citation" data-cites="elish2019moral">Elish (2019)</span>.<br />
+<br />
+</span></span> Additionally, since generative-AI systems typically take in input from human users, it is also possible for a user to intentionally cause a model to output potentially infringing content.</p></li>
+<li><p><em>Market externalities</em>: There are many concerns that Generative AI will lead to mass labor displacement, significant market changes, and the concentration of market power. These issues extend beyond IP, but necessarily invoke related questions of ownership. These are matters for labor law, international trade law, and other areas of law. But they are also IP issues, because doctrines such as fair use invite courts to consider such societal effects in weighing the propriety of particular copying.</p></li>
+<li><p><em>Trade secrecy</em>: Fine-tuning on proprietary data is poised to become a potentially useful pattern in the adoption of generative-AI technology. However, existing generative-AI models are known to <a href="glossary.html#memorization"><strong>memorize</strong></a> their training data <span class="citation" data-cites="carlini2023extracting carlini2023quantifying">(Carlini, Hayes, et al. 2023; Carlini, Ippolito, et al. 2023)</span>. In turn, this raises the possibility that an adversarial user could extract proprietary information in training data, thereby presenting issues related to trade secrecy <span class="citation" data-cites="edwards2023leak">(Edwards 2023)</span>.</p></li>
+<li><p><em>Scraping</em>: Similarly, the legality of scraping training data is intextricable from the IP treatment of Generative AI. Generative-AI companies both rely on scraped data as an input and take measures (both technical and legal) to prevent outputs from their systems from being used as inputs to other systems without permission.</p></li>
+<li><p><em>Authorship</em>: As alluded to above, IP law may need to reconsider authorship eligibility in light of Generative AI. Computer authorship is not a new topic of analysis in the law <span class="citation" data-cites="grimmelmann2016authored samuelson1985allocating">(Grimmelmann 2016; Samuelson 1985 e.g.)</span>, but Generative AI is likely to present new variations on old themes. For example, purely computer-generated works are not currently covered by copyright. However, some argue that this situation not sustainable <span class="citation" data-cites="lee2023author">(T. B. Lee 2023 e.g.)</span>. Where AI-generated works have significant value, there will be strong economic pressures on courts to gives users copyright in those works.</p></li>
+<li><p><em>Patent</em>: Given that generative-AI modeling techniques also have applications in the physical sciences (e.g., in drug design, see Section <a href="#sec:challenges">4</a>), it seems likely that there will be implications for <a href="glossary.html#patent"><strong>patent</strong></a> law. For example, U.S. patent law requires a human inventor as a condition of patent eligibility. Just as copyright’s human authorship requirement has been challenged (but so far upheld <span class="citation" data-cites="thaler">(Thaler v. Perlmutter 2023 e.g.)</span>), similar challenges may arise with respect to patents.</p></li>
+<li><p><em>Idea-expression dichotomy</em>: Generative AI seems to further blur the already often-murky line between idea and expression in copyright law. For example, one could attempt to analogize the <a href="glossary.html#prompt"><strong>prompt</strong></a> to an idea and the associated <a href="glossary.html#generation"><strong>generation</strong></a> to its expression, but this presents several problems. For one thing, there seems to be a bit of an inversion from the typical pattern: it suggests that the AI, rather than the human, is responsible for the creative expression (which is not currently protectable by copyright law). For another, there may be sufficient creativity for copyrightability of the prompt itself, even if it is ultimately (by the prior analogy) responsible for the idea in the resulting generation. Lastly, there is a tenable argument that the human prompter and generative-AI system are acting in concert to produce the resulting generation <span class="citation" data-cites="lee2023talkin">(K. Lee, Cooper, and Grimmelmann 2023)</span>, and that the way that an idea is expressed in a prompt makes it intextricably indivisible from the resulting expressive generation. In short, as others have noted <span class="citation" data-cites="lemley2023upsidedown">(Lemley 2023)</span>, Generative AI seems to turn the idea-expression dichotomy “upside down.”</p></li>
+</ul>
+<h1 id="sec:agenda">6. Toward a Long-Term Research Agenda</h1>
+<p>Participants in the GenLaw workshop and roundtable identified several important and promising future research directions. Notably, these topics have several elements in common. First, each showcases how technical design choices play a crucial role in legal research questions. Many of the architectures and applications of generative-AI systems are genuinely novel, compared to previous technologies that the legal system has had to contend with. Understanding the legal issues that they raise will require close engagement with the technical details.</p>
+<p>Second, just as design choices can inspire questions for the legal scholars, it is also important to consider how legal scholarship can influence the choices that generative-AI researchers make when designing systems (Sections <a href="#sec:dividing">4.2</a>, <a href="#sec:system">4.3</a>). Understanding not just the current legal framework, but also how that framework may evolve, provides important guidance for system designers about which technical changes are and are not legally significant. In addition, a clear sense of the legal possibility space can help direct generative-AI research toward novel designs, algorithms, attacks, and characterizations that have beneficial characteristics.</p>
+<p>The list that follows is just a sample of emerging research areas at the intersection of Generative AI and law. It gives a flavor of how these two disciplines can concretely inform each other. We believe it is the starting point of a rich, long-term research agenda with the potential to influence and inform public policy, education, and industrial best practices.</p>
+<h2 id="centralization-and-decentralization">6.1 Centralization and Decentralization</h2>
+<p>One crucial question about the future of Generative AI concerns the relative degree of centralization versus decentralization. Consider, as an example, the controversies over the use of <a href="glossary.html#closed-dataset"><strong>closed</strong></a>-<a href="glossary.html#license"><strong>licensed</strong></a> data (within web-scraped datasets) as training data for generative-AI models (e.g., LAION datasets <span class="citation" data-cites="laion laionpaper">(Beaumont 2022; Schuhmann et al. 2022)</span>, The Pile <span class="citation" data-cites="pile">(Gao et al. 2020)</span>, Books3 <span class="citation" data-cites="books3wired">(Knibbs 2023)</span>, etc.), especially if training involves removing copyright management information. While such datasets are often released with <a href="glossary.html#open-dataset"><strong>open</strong></a> licenses (e.g., the LAION organization has released their datasets under the MIT license, which allows for use and copying), this does not guarantee that the associated and constituent data examples in those datasets can be licensed for use in this way <span class="citation" data-cites="lee2023talkin">(K. Lee, Cooper, and Grimmelmann 2023)</span>. Many examples within datasets have closed licenses.<span class="sidenote-wrapper"><label for="sn-21" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-21" class="margin-toggle"/><span class="sidenote">As <span class="citation" data-cites="lee2023talkin">K. Lee, Cooper, and Grimmelmann (2023)</span> notes, this is particularly complex for datasets used to train <a href="glossary.html#multimodal"><strong>multimodal</strong></a> models, like text-to-image models; the examples to train text-to-image models are image-caption <em>pairs</em>, where for each pair the image and the text caption could be subject to their own copyrights (and even hypothetically could be subject to a copyright as a compilation).<br />
+<br />
+</span></span> Legal scholars have made arguments that run the gamut of possible fair-use outcomes for the use of these datasets in Generative AI <span class="citation" data-cites="samuelson lemley2023upsidedown lee2023talkin sobel2021taxonomy sag2023safety henderson2023foundation">(Samuelson 2023; Lemley 2023; K. Lee, Cooper, and Grimmelmann 2023; Sobel 2021; Sag 2023; Henderson et al. 2023 e.g.)</span>. Nevertheless, it remains to be seen whether courts will rule that the use of such datasets constitutes fair use.</p>
+<p>In the interim, an alternative path is to invest in producing open, permissively licensed datasets that avoid the alleged legal issues of using web-scraped data. This means not only releasing datasets with such licenses, but ensuring that the underlying data examples in the dataset have clear provenance <span class="citation" data-cites="lee2023explainers">(K. Lee et al. 2023)</span> and are openly licensed. This is a rich problem domain. It involves significant technical innovation, both in techniques for collecting such datasets at scale while respecting licensing conditions and also in training models that make best use of the limited materials available in them. (Current attempts to train models on such openly licensed datasets have yielded mixed results in terms of generation quality <span class="citation" data-cites="gokaslan2023commoncanvas">(Gokaslan et al. 2023)</span>.) It also requires substantial legal innovation, including the development of appropriate licenses that function as intended across jurisdictions, and organizational innovation in creating authorities to steward such datasets.</p>
+<p>These same issues and tensions recur at every stage in the development of generative-AI systems. This is partly a technical question; current methods require centralized pre-training at scale based on datasets typically gathered from highly decentralized creators. Whether either or both of these constraints will change in the future is an important and open question. Improvements in training algorithms may reduce the investment required to pre-train a powerful <a href="glossary.html#base-model"><strong>base model</strong></a>, opening it up to greater decentralization. At the same time, improvements in synthetic data may enable well-resourced actors to generate their own training data, partially centralizing the data-collection step.</p>
+<p>Centralization versus decentralization is also partly a business question (Section <a href="#sec:business">3.3</a>). There is currently substantial investment both in large centralized companies that are developing large base models, and in a large ecosystem of smaller entities developing fine-tuned models or smaller special-purpose models. The relationships among, and relative balance between, these different entities is likely to evolve rapidly in the coming years.</p>
+<p>And, most significantly, centralization versus decentralization is a fundamentally legal question. As noted above, licensing law may inform who can use a dataset. Competition and antitrust law are likely to play a major role going forward. Every important potential bottleneck in Generative AI – from copyright ownership to datasets to compute to models and beyond – will be the focus of close scrutiny. These novel markets will require technical, economic, and legal analysis to determine the most appropriate competition policy. In addition to antitrust enforcement, possible policies include government subsidies, open-access requirements, “public option” generative-AI infrastructure, export restrictions, and structural separation. These questions cannot be discussed intelligently without contributions from both technical and legal scholars.</p>
+<h2 id="rules-standards-reasonableness-and-best-practices">6.2 Rules, Standards, Reasonableness, and Best Practices</h2>
+<p>Since the technological capabilities of today’s generative-AI systems are so new, it is unclear what duties the creators and users of these systems should be. This overarching problem is not unprecedented for either law or computing. In some cases, these duties take bright-line rule-like forms; HIPAA strictly regulates which kinds of data are treated as personally identifying and subject to stringent security standards. In other cases, these are more flexible standards that require greater exercises of discretion. In some cases, the legal system defaults to a general standard of reasonableness: did a person behave reasonably when developing or using a system? And sometimes, even when there is no law on point, practitioners have developed best practices that they follow to do their jobs effectively. We anticipate that the legal system will need to articulate these duties for generative-AI creators and users, and to determine which modalities of rules and standards to employ.</p>
+<p>These expectations have always been technology-specific and necessarily change over time as technology evolves. For example, under the Uniform Trade Secrets Act (UTSA) information must be “the subject of efforts that are reasonable under the circumstances to maintain its secrecy.” The threshold for what efforts are considered “reasonable” has changed over time in response to developments in information security. Similarly, in cybersecurity, the FTC monitors the state of the art. As state-of-the-art practices improve, the FTC has been willing to argue that companies engage in unfair and deceptive trade practices by failing to implement widely used cost-effective measures. Further, the definition of reasonableness is contextual; what is considered reasonable for a large company (e.g., in terms of system development practices) is typically different than what is considered reasonable for smaller actors.</p>
+<p>In short, legal scholars urgently need to study – and technical scholars urgently need to explain – which generative-AI safety and security measures are recognized as efficient and effective. Nor will a one-time exchange suffice. The legal system must be attuned to the dynamism of generative-AI development. What is currently an effective countermeasure against extracting memorized examples from models may fail completely in the face of a newly developed techniques. But conversely, new techniques of <a href="glossary.html#pre-training-and-fine-tuning"><strong>training</strong></a> and <a href="glossary.html#alignment"><strong>alignment</strong></a> may be developed that are so clearly effective that it is appropriate to expect future generative-AI creators to employ them. Indeed, the legal system must be attuned to this dynamism itself, to the fact that our current understanding of the frontier between the possible and the impossible in Generative AI is provisional and constantly being refined. There is work here for many researchers from both communities.</p>
+<p>Once technology begins to stabilize, it becomes easier to define concrete standards (e.g., safety standards). Accordingly, by definition, compliance with such standards is sufficient for meeting the bar of reasonableness. Until there is some stability, when harms occur, there will necessarily be some flexibility; there will be some deference to system builder’s self-assessments of whether their design choices reflected reasonable best efforts to construct safe systems. In turn, today’s best efforts will guide future standards-setting and determination of best practices.</p>
+<p>Both the legal and machine-learning research communities should face this reality head-on; they should take hold of the opportunity to actively engage in research and public policy regarding today’s generative-AI systems, such that they can help shape the development of future standards. This work will require understanding the complexity and particulars of different generative-AI technologies; effective standards will differ by model <a href="glossary.html#multimodal"><strong>modality</strong></a> and other system capabilities (e.g., generative-AI systems that interact with APIs to bring in additional content, such as plugins <span class="citation" data-cites="chatgpt-plugins">(OpenAI 2023a)</span>).</p>
+<p>To meet this challenge, one clear need is useful metrics to effectively evaluate the behaviors of generative-AI systems. As we discuss below (Section <a href="#sec:eval">6.4</a>), effective ways to evaluate generative-AI systems currently remain elusive. System capabilities and harms are not readily quantifiable; designing useful metrics will be an important, related area of research for Generative AI and law.</p>
+<h2 id="sec:unlearning">6.3 Notice and Takedown <span class="math inline">\neq</span> Machine Unlearning</h2>
+<p>Notice and takedown is well-known in both software and legal communities because of search engines and Section 512 of the US Copyright Act. Enabling notice-and-takedown functionality has a variety of sociotechnical challenges, which are notably even more complicated for Generative AI.</p>
+<p>For generative-AI models, there is no straightforward analogue for simply<span class="sidenote-wrapper"><label for="sn-22" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-22" class="margin-toggle"/><span class="sidenote">Notice and take down can be technically challenging (but nevertheless feasible) for large-scale software systems that involve distributed databases that work in concert.<br />
+<br />
+</span></span> removing a piece of data from a database (as might be the case for removing a file from a video-hosting platform). Once a model has been trained, the impact of each data example in the training data is dispersed throughout the model and cannot be easily traced. In order to remove an example from a trained model, one must either track down all the places where the example has an impact and identify a way to negate its influence, or re-train the entire model. This is challenging because “impact” is not well defined, and neither is “removal.”<span class="sidenote-wrapper"><label for="sn-23" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-23" class="margin-toggle"/><span class="sidenote">Alternatively, we must first define what it means to “take down” a training example from a generative-AI model, which itself is a ill-defined problem.<br />
+<br />
+</span></span></p>
+<p>There are entire subfields of machine learning devoted to problems like these. For example, the subfield of “machine unlearning” <span class="citation" data-cites="bourtoule2021machine cao2015towards">(Bourtoule et al. 2021; Cao and Yang 2015)</span> attempts to define the desired goals for removing an example and to design algorithms that satisfy these goals.<span class="sidenote-wrapper"><label for="sn-24" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-24" class="margin-toggle"/><span class="sidenote">This subfield is also heavily motivated by the <a href="glossary.html#the-right-to-be-forgotten"><strong>The Right to be Forgotten</strong></a> clause in <a href="glossary.html#the-general-data-protection-regulation-(gdpr)"><strong>GDPR</strong></a>.<br />
+<br />
+</span></span> Another line of work attempts to quantify data-example attribution and influence; it seeks to define “attribution” and then attribute generations from a model to specific data examples in the training data. Both machine unlearning and attribution are very young fields, and their strategies are (for the most part) not yet computationally feasible to implement in practice for deployed generative-AI systems. Machine unlearning and attribution are of significant interest for ML researchers and practitioners. There has been intense (and growing) investment in this area. How these fields will develop remains to be seen.</p>
+<h2 id="sec:eval">6.4 Evaluation Metrics</h2>
+<p>Evaluation is far from a new topic in machine learning (or computing more generally). Nevertheless, there is a clear need for useful metric definitions for Generative AI. We discuss some issues of interest below.</p>
+<p>It is well-known that the force of legal rules depends on how they are implemented and interpreted. Many decisions are made on a case-by-case basis, taking into account specific facts and context. In contrast to this approach, machine-learning practitioners evaluate systems at scale. It is common practice to define metrics that can be applied directly to every situation (or at least a large majority of them). These metrics necessarily use a pre-specified sets of features that may leave out considerations that may be important to forming a decision that appropriately accounts for broader context.</p>
+<p>This is hardly a new observation; it has had significant influence machine-learning subfields, such as algorithmic fairness. More generally, the challenges of operationalizing or concretizing societal concepts into math has been discussed at length in prior works <span class="citation" data-cites="jacobs2021measurement friedman1996bias cooper2021emergent cooper2021eaamo">(Jacobs and Wallach 2021; Friedman and Nissenbaum 1996; Cooper and Abrams 2021; Cooper, Levy, and De Sa 2021 e.g.)</span>, and developing reasonable definitions for legal concepts is an active and evolving area of research <span class="citation" data-cites="cooper2022lawless cooper2023variance scheffler2022formalizing">(Cooper, Frankle, and De Sa 2022; Cooper et al. 2023; Scheffler, Tromer, and Varia 2022 e.g.)</span>.</p>
+<p>Nevertheless, it is worth emphasizing that these observations hold true for Generative AI.<span class="sidenote-wrapper"><label for="sn-25" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-25" class="margin-toggle"/><span class="sidenote">There are also specific complexities for Generative AI that have not been so readily apparent in prior work in machine learning (e.g., in other areas of machine learning, there are accepted (though imperfect) notions of “ground truth” labels, which are absent in Generative AI).<br />
+<br />
+</span></span> For example, as we discussed in Section <a href="#sec:metaphors">3.2</a>, researchers create different, precise, definitions of memorization for different purposes. The definition of memorization for an image-generation model will differ greatly from a code-generation model or a text-generation model. Similarly, since “removing” the impact of a training example from a trained model is an ill-defined problem, researchers may develop different metrics for quantifying whether or not training data points are successfully removed.</p>
+<p>Many metrics are defined in terms of technical capabilities. For example, the evaluation of the amount of memorized training data in a model depends on the ability to extract and discover the memorized training data <span class="citation" data-cites="carlini2023quantifying ippolito2023preventing">(Carlini, Ippolito, et al. 2023; Ippolito et al. 2023)</span>. As the techniques for data extraction improve, the evaluation of the model will change. Additionally, the way models are used alters the way that they should be evaluated. For example, a machine-unlearning method may be applied to a model to remove the effect of a specific individual’s data. However, that model may later be fine-tuned on additional data that is very similar to the removed individual’s data. This may cause the individual’s data to effectively “resurface.”<span class="sidenote-wrapper"><label for="sn-26" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-26" class="margin-toggle"/><span class="sidenote">This is presently speculation, though not all-together baseless. Recent research shows that the effects of <a href="glossary.html#alignment"><strong>alignment</strong></a> methods may be negated through the course of <a href="glossary.html#pre-training-and-fine-tuning"><strong>fine-tuning</strong></a> <span class="citation" data-cites="qi2023finetuning">(Qi et al. 2023)</span>.<br />
+<br />
+</span></span> The way that the <a href="glossary.html#supply-chain"><strong>supply chain</strong></a> is constructed for a particular generative-AI model may alter the way that the systems (in which that model is embedded) can and should be evaluated. For example, the analysis may change depending on whether a model is <a href="glossary.html#alignment"><strong>aligned</strong></a> or not.<span class="sidenote-wrapper"><label for="sn-27" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-27" class="margin-toggle"/><span class="sidenote">Further, alignment is not binary. There are different possible degrees of alignment.<br />
+<br />
+</span></span> In turn, as another example, it is possible that some actors may not have the relevant information to perform necessary evaluations; some actors may not even know if a particular model is aligned or not.</p>
+<h1 id="conclusion">7. Conclusion and the Future of GenLaw</h1>
+<p>In this report, we discussed the main topics broached at the first GenLaw workshop: the importance of developing a shared knowledge base for improved communication (Section <a href="#sec:knowledge">3</a>), the unique aspects of Generative AI that present novel challenges and opportunities (Section <a href="#sec:challenges">4</a>), a taxonomy of emerging legal issues (Section <a href="#sec:taxonomy">5</a>), and associated open research questions at the intersection of Generative AI and law (Section <a href="#sec:agenda">6</a>).</p>
+<p>As is clear from the diversity of issues discussed within these topics, it is difficult to pithily sum up the main takeaways of GenLaw. Nevertheless, we will attempt to do so, and will sketch out our hopes for the future of GenLaw as an organization.</p>
+<ol type="1">
+<li><p><em>Expanding beyond copyright concerns</em>: Perhaps the fairest overarching assessment from this report is that GenLaw’s participants believe that copyright concerns just scratch the surface of potential issues. Put differently, a common belief was that the legal questions currently under consideration in U.S. courts only touch on a small area of the potential legal issues that Generative AI will raise. In part, this is because the underlying technology is continuing the evolve and be adopted at such a rapid pace. As a result, the research agenda that we suggest here (Section <a href="#sec:agenda">6</a>) will necessarily evolve over time.</p></li>
+<li><p><em>Shaking off disciplinary boundaries</em>: There remain major open questions about how best to evaluate the behavior of generative-AI systems. Answering these questions necessarily will involve machine-learning-technical knowledge, but they will also involve much more. This report illustrates just how central legal considerations are to effective evaluation. But we do not intend to suggest that accounting for these considerations will on its own be sufficient. As we continue to understand how Generative AI will transform our interactions, expectations, economy, education, etc., we will need to continue to shake off disciplinary boundaries in order to design useful and comprehensive evaluation methodologies.</p></li>
+<li><p><em>Evolving resources and engagement</em>: Given the generative and evolving nature of generative-AI systems and products, GenLaw’s work to help educate and facilitate engagement between technologists, legal experts, policymakers, and the general public will necessarily require ongoing effort. The resources that we develop (such as those in this report) will need to be frequently updated to keep pace with technological changes.</p></li>
+</ol>
+<p>In response to these takeaways, we are growing GenLaw into a nonprofit<span class="sidenote-wrapper"><label for="sn-28" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-28" class="margin-toggle"/><span class="sidenote">GenLaw is in the process of obtaining 501(c)(3) status.<br />
+<br />
+</span></span> home for research, education, and interdisciplinary discussion. Thus far, we have written pieces that make complex and specialized knowledge about law and Generative AI accessible to both a general audience <span class="citation" data-cites="lee2023explainers">(K. Lee et al. 2023)</span> and to subject-matter experts <span class="citation" data-cites="lee2023talkin">(K. Lee, Cooper, and Grimmelmann 2023)</span>. We have worked to provide additional resources, such as recordings of our events <span class="citation" data-cites="livestream liveblog">(GenLaw 2023a; James Grimmelmann 2023)</span>, collections of external resources <span class="citation" data-cites="resources">(GenLaw 2023b)</span>, and the initial glossary on the GenLaw website. For our first in-person workshop, we engaged with participants that have various expertise in Generative AI, law, policy, and other computer-science disciplines across 25 different institutions. We are excited to continue engaging with experts across industry, academia, and government. While our first event and materials have had a U.S.-based orientation, we are actively focusing on expanding our engagement globally. We will be maintaining the GenLaw website<span class="sidenote-wrapper"><label for="sn-29" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-29" class="margin-toggle"/><span class="sidenote"><a href="https://genlaw.github.io" class="uri">https://genlaw.github.io</a><br />
+<br />
+</span></span> with the most up-to-date information about future events and resources.</p>
+<h1 class="unnumbered" id="references">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-agostinelli2023musiclm" class="csl-entry" role="listitem">
+Agostinelli, Andrea, Timo I. Denk, Zalán Borsos, Jesse Engel, Mauro Verzetti, Antoine Caillon, Qingqing Huang, et al. 2023. <span>“MusicLM: Generating Music from Text.”</span> <a href="https://arxiv.org/abs/2301.11325">https://arxiv.org/abs/2301.11325</a>.
+</div>
+<div id="ref-anil2023palm" class="csl-entry" role="listitem">
+Anil, Rohan, Andrew M Dai, Orhan Firat, Melvin Johnson, Dmitry Lepikhin, Alexandre Passos, Siamak Shakeri, et al. 2023. <span>“Palm 2 Technical Report.”</span> <em>arXiv Preprint arXiv:2305.10403</em>.
+</div>
+<div id="ref-poe" class="csl-entry" role="listitem">
+Anthropic. 2023. <span>“<span>Introducing Claude</span>.”</span> <a href="https://www.anthropic.com/index/introducing-claude">https://www.anthropic.com/index/introducing-claude</a>.
+</div>
+<div id="ref-laion" class="csl-entry" role="listitem">
+Beaumont, Romain. 2022. <span>“<span class="nocase">LAION-5B: A New Era of Large-Scale Multi-Modal Datasets</span>.”</span> <em>LAION Blog</em>, March. <a href="https://laion.ai/blog/laion-5b/">https://laion.ai/blog/laion-5b/</a>.
+</div>
+<div id="ref-bloom-training" class="csl-entry" role="listitem">
+Bekman, Stas. 2022. <span>“<span>The Technology Behind BLOOM Training</span>.”</span> <em>HuggingFace</em>, July. <a href="https://huggingface.co/blog/bloom-megatron-deepspeed">https://huggingface.co/blog/bloom-megatron-deepspeed</a>.
+</div>
+<div id="ref-bloom" class="csl-entry" role="listitem">
+BigScience. 2022. <span>“<span class="nocase">BigScience Large Open-science Open-access Multilingual Language Model</span>.”</span> <em>HuggingFace</em>, July. <a href="https://huggingface.co/bigscience/bloom">https://huggingface.co/bigscience/bloom</a>.
+</div>
+<div id="ref-boers1993biological" class="csl-entry" role="listitem">
+Boers, Egbert JW, Herman Kuiper, Bart LM Happel, and Ida G Sprinkhuizen-Kuyper. 1993. <span>“Biological Metaphors in Designing Modular Artificial Neural Networks.”</span> In <em>ICANN’93: Proceedings of the International Conference on Artificial Neural Networks Amsterdam, the Netherlands 13–16 September 1993 3</em>, 780–80. Springer.
+</div>
+<div id="ref-bourtoule2021machine" class="csl-entry" role="listitem">
+Bourtoule, Lucas, Varun Chandrasekaran, Christopher A Choquette-Choo, Hengrui Jia, Adelin Travers, Baiwu Zhang, David Lie, and Nicolas Papernot. 2021. <span>“Machine Unlearning.”</span> In <em>2021 IEEE Symposium on Security and Privacy (SP)</em>, 141–59. IEEE.
+</div>
+<div id="ref-bowman2023eight" class="csl-entry" role="listitem">
+Bowman, Samuel R. 2023. <span>“Eight Things to Know about Large Language Models.”</span> <em>arXiv Preprint arXiv:2304.00612</em>.
+</div>
+<div id="ref-brown2022privacy" class="csl-entry" role="listitem">
+Brown, Hannah, Katherine Lee, Fatemehsadat Mireshghallah, Reza Shokri, and Florian Tramèr. 2022. <span>“<span class="nocase">What Does It Mean for a Language Model to Preserve Privacy?</span>”</span> In <em>Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency</em>, 2280–92. FAccT ’22. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3531146.3534642">https://doi.org/10.1145/3531146.3534642</a>.
+</div>
+<div id="ref-milesblog" class="csl-entry" role="listitem">
+Brundage, Miles, Katie Mayer, Tyna Eloundou, Sandhini Agarwal, Steven Adler, Gretchen Krueger, Jan Leike, and Pamela Mishkin. 2022. <span>“<span class="nocase">Lessons learned on language model safety and misuse</span>.”</span> <em>OpenAI Blog</em>. <a href="https://openai.com/research/language-model-safety-and-misuse">https://openai.com/research/language-model-safety-and-misuse</a>.
+</div>
+<div id="ref-CallisonBurch_2023" class="csl-entry" role="listitem">
+Callison-Burch, Chris. 2023. <span>“<span class="nocase">Understanding Generative Artificial Intelligence and Its Relationship to Copyright</span>.”</span> University of Pennsylvania, School of Engineering; Applied Sciences, Department of Computer; Information Science; Testimony before The U.S. House of Representatives Judiciary Committee, Subcommittee on Courts, Intellectual Property, and the Internet.
+</div>
+<div id="ref-cao2015towards" class="csl-entry" role="listitem">
+Cao, Yinzhi, and Junfeng Yang. 2015. <span>“Towards Making Systems Forget with Machine Unlearning.”</span> In <em>2015 IEEE Symposium on Security and Privacy</em>, 463–80. IEEE.
+</div>
+<div id="ref-carlini2023extracting" class="csl-entry" role="listitem">
+Carlini, Nicholas, Jamie Hayes, Milad Nasr, Matthew Jagielski, Vikash Sehwag, Florian Tramèr, Borja Balle, Daphne Ippolito, and Eric Wallace. 2023. <span>“<span class="nocase">Extracting Training Data from Diffusion Models</span>.”</span> <a href="https://arxiv.org/abs/2301.13188">https://arxiv.org/abs/2301.13188</a>.
+</div>
+<div id="ref-carlini2023quantifying" class="csl-entry" role="listitem">
+Carlini, Nicholas, Daphne Ippolito, Matthew Jagielski, Katherine Lee, Florian Tramèr, and Chiyuan Zhang. 2023. <span>“<span>Quantifying Memorization Across Neural Language Models</span>.”</span> In <em>International Conference on Learning Representations</em>.
+</div>
+<div id="ref-casper2023measuring" class="csl-entry" role="listitem">
+Casper, Stephen, Zifan Guo, Shreya Mogulothu, Zachary Marinov, Chinmay Deshpande, Rui-Jie Yew, Zheng Dai, and Dylan Hadfield-Menell. 2023. <span>“<span class="nocase">Measuring the Success of Diffusion Models at Imitating Human Artists</span>.”</span> <a href="https://arxiv.org/abs/2307.04028">https://arxiv.org/abs/2307.04028</a>.
+</div>
+<div id="ref-newyorker-stealing" class="csl-entry" role="listitem">
+Chayka, Kyle. 2023. <span>“<span class="nocase">Is A.I. Art Stealing from Artists?</span>”</span> <em>The New Yorker</em>, February. <a href="https://www.newyorker.com/culture/infinite-scroll/is-ai-art-stealing-from-artists">https://www.newyorker.com/culture/infinite-scroll/is-ai-art-stealing-from-artists</a>.
+</div>
+<div id="ref-citron2022privacy" class="csl-entry" role="listitem">
+Citron, Danielle Keats, and Daniel J. Solove. 2022. <span>“<span>Privacy Harms</span>.”</span> <em>Boston University Law Review</em> 102.
+</div>
+<div id="ref-404mushroom" class="csl-entry" role="listitem">
+Cole, Samantha. 2023. <span>“<span><span>‘Life or Death:’</span> AI-Generated Mushroom Foraging Books Are All Over Amazon</span>.”</span> <em>404 Media</em>, August. <a href="https://www.404media.co/ai-generated-mushroom-foraging-books-amazon/">https://www.404media.co/ai-generated-mushroom-foraging-books-amazon/</a>.
+</div>
+<div id="ref-collins2018robotica" class="csl-entry" role="listitem">
+Collins, Ronald KL, and David M Skover. 2018. <em>Robotica: Speech Rights and Artificial Intelligence</em>. Cambridge University Press.
+</div>
+<div id="ref-cooper2021emergent" class="csl-entry" role="listitem">
+Cooper, A. Feder, and Ellen Abrams. 2021. <span>“<span class="nocase">Emergent Unfairness in Algorithmic Fairness-Accuracy Trade-Off Research</span>.”</span> In <em>Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society</em>, 46–54. New York, NY, USA: Association for Computing Machinery.
+</div>
+<div id="ref-cooper2022lawless" class="csl-entry" role="listitem">
+Cooper, A. Feder, Jonathan Frankle, and Christopher De Sa. 2022. <span>“<span class="nocase">Non-Determinism and the Lawlessness of Machine Learning Code</span>.”</span> In <em>Proceedings of the 2022 Symposium on Computer Science and Law</em>, 1–8. CSLAW ’22. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3511265.3550446">https://doi.org/10.1145/3511265.3550446</a>.
+</div>
+<div id="ref-cooper2023variance" class="csl-entry" role="listitem">
+Cooper, A. Feder, Katherine Lee, Solon Barocas, Christopher De Sa, Siddhartha Sen, and Baobao Zhang. 2023. <span>“<span class="nocase">Is My Prediction Arbitrary? Measuring Self-Consistency in Fair Classification</span>.”</span> <em>arXiv Preprint arXiv:2301.11562</em>.
+</div>
+<div id="ref-cooper2022avs" class="csl-entry" role="listitem">
+Cooper, A. Feder, and Karen Levy. 2022. <span>“<span class="nocase">Fast or Accurate? Governing Conflicting Goals in Highly Autonomous Vehicles</span>.”</span> <em>Colorado Technology Law Journal</em> 20.
+</div>
+<div id="ref-cooper2021eaamo" class="csl-entry" role="listitem">
+Cooper, A. Feder, Karen Levy, and Christopher De Sa. 2021. <span>“<span class="nocase">Accuracy-Efficiency Trade-Offs and Accountability in Distributed ML Systems</span>.”</span> In <em>Equity and Access in Algorithms, Mechanisms, and Optimization</em>. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3465416.3483289">https://doi.org/10.1145/3465416.3483289</a>.
+</div>
+<div id="ref-cooper2022accountability" class="csl-entry" role="listitem">
+Cooper, A. Feder, Emanuel Moss, Benjamin Laufer, and Helen Nissenbaum. 2022. <span>“<span class="nocase">Accountability in an Algorithmic Society: Relationality, Responsibility, and Robustness in Machine Learning</span>.”</span> In <em>2022 ACM Conference on Fairness, Accountability, and Transparency</em>, 864–76. FAccT ’22. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3531146.3533150">https://doi.org/10.1145/3531146.3533150</a>.
+</div>
+<div id="ref-cooper2022arpa" class="csl-entry" role="listitem">
+Cooper, A. Feder, and Gili Vidan. 2022. <span>“<span class="nocase">Making the Unaccountable Internet: The Changing Meaning of Accounting in the Early ARPANET</span>.”</span> In <em>Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency</em>, 726–42. FAccT ’22. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3531146.3533137">https://doi.org/10.1145/3531146.3533137</a>.
+</div>
+<div id="ref-corso2023diffdock" class="csl-entry" role="listitem">
+Corso, Gabriele, Hannes Stärk, Bowen Jing, Regina Barzilay, and Tommi Jaakkola. 2023. <span>“<span class="nocase">DiffDock: Diffusion Steps, Twists, and Turns for Molecular Docki</span>.”</span> In <em>International Conference on Learning Representations</em>.
+</div>
+<div id="ref-deng2009imagenet" class="csl-entry" role="listitem">
+Deng, Jia, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, and Li Fei-Fei. 2009. <span>“Imagenet: A Large-Scale Hierarchical Image Database.”</span> In <em>2009 IEEE Conference on Computer Vision and Pattern Recognition</em>, 248–55. Ieee.
+</div>
+<div id="ref-deng2012mnist" class="csl-entry" role="listitem">
+Deng, Li. 2012. <span>“The MNIST Database of Handwritten Digit Images for Machine Learning Research.”</span> <em>IEEE Signal Processing Magazine</em> 29 (6): 141–42.
+</div>
+<div id="ref-edwards2023leak" class="csl-entry" role="listitem">
+Edwards, Benj. 2023. <span>“<span class="nocase">I-powered Bing Chat spills its secrets via prompt injection attack [Updated]</span>.”</span> <em>Ars Technica</em>. <a href="https://arstechnica.com/information-technology/2023/02/ai-powered-bing-chat-spills-its-secrets-via-prompt-injection-attack/">https://arstechnica.com/information-technology/2023/02/ai-powered-bing-chat-spills-its-secrets-via-prompt-injection-attack/</a>.
+</div>
+<div id="ref-elish2019moral" class="csl-entry" role="listitem">
+Elish, Madeleine Clare. 2019. <span>“Moral Crumple Zones: Cautionary Tales in Human-Robot Interaction (Pre-Print).”</span> <em>Engaging Science, Technology, and Society (Pre-Print)</em>.
+</div>
+<div id="ref-epic" class="csl-entry" role="listitem">
+Fergusson, Grant, Caitriona Fitzgerald, Chris Frascella, Megan Iorio, Tom McBrien, Calli Schroeder, Ben Winters, and Enid Zhou. 2023. <span>“<span class="nocase">Generating Harms: Generative AI’s Impact &amp; Paths Forward</span>.”</span> Electronic Privacy Information Center.
+</div>
+<div id="ref-friedman1996bias" class="csl-entry" role="listitem">
+Friedman, Batya, and Helen Nissenbaum. 1996. <span>“Bias in <span>C</span>omputer <span>S</span>ystems.”</span> <em>ACM Trans. Inf. Syst.</em> 14 (3): 330–47.
+</div>
+<div id="ref-pile" class="csl-entry" role="listitem">
+Gao, Leo, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, et al. 2020. <span>“<span class="nocase">The Pile: An 800GB Dataset of Diverse Text for Language Modeling</span>.”</span> <a href="https://arxiv.org/abs/2101.00027">https://arxiv.org/abs/2101.00027</a>.
+</div>
+<div id="ref-livestream" class="csl-entry" role="listitem">
+GenLaw. 2023a. <span>“<span class="nocase">Generative AI + Law (GenLaw) ’23 – 29 July 2023 [livestream]</span>.”</span> <a href="https://www.youtube.com/watch?v=5j4U2UzJWfI">https://www.youtube.com/watch?v=5j4U2UzJWfI</a>.
+</div>
+<div id="ref-resources" class="csl-entry" role="listitem">
+———. 2023b. <span>“<span>GenLaw [Resources]</span>.”</span> <a href="https://genlaw.github.io/resources.html">https://genlaw.github.io/resources.html</a>.
+</div>
+<div id="ref-copilot-safety-filter" class="csl-entry" role="listitem">
+GitHub. 2023. <span>“<span class="nocase">About GitHub Copilot for Individuals, GitHub</span>.”</span> <a href="https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-for-individuals">https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-for-individuals</a>.
+</div>
+<div id="ref-gokaslan2023commoncanvas" class="csl-entry" role="listitem">
+Gokaslan, Aaron, A. Feder Cooper, Jasmine Collins, Landan Seguin, Austin Jacobson, Mihir Patel, Jonathan Frankle, Cory Stephenson, and Volodymyr Kuleshov. 2023. <span>“<span class="nocase">CommonCanvas: An Open Diffusion Model Trained with Creative-Commons Images</span>.”</span> <em>arXiv Preprint arXiv:2310.16825</em>.
+</div>
+<div id="ref-grimmelmann2016authored" class="csl-entry" role="listitem">
+Grimmelmann, James. 2016. <span>“<span class="nocase">There’s No Such Thing as a Computer-Authored Work – And It’s a Good Thing, Too</span>.”</span> <em>Columbia Journal of Law and the Arts</em> 39: 403.
+</div>
+<div id="ref-henderson2023foundation" class="csl-entry" role="listitem">
+Henderson, Peter, Xuechen Li, Dan Jurafsky, Tatsunori Hashimoto, Mark A. Lemley, and Percy Liang. 2023. <span>“<span class="nocase">Foundation Models and Fair Use</span>.”</span> <a href="https://arxiv.org/abs/2303.15715">https://arxiv.org/abs/2303.15715</a>.
+</div>
+<div id="ref-ideogram" class="csl-entry" role="listitem">
+Ideogram.AI. 2023. <a href="https://ideogram.ai/">https://ideogram.ai/</a>.
+</div>
+<div id="ref-mensrea" class="csl-entry" role="listitem">
+Institute, Legal Information. 2023. <span>“<span class="nocase">Mens rea</span>.”</span> <a href="https://www.law.cornell.edu/wex/mens_rea">https://www.law.cornell.edu/wex/mens_rea</a>.
+</div>
+<div id="ref-ippolito2023preventing" class="csl-entry" role="listitem">
+Ippolito, Daphne, Florian Tramèr, Milad Nasr, Chiyuan Zhang, Matthew Jagielski, Katherine Lee, Christopher A. Choquette-Choo, and Nicholas Carlini. 2023. <span>“<span class="nocase">Preventing Verbatim Memorization in Language Models Gives a False Sense of Privacy</span>.”</span> <a href="https://arxiv.org/abs/2210.17546">https://arxiv.org/abs/2210.17546</a>.
+</div>
+<div id="ref-jacobs2021measurement" class="csl-entry" role="listitem">
+Jacobs, Abigail Z., and Hanna Wallach. 2021. <span>“<span class="nocase">Measurement and Fairness</span>.”</span> In <em>Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency</em>, 375–85. FAccT ’21. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3442188.3445901">https://doi.org/10.1145/3442188.3445901</a>.
+</div>
+<div id="ref-liveblog" class="csl-entry" role="listitem">
+James Grimmelmann. 2023. <span>“<span class="nocase">GenLaw [liveblog]</span>.”</span> <a href="https://3d.laboratorium.net/2023-07-29-genlaw">https://3d.laboratorium.net/2023-07-29-genlaw</a>.
+</div>
+<div id="ref-kiritchenko2014sentiment" class="csl-entry" role="listitem">
+Kiritchenko, Svetlana, Xiaodan Zhu, and Saif M Mohammad. 2014. <span>“Sentiment Analysis of Short Informal Texts.”</span> <em>Journal of Artificial Intelligence Research</em> 50: 723–62.
+</div>
+<div id="ref-books3wired" class="csl-entry" role="listitem">
+Knibbs, Kate. 2023. <span>“<span>The Battle Over Books3 Could Change AI Forever</span>.”</span> <em>Wired</em>, September. <a href="https://www.wired.com/story/battle-over-books3/">https://www.wired.com/story/battle-over-books3/</a>.
+</div>
+<div id="ref-kudugunta2023madlad" class="csl-entry" role="listitem">
+Kudugunta, Sneha, Isaac Caswell, Biao Zhang, Xavier Garcia, Christopher A Choquette-Choo, Katherine Lee, Derrick Xin, et al. 2023. <span>“MADLAD-400: A Multilingual and Document-Level Large Audited Dataset.”</span> <em>arXiv Preprint arXiv:2309.04662</em>.
+</div>
+<div id="ref-le2023voicebox" class="csl-entry" role="listitem">
+Le, Matthew, Apoorv Vyas, Bowen Shi, Brian Karrer, Leda Sari, Rashel Moritz, Mary Williamson, et al. 2023. <span>“<span class="nocase">Voicebox: Text-Guided Multilingual Universal Speech Generation at Scale</span>.”</span> <a href="https://arxiv.org/abs/2306.15687">https://arxiv.org/abs/2306.15687</a>.
+</div>
+<div id="ref-lee2023talkin" class="csl-entry" role="listitem">
+Lee, Katherine, A. Feder Cooper, and James Grimmelmann. 2023. <span>“<span class="nocase">Talkin’ ’Bout AI Generation: Copyright and the Generative-AI Supply Chain</span>.”</span> <em>arXiv Preprint arXiv:2309.08133</em>.
+</div>
+<div id="ref-lee2023explainers" class="csl-entry" role="listitem">
+Lee, Katherine, A. Feder Cooper, James Grimmelmann, and Daphne Ippolito. 2023. <span>“<span class="nocase">AI and Law: The Next Generation</span>.”</span> <a href="http://dx.doi.org/10.2139/ssrn.4580739 ">http://dx.doi.org/10.2139/ssrn.4580739 </a>.
+</div>
+<div id="ref-lee2023author" class="csl-entry" role="listitem">
+Lee, Timothy B. 2023. <span>“<span class="nocase">Opinion: The Copyright Office is making a mistake on AI-generated art</span>.”</span> <em>Ars Technica</em>. <a href="https://arstechnica.com/tech-policy/2023/09/opinion-dont-exclude-ai-generated-art-from-copyright/">https://arstechnica.com/tech-policy/2023/09/opinion-dont-exclude-ai-generated-art-from-copyright/</a>.
+</div>
+<div id="ref-lemley2023upsidedown" class="csl-entry" role="listitem">
+Lemley, Mark A. 2023. <span>“<span class="nocase">How Generative AI Turns Copyright Law on its Head</span>.”</span> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4517702">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4517702</a>.
+</div>
+<div id="ref-li2023blip2" class="csl-entry" role="listitem">
+Li, Junnan, Dongxu Li, Silvio Savarese, and Steven Hoi. 2023. <span>“<span class="nocase">BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models</span>.”</span> <a href="https://arxiv.org/abs/2301.12597">https://arxiv.org/abs/2301.12597</a>.
+</div>
+<div id="ref-longpre2023pretrainers" class="csl-entry" role="listitem">
+Longpre, Shayne, Gregory Yauney, Emily Reif, Katherine Lee, Adam Roberts, Barret Zoph, Denny Zhou, et al. 2023. <span>“<span class="nocase">A Pretrainer’s Guide to Training Data: Measuring the Effects of Data Age, Domain Coverage, Quality, &amp; Toxicity</span>.”</span> <a href="https://arxiv.org/abs/2305.13169">https://arxiv.org/abs/2305.13169</a>.
+</div>
+<div id="ref-maiberg2023aiporn" class="csl-entry" role="listitem">
+Maiberg, Emanuel. 2023. <span>“<span class="nocase">Inside the AI Porn Marketplace Where Everything and Everyone Is for Sale</span>.”</span> <em>404 Media</em>, August. <a href="https://rb.gy/yylwk">https://rb.gy/yylwk</a>.
+</div>
+<div id="ref-midjourney" class="csl-entry" role="listitem">
+Midjourney. 2023. <a href="https://www.midjourney.com/">https://www.midjourney.com/</a>.
+</div>
+<div id="ref-mosaic" class="csl-entry" role="listitem">
+MosaicML. 2023. <a href="https://www.mosaicml.com/">https://www.mosaicml.com/</a>.
+</div>
+<div id="ref-chatgpt" class="csl-entry" role="listitem">
+OpenAI. 2022. <span>“<span class="nocase">ChatGPT: Optimizing Language Models for Dialogue</span>.”</span> <a href="https://web.archive.org/web/20221130180912/https://openai.com/blog/chatgpt/">https://web.archive.org/web/20221130180912/https://openai.com/blog/chatgpt/</a>.
+</div>
+<div id="ref-chatgpt-plugins" class="csl-entry" role="listitem">
+———. 2023a. <span>“<span class="nocase">ChatGPT plugins</span>.”</span> <a href="https://openai.com/blog/chatgpt-plugins">https://openai.com/blog/chatgpt-plugins</a>.
+</div>
+<div id="ref-gpt4-systemcard" class="csl-entry" role="listitem">
+———. 2023b. <span>“<span>GPT-4 System Card</span>.”</span> <a href="https://cdn.openai.com/papers/gpt-4-system-card.pdf">https://cdn.openai.com/papers/gpt-4-system-card.pdf</a>.
+</div>
+<div id="ref-perez2022discovering" class="csl-entry" role="listitem">
+Perez, Ethan, Sam Ringer, Kamilė Lukošiūtė, Karina Nguyen, Edwin Chen, Scott Heiner, Craig Pettit, et al. 2022. <span>“Discovering Language Model Behaviors with Model-Written Evaluations.”</span> <em>arXiv Preprint arXiv:2212.09251</em>.
+</div>
+<div id="ref-qi2023finetuning" class="csl-entry" role="listitem">
+Qi, Xiangyu, Yi Zeng, Tinghao Xie, Pin-Yu Chen, Ruoxi Jia, Prateek Mittal, and Peter Henderson. 2023. <span>“Fine-Tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!”</span> <a href="https://arxiv.org/abs/2310.03693">https://arxiv.org/abs/2310.03693</a>.
+</div>
+<div id="ref-radford2022whisper" class="csl-entry" role="listitem">
+Radford, Alec, Jong Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, and Ilya Sutskever. 2022. <span>“<span class="nocase">Robust Speech Recognition via Large-Scale Weak Supervision</span>.”</span> <a href="https://cdn.openai.com/papers/whisper.pdf">https://cdn.openai.com/papers/whisper.pdf</a>.
+</div>
+<div id="ref-ratner2019mlsys" class="csl-entry" role="listitem">
+Ratner, Alexander, Dan Alistarh, Gustavo Alonso, David G. Andersen, et al. 2019. <span>“<span class="nocase">MLSys: The New Frontier of Machine Learning Systems</span>.”</span> <a href="https://arxiv.org/abs/1904.03257">https://arxiv.org/abs/1904.03257</a>.
+</div>
+<div id="ref-rombach2022diffusion" class="csl-entry" role="listitem">
+Rombach, Robin, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Björn Ommer. 2022. <span>“<span class="nocase">High-Resolution Image Synthesis with Latent Diffusion Models</span>.”</span> In <em>2022 IEEE Conference on Computer Vision and Pattern Recognition</em>.
+</div>
+<div id="ref-rosenfeld2000two" class="csl-entry" role="listitem">
+Rosenfeld, Ronald. 2000. <span>“Two Decades of Statistical Language Modeling: Where Do We Go from Here?”</span> <em>Proceedings of the IEEE</em> 88 (8): 1270–78.
+</div>
+<div id="ref-deepfakehs" class="csl-entry" role="listitem">
+Rubin, April. 2023. <span>“<span class="nocase">Teens exploited by fake nudes illustrate threat of unregulated AI</span>.”</span> <em>Axios</em>, November. <a href="https://www.axios.com/2023/11/03/ai-deepfake-nude-images-new-jersey-high-school">https://www.axios.com/2023/11/03/ai-deepfake-nude-images-new-jersey-high-school</a>.
+</div>
+<div id="ref-sag2023safety" class="csl-entry" role="listitem">
+Sag, Matthew. 2023. <span>“<span class="nocase">Copyright Safety for Generative AI</span>.”</span> <em>Houston Law Review</em>.
+</div>
+<div id="ref-samuelson1985allocating" class="csl-entry" role="listitem">
+Samuelson, Pamela. 1985. <span>“<span class="nocase">Allocating Ownership Rights in Computer-Generated Works</span>.”</span> <em>University of Pittsburgh Law Review</em> 47: 1185.
+</div>
+<div id="ref-samuelson" class="csl-entry" role="listitem">
+———. 2023. <span>“<span class="nocase">Generative AI meets copyright</span>.”</span> <em>Science</em> 381 (6654): 158–61. <a href="https://doi.org/10.1126/science.adi0656">https://doi.org/10.1126/science.adi0656</a>.
+</div>
+<div id="ref-scaleai" class="csl-entry" role="listitem">
+Scale AI. 2023. <a href="https://scale.com/">https://scale.com/</a>.
+</div>
+<div id="ref-scheffler2022formalizing" class="csl-entry" role="listitem">
+Scheffler, Sarah, Eran Tromer, and Mayank Varia. 2022. <span>“<span class="nocase">Formalizing Human Ingenuity: A Quantitative Framework for Copyright Law’s Substantial Similarity</span>.”</span> In <em>Proceedings of the Symposium on Computer Science and Law</em>, 37–49.
+</div>
+<div id="ref-laionpaper" class="csl-entry" role="listitem">
+Schuhmann, Christoph, Romain Beaumont, Richard Vencu, Cade W Gordon, Ross Wightman, Mehdi Cherti, Theo Coombes, et al. 2022. <span>“<span class="nocase">LAION-5B: An open large-scale dataset for training next generation image-text models</span>.”</span> In <em>Thirty-Sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track</em>.
+</div>
+<div id="ref-smith2023convnets" class="csl-entry" role="listitem">
+Smith, Samuel L., Andrew Brock, Leonard Berrada, and Soham De. 2023. <span>“<span class="nocase">ConvNets Match Vision Transformers at Scale</span>.”</span> <a href="https://arxiv.org/abs/2310.16764">https://arxiv.org/abs/2310.16764</a>.
+</div>
+<div id="ref-sobel2021taxonomy" class="csl-entry" role="listitem">
+Sobel, Benjamin L. W. 2021. <span>“<span class="nocase">A Taxonomy of Training Data: Disentangling the Mismatched Rights, Remedies, and Rationales for Restricting Machine Learning</span>.”</span> In <em>Artificial Intelligence and Intellectual Property</em>, edited by Jyh-An Lee and Kung-Chung Liu.
+</div>
+<div id="ref-solove2001metaphor" class="csl-entry" role="listitem">
+Solove, Daniel. 2001. <span>“<span class="nocase">Privacy and Power: Computer Databases and Metaphors for Information Privacy</span>.”</span> <em>Stanford Law Review</em> 53 (6).
+</div>
+<div id="ref-stability" class="csl-entry" role="listitem">
+Stability AI. 2023. <a href="https://stability.ai/">https://stability.ai/</a>.
+</div>
+<div id="ref-thaler" class="csl-entry" role="listitem">
+Thaler v. Perlmutter. 2023.
+</div>
+<div id="ref-together" class="csl-entry" role="listitem">
+Together AI. 2023. <a href="https://together.ai/">https://together.ai/</a>.
+</div>
+<div id="ref-llama2" class="csl-entry" role="listitem">
+Touvron, Hugo, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, et al. 2023. <span>“<span class="nocase">Llama 2: Open Foundation and Fine-Tuned Chat Models</span>.”</span> <a href="https://arxiv.org/abs/2307.09288">https://arxiv.org/abs/2307.09288</a>.
+</div>
+<div id="ref-volokh2023llms" class="csl-entry" role="listitem">
+Volokh, Eugene. 2023. <span>“<span class="nocase">Large Libel Models? Liability for AI Output</span>.”</span> <em>Journal of Free Speech Law</em> 3: 489–558. <a href="https://www.journaloffreespeechlaw.org/volokh4.pdf">https://www.journaloffreespeechlaw.org/volokh4.pdf</a>.
+</div>
+<div id="ref-vyas2023provable" class="csl-entry" role="listitem">
+Vyas, Nikhil, Sham Kakade, and Boaz Barak. 2023. <span>“<span class="nocase">On Provable Copyright Protection for Generative Models</span>.”</span> <a href="https://arxiv.org/abs/2302.10870">https://arxiv.org/abs/2302.10870</a>.
+</div>
+<div id="ref-wei2023emergent" class="csl-entry" role="listitem">
+Wei, Jason, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeaud, Dani Yogatama, et al. 2022. <span>“<span class="nocase">Emergent Abilities of Large Language Models</span>.”</span> <a href="https://arxiv.org/abs/2206.07682">https://arxiv.org/abs/2206.07682</a>.
+</div>
+<div id="ref-weights-biases" class="csl-entry" role="listitem">
+Weights &amp; Biases. 2023. <a href="https://wandb.ai/site">https://wandb.ai/site</a>.
+</div>
+<div id="ref-yilmaz2023coding" class="csl-entry" role="listitem">
+Yilmaz, Ramazan, and Fatma Gizem Karaoglan Yilmaz. 2023. <span>“<span class="nocase">The effect of generative artificial intelligence (AI)-based tool use on students’ computational thinking skills, programming self-efficacy and motivation</span>.”</span> <em>Computers and Education: Artificial Intelligence</em> 4: 100147. https://doi.org/<a href="https://doi.org/10.1016/j.caeai.2023.100147">https://doi.org/10.1016/j.caeai.2023.100147</a>.
+</div>
+<div id="ref-zipursky2023tort" class="csl-entry" role="listitem">
+Zipursky, Benjamin C, and John CP Goldberg. 2023. <span>“A Tort for the Digital Age: False Light Invasion of Privacy Reconsidered.”</span>
+</div>
+<div id="ref-zittrainfuture" class="csl-entry" role="listitem">
+Zittrain, Jonathan. 2008. <em>The Future of the Internet–and How to Stop It</em>. USA: Yale University Press.
+</div>
+</div>
+<aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Equal contribution. Correspondence: <code>genlaw.org@gmail.com</code>. We thank Matthew Jagielski, Andreas Terzis, and Jonathan Zittrain for feedback on this report. We thank Google, Microsoft, Schmidt Futures, OpenAI, Anthropic, Cornell Law School, and ML Collective for their generous sponsorship.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</aside>
+</main>
+
+<footer>
+<p class="signoff">
+  <a href="https://genlaw.github.io/">← GenLaw</a>
+</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Non-essential if user has JavaScript off. Just hides TOC button on scroll.
+    const nav = document.querySelector("nav");
+    let lastScrollTop = 0;
+    const min_diff_px = 32;
+    
+    function didScroll() {
+        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (currentScrollTop < lastScrollTop) {
+            nav.classList.add("scrolled-up");
+            nav.classList.remove("scrolled-down");
+            lastScrollTop = currentScrollTop;
+        } else if (currentScrollTop > lastScrollTop + min_diff_px) {
+            nav.classList.remove("scrolled-up");
+            nav.classList.add("scrolled-down");
+            lastScrollTop = currentScrollTop;
+        }
+    }
+
+    window.addEventListener("scroll", didScroll);
+});
+  
+document.addEventListener("DOMContentLoaded", function () {
+    const headings = document.querySelectorAll('main h1, main h2, main h3, main h4');
+
+    function handleIntersection(entries) {
+        //  IntersectionObserver's entries are ordered by their position in the DOM tree
+        const topmostEntry = entries.find(entry => entry.isIntersecting);
+        console.log(topmostEntry)
+        if (!topmostEntry) return;
+
+        const tocElementId = 'toc-' + topmostEntry.target.id;
+        const tocElement = document.getElementById(tocElementId);
+        if (!tocElement) return;
+
+        const otherTocElements = document.querySelectorAll('.active');
+        otherTocElements.forEach(el => el.classList.remove('active'));
+        tocElement.classList.add('active');
+    }
+
+    // root: null -> entire browser viewport
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.8
+    };
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    headings.forEach(heading => {
+        observer.observe(heading);
+    });
+
+    // Manually trigger the IntersectionObserver callback for the initial state
+    const initialEntries = Array.from(headings).map(heading => ({
+        isIntersecting: heading.getBoundingClientRect().top < window.innerHeight && heading.getBoundingClientRect().bottom > 0,
+        target: heading
+    }));
+    handleIntersection(initialEntries);
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const nav_anchors = document.querySelectorAll('nav a');
+    const contents_checkbox = document.getElementById('contents');
+  
+    nav_anchors.forEach(anchor => {
+      anchor.addEventListener('click', function(event) {
+        // Do not stop normal functionality of the anchor tag
+        // event.preventDefault();
+  
+        // Uncheck the input with id "contents"
+        if (contents_checkbox && contents_checkbox.type === 'checkbox') {
+          contents_checkbox.checked = false;
+        }
+      });
+    });
+  });
+  
+document.addEventListener('DOMContentLoaded', () => {
+  const headings = document.querySelectorAll('main h1[id], main h2[id], main h3[id], main h4[id], main h5[id], main h6[id]');
+
+  headings.forEach(heading => {
+    heading.addEventListener('click', event => {
+      const target = event.target;
+
+      if (target.tagName.toLowerCase().startsWith('h') && target.hasAttribute('id')) {
+        const headingId = target.getAttribute('id');
+        const url = new URL(window.location.href);
+        url.hash = headingId;
+
+        navigator.clipboard.writeText(url.toString())
+          .then(() => {
+            console.log('Heading URL copied to clipboard:', url.toString());
+            target.classList.add('copy-success');
+            target.setAttribute('title', 'Copied URL to clipboard! ✅');
+            setTimeout(() => {
+              target.classList.remove('copy-success');
+              target.removeAttribute('title');
+            }, 3000);
+
+          })
+          .catch(err => {
+            console.error('Failed to copy the heading URL:', err);
+            target.classList.add('copy-error');
+            target.setAttribute('title', 'Failed to copy URL! ❌');
+            setTimeout(() => {
+              target.classList.remove('copy-error');
+              target.removeAttribute('title');
+            }, 3000);
+
+          });
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

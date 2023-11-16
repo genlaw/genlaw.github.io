@@ -77,16 +77,24 @@ $if(date)$
 $endif$
 $if(citation)$
 <div class="citation">
-  <span class="label">Citation</span>
-    $if(citation.pdf)$
-  <a href=$citation.pdf$>Read as pdf.</a>
-  $endif$
-  $if(citation.arxiv)$
-  <a href=$citation.arxiv$>$citation.arxiv$</a>
-  $endif$
   <div>
     $citation.bib$
   </div>
+</div>
+$endif$
+
+$if(readon)$
+<div class="readon">
+  <span class="label">Read:</span>
+  $if(readon.pdf)$
+  <a href=$readon.pdf$>[pdf]</a>
+  $endif$
+  $if(readon.ssrn)$
+  <a href=$readon.ssrn$>[ssrn]</a>
+  $endif$
+  $if(readon.arxiv)$
+  <a href=$readon.arxiv$>[arxiv]</a>
+  $endif$
 </div>
 $endif$
 </div>

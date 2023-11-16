@@ -189,7 +189,7 @@ figcaption .sidenote-number:after {
 }
 
 .metadata>* {
-  /* flex-basis: 50%; */
+  /*flex-basis: 100%; */
   display: flex;
   flex-flow: column;
   gap: .25em;
@@ -200,6 +200,11 @@ figcaption .sidenote-number:after {
   font-weight: bold;
   text-transform: uppercase;
   color: var(--color-text-secondary);
+}
+
+
+.metadata > :first-child {
+  flex-basis: 120%; /* Adjust this value as needed for the first column */
 }
 
 .subtitle {
