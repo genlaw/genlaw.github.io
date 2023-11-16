@@ -173,6 +173,10 @@ body {
   }
 }
 
+.affil {
+    font-size: calc(var(--font-size) * 0.8);
+}
+
 /* }}} */
 /* ----- Utility classes -----------------------------------------------  {{{ */
 .only-light-mode {

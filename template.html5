@@ -57,6 +57,9 @@ $if(authors)$
     $else$
       <span>$authors.name$</span>
     $endif$
+    $if(authors.affil)$
+      <span class="affil">$authors.affil$</span>
+    $endif$
   $endfor$
 </div>
 $elseif(author)$
@@ -66,6 +69,9 @@ $elseif(author)$
     <a href="$author-url$">$author$</a>
   $else$
     <span>$author$</span>
+  $endif$
+  $if(author.affil)$
+    <span class="affil">$author.affil$</span>
   $endif$
   </div>
 $endif$
