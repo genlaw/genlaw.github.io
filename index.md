@@ -28,12 +28,13 @@ return-footer: false
 
 ### Writing
 
-- Report of the 1st Workshop on Generative AI and Law [[blog](2023-report.html)][[full report](2023-full-report.html)]
-- "[The Devil is in the Training Data](explainers/training-data.html)" (an [explainer](explainers/index.html) series)
-- "Talkin' 'Bout AI Generation: Copyright and the Generative-AI Supply Chain" July 2023. (law review article, to appear at the  *Journal of the Copyright Society*) [[blog](https://genlaw.github.io/explainers/talkin.html)][[ssrn](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551)]
+- "Report of the 1st Workshop on Generative AI and Law" [[blog](2023-report.html)][[full report](2023-full-report.html)]
+- "The Devil is in the Training Data" [[blog](explainers/training-data.html)] (an [explainer](explainers/index.html) series)
+- "Talkin' 'Bout AI Generation: Copyright and the Generative-AI Supply Chain" July 2023. (law review article, to appear at the  *[Journal of the Copyright Society](https://copyrightsociety.org/journal-entries/)*) [[blog](https://genlaw.github.io/explainers/talkin.html)][[ssrn](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551)]
 
-### [**ICML 2023 Workshop Website**](2023-workshop.html)
+### ICML 2023 Workshop
 
+- [Website](2023-workshop.html)
 - [Livestream](https://www.youtube.com/watch?v=5j4U2UzJWfI)
 - [Liveblog](https://3d.laboratorium.net/2023-07-29-genlaw)  
 - [Accepted Papers](papers.html)
