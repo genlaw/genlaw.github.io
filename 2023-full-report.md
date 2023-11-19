@@ -63,11 +63,20 @@ To best serve these ends, this report does not delve into the technical details 
 
 Generative AI is "generative" because it generates text, images, audio, or other types of output. But it is also "generative" in the sense of Jonathan Zittrain's theory of generative technologies: it has the "capacity to produce unanticipated change through unfiltered contributions from broad and varied audiences" [@zittrainfuture]. As a result, generative-AI systems will be both immensely societally significant --- too significant for governments to ignore or to delay dealing with --- and present an immensely broad range of legal issues. To see why, it is useful to consider @zittrainfuture's five dimensions of generativity:
 
-*A technology provides leverage when it makes difficult tasks easier.* Generative AI is widely recognized for its use in creativity; programming; retrieving and synthesizing complex bodies of knowledge; and automating repetitive tasks.
-*A technology is adaptable when it can be applied to a wide range of uses.* Generative AI is celebrated for its adaptability. It has been applied to programming, painting, language translation, drug discovery, fiction, educational testing, graphic design, and much more.
-*A technology is easy to master when users without specialized training can readily adopt and adapt it.* While some generative-AI methodologies, such as model pre-training, still require technical skills, the ability to use chat-style, interactive, natural-language prompting to control generative-AI systems greatly reduces the difficulty of adoption. Users without programming or ML backgrounds have been able to use Generative AI for numerous tasks.
-*A technology is accessible when there are few barriers to its use.* Cost is the most obvious barrier, but other barriers can include regulation, secrecy, and linguistic limits. The creation of cutting-edge generative-AI models from scratch requires enormous inputs of data, compute, and human expertise --- currently limiting model creation to a handful of institutions --- but services allowing inference with these models are widely available to the public. These services are inexpensive for users making small numbers of queries, and they tend to operate close to real-time, making generative outputs (at least appear) low-cost to produce, in terms of time.
-*A technology is transferable when changes in it can easily be conveyed to others.* Once pre-trained or fine-tuned, generative-AI models can be easily shared, prompts and prompting techniques are trivially easy to describe, and systems built around generative-AI models can be made broadly available at increasingly low effort and cost.
+**Leverage**
+: *A technology provides leverage when it makes difficult tasks easier.* Generative AI is widely recognized for its use in creativity; programming; retrieving and synthesizing complex bodies of knowledge; and automating repetitive tasks.
+
+**Adaptability**
+: *A technology is adaptable when it can be applied to a wide range of uses.* Generative AI is celebrated for its adaptability. It has been applied to programming, painting, language translation, drug discovery, fiction, educational testing, graphic design, and much more.
+
+**Ease of mastery**
+: *A technology is easy to master when users without specialized training can readily adopt and adapt it.* While some generative-AI methodologies, such as model pre-training, still require technical skills, the ability to use chat-style, interactive, natural-language prompting to control generative-AI systems greatly reduces the difficulty of adoption. Users without programming or ML backgrounds have been able to use Generative AI for numerous tasks.
+
+**Accessibility**
+: *A technology is accessible when there are few barriers to its use.* Cost is the most obvious barrier, but other barriers can include regulation, secrecy, and linguistic limits. The creation of cutting-edge generative-AI models from scratch requires enormous inputs of data, compute, and human expertise --- currently limiting model creation to a handful of institutions --- but services allowing inference with these models are widely available to the public. These services are inexpensive for users making small numbers of queries, and they tend to operate close to real-time, making generative outputs (at least appear) low-cost to produce, in terms of time.
+
+**Transferability**
+: *A technology is transferable when changes in it can easily be conveyed to others.* Once pre-trained or fine-tuned, generative-AI models can be easily shared, prompts and prompting techniques are trivially easy to describe, and systems built around generative-AI models can be made broadly available at increasingly low effort and cost.
 
  In short, Generative AI hits the generativity jackpot. It provides enormous leverage across a wide range of tasks, is readily built on by a huge range of users, and facilitates rapid iterative improvement as those users share their innovations with each other.
 
