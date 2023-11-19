@@ -175,7 +175,10 @@ body {
 
 .affil {
     font-size: calc(var(--font-size) * 0.8);
+    line-height: calc(var(--font-size) * 0.9);
+
 }
+
 
 /* }}} */
 /* ----- Utility classes -----------------------------------------------  {{{ */
@@ -377,7 +380,7 @@ ul.task-list > li {
   position: relative;
 }
 
-ul.task-list > li > input[type="checkbox"] {
+ul.task-list > li > input<sup>type="checkbox"] {
   position: absolute;
   left: calc(-1 * var(--ul-indent-size));
   height: var(--line-height);
@@ -618,7 +621,7 @@ pre.tight-code > code.sourceCode > span {
 }
 
 /* --- Code line highlights --- {{{ */
-/* I used some code I contributed to owickstrom's pandoc-emphasize-code[1] as
+/* I used some code I contributed to owickstrom's pandoc-emphasize-code<sup>1] as
  * inspiration for these changes.
  *
  * The novel part is using :nth-of-type(...) selectors and CSS classes, instead
@@ -629,7 +632,7 @@ pre.tight-code > code.sourceCode > span {
  * enough to write, so anyone who needs more lines can write their own
  * stylesheet and include it to add more after the fact.
  *
- * [1] https://github.com/owickstrom/pandoc-emphasize-code/pull/3
+ * <sup>1] https://github.com/owickstrom/pandoc-emphasize-code/pull/3
  */
 
 pre > code.sourceCode > span::after {
@@ -1379,7 +1382,7 @@ dd:last-child {
 }
 
 /* Show the night image when checkbox is checked */
-input[type="checkbox"]:checked + .image-container:after {
+input<sup>type="checkbox"]:checked + .image-container:after {
   opacity: 1;
 }
 

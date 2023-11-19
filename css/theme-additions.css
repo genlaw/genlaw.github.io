@@ -93,6 +93,11 @@
 
 /* Text */
 
+sup {
+    font-size: 65%; /* Adjusts the font size to be 75% of the current font size */
+    /*vertical-align: super;*/
+}
+
 code {
   padding: .125em .125em .0625em;
   border-radius: .125em;
@@ -338,42 +343,42 @@ nav#TOC a.active::after {
 
 /* Copyable heading ids */
 
-main h1[id]:hover,
-main h2[id]:hover,
-main h3[id]:hover,
-main h4[id]:hover,
-main h5[id]:hover,
-main h6[id]:hover {
+main h1<sup>id]:hover,
+main h2<sup>id]:hover,
+main h3<sup>id]:hover,
+main h4<sup>id]:hover,
+main h5<sup>id]:hover,
+main h6<sup>id]:hover {
   position: relative;
   cursor: pointer;
 }
 
-main h1[id]:hover::before,
-main h2[id]:hover::before,
-main h3[id]:hover::before,
-main h4[id]:hover::before,
-main h5[id]:hover::before,
-main h6[id]:hover::before {
+main h1<sup>id]:hover::before,
+main h2<sup>id]:hover::before,
+main h3<sup>id]:hover::before,
+main h4<sup>id]:hover::before,
+main h5<sup>id]:hover::before,
+main h6<sup>id]:hover::before {
   content: '📎';
   font-size: .75rem;
   position: absolute;
   left: -1.25rem;
 }
 
-main h1[id].copy-success:hover::before,
-main h2[id].copy-success:hover::before,
-main h3[id].copy-success:hover::before,
-main h4[id].copy-success:hover::before,
-main h5[id].copy-success:hover::before,
-main h6[id].copy-success:hover::before {
+main h1<sup>id].copy-success:hover::before,
+main h2<sup>id].copy-success:hover::before,
+main h3<sup>id].copy-success:hover::before,
+main h4<sup>id].copy-success:hover::before,
+main h5<sup>id].copy-success:hover::before,
+main h6<sup>id].copy-success:hover::before {
   content: '✅';
 }
 
-main h1[id].copy-error:hover::before,
-main h2[id].copy-error:hover::before,
-main h3[id].copy-error:hover::before,
-main h4[id].copy-error:hover::before,
-main h5[id].copy-error:hover::before,
-main h6[id].copy-error:hover::before {
+main h1<sup>id].copy-error:hover::before,
+main h2<sup>id].copy-error:hover::before,
+main h3<sup>id].copy-error:hover::before,
+main h4<sup>id].copy-error:hover::before,
+main h5<sup>id].copy-error:hover::before,
+main h6<sup>id].copy-error:hover::before {
   content: '❌';
 }
