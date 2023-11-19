@@ -43,42 +43,43 @@
   --side-note-number-font-family: et-book-roman-old-style, Palatino, Georgia, serif;
 
   /* Make some fonts a tad larger */
-  --font-size: 19px;
-  --line-height: 29px;
+  --font-size: 19px; /* 90% of 19px */
+  --line-height: 29px; /* 90% of 29px */
   font-size: var(--font-size);
   
-  --nav-toc-font-size: 17px;
-  --nav-toc-code-font-size: 15px;
+  --nav-toc-font-size: 15.3px; /* 90% of 17px */
+  --nav-toc-code-font-size: 13.5px; /* 90% of 15px */
   
-  --side-note-line-height: 23px;
-  --side-note-font-size: 17px;
-  --side-note-code-font-size: 15px;
+  --side-note-line-height: 20.7px; /* 90% of 23px */
+  --side-note-font-size: 15.3px; /* 90% of 17px */
+  --side-note-code-font-size: 13.5px; /* 90% of 15px */
 
-  --figcaption-line-height: 23px;
-  --figcaption-font-size: 17px;
-  --figcaption-code-font-size: 15px;
-  --figcaption-gap: 9px;
-  --captioned-figure-gap: 13px;
+  --figcaption-line-height: 20.7px; /* 90% of 23px */
+  --figcaption-font-size: 15.3px; /* 90% of 17px */
+  --figcaption-code-font-size: 13.5px; /* 90% of 15px */
+  --figcaption-gap: 8.1px; /* 90% of 9px */
+  --captioned-figure-gap: 11.7px; /* 90% of 13px */
 
-  --title-font-size: 50px;
-  --title-line-height: 55px;
-  --h1-font-size: 38px;
-  --h1-line-height: 42px;
-  --h1-margin-top: 42px;
-  --h1-margin-bottom: 14px;
-  --h2-font-size: 38px;
-  --h2-line-height: 42px;
-  --h2-margin-top: 42px;
-  --h2-margin-bottom: 14px;
-  --h3-margin-top: 0.5em;
+  --title-font-size: 45px; /* 90% of 50px */
+  --title-line-height: 49.5px; /* 90% of 55px */
+  --h1-font-size: 30px; /* 80% of 38px */
+  --h1-line-height: 33.6px; /* 80% of 42px */
+  --h1-margin-top: 33.6px; /* 80% of 42px */
+  --h1-margin-bottom: 11.2px; /* 80% of 14px */
+  --h2-font-size: 30px; /* 80% of 38px */
+  --h2-line-height: 33.6px; /* 80% of 42px */
+  --h2-margin-top: 33.6px; /* 80% of 42px */
+  --h2-margin-bottom: 11.2px; /* 80% of 14px */
+  --h3-margin-top: 0.45em; /* Adjusted proportionally */
 
-  --background-color: white;  /* hsl(36, 5%, 96%); */
+  --background-color: white; /* hsl(36, 5%, 96%); */
   --color-text: hsl(210, 31%, 5%);
   --color-text-secondary: hsl(211, 14%, 25%);
   --color-sidenote: var(--color-text-secondary);
   /* color: #436ed0; */
   /* color: hsl(25, 78%, 53%); */
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {

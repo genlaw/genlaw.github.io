@@ -33,7 +33,7 @@
   --side-note-number-font-family: var(--font-family-prose);
 
   --line-height: 26px;
-  --font-size: 17px;
+  --font-size: 15px;
 
   --inline-code-font-size: 15px;
   --code-block-font-size: 14px;
@@ -88,8 +88,8 @@
   --captioned-figure-gap: 10px;
 
   --table-line-height: 21px;
-  --table-font-size: 14px;
-  --table-code-font-size: 13px;
+  --table-font-size: var(--font-size);
+  --table-code-font-size: var(--font-size);
 
   --nav-toc-font-size: 12px;
   --nav-toc-code-font-size: 12px;

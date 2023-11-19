@@ -3,7 +3,7 @@
 # Copy HTML
 source_dir="/Users/katherine/Projects/pandoc-markdown-css-theme/docs/training-data/"
 destination_dir="/Users/katherine/Projects/genlaw.github.io/"
-file_list=("resources" "glossary" "papers" "cfp" "2023-full-report" "2023-report" "metaphors")
+file_list=("resources" "glossary" "papers" "cfp" "2023-full-report" "2023-report" "metaphors" "index")
 
 for filename in "${file_list[@]}"
 do
@@ -29,7 +29,7 @@ done
 # Copy md
 source_dir="/Users/katherine/Projects/pandoc-markdown-css-theme/src/training-data/"
 destination_dir="/Users/katherine/Projects/genlaw.github.io/"
-file_list=("resources" "glossary" "papers" "cfp" "2023-full-report" "2023-report" "metaphors")
+file_list=("resources" "glossary" "papers" "cfp" "2023-full-report" "2023-report" "metaphors" "index")
 
 for filename in "${file_list[@]}"
 do
