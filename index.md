@@ -36,6 +36,7 @@ return-footer: false
 
 - [Livestream](https://www.youtube.com/watch?v=5j4U2UzJWfI)
 - [Liveblog](https://3d.laboratorium.net/2023-07-29-genlaw)  
+- [Accepted Papers](papers.html)
     
 ### Resources
 - [Glossary](glossary.html)

@@ -5,6 +5,7 @@ toc-title: "Accepted Papers"
 return-genlaw: true
 return-footer: true
 ---
+<p style="text-align:right">GenLaw 2023: <a href="2023-workshop.html">homepage</a>, <a href="cfp.html">CFP</a></p>
 
 ## The Restatement (Artificial) of Torts
 
