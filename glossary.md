@@ -5,12 +5,19 @@ return-genlaw: true
 return-footer: true 
 ---
 
+The goal of this glossary is make it easier for those trained in law to understand the 
+the technical terms commonly used in machine learning, and for those trained in machine learning 
+to better understand important legal terms.
+
+If you have any suggestions for additional terms, or you would like to give us feedback about any
+of the definitions, please don't hesitate to email genlaw.org@gmail.com.
+
 We roughly divide our glossary into sections:
 
-- [Machine Learning and Generative AI](#gloss:machine-learning)
+- [Terms from Machine Learning and Generative AI](#gloss:machine-learning)
 - [Open versus Closed](#app:os)
 - [Legal Concepts in Intellectual Property and Software](#gloss:legal-concepts)
-- [Privacy](#app:privacy)
+- [Terms related to Privacy](#app:privacy)
 
 See also: [resources](resources.html), [metaphors](#metaphors.html), and the [GenLaw Report](2023-report.html)
 

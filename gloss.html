@@ -1,615 +1,509 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc-markdown-css-theme" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>GenLaw: Glossary</title>
-  <link rel="stylesheet" href="css/theme.css" />
-  <link rel="stylesheet" href="css/skylighting-paper-theme.css" />
-  <link rel="stylesheet" href="css/theme-additions.css" />
-  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
-<!-- Google Analytics tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W2ZW2ZM1M6"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-W2ZW2ZM1M6');
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+    <title>GenLaw: Glossary</title>
+        <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Analytics tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2ZW2ZM1M6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W2ZW2ZM1M6');
+    </script>
 </head>
 <body>
+    <header>
+        <img src="/favicon.ico" alt="reading robot icon">
+        <a href="index.html" style="white-space: nowrap;">GenLaw '23</a>
+        <nav>
+            <a href="index.html#schedule">Schedule</a>
+            <a href="cfp.html">CFP</a>
+            <a href="papers.html">Accepted Papers</a>
+            <a href="resources.html">Resources</a>
+            <a href="glossary.html">Glossary</a>
+        </nav>
+    </header>
+    <main id="">
+                <aside class="sidebar-container">
+            <div class="sidebar" id="table-of-contents">
+                <ul>
+                <li><a href="#gloss:machine-learning" id="toc-gloss:machine-learning">Machine Learning and Generative AI</a>
+                <ul>
+                <li><a href="#algorithm" id="toc-algorithm">Algorithm</a></li>
+                <li><a href="#alignment" id="toc-alignment">Alignment</a></li>
+                <li><a href="#api" id="toc-api">Application Programming Interface (API)</a></li>
+                <li><a href="#architecture" id="toc-architecture">Architecture</a></li>
+                <li><a href="#attention" id="toc-attention">Attention</a></li>
+                <li><a href="#base-model" id="toc-base-model">Base Model</a></li>
+                <li><a href="#checkpoint" id="toc-checkpoint">Checkpoint</a></li>
+                <li><a href="#context" id="toc-context">Context Window</a></li>
+                <li><a href="#data-curation" id="toc-data-curation">Data Curation and Pre-Processing</a></li>
+                <li><a href="#datasets" id="toc-datasets">Datasets</a></li>
+                <li><a href="#decoding" id="toc-decoding">Decoding</a></li>
+                <li><a href="#diffusion" id="toc-diffusion">Diffusion-Based Modeling</a></li>
+                <li><a href="#embedding" id="toc-embedding">Embedding</a></li>
+                <li><a href="#examples" id="toc-examples">Examples</a></li>
+                <li><a href="#generalization" id="toc-generalization">Generalization</a></li>
+                <li><a href="#generation" id="toc-generation">Generation</a></li>
+                <li><a href="#ft" id="toc-ft">Fine-Tuning</a></li>
+                <li><a href="#foundation" id="toc-foundation">Foundation Model</a></li>
+                <li><a href="#hallucination" id="toc-hallucination">Hallucination</a></li>
+                <li><a href="#hyperparameter" id="toc-hyperparameter">Hyperparameter</a></li>
+                <li><a href="#in-context" id="toc-in-context">In-Context Learning (Zero-Shot / Few-shot)</a></li>
+                <li><a href="#inference" id="toc-inference">Inference</a></li>
+                <li><a href="#lm" id="toc-lm">Language Model</a></li>
+                <li><a href="#llm" id="toc-llm">Large Language Model (LLM)</a></li>
+                <li><a href="#loss" id="toc-loss">Loss</a></li>
+                <li><a href="#memorization" id="toc-memorization">Memorization</a></li>
+                <li><a href="#model" id="toc-model">Model</a></li>
+                <li><a href="#multimodal" id="toc-multimodal">Multimodal</a></li>
+                <li><a href="#nn" id="toc-nn">Neural Network</a></li>
+                <li><a href="#parameters" id="toc-parameters">Parameters</a></li>
+                <li><a href="#preprocessing" id="toc-preprocessing">Pre-Processing</a></li>
+                <li><a href="#pt-ft" id="toc-pt-ft">Pre-Training and Fine-Tuning</a></li>
+                <li><a href="#prompt" id="toc-prompt">Prompt</a></li>
+                <li><a href="#rl" id="toc-rl">Reinforcement Learning</a></li>
+                <li><a href="#regurgitation" id="toc-regurgitation">Regurgitation</a></li>
+                <li><a href="#sampling" id="toc-sampling">Sampling</a></li>
+                <li><a href="#scale" id="toc-scale">Scale</a></li>
+                <li><a href="#supply-chain" id="toc-supply-chain">Supply Chain</a></li>
+                <li><a href="#tokens" id="toc-tokens">Tokenization</a></li>
+                <li><a href="#transformer" id="toc-transformer">Transformer</a></li>
+                <li><a href="#training" id="toc-training">Training</a></li>
+                <li><a href="#vector" id="toc-vector">Vector Representation</a></li>
+                <li><a href="#web-crawl" id="toc-web-crawl">Web Crawl</a></li>
+                <li><a href="#weight" id="toc-weight">Weights</a></li>
+                </ul></li>
+                <li><a href="#app:os" id="toc-app:os">Open versus Closed</a>
+                <ul>
+                <li><a href="#closed-dataset" id="toc-closed-dataset">Closed Dataset</a></li>
+                <li><a href="#closed-model" id="toc-closed-model">Closed Model</a></li>
+                <li><a href="#closed-source" id="toc-closed-source">Closed Software</a></li>
+                <li><a href="#open-dataset" id="toc-open-dataset">Open Dataset</a></li>
+                <li><a href="#open-model" id="toc-open-model">Open Model</a></li>
+                <li><a href="#os" id="toc-os">Open Software</a></li>
+                </ul></li>
+                <li><a href="#gloss:legal-concepts" id="toc-gloss:legal-concepts">Legal Concepts in Intellectual Property and Software</a>
+                <ul>
+                <li><a href="#claims" id="toc-claims">Claims</a></li>
+                <li><a href="#copyright" id="toc-copyright">Copyright</a></li>
+                <li><a href="#infringe" id="toc-infringe">Copyright Infringement</a></li>
+                <li><a href="#damages" id="toc-damages">Damages</a></li>
+                <li><a href="#fair-use" id="toc-fair-use">Fair Use</a></li>
+                <li><a href="#ip" id="toc-ip">The Field of Intellectual Property (IP)</a></li>
+                <li><a href="#harm" id="toc-harm">Harm</a></li>
+                <li><a href="#idea-expression" id="toc-idea-expression">Idea vs. Expression</a></li>
+                <li><a href="#license" id="toc-license">License</a></li>
+                <li><a href="#non-expressive-or-non-consumptive" id="toc-non-expressive-or-non-consumptive">Non-Expressive or Non-Consumptive</a></li>
+                <li><a href="#patent" id="toc-patent">Patent</a></li>
+                <li><a href="#prior-art" id="toc-prior-art">Prior Art</a></li>
+                <li><a href="#tos" id="toc-tos">Terms of Service</a></li>
+                <li><a href="#transformative-use" id="toc-transformative-use">Transformative Use</a></li>
+                </ul></li>
+                <li><a href="#app:privacy" id="toc-app:privacy">Privacy</a>
+                <ul>
+                <li><a href="#anonymization" id="toc-anonymization">Anonymization</a></li>
+                <li><a href="#the-california-consumer-privacy-act" id="toc-the-california-consumer-privacy-act">The California Consumer Privacy Act (CCPA)</a></li>
+                <li><a href="#consent" id="toc-consent">Consent</a></li>
+                <li><a href="#differential-privacy" id="toc-differential-privacy">Differential Privacy</a></li>
+                <li><a href="#gdpr" id="toc-gdpr">The General Data Protection Regulation (GDPR)</a></li>
+                <li><a href="#pii" id="toc-pii">Personally Identifiable Information (PII)</a></li>
+                <li><a href="#privacy-policy" id="toc-privacy-policy">Privacy Policy</a></li>
+                <li><a href="#privacy-violation" id="toc-privacy-violation">Privacy Violation</a></li>
+                <li><a href="#the-right-to-be-forgotten" id="toc-the-right-to-be-forgotten">The Right to be Forgotten</a></li>
+                <li><a href="#tort" id="toc-tort">Tort</a></li>
+                </ul></li>
+                <li><a href="#app:metaphors" id="toc-app:metaphors">Metaphors</a>
+                <ul>
+                <li><a href="#models-are-trained." id="toc-models-are-trained.">Models are trained.</a></li>
+                <li><a href="#models-learn-like-children-do." id="toc-models-learn-like-children-do.">Models learn like children do.</a></li>
+                <li><a href="#generations-are-collages." id="toc-generations-are-collages.">Generations are collages.</a></li>
+                <li><a href="#language-models-are-stochastic-parrots." id="toc-language-models-are-stochastic-parrots.">Language models are stochastic parrots.</a></li>
+                <li><a href="#language-models-are-noisy-search-engines." id="toc-language-models-are-noisy-search-engines.">Language models are noisy search engines.</a></li>
+                <li><a href="#references" id="toc-references">References</a></li>
+                </ul></li>
+                </ul>
+            </div>
+        </aside>
+                <div id="content">
+            <h1>GenLaw: Glossary</h1>
+            <p style="text-align:right">
+            Also see the <a href="resources.html">resources</a>.
+            </p>
+            <p>We roughly divide our glossary into sections:</p>
+            <ul>
+            <li><a href="#gloss:machine-learning">Machine Learning and Generative AI</a></li>
+            <li><a href="#app:os">Open versus Closed</a></li>
+            <li><a href="#gloss:legal-concepts">Legal Concepts in Intellectual Property and Software</a></li>
+            <li><a href="#app:privacy">Privacy</a></li>
+            <li><a href="#app:metaphors">Metaphors</a></li>
+            </ul>
+            <h2 id="gloss:machine-learning">Machine Learning and Generative AI</h2>
+            <h3 id="algorithm">Algorithm</h3>
+            <p>An <strong>algorithm</strong> is a formal, step-by-step specification of a process. Machine learning uses algorithms for <a href="#training">training</a> <a href="#model">models</a> and for applying models (a process called <a href="#inference">inference</a>). In training, the algorithm takes a model <a href="#architecture">architecture</a>, <a href="#datasets">training data</a>, <a href="#hyperparameter">hyperparameters</a>, and a random seed (to enable random choices during statistical computations) to produce trained model <a href="#parameters">parameters</a>.</p>
+            <p>In public discourse around social media, the term algorithm is often used to refer to methods for optimizing the probability that a user will engage with a post; however, it is important to note that algorithms describe many processes including, for example, the process of sorting social media posts by date.</p>
+            <h3 id="alignment">Alignment</h3>
+            <p><strong>Alignment</strong> refers to the process of taking a <a href="#pt-ft">pre-trained</a> <a href="#model">model</a> and further tuning it so that its outputs are <em>aligned</em> with a policy set forth by the model developer. Alignment can also refer to the <em>state of being aligned</em> — some academic papers might compare and contrast between an aligned and an unaligned model. The goals included in an alignment policy (sometimes called a constitution) vary from developer to developer, but common ones include:</p>
+            <ul>
+            <li>Following the intent of user-provided instructions;</li>
+            <li>Abiding by human values (e.g., not emitting swear-words);</li>
+            <li>Being polite, factual, or helpful;</li>
+            <li>Avoiding generating copyrighted text.</li>
+            </ul>
+            <p>While the goals of alignment are vast and pluralistic, current techniques for achieving better alignment are broadly applicable across goals. These techniques include <a href="#rl">reinforcement learning</a> with human feedback and full model <a href="#pt-ft">fine-tuning</a> Specifying the desired properties of alignment often requires a special dataset. These datasets may include user-provided feedback, supplied through the user interface in a generative-AI product.</p>
+            <h3 id="api">Application Programming Interface (API)</h3>
+            <p>Companies choose between releasing generative-AI <a href="#model">model</a> functionality in a variety of ways: They can release the model directly by <a href="#open-model">open-sourcing</a> it; they can embed the model in a software system, which they release as a product; or, they can make the model (or the system its embedded in) available via an <strong>Application Programming Interface (API)</strong>. When a model is open-source, anyone can take the <a href="#checkpoint">checkpoint</a> and load it onto a personal computer in order to use it for <a href="#Generations">generation</a>. In contrast, when a company only makes their generative-AI model or system available via an API, that means that users access it in code. The user writes a query in a format specified by the company, then sends the query to the company’s server. The company then runs the model or system on their own computers, and provides a response to the user with the generated content. API access usually requires accepting the company’s <a href="#tos">Terms of Service</a>, and companies may add extra layers of security on top of the model (such as rejecting queries identified as being in violation of the ToS).</p>
+            <h3 id="architecture">Architecture</h3>
+            <p>The design of a <a href="#model">model</a> is called its <strong>architecture</strong>. For a <a href="#nn">neural network</a>, architectural decisions include the format of inputs that can be accepted (e.g., images with a certain number of pixels), the number of layers, how many <a href="#parameters">parameters</a> per layer, how the parameters in each layer are connected to each other, and how we represent the intermediate state of the model as each layer transforms input to output. The most common architecture for language tasks is called a Transformer <span class="citation" data-cites="vaswani2017attention">(Vaswani et al. 2017)</span>, for which there are many variations.</p>
+            <p>Many contemporary models appear in <strong>model families</strong> that have similar architectures but different sizes, often differentiated by the total number of parameters in the model. For example, Meta originally released four sizes of the LLaMA family that had almost the exact same architectures, differing only in the number of layers and size of the intermediate <a href="#vector">vector representations</a>. More layers and wider internal representations can improve the capability of a model, but can also increase the amount of time it takes to <a href="#training">train</a> the model or to do <a href="#inference">inference</a>.</p>
+            <h3 id="attention">Attention</h3>
+            <p>An <strong>attention</strong> mechanism is a sub-component of a <a href="#transformer">transformer</a> architecture. This mechanism allows a <a href="#nn">neural network</a> to selectively focus on (i.e., <strong>attend</strong> to) specific tokens in the input sequence by assigning different attention weights to each token. Attention also refers to the influence an input token has on the token that is generated by the model.</p>
+            <h3 id="base-model">Base Model</h3>
+            <p>A <strong>base model</strong> (sometimes called a “<a href="#foundation">foundation</a>” or “pre-trained model”) is a <a href="#nn">neural network</a> that has been <a href="#pt-ft">pre-trained</a> on a large general-purpose dataset, such as a <a href="#web-crawl">web crawl</a>. Base models can be thought of as the first step of training and a good building block for other models. Thus, base models are not typically exposed to Generative AI users; instead they are adapted to be more usable either through <a href="#alignment">alignment</a> or <a href="#pt-ft">fine-tuning</a> or performing <a href="#in-context">in-context learning</a> for <em>specific</em> tasks. For example, OpenAI trained a base model called GPT-3 then adapted it to follow natural-language instructions from users to create a subsequent model called InstructGPT <span class="citation" data-cites="instructgpt">(OpenAI 2022)</span>.</p>
+            <p>See also <a href="#pt-ft">pre-training and fine-tuning</a>.</p>
+            <h3 id="checkpoint">Checkpoint</h3>
+            <p>While a <a href="#model">model</a> is being trained, all of its <a href="#parameters">parameters</a> are stored in the computer’s memory, which gets reset if the program terminates or the computer turns off. To keep a model around long-term, it is written to long-term memory, i.e., a hard drive in a file called a <strong>checkpoint.</strong> Often, during training, checkpoints are written to disk every several thousand steps of training. The minimum bar for a model to be considered <a href="#open-model">open-source</a> is if there has been a public release of one of its checkpoints, as well as the code needed to load the checkpoint back into memory.</p>
+            <h3 id="context">Context Window</h3>
+            <p>Also called <strong>prompt length</strong>. Generative AI <a href="#prompt">prompts</a> typically have a fixed <strong>context window</strong>. This is the maximum accepted input length for the model and arises because models are trained with data examples that are no longer than this maximum context window. Inputs longer than this maximum context window may result in generations with performance degradations.</p>
+            <h3 id="data-curation">Data Curation and Pre-Processing</h3>
+            <p><strong>Data curation</strong> is the process of creating and curating a dataset for training a model. In the past, when datasets were smaller, they could be manually curated, with human annotators assessing the quality of each example. Today, the final datasets used to train generative machine learning models are typically automatically curated. For example, data examples identified as “toxic” or “low quality” may be removed. This filtering is done using an <a href="#algorithm">algorithm</a>. These algorithms may include heuristic rules (e.g., labeling examples containing forbidden words as toxic) or may use a different machine learning model trained to classify training examples as low-quality or toxic. Another common curation step is to deduplicate the dataset by identifying examples that are very similar to each other and removing all but one copy <span class="citation" data-cites="lee2022dedup">(Lee et al. 2022)</span>.</p>
+            <p><strong>Data pre-processing</strong> involves transforming each example in the dataset to a format that is useful for the task we want our machine learning model to be able to do. For example, a web page downloaded from a <a href="#web-crawl">web crawl</a> might contain HTML markup and site navigation headers. We may want to remove these components and keep only the content text.</p>
+            <p>Data curation and pre-processing happens directly to the data and are independent of any model. Different models can be trained on the same dataset. For more information about dataset curation and pre-processing, see <span class="citation" data-cites="lee2023explainers">Lee et al. (2023, chap. 1)</span></p>
+            <h3 id="datasets">Datasets</h3>
+            <p><strong>Datasets</strong> are collections of data <a href="#examples">examples</a>. Datasets are used to <a href="#training">train</a> machine-learning models. This means that the <a href="#parameters">parameters</a> of a machine learning model depend on the dataset. Different machine-learning models may require different types of data and thus different datasets. The choice of dataset depends on the task we want the machine learning model to be able to accomplish. For example, to train a model that can generate images from natural-language descriptions, we would need a dataset consisting of aligned image-text pairs.</p>
+            <p>Datasets are often copied and reused for multiple projects because (a) they are expensive and time-consuming to create, and (b) reuse makes it easier to compare new models and algorithms to existing methods (a process called <strong>benchmarking</strong>). Datasets are usually divided into <a href="#training">training</a> and <strong>testing</strong> portions. The testing portion is not used during training, and is instead used to measure how well the resulting model <a href="#generalization">generalizes</a> to new data (how well the model performs on examples that look similar to the training data but were not actually used for training).</p>
+            <p>Datasets can be either created directly from a raw source, such as Wikipedia or a <a href="#web-crawl">web crawl</a>, or they can be created by assembling together pre-existing datasets. Here are some popular “source” datasets used to train generative machine learning models:</p>
+            <ul>
+            <li><a href="https://huggingface.co/datasets/wikipedia"><em>Wikipedia</em></a></li>
+            <li><a href="https://arxiv.org/abs/1812.08092v1"><em>Project Gutenberg</em></a></li>
+            <li><a href="https://commoncrawl.org/"><em>Common Crawl</em></a></li>
+            <li><a href="https://github.com/allenai/allennlp/discussions/5056"><em>C4</em></a></li>
+            <li><a href="https://www.image-net.org/"><em>ImageNet</em></a></li>
+            <li><a href="https://laion.ai/blog/laion-400-open-dataset/"><em>LAION-400M</em></a></li>
+            <li><a href="https://huggingface.co/papers/2303.03915"><em>ROOTS</em></a></li>
+            </ul>
+            <p>Here are some popular datasets that were created by collecting together several pre-existing datasets:</p>
+            <ul>
+            <li>The Pile (The Pile was formerly listed online, but was removed following the Huckabee v. Meta Platforms, Inc., Bloomberg L.P., Bloomberg Finance, L.P., Microsoft Corporation, and The EleutherAI Institute class action complaint <span class="citation" data-cites="huckabee">(Huckabee v. Meta Platforms, Inc., Bloomberg L.P., Bloomberg Finance, L.P., Microsoft Corporation, and The EleutherAI Institute 2023)</span>. Notably, a de-duplicated version of the dataset is still available on HuggingFace via EleutherAI, as of the writing of this report <span class="citation" data-cites="deduppile">(EleutherAI 2023)</span>.)</li>
+            <li><a href="https://blog.allenai.org/dolma-3-trillion-tokens-open-llm-corpus-9a0ff4b8da64"><em>Dolma</em></a></li>
+            <li><a href="https://github.com/togethercomputer/RedPajama-Data"><em>RedPajama</em></a></li>
+            </ul>
+            <p>Collection-based datasets tend to have a separate license for each constituent dataset rather than a single overarching license.</p>
+            <h3 id="decoding">Decoding</h3>
+            <p>A <strong>decoding algorithm</strong> is used by a <a href="#lm">language model</a> to generate the next word given the previous words in a prompt. There are many different types of decoding algorithms including: greedy algorithm, beam-search, and top-k <span class="citation" data-cites="decoding">(Patrick von Platen 2020)</span>. For language models, the term <strong>decoding</strong> may be used interchangeably with <a href="#inference">inference</a>, <a href="#Generations">generation</a>, and <a href="#sampling">sampling</a>.</p>
+            <h3 id="diffusion">Diffusion-Based Modeling</h3>
+            <p><strong>Diffusion-based modeling</strong> is an algorithmic process for model training. Diffusion is <em>not</em> itself a <a href="#architecture">model architecture</a>, but describes a process for training a model architecture (typically, an underlying <a href="#nn">neural network</a>) <span class="citation" data-cites="sohldickstein2015dpm rombach2022diffusion ho2020denoising song2019grads">(Sohl-Dickstein et al. 2015; Rombach et al. 2022; Ho, Jain, and Abbeel 2020; Song and Ermon 2019)</span>. Diffusion-based models are commonly used for image generation, such as in the Stable Diffusion text-to-image models <span class="citation" data-cites="stable-diffusion">(Stability AI 2022)</span>.</p>
+            <h3 id="embedding">Embedding</h3>
+            <p>(Also called <strong>vector representation</strong>.) Embeddings are numerical representations of data. There are different types of embeddings such as word embeddings, sentence embeddings, image embeddings, etc. <span class="citation" data-cites="murphy2022mlintro">(Murphy 2022, 26, p. 703-10)</span>. Embeddings created with machine learning models seek to model statistical relationships between the data seen during training.</p>
+            <p>“Common embedding strategies capture semantic similarity, where vectors with similar numerical representations (as measured by a chosen distance metric) reflect words with similar meanings.</p>
+            <p>Needless to say, such quantified data are not identical to the entities they reflect, <em>however</em>, they can capture certain useful information about said entities” Quoted from <span class="citation" data-cites="lee2023talkin">Lee, Cooper, and Grimmelmann (2023, 7)</span>:</p>
+            <h3 id="examples">Examples</h3>
+            <p>An example is a self-contained piece of data. Examples are assembled into <a href="#datasets">datasets</a>. Depending on the dataset, an example can be an image, a piece of text (such as content of a web page), a sound snippet, a video, or some combination of these. Often times examples are <strong>labeled</strong>—they have an input component that can be passed into a machine learning model, and they have a target output, which is what we would like the model to predict when it sees the input. This format is usually referred to as an “input-output” or “input-target” pair. For example, an input-target example pair for training an image classification model would consist of an image as the input, and a label (e.g. whether this animal is a dog or a cat) as the target.</p>
+            <h3 id="generalization">Generalization</h3>
+            <p>Generalization in machine learning refers to a model’s ability to perform well on unseen data, i.e. data it was not exposed to during training. <strong>Generalization error</strong> is usually measured evaluating the model on <em>training</em> data and comparing it with the evaluation of the model on <em>test</em> data <span class="citation" data-cites="generalization">(Wikipedia Accessed October 2023)</span>. Generalization is</p>
+            <h3 id="generation">Generation</h3>
+            <p><strong>Generative models</strong> produce complex, human interpretable outputs such as full sentences or natural-looking images, called <strong>generations.</strong> Generation also refers to the process of applying the generative-AI model to an input and generating an output. The input to a generative model is often called a <a href="#prompt">prompt</a>. More traditional, machine learning models are limited to ranges of numeric outputs (<strong>regression</strong>) or discrete output labels like “cat” and “dog” (<strong>classification</strong>). More commonly the word <a href="#inference">inference</a> is used to describe applying a traditional machine learning model to inputs.</p>
+            <p>Generative models could output many different generations for the same prompt prompt that may all be valid to a user. For example, there may be many different kinds of cats that would all look great wearing a hat. Thus, evaluating the performance of generative models can be challenging. Recent developments in generative AI have made these outputs look much better. The process of producing generations is much more difficult and even high-quality generations can reach an <strong>uncanny valley</strong> with subtly wrong details like seven-fingered hands.</p>
+            <p>See also: <a href="#inference">inference</a>.</p>
+            <h3 id="ft">Fine-Tuning</h3>
+            <p>See description alongside <a href="#pt-ft">pre-training</a>.</p>
+            <h3 id="foundation">Foundation Model</h3>
+            <p><strong>Foundation model</strong> is a term coined by researchers at Stanford University <span class="citation" data-cites="bommasani2021foundation">(Bommasani et al. 2021)</span> to refer to neural networks that are trained on very large general-purpose datasets, after which they can be adapted to many different applications. Another commonly used word is “<a href="#base-model">base model</a>.”</p>
+            <h3 id="hallucination">Hallucination</h3>
+            <p>There are two definitions of the word <strong>hallucination</strong> <span class="citation" data-cites="hallucination">(Ben Zimmer 2023)</span>. First, a generation that does not accord with our understanding of reality may be termed a hallucination. For example, an image of a traffic light not connected to anything in response to the prompt: “a sunny street corner in San Francisco,” or “bibliographies” consisting of research papers that do not exist. These hallucinations may occur because generative models do not have explicit representations of facts or knowledge. Second, generations that have nothing to do with the input may also be termed a hallucination. For example, an image generated of a cat wearing a hat in response to the prompt “Science fiction from the 80s” may be termed a hallucination.</p>
+            <h3 id="hyperparameter">Hyperparameter</h3>
+            <p>Neural networks contain both <a href="#parameters">parameters</a> (or weights) and <strong>hyperparameters.</strong> <strong>Parameters</strong> are the numbers in a network network whose values are updated over and over again during training. Hyperparameters are settings for the model or training process that are manually specify these prior to training. These settings are often written as numbers (such as the number of layers in the neural network), but these are numbers that are <em>not</em> learned. Examples of hyperparameters for the model include: properties of the architecture, such as input sequence length, the number of model parameters per <strong>layer</strong>, and number of layers. Examples of hyperparameters that determine the behavior of the training algorithm include: the choice of optimization algorithm and the learning rate, which controls how much we update model parameters after each input/output training example. The process of picking hyperparameters is typically called <strong>hyperparameter optimization</strong>, which is its own field of research.</p>
+            <h3 id="in-context">In-Context Learning (Zero-Shot / Few-shot)</h3>
+            <p>A <a href="#base-model">base model</a> can be used directly without creating new <a href="#checkpoint">checkpoint</a> through <a href="#pt-ft">fine-tuning</a>. <strong>In-context learning</strong> is a method of adapting the model to a specific application by providing additional <a href="#context">context window</a>to the model through the <a href="#prompt">prompt</a>. This can be used instead of the more computationally expensive <a href="#pt-ft">fine-tuning</a> process, though it may not be as effective. In-context learning involves creating an input or <a href="#prompt">prompt</a> to a model in a way that constrains a desired output. Typically the input includes either <strong>instructions</strong> (zero-shot: a natural language description of the output) or a small number of <strong>examples</strong> of input-output pairs (few-shot). “<strong>Shot</strong>” refers to the number of examples provided.</p>
+            <h3 id="inference">Inference</h3>
+            <p>More traditional, machine learning (like <strong>regression</strong> and <strong>classification</strong>) may have used the word <strong>inference</strong> instead of <a href="#Generations">generation</a> to refer to the process of applying a trained model to input data. However, both <strong>inference</strong> and <strong>generation</strong> are used to describe the generation process for a generative-AI model.</p>
+            <p>See also: <a href="#Generations">generation</a>.</p>
+            <h3 id="lm">Language Model</h3>
+            <p>A language model (LM) is a type of <a href="#model">model</a> that takes a sequence of text as input and returns a prediction for what the next word in the text sequence should be. This prediction is usually in the form of a probability distribution. For example, when passed the input “It is raining,” the language model might output that the probability of “outside” is 70%, and the probability of “inside” is 5%. Language models used to be entirely statistical; the probability of a “outside” coming next in the phrase would be computed by counting the number of times “outside” occurred after the sequence “It is raining” in their training <a href="#datasets">dataset</a>. Modern language models are implemented using neural networks, which have the key advantage that they can base their output probabilities on complex relationships between sequences in the training data, rather than just counting how often each possible sequence occurs. As an illustrative example, a neural network may be able to use information from a phrase like “It’s a monsoon outside” occurring in the training data to increase the probability of the word “outside.”</p>
+            <p>A language model can be used for generation by employing an <a href="#algorithm">algorithm</a> that selects a word to generate given the probabilities outputted by the model for some prompt sequence. After each word is selected, the algorithm appends that word to the previous prompt to create a new prompt, which is then used to pick the next word, and so on. Such an algorithm is referred to as a <a href="#decoding">decoding algorithm</a>.</p>
+            <p>Language model generation can be used to implement many tasks, including autocomplete (given the start of a sentence, how should the sentence be completed?) and translation (translate a sentence from English to Chinese). The probabilities outputted by the language model can also be used directly for tasks. For example, for a sentiment classification task, we might ask the language model whether “but” or “because” is a more probable next word given the prompt “the food was absolutely delicious.”</p>
+            <p>For more information, see <span class="citation" data-cites="riedl2023transformers">Riedl (2023)</span>.</p>
+            <h3 id="llm">Large Language Model (LLM)</h3>
+            <p>This term has become popular as a way to distinguish older language models from more modern language models, which use the <a href="#transformer">transformer</a> architecture with many parameters and are trained on web-scale datasets. Older models may have used different <a href="#architecture">model architectures</a>, or may have used fewer <a href="#parameters">parameters</a> and were often trained on smaller, more narrowly scoped datasets. Consensus for what constitutes “large” has shifted over time as previous generations of large language models are replaced with models with even more parameters and trained for even more steps.</p>
+            <h3 id="loss">Loss</h3>
+            <p>Neural networks take an input and predict an output. The distance between this output and the output we <em>expect</em> the model to predict (i.e., the target) is called the loss. Neural networks are <a href="#pt-ft">trained</a> by an algorithm which repeatedly passes <a href="#examples">examples</a> into the the network, measures the loss compared to the expected output, and then updates the network’s <a href="#parameters">weights</a> so as to reduce the size of the loss on these examples. The goal of this training process is to minimizing the loss over all the exampling in the training dataset.</p>
+            <p>Some research areas (for example, reinforcement learning) refer to “maximizing a reward” rather than “minimizing a loss.” These concepts are largely interchangeable; a loss can be turned into a reward by adding a negative sign to it.</p>
+            <h3 id="memorization">Memorization</h3>
+            <p>A training <a href="#examples">example</a> may be <strong>memorized</strong> by a model if information about that training example can be <strong>discovered</strong> inside the model through any means. A training example is said to be <strong>extracted</strong> from a model if the generative model can be prompted to generate an output that looks exactly or almost exactly the same as the training example. A training example may be <strong>regurgitated</strong> by the model if the generation looks very similar or almost exactly the same as the training example (with or without the user’s intention to extract that training example from the model). To use all these words together, a training example is <em>memorized</em> by a model and can be <em>regurgitated</em> in the generation process regardless of whether the intent is to <em>extract</em> the memorized example.</p>
+            <p>The word memorization itself may be used to refer to other concepts that we may colloquially understand as “memorization.” For example, facts and style (artists style) may also be memorized, regurgitated, and extracted.</p>
+            <h3 id="model">Model</h3>
+            <p>The <strong>model</strong> is at the core of contemporary machine learning. A model is a mathematical tool that takes an <strong>input</strong> and produces an <strong>output</strong>. A simple example might be a model that tells you whether a temperature is above or below average for a specific geographic location. In this case the input is a number (temperature) and the output is binary (above/below).</p>
+            <p>There could be many versions of this model depending on geographic location. The behavior of the model is defined by an internal <a href="#parameter">parameter</a> (or, <a href="#weights">weight</a>). In our temperature example, the model has one parameter, the average temperature for the location. The process for setting the value of the parameter for a specific version of the model is called <a href="#training">training</a>. In this case we might train a model for New York City by gathering historical temperature data and calculating the average. The process of gathering historical data is called <a href="#data-curation">data collection</a>. The process of training — in this case, calculating the average — is an <a href="#algorithm">algorithm</a>.</p>
+            <p>A saved copy of a model’s trained parameters is called a <a href="#checkpoint">checkpoint</a>. We might save separate checkpoints for different cities or save new checkpoints for our New York City model if we retrain with new data. The process of applying the model to new inputs is called <a href="#inference">inference</a>. To create an output for a temperature, we also apply an algorithm: subtract the parameter from the input, and return “above” if the difference is positive.</p>
+            <p>Our temperature example is a very simple model. In machine learning, models can be arbitrarily complex. A common type of model <a href="#architecture">architecture</a> is a <a href="#nn">neural network</a>, which (today) can have billions of parameters.</p>
+            <p>It is important to note that models are often embedded within <strong>software systems</strong> that can get deployed to public-facing users. For example, GPT-4 is a generative-AI model that is embedded within the ChatGPT system, which also has a user interface, developer <a href="#api">APIs</a>, and other functionality, like <strong>input and output filters</strong>. The other components are not part of the model itself, but can work in concert with the model to provide overall functionality.</p>
+            <h3 id="multimodal">Multimodal</h3>
+            <p>Generative-AI models may generate content in one modality (text, images, audio, etc.) or in multiple modalities. For example, DALL-E is a multimodal model that transforms text to images.</p>
+            <h3 id="nn">Neural Network</h3>
+            <p>A neural network is a type of <a href="#architecture">model architecture</a>. Neural networks consist of <strong>layers</strong>, where the output of one layer is used as the input of the next layer. Each layer consists of a set of classifiers (<strong>neurons</strong>) that each performs a simple operation independently of one another. A neural-network model synthesizes multiple simple decisions by passing the input through a series of intermediate transformations. The outputs of all classifiers at layer <em>n</em> are then passed to each classifier in layer <em>n+1</em>, and so forth. Each classifier in each layer has <a href="#parameters">parameters</a> that define how it responds to input.</p>
+            <h3 id="parameters">Parameters</h3>
+            <p><strong>Parameters</strong> are numbers that define the specific behavior of a model. For example, in the linear equation model <span class="math inline"><em>y</em> = <em>m</em><em>x</em> + <em>b</em></span>, there are two parameters: the slope <span class="math inline"><em>m</em></span> and the <strong>bias</strong> (or, <strong>intercept</strong>) <span class="math inline"><em>b</em></span>. A more complex example might be a model that predicts the probability a person makes a bicycle trip given the current temperature and rainfall. This could have two parameters: one representing the effect of temperature and one representing the effect of rainfall. Contemporary <a href="#nn">neural network</a> models have millions to billions of parameters. Model parameters are often interchangeably referred to as model <a href="#weights">weights</a>. The values of parameters are saved in files called <a href="#checkpoint">checkpoint</a>.</p>
+            <p>For more on the distinction between <strong>parameters</strong> and <strong>hyperparameters</strong>, see <a href="hyperparameter">hyperparameters</a>.</p>
+            <h3 id="preprocessing">Pre-Processing</h3>
+            <p>See <a href="#data-curation">data curation</a>.</p>
+            <h3 id="pt-ft">Pre-Training and Fine-Tuning</h3>
+            <p>Current protocols divide <a href="#training">training</a> into a common <strong>pre-training</strong> phase that results in a general-purpose or <a href="#base-model">base model</a> (sometimes called a foundation or pre-trained model) and an application-specific <strong>fine-tuning</strong> phase that adapts a pre-trained model <a href="#checkpoint">checkpoint</a> to perform a desired task using additional data. This paradigm has become common over the last five years, especially as model architectures have become larger and larger. This is because, relative to pre-training datasets, fine-tuning datasets are smaller making fine-tuning faster and less expensive: It is much cheaper to fine-tune an existing base model for a particular task than it is to train a new model from scratch.</p>
+            <p>As a concrete example, fine-tuning models to “follow instructions” has become an important special case with the popularity of ChatGPT (this is called <strong>instruction tuning</strong>). Examples of interactions in which someone makes a request and someone else follows those instructions are relatively rare on the Internet compared to, for example, question / answer forums. As a result, such data sets are often constructed specifically for the purpose of language model fine-tuning, and may provide substantial practical benefits for commercial companies.</p>
+            <p>Because pre-trained models are most useful if they provide a good basis for many distinct applications, model builders have a strong incentive to collect as much pre-training data from as many distinct sources as possible. Fine-tuning results in a completely new model checkpoint (potentially gigabytes of data that must be loaded and served separately from the original model), and requires hundreds to thousands of application-specific examples.</p>
+            <p>However, the distinction between pre-training and fine-tuning is not well defined. Models are often trained with many (more than two) training stages. For example, the choice to call the first two of, say three, training stages pre-training and the last stage fine-tuning is simply a choice. Finally, pre-training should not be confused with <a href="#data-curation">data curation or pre-processing</a>.</p>
+            <h3 id="prompt">Prompt</h3>
+            <p>Most generative-AI systems take as input some text, which is then used to condition the output. This input text is called the <strong>prompt</strong>.</p>
+            <h3 id="rl">Reinforcement Learning</h3>
+            <p>Reinforcement learning (RL) is a method for incorporating feedback into systems. For generative models, RL is commonly used to incorporate <strong>human feedback</strong> (HF) about whether the generations were “good” or “useful” to improve future generations. For example, ChatGPT collects “thumbs-up” and “thumbs-down” feedback on interactions in the system. User feedback is just one way of collecting human feedback, model creators can also pay testers to rate generations as well.</p>
+            <h3 id="regurgitation">Regurgitation</h3>
+            <p>See <a href="#memorization">memorization</a>.</p>
+            <h3 id="sampling">Sampling</h3>
+            <h3 id="scale">Scale</h3>
+            <p>Machine-learning practitioners use the term "scale" to refer to the <a href="#parameters">number of parameters</a> in their model, the size of their training data (commonly measured in terms of number of <a href="#examples">examples</a> or storage size on disk), or the computational requirements to train the model. The scale of the model’s parameter count and the training dataset size directly influence the computational requirements of training. The scale of computation needed for training can be measured in terms of the number of GPU-hours (on a given GPU type), the number of computers/GPUs involved in total, or the number of FLOPs (floating point operations).</p>
+            <p>Machine-learning practitioners will sometimes talk about “scaling up” a model. This usually means figuring out a way to increase one of the properties listed above. It can also mean figuring out how to increase the fidelity of training examples–e.g. training on longer text sequences or on higher-resolution images.</p>
+            <h3 id="supply-chain">Supply Chain</h3>
+            <p>Generative-AI systems are created, deployed, and used in a variety of different ways. Other work has written about how it is useful to think of these systems in terms of a <strong>supply-chain</strong> that involves many different stages and actors. For more information about the generative-AI supply chain, please see <span class="citation" data-cites="lee2023talkin">Lee, Cooper, and Grimmelmann (2023)</span>.</p>
+            <h3 id="tokens">Tokenization</h3>
+            <p>For language models, a common pre-processing step is to break documents into segments called <strong>tokens</strong>. For example, the input “I like ice cream.” might be tokenized into [“I”, “like”, “ice”, “cream”, “.”]. The tokens can then be mapped to entries in a <strong>vocabulary</strong>. Each entry, or token, in the vocabulary is given an ID (a number representing that token). Each token in the vocabulary has a corresponding <a href="#embedding">embedding</a> that is a learned <a href="#parameters">parameter</a>. The embedding turns words into numeric representations that can be interpreted and modified by a model.</p>
+            <p>Each model family tends to share a vocabulary, which is optimized to represent a particular training corpus. Most current models use <strong>subword tokenization</strong> to handle words that would otherwise not be recognized. Therefore, a rare or misspelled word might be represented by multiple tokens, for example [“seren”, “dipity”] for “serendipity.” The number of tokens used to represent an input is important because it determines how large the effective <a href="#context">context window</a> of a model is.</p>
+            <p>Tokens are also used for other modalities, like music. Music tokens may be <strong>semantic tokens</strong> that may be created using yet another neural network.</p>
+            <h3 id="transformer">Transformer</h3>
+            <p>A <strong>transformer</strong> is a popular <a href="#architecture">model architecture</a> for image, text, and music applications, and the transformer architecture underlies models like ChatGPT, Bard, and MusicLM. An input (text or image) is broken into segments (word <a href="#tokens">tokens</a> or image patches) as a pre-processing step. These input segments are then passed through a series of layers that generate <a href="#embeddings">vector representations</a> of the segments. The model has trainable parameters that determine how much <a href="#attention">attention</a> is paid to parts of the input. Like many other generative-AI models, the transformer model is trained with a loss function that rewards reproducing a target training example.</p>
+            <h3 id="training">Training</h3>
+            <p>Machine-learning models all contain <a href="#parameters">parameters</a>. These parameters are initialized to random numbers when the network is first created. During a process called training, these parameters are repeatedly updated based on the training data that the model has seen. Each update is designed to increase the chance that when a model is provided some input, it outputs a value close to the target value we would like it to output. By presenting the model with all of the examples in a <a href="#dataset">dataset</a> and updating the parameters after each presentation, the model can become quite good at doing the task we want it to do.</p>
+            <p>A common <a href="#algorithm">algorithm</a> for training neural network models is <strong>stochastic gradient descent,</strong> or SGD. Training data sets are often too large to process all at once, so SGD operates on small <strong>batches</strong> of dozens to hundreds of <strong>examples</strong> at a time. Upon seeing a training example, the algorithm generates the model’s output based on the current setting of the parameters and compares that output to the desired output from the training data (In the case of a language model, we might ask: did we correctly choose the next word?). If the output did not match, the algorithm works backwards through the model’s layers, modifying the model’s parameters so that the correct output becomes more likely. This process can be thought of as leaving “echoes” of the training examples encoded in the parameters of the model.</p>
+            <h3 id="vector">Vector Representation</h3>
+            <p>See <a href="#embedding">embedding</a>.</p>
+            <h3 id="web-crawl">Web Crawl</h3>
+            <p>A web crawl is a catalog of the web pages accessible on the internet. It is created by a web crawler, an <a href="#algorithm">algorithm</a> that systematically browses the Internet, trying to reach every single web page. For example, Google Search functions using a web crawl of the internet that can be efficiently queried and ranked. Web crawls are very expensive and compute-intensive to create, and so most companies keep their crawls private. However, there is one public web crawl, called <a href="https://commoncrawl.org/"><em>Common Crawl</em></a>. Most open-source (and many closed-source) language models are trained at least in part on data extracted from the Common Crawl.</p>
+            <h3 id="weight">Weights</h3>
+            <p>See <a href="#parameters">parameters</a>.</p>
+            <h2 id="app:os">Open versus Closed</h2>
+            <p>In general, an informational resource — such as software or data — is <strong>open</strong> when it is publicly available for free reuse by others and <strong>closed</strong> when it is not. Openness has both practical and legal dimensions. The practical dimension is that the information must actually be available to the public. For example, software is open in this sense when its source code is available to the public. The legal dimension is that the public must have the legal right to reuse the information. This legal dimension is typically ensured with an “open-source” or “public” license that provides any member of the public with the right to use the information.</p>
+            <p>Open versus closed is not a binary distinction. For one thing, an informational artifact could be practically open but legally closed. For another, there are numerous different licenses, which provide users with different rights. Instead, it is always important to break down the specific ways in which information is open for reuse and the ways in which it is not. The relevant forms of openness are different for different types of information. In this section, we discuss some of the common variations on open and closed datasets, models, and software.</p>
+            <h3 id="closed-dataset">Closed Dataset</h3>
+            <p>Many <a href="#model">models</a>, including <a href="#open-model">open models</a>, have been trained on non-public <a href="#datasets">datasets</a>. Though a high-level description of the dataset may have been released and some portions of it may indeed be public (e.g. nearly all models are trained on Wikipedia), there is insufficient public information for the dataset to be fully reproduced. For example, there might be very little information available on the <a href="#data-curation">curation and pre-processing</a> techniques applied, or constituent datasets might be described in general terms such as “books” or “social media conversations” without any detail about the source of these datasets. GPT-4 and PaLM are both examples of models trained on non-public datasets.</p>
+            <h3 id="closed-model">Closed Model</h3>
+            <p>When a <a href="#model">model</a> is described as closed, it might mean one of three different things. First, a model might have been described in a technical report or paper, but there is no way for members of the public to access or use the model. This is the most closed a model can be. For example, DeepMind described the Chinchilla model in a blog post and paper but was never made accessible to the public <span class="citation" data-cites="hoffmann2022training">(Hoffmann et al. 2022)</span>. Second, a model’s <a href="#checkpoint">checkpoint</a> may not be publicly available, but the general public may be able to access the model in a limited way via an <a href="#api">API</a> or a web application (often for a fee and with the requirement they must sign a <a href="#tos">Terms of Service</a>). For example, OpenAI’s GPT-3 and GPT-4 have followed this paradigm. In this case, it might be possible for users to reconstruct some of the model’s characteristics, but just as with closed-source software they do not have access to the full details. Third, the model itself may have been publicly released for inspection, but without a license that allows others to make free use of it. Practically, the license restrictions may be unenforceable against individual users, but the lack of an open license effectively prevents others from building major products using the model.</p>
+            <h3 id="closed-source">Closed Software</h3>
+            <p>Closed-source software is any software where the source code has not been made available to the public for inspection, modification, or enhancement. It is worth noting that closed software can contain <a href="#os">open</a> components. For example, an overall system might be (semi-)closed if it releases its <a href="#open-model">model</a>, but does not disclose its <a href="#Closed-Dataset">dataset</a>. Many open-source licenses, which were developed before the advent of modern generative-AI systems, do not prevent open-source software from being combined with closed components in this way.</p>
+            <h3 id="open-dataset">Open Dataset</h3>
+            <p>Saying that a <a href="#datasets">dataset</a> is “open” or “open-source” can mean one of several things. At the most open end of the spectrum, it can mean that the dataset is broadly available to the public for download and that the code and experimental settings used to create it are entirely open-source. (This is the fullest expression of the idea that making a software artifact open requires providing access to the preferred form for studying and modifying it.) In some cases, a dataset is available for download but the code and exact experimental settings used to create it are not public. In both these situations, use of the dataset is normally governed by an open-source <a href="#license">license</a>. For example, one popular set of benchmark datasets for language models is called SuperGLUE. The licenses for its constituent datasets include <a href="https://people.ict.usc.edu/~gordon/copa.html"><em>BSD 2-Clause</em></a>, <a href="https://github.com/google-research-datasets/boolean-questions"><em>Creative Commons Share-Alike 3.0</em></a>, and the <a href="https://github.com/rudinger/winogender-schemas/tree/master"><em>MIT License</em></a>. In more restrictive cases, the dataset is public, but users must agree to contractual terms of service to access it — and those terms impose restrictions on how the dataset can be used. Finally, many datasets are public but cost money to access. For example, the <a href="https://www.ldc.upenn.edu/"><em>UPenn Linguistics Data Consortium</em></a> has a catalog of hundreds of high-quality datasets, but individuals need to be affiliated with a member institution of the consortium to access them.</p>
+            <h3 id="open-model">Open Model</h3>
+            <p>The machine learning community has described a <a href="#model">model</a> as “open-source” when a trained <a href="#checkpoint">checkpoint</a> has been released with a <a href="#license">license</a> allowing anyone to download and use it, and the software package needed to load the checkpoint and perform inference with it have also been open-sourced. A model can be open-sourced even in cases where details about how the model was developed have not been made public (sometimes, such models are referred to instead as <strong>semi-closed</strong>). For example, the model creators may not have open-sourced the software package for training the model — indeed, they may have not even publicly documented the training procedure in a technical report. Furthermore, a model being open-source does not necessarily mean the training <a href="#datasets">data</a> has been made public. However, various pre-existing open communities (including the Open Source Initiative, which maintains the canonical Open Source Definition) have objected to usage by the machine learning community, arguing that it does not capture several of the most important qualities of opennness as it has been understood by the software community for over two decades. These qualities include the freedom to inspect the software, the freedom to use the software for any purpose, and the ability to modifiy the software, and the freedom to distribute modifications to others.</p>
+            <h3 id="os">Open Software</h3>
+            <p>Open-source software is software with source code that anyone can inspect, modify, and enhance, for any purpose. Typically such software is licensed under a standardized open-source <a href="#license">license</a>, such as the <a href="https://opensource.org/license/mit/"><em>MIT License</em></a> or the <a href="https://opensource.org/license/apache-2-0/"><em>Apache license</em></a>. Machine-learning systems typically consist of several relatively independent pieces of software; there is the software that builds the <a href="#datasets">training dataset</a>, the software that <a href="#training">trains</a> the model, and the software that does <a href="#inference">inference</a> with the <a href="#model">model</a>. Each of these can be independently open-sourced.</p>
+            <h2 id="gloss:legal-concepts">Legal Concepts in Intellectual Property and Software</h2>
+            <h3 id="claims">Claims</h3>
+            <p><a href="#patent">Patent</a> <strong>claims</strong> are extremely precise statements that define the scope of protection within the patent. Patent claims are carefully written to be broad enough to encompass potential variations of the invention and specific enough to distinguish the invention from prior art.</p>
+            <h3 id="copyright">Copyright</h3>
+            <p><strong>Copyright</strong> grants exclusive rights to creators of original works. For a work to be copyrightable, it must meet a certain criteria: (1) it must be original, and (2) it must possess a sufficient degree of creativity. Copyright does not protect facts or concepts, but expressions of those ideas fixed in a tangible medium (e.g., the idea for a movie, if not written down or recorded in some way, is typically not copyrightable; a screenplay is typically copyrightable). Copyright laws provide protections for various forms of creative expression, including, but not limited to, literary works, artistic works, musical composition, movies, and software <span class="citation" data-cites="copyright">(Legal Information Institute (Cornell) 2023a)</span>.</p>
+            <h3 id="infringe">Copyright Infringement</h3>
+            <p>Copyright infringement occurs when someone uses, reproduces, distributes, performs, or displays copyrighted materials without permission from the copyright owner. This act breaches the exclusive rights held by the copyright holder.</p>
+            <h3 id="damages">Damages</h3>
+            <p>In the context of <a href="#ip">IP</a>, <strong>damages</strong> refers to financial compensation awarded to the owner of IP for harms and losses sustained as a result of IP infringement. When IP rights such as <a href="#patent">patents</a>, <a href="#copyright">copyright</a>, or trademarks are violated, the owner of the IP may file a legal claim for damages. These can cover lost profits, reputational damage, or <a href="#license">licensing</a> fees.</p>
+            <h3 id="fair-use">Fair Use</h3>
+            <p><strong>Fair use</strong> is a legal concept that allows limited use of <a href="#copyright">copyrighted</a> materials without permission from the copyright owner <span class="citation" data-cites="fairuse">(Legal Information Institute (Cornell) 2023b)</span>. Typically, fair use applies to contexts such as teaching, research, and news reporting, and fair use analyses consider the purpose of use, scope, and the amount of material used.</p>
+            <h3 id="ip">The Field of Intellectual Property (IP)</h3>
+            <p>The <strong>field of Intellectual Property (IP)</strong> refers to a set of laws that grant exclusive rights for creative and inventive works. IP laws protect and promote ideas by providing incentives for innovation and protecting owners of inventions (e.g. written works, music, designs, among others). Intellectual property laws include copyright, patents, trademarks and trade dress, and trade secrets. Intellectual property law is often the first recourse for conflicts around emerging technologies where more specific legislation has not yet crystallized. Property law is well-developed, widely applicable, and carries significant penalties including fines and forced removal or destruction of work.</p>
+            <h3 id="harm">Harm</h3>
+            <p>Many areas of law only regulate actions that cause some identifiable <strong>harm</strong> to specific victims. For example, people who have not suffered individual harms may not have “standing” to bring a lawsuit in federal court. For another, damage awards and other remedies may be limited to the harms suffered by the plaintiffs, rather than dealing more broadly with the consequences of the defendant’s conduct. It is important to note that what counts as a cognizable harm is a legal question, and does not always correspond to people’s intuitive senses of when someone has suffered a harm. Physical injury is the most obvious and widely accepted type of legal harm; other widely recognized forms of harm include damage to property, economic losses, loss of liberty, restrictions on speech, and some kinds of privacy violations. But other cases have held that fear of future injury is not a present harm. Thus, having one’s personal information included in a data breach may not be a harm by itself — but out-of-pocket costs and hassle to cancel credit cards are recognized harms.</p>
+            <h3 id="idea-expression">Idea vs. Expression</h3>
+            <p>This <strong>idea vs. expression</strong> dichotomy gets at the distinction between underlying concepts (or ideas) conveyed by a work, and the specific, tangible manner in which those are expressed. An idea refers to an abstract concept or notion behind a creative work, and ideas are not subject to <a href="#copyright">copyright</a> protection. However, expressions, as tangible manifestations, are. Tangible fixed expressions of ideas include words, music, code, or art. It is important to note that within copyright law, rights are granted to expression of ideas, not ideas themselves.</p>
+            <p>See <a href="#copyright">copyright</a>.</p>
+            <h3 id="license">License</h3>
+            <p>A <strong>license</strong> gives legal permission or authorization, granted by the rights holder to others. License agreements explicitly outline rights that are granted, as well as limitations, restrictions, and other provisions related to its scope, for example, duration. Licenses are common practice within the <a href="#ip">field of IP</a>, and are commonly used in software, music, and film industries.</p>
+            <h3 id="non-expressive-or-non-consumptive">Non-Expressive or Non-Consumptive</h3>
+            <p>Certain uses of <a href="#copyright">copyrighted</a> materials can be <strong>non-expressive</strong> or <strong>non-consumptive</strong>. In such cases, copyrighted material is used in a way that does not involve expressing or displaying original work to users. Some examples include text mining, building a search engine, or various forms of computational analyses.</p>
+            <h3 id="patent">Patent</h3>
+            <p>A <strong>patent</strong> confers exclusive rights to inventors, granting them the authority to prevent others from making, using, or selling their inventions without permission. Patents create incentives for innovation by providing inventors with a time-based protection from the filing date. To obtain a patent, inventions must be new, inventive, and industrially applicable. Creators apply for patents; their applications must contain <a href="#claims">claims</a> that describe what is novel in the work.</p>
+            <h3 id="prior-art">Prior Art</h3>
+            <p><strong>Prior art</strong> is evidence of existing knowledge or information that is publicly available before a certain date. Prior art is critical in adjudicating the novelty and nonobviousness of a new invention and may include other <a href="#patent">patents</a>. Patent examiners search for prior art to determine the patentability of the <a href="#claims">claimed</a> invention. Further, prior art informs the patent’s applicability and scope.</p>
+            <h3 id="tos">Terms of Service</h3>
+            <p><strong>Terms of service (ToS)</strong> refers to a contractual agreement between the IP owner and users of <a href="#license">licenses</a> that govern the use and access to the protected content. ToS outline rights, restrictions, and obligations involved. ToS may specify permitted uses, licensing terms, and how IP may be copied or distributed. ToS safeguard IP owners’ rights and ensure compliance with legal standards in the use of IP.</p>
+            <h3 id="transformative-use">Transformative Use</h3>
+            <p>Expression can build on prior expression. In some cases, a new piece of <a href="#copyright">copyrightable</a> material may borrow or re-purpose material from prior work. If this new material creates something inventive, new, and substantially different from the original work, then it can be considered <strong>transformative use</strong> of the original work, as opposed to <a href="#infringe">infringing</a> on the original copyright owner’s exclusive rights. The new material may also be copyright eligible. Parody is one common type of transformative use.</p>
+            <h2 id="app:privacy">Privacy</h2>
+            <h3 id="anonymization">Anonymization</h3>
+            <p><strong>Anonymization</strong> is the process of removing or modifying personal data in a way that it cannot be attributed to an identifiable individual.</p>
+            <h3 id="the-california-consumer-privacy-act">The California Consumer Privacy Act (CCPA)</h3>
+            <p>The <strong>CCPA</strong> is a California state law that provides consumers with the right to know what personal information businesses collect about them, the right to request their personal information be deleted, and the right to opt-out of sales of their personal information. The CCPA applies to all businesses that operate in California, as well as those outside of California that may transfer or process the personal information of California residents.</p>
+            <h3 id="consent">Consent</h3>
+            <p><strong>Consent</strong> is the voluntary and informed agreement given by an individual for the collection, use, or disclosure of their personal information. In the context of data, consent often requires clear and specific communication about the purpose and use of collected data.</p>
+            <h3 id="differential-privacy">Differential Privacy</h3>
+            <p><strong>Differential privacy</strong> (DP) is an approach for modifying algorithms to protect the membership of a given <strong>record</strong> in a dataset <span class="citation" data-cites="dp">(Wikipedia Accessed October 2023)</span>. Informally, these guarantees are conferred by adding small amounts of <strong>noise</strong> to the individual data <a href="#examples">examples</a> in the dataset. Let us say that there are two version of a dataset, <span class="math inline"><em>D</em></span> and <span class="math inline"><em>D</em>′</span>, where the former contains an example <span class="math inline"><em>E</em></span> and the latter does not. If we were to run differentially private algorithms to compute statistics on the datasets <span class="math inline"><em>D</em></span> and <span class="math inline"><em>D</em>′</span>, we would not be able to tell by those statistics which dataset contains <span class="math inline"><em>E</em></span> and which does not. As a result, we can no longer use the computed statistics to infer whether or not the original training data contained the example <span class="math inline"><em>E</em></span>.</p>
+            <p>Differential privacy is a theoretical framework that encounters some challenges in practice. For example, the amount of noise one must add to data may impact the accuracy of statistics computed, or, when used for generative-AI models, may impact performance of the model. On the other hand, someone using a differentally private approach needs to add enough noise to ensure that the two datasets <span class="math inline"><em>D</em></span> and <span class="math inline"><em>D</em>′</span> cannot be differentiated through computed statistics. Finally, differential privacy was originally created for tabular data and encounters challenges adapting to the unstructured data commonly used for generative-AI models. For more on the challenges of applying differential privacy to language models, please see <span class="citation" data-cites="brown2022privacy">Brown et al. (2022)</span>.</p>
+            <h3 id="gdpr">The General Data Protection Regulation (GDPR)</h3>
+            <p><strong>GDPR</strong> is a comprehensive data protection law implemented by the European Union in 2018 <span class="citation" data-cites="gdpr">(GDPR.eu 2023)</span>. The GDPR governs the collection, use, storage, and protection of personal data for EU residents. The law sets out specific rights for individuals regarding their personal data, such as the right to access, rectify, and delete their data, as well as the right to know how their data is being processed. Further, the GDPR imposes obligations on organizations such as businesses that handle personal data to ensure that proper data protection measures are in place and that consent is obtained for data processing. Non-compliance results in fines and penalties.</p>
+            <h3 id="pii">Personally Identifiable Information (PII)</h3>
+            <p><strong>Personally Identifiable Information (PII)</strong> refers to data that can be used to identify an individual. PII can include names, addresses, phone numbers, social security numbers, email addresses, financial information, and biometric data. PII is sensitive, and organizations that collect PII are required to implement appropriate measures, adhering to relevant data protection laws (such as the GDPR) to safeguard its confidentiality and integrity.</p>
+            <h3 id="privacy-policy">Privacy Policy</h3>
+            <p>A <strong>privacy policy</strong> consists of documents that outline how organizations collect, use, store, and protect personal information. Privacy policies are meant to inform individuals about their rights and the organization’s data processing practices.</p>
+            <h3 id="privacy-violation">Privacy Violation</h3>
+            <p>A <strong>privacy violation</strong> involves unauthorized or inappropriate intrusion into an individual’s personal information or activities. Privacy violations may occur in various forms from data breaches, surveillance, identity theft, or sharing personal or sensitive information without consent. These violations may lead to significant harm such as the loss of personal autonomy, reputational damage, or financial loss.</p>
+            <h3 id="the-right-to-be-forgotten">The Right to be Forgotten</h3>
+            <p>Some countries’ legal systems recognize a <strong>right to be forgotten</strong> that grants individuals the ability to request the removal of their personal information from online platforms or search-engine results. The idea is that the legitimate public interest in knowing about other people’s past conduct can be outweighed when the information about it is out-of-date or misleading. The European Union’s <a href="#gdpr">GDPR</a> includes a form of the right to be forgotten.</p>
+            <h3 id="tort">Tort</h3>
+            <p>A <strong>tort</strong> is a civil wrongdoing that causes harm or injury to another person or their property. Tort law provides remedies and compensation to individuals who suffer harm as a result of someone else’s actions or negligence.</p>
+            <h1 id="app:metaphors">Metaphors</h1>
+            <p>We briefly discuss several metaphors for Generative AI that came up in the GenLaw discussions. It is worth considering why these metaphors are helpful and where they start to break down.</p>
+            <h3 id="models-are-trained.">Models are trained.</h3>
+            <p>Machine learning practitioners will often say they “train” models. Training brings to mind teaching a dog to perform tricks by enforcing good behavior with treats. Each time the dog performs the desired behavior, they get a treat. As the dog masters one skill it may move onto another. Model training is similar in the sense that models are optimized to maximize some reward<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. This “reward” is computed based on how similar the model’s outputs are to desired outputs from the model.</p>
+            <p>However, unlike training a dog, model training does not typically have a curriculum;<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> there is no progression of easier to harder skills to learn, and the formula for computing the reward remains the same throughout model training.</p>
+            <h3 id="models-learn-like-children-do.">Models learn like children do.</h3>
+            <p>“Learning” is the active verb we use to describe what a model does as it is being <em>trained</em>— a model is <em>trained</em>, and during this process it <em>learns</em>. Model learning is the most common anthropomorphic metaphor applied to machine learning models. The use of the word “learning” by machine learning practitioners has naturally led to comparisons between how models learn and how human children do. Both children and machine learning models “skilled imitators,” acquiring knowledge of the world by learning to imitate provided exemplars However, human children and Generative AI obviously use very different mechanisms to learn. Techniques that help generative-AI systems to learn better, such as increasing model size, have no parallels in child development, and mechanisms children use to “extract novel and abstract structures from the environment beyond statistical patterns” have no machine learning comparisons <span class="citation" data-cites="yiu2023imitation">(Yiu, Kosoy, and Gopnik 2023)</span>.</p>
+            <h3 id="generations-are-collages.">Generations are collages.</h3>
+            <p>Quoted from <span class="citation" data-cites="lee2023talkin">Lee, Cooper, and Grimmelmann (2023, 58)</span>:</p>
+            <p>It also may seem intuitively attractive to consider generations to be analogous to collages. However, while this may seem like a useful metaphor, it can be misleading in several ways. For one, an artist may make a collage by taking several works and splicing them together to form another work. In this sense, a generation is not a collage: a generative-AI system does not take several works and splice them together. Instead, as we have described above, generative-AI systems are built with models trained on many data examples. Moreover, those data examples are not explicitly referred back to during the generation process. Instead, the extent that a generation resembles specific data examples is dependent on the model encoding in its parameters what the specific data examples look like, and then effectively recreating them. Ultimately, it is nevertheless possible for a generation to look like a collage of several different data examples; however, it is debatable whether the the process that produced this appearance meets the definition for a collage. There is no author “select[ing], coordinat[ing], or arrang[ing]”<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> training examples to produce the resulting generation.</p>
+            <h3 id="language-models-are-stochastic-parrots.">Language models are stochastic parrots.</h3>
+            <p><span class="citation" data-cites="bender2021parrots">Bender et al. (2021)</span> describe a language model as a stochastic parrot, a “system for haphazardly stitching together sequences of linguistic forms it has observed in its vast training data, according to probabilistic information about how they combine, but without any reference to meaning.” Like parrots mimicking the sounds they hear around them, language models repeat the phrases they are exposed to, but have no conception of the human meaning behind these phrases. This analogy is useful because it references the very real problem of machine learning models simply outputting their most frequent training data. Critics of the stochastic parrot analogy say that it undervalues the competencies that state-of-the-art language models have. Some critics take this further and say that these competencies imply models understand meaning in a human-like way <span class="citation" data-cites="piantadosi2022meaning">(Piantadosi and Hill 2022)</span>.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> For example, proponents of this analogy might argue that Generative AI passing a difficult standardized exam (such as the Bar Exam <span class="citation" data-cites="katz2023gpt">(Katz et al. 2023)</span> or the GRE <span class="citation" data-cites="gpt4">(OpenAI 2023)</span>) is more about parroting training data than human-like skill.</p>
+            <h3 id="language-models-are-noisy-search-engines.">Language models are noisy search engines.</h3>
+            <p>A search engine allows users to search for information within a large database using natural language queries. Like a search engine, language models also return information in response to a natural language query. However, while a search engine queries the entries in its database and returns the most appropriate ones, a language model does not have direct access to its training data and can only make predictions based on the information stored in the model weights.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> Most often the output will be a mixture of information contained in many database entries. Some model outputs may quote directly from relevant entries in the database (in the case of <a href="#memorization">memorization</a>), but this is not reflective of the most typical outputs.</p>
+            <p>Sometimes generations from a language model will convey similar information that one might learn from running a search; however, sometimes it will not because the underlying <a href="#algorithm">algorithm</a> is different. Thus, while some generations answer the prompt in a similar way to a search, we can more generally think of generative-model outputs as a noisy version of what is actually in the database. Currently, such outputs also tend to lack attribution to the original data entries, and sometimes are incorrect.</p>
+            <h2 class="unnumbered" id="references">References</h2>
+            <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+            <div id="ref-hallucination" class="csl-entry" role="listitem">
+            Ben Zimmer. 2023. <span>“<span class="nocase">’Hallucination’: When Chatbots (and People) See What Isn’t There</span>.”</span> <a href="https://www.wsj.com/articles/hallucination-when-chatbots-and-people-see-what-isnt-there-91c6c88b?st=wns4rqlp2dl1ly5\&amp;reflink=desktopwebshare_permalink">https://www.wsj.com/articles/hallucination-when-chatbots-and-people-see-what-isnt-there-91c6c88b?st=wns4rqlp2dl1ly5\&amp;reflink=desktopwebshare_permalink</a>.
+            </div>
+            <div id="ref-bender2021parrots" class="csl-entry" role="listitem">
+            Bender, Emily M., Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell. 2021. <span>“<span class="nocase">On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?</span>”</span> In <em>Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency</em>, 610–23. FAccT ’21. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3442188.3445922">https://doi.org/10.1145/3442188.3445922</a>.
+            </div>
+            <div id="ref-bommasani2021foundation" class="csl-entry" role="listitem">
+            Bommasani, Rishi, Drew A Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael S Bernstein, et al. 2021. <span>“On the Opportunities and Risks of Foundation Models.”</span> <em>arXiv Preprint arXiv:2108.07258</em>. <a href="https://fsi.stanford.edu/publication/opportunities-and-risks-foundation-models">https://fsi.stanford.edu/publication/opportunities-and-risks-foundation-models</a>.
+            </div>
+            <div id="ref-brown2022privacy" class="csl-entry" role="listitem">
+            Brown, Hannah, Katherine Lee, Fatemehsadat Mireshghallah, Reza Shokri, and Florian Tramèr. 2022. <span>“<span class="nocase">What Does It Mean for a Language Model to Preserve Privacy?</span>”</span> In <em>Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency</em>, 2280–92. FAccT ’22. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3531146.3534642">https://doi.org/10.1145/3531146.3534642</a>.
+            </div>
+            <div id="ref-deduppile" class="csl-entry" role="listitem">
+            EleutherAI. 2023. <span>“<span class="nocase">the_pile_deduplicated</span>.”</span> <a href="https://huggingface.co/datasets/EleutherAI/the_pile_deduplicated">https://huggingface.co/datasets/EleutherAI/the_pile_deduplicated</a>.
+            </div>
+            <div id="ref-gdpr" class="csl-entry" role="listitem">
+            GDPR.eu. 2023. <span>“<span>General Data Protection Regulation (GDPR)</span>.”</span> <a href="https://gdpr.eu/tag/gdpr/">https://gdpr.eu/tag/gdpr/</a>.
+            </div>
+            <div id="ref-ho2020denoising" class="csl-entry" role="listitem">
+            Ho, Jonathan, Ajay Jain, and Pieter Abbeel. 2020. <span>“<span>Denoising Diffusion Probabilistic Models</span>.”</span> In <em>Advances in Neural Information Processing Systems</em>. Vol. 33.
+            </div>
+            <div id="ref-hoffmann2022training" class="csl-entry" role="listitem">
+            Hoffmann, Jordan, Sebastian Borgeaud, Arthur Mensch, Elena Buchatskaya, Trevor Cai, Eliza Rutherford, Diego de Las Casas, et al. 2022. <span>“<span>Training Compute-Optimal Large Language Models</span>.”</span> <a href="https://arxiv.org/abs/2203.15556">https://arxiv.org/abs/2203.15556</a>.
+            </div>
+            <div id="ref-huckabee" class="csl-entry" role="listitem">
+            Huckabee v. Meta Platforms, Inc., Bloomberg L.P., Bloomberg Finance, L.P., Microsoft Corporation, and The EleutherAI Institute. 2023.
+            </div>
+            <div id="ref-katz2023gpt" class="csl-entry" role="listitem">
+            Katz, Daniel Martin, Michael James Bommarito, Shang Gao, and Pablo Arredondo. 2023. <span>“GPT-4 Passes the Bar Exam.”</span> <em>Social Science Research Network 4389233</em>.
+            </div>
+            <div id="ref-lee2023talkin" class="csl-entry" role="listitem">
+            Lee, Katherine, A. Feder Cooper, and James Grimmelmann. 2023. <span>“<span class="nocase">Talkin’ ’Bout AI Generation: Copyright and the Generative-AI Supply Chain</span>.”</span> <em>arXiv Preprint arXiv:2309.08133</em>.
+            </div>
+            <div id="ref-lee2023explainers" class="csl-entry" role="listitem">
+            Lee, Katherine, A. Feder Cooper, James Grimmelmann, and Daphne Ippolito. 2023. <span>“<span class="nocase">AI and Law: The Next Generation</span>.”</span> <a href="http://dx.doi.org/10.2139/ssrn.4580739 ">http://dx.doi.org/10.2139/ssrn.4580739 </a>.
+            </div>
+            <div id="ref-lee2022dedup" class="csl-entry" role="listitem">
+            Lee, Katherine, Daphne Ippolito, Andrew Nystrom, Chiyuan Zhang, Douglas Eck, Chris Callison-Burch, and Nicholas Carlini. 2022. <span>“<span>Deduplicating Training Data Makes Language Models Better</span>.”</span> In <em>Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics</em>, 1:8424–45.
+            </div>
+            <div id="ref-copyright" class="csl-entry" role="listitem">
+            Legal Information Institute (Cornell). 2023a. <span>“<span class="nocase">17 U.S. Code § 102 - Subject matter of copyright: In general</span>.”</span> <a href="https://www.law.cornell.edu/uscode/text/17/102">https://www.law.cornell.edu/uscode/text/17/102</a>.
+            </div>
+            <div id="ref-fairuse" class="csl-entry" role="listitem">
+            ———. 2023b. <span>“<span class="nocase">17 U.S. Code § 107 - Limitations on exclusive rights: Fair use</span>.”</span> <a href="https://www.law.cornell.edu/uscode/text/17/107">https://www.law.cornell.edu/uscode/text/17/107</a>.
+            </div>
+            <div id="ref-murphy2022mlintro" class="csl-entry" role="listitem">
+            Murphy, Kevin P. 2022. <em>Probabilistic Machine Learning: An Introduction</em>. The MIT Press.
+            </div>
+            <div id="ref-instructgpt" class="csl-entry" role="listitem">
+            OpenAI. 2022. <span>“<span class="nocase">Aligning language models to follow instructions</span>.”</span> <a href="https://openai.com/research/instruction-following">https://openai.com/research/instruction-following</a>.
+            </div>
+            <div id="ref-gpt4" class="csl-entry" role="listitem">
+            OpenAI. 2023. <span>“GPT-4 Technical Report.”</span> <em>arXiv Preprint arXiv:2303.08774</em>.
+            </div>
+            <div id="ref-decoding" class="csl-entry" role="listitem">
+            Patrick von Platen. 2020. <span>“<span class="nocase">How to generate text: using different decoding methods for language generation with Transformers</span>.”</span> <a href="https://huggingface.co/blog/how-to-generate">https://huggingface.co/blog/how-to-generate</a>.
+            </div>
+            <div id="ref-piantadosi2022meaning" class="csl-entry" role="listitem">
+            Piantadosi, Steven T, and Felix Hill. 2022. <span>“Meaning Without Reference in Large Language Models.”</span> <em>arXiv Preprint arXiv:2208.02957</em>.
+            </div>
+            <div id="ref-riedl2023transformers" class="csl-entry" role="listitem">
+            Riedl, Mark. 2023. <span>“<span class="nocase">A Very Gentle Introduction to Large Language Models without the Hype</span>.”</span> <a href="https://rb.gy/tkfw5">https://rb.gy/tkfw5</a>.
+            </div>
+            <div id="ref-rombach2022diffusion" class="csl-entry" role="listitem">
+            Rombach, Robin, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Björn Ommer. 2022. <span>“<span class="nocase">High-Resolution Image Synthesis with Latent Diffusion Models</span>.”</span> In <em>2022 IEEE Conference on Computer Vision and Pattern Recognition</em>.
+            </div>
+            <div id="ref-sohldickstein2015dpm" class="csl-entry" role="listitem">
+            Sohl-Dickstein, Jascha, Eric Weiss, Niru Maheswaranathany, and Surya Ganguli. 2015. <span>“<span class="nocase">Deep Unsupervised Learning using Nonequilibrium Thermodynamics</span>.”</span> In <em>Proceedings of the 32nd International Conference on Machine Learning</em>.
+            </div>
+            <div id="ref-song2019grads" class="csl-entry" role="listitem">
+            Song, Yang, and Stefano Ermon. 2019. <span>“<span class="nocase">Generative Modeling by Estimating Gradients of the Data Distribution</span>.”</span> In <em>Advances in Neural Information Processing Systems</em>. Vol. 32.
+            </div>
+            <div id="ref-stable-diffusion" class="csl-entry" role="listitem">
+            Stability AI. 2022. <span>“<span>Stable Diffusion Public Release</span>.”</span> <a href="https://stability.ai/blog/stable-diffusion-public-release">https://stability.ai/blog/stable-diffusion-public-release</a>.
+            </div>
+            <div id="ref-vaswani2017attention" class="csl-entry" role="listitem">
+            Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkorei, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and llia Polosukhin. 2017. <span>“<span>Attention Is All You Need</span>.”</span> In <em>Advances Neural Information Processing Systems</em>. Vol. 30.
+            </div>
+            <div id="ref-dp" class="csl-entry" role="listitem">
+            Wikipedia. Accessed October 2023. <span>“<span class="nocase">Differential privacy</span>.”</span> <a href="https://en.wikipedia.org/wiki/Differential_privacy">https://en.wikipedia.org/wiki/Differential_privacy</a>.
+            </div>
+            <div id="ref-generalization" class="csl-entry" role="listitem">
+            ———. Accessed October 2023. <span>“<span class="nocase">Generalization error</span>.”</span> <a href="https://en.wikipedia.org/wiki/Generalization_error">https://en.wikipedia.org/wiki/Generalization_error</a>.
+            </div>
+            <div id="ref-yiu2023imitation" class="csl-entry" role="listitem">
+            Yiu, Eunice, Eliza Kosoy, and Alison Gopnik. 2023. <span>“Imitation Versus Innovation: What Children Can Do That Large Language and Language-and-Vision Models Cannot (Yet)?”</span> <em>arXiv Preprint arXiv:2305.07666</em>.
+            </div>
+            </div>
+            <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+            <hr />
+            <ol>
+            <li id="fn1"><p>Maximizing a reward is exactly equivalent to minimizing a loss (except for the extra minus sign), but due to historical reasons, machine learning practitioners use the latter phrasing more often.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+            <li id="fn2"><p>Curriculum learning is an entire field of research in machine learning, but it is not currently standard to use a curriculum.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+            <li id="fn3"><p>§ 101 (definition of “compilation”).<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+            <li id="fn4"><p>Whether models are human-like, or the outputs are simply “really good” is less pertinent for how generations and inputs should be regulated.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+            <li id="fn5"><p>The training data is seen during training, but models are used separately from the training data.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+            </ol>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p style="white-space: nowrap;">GenLaw '23</p>
+        <p class="colophon">Built with <a href="http://pandoc.org">Pandoc</a> and <a href="https://chat.openai.com/chat?model=gpt-4">ChatGPT</a> :)</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+           const toc = document.getElementById('table-of-contents');
+           if (toc == null) {
+            console.log('no toc');
+            return;
+           }
+           // hide all level 2 LIs until clicked
+           const level2LIs = toc.querySelectorAll('#table-of-contents > ul > li > ul > li');
+           level2LIs.forEach(li => {
+               const child_ul = li.querySelector('ul');
+               child_ul.style.display = 'none';
 
-<header>
-  <h1 class="title">GenLaw: Glossary</h1>
-<div class="metadata">
-</div>
-
-</header>
-
-<nav id="TOC" role="doc-toc">
-    <input type="checkbox" id="contents">
-  <label for="contents">
-    <h4 id="toc-heading">
-              Contents
-            <svg id="toc-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2.08926 3.16074C1.76382 2.83531 1.23618 2.83531 0.910744 3.16074C0.585307 3.48618 0.585307 4.01382 0.910744 4.33926L2.08926 3.16074ZM6 8.25L5.41074 8.83926C5.73618 9.16469 6.26382 9.16469 6.58926 8.83926L6 8.25ZM11.0893 4.33926C11.4147 4.01382 11.4147 3.48618 11.0893 3.16074C10.7638 2.83531 10.2362 2.83531 9.91074 3.16074L11.0893 4.33926ZM0.910744 4.33926L5.41074 8.83926L6.58926 7.66074L2.08926 3.16074L0.910744 4.33926ZM6.58926 8.83926L11.0893 4.33926L9.91074 3.16074L5.41074 7.66074L6.58926 8.83926Z" fill="currentColor"/>
-      </svg>
-    </h4>
-  </label>
-  <ul>
-  <li><a href="#gloss:machine-learning" id="toc-gloss:machine-learning">Machine Learning and Generative AI</a>
-  <ul>
-  <li><a href="#algorithm" id="toc-algorithm">Algorithm</a></li>
-  <li><a href="#alignment" id="toc-alignment">Alignment</a></li>
-  <li><a href="#api" id="toc-api">Application Programming Interface (API)</a></li>
-  <li><a href="#architecture" id="toc-architecture">Architecture</a></li>
-  <li><a href="#attention" id="toc-attention">Attention</a></li>
-  <li><a href="#base-model" id="toc-base-model">Base Model</a></li>
-  <li><a href="#checkpoint" id="toc-checkpoint">Checkpoint</a></li>
-  <li><a href="#context" id="toc-context">Context Window</a></li>
-  <li><a href="#data-curation" id="toc-data-curation">Data Curation and Pre-Processing</a></li>
-  <li><a href="#datasets" id="toc-datasets">Datasets</a></li>
-  <li><a href="#decoding" id="toc-decoding">Decoding</a></li>
-  <li><a href="#diffusion" id="toc-diffusion">Diffusion-Based Modeling</a></li>
-  <li><a href="#embedding" id="toc-embedding">Embedding</a></li>
-  <li><a href="#examples" id="toc-examples">Examples</a></li>
-  <li><a href="#generalization" id="toc-generalization">Generalization</a></li>
-  <li><a href="#generation" id="toc-generation">Generation</a></li>
-  <li><a href="#ft" id="toc-ft">Fine-Tuning</a></li>
-  <li><a href="#foundation" id="toc-foundation">Foundation Model</a></li>
-  <li><a href="#hallucination" id="toc-hallucination">Hallucination</a></li>
-  <li><a href="#hyperparameter" id="toc-hyperparameter">Hyperparameter</a></li>
-  <li><a href="#in-context" id="toc-in-context">In-Context Learning (Zero-Shot / Few-shot)</a></li>
-  <li><a href="#inference" id="toc-inference">Inference</a></li>
-  <li><a href="#lm" id="toc-lm">Language Model</a></li>
-  <li><a href="#llm" id="toc-llm">Large Language Model (LLM)</a></li>
-  <li><a href="#loss" id="toc-loss">Loss</a></li>
-  <li><a href="#memorization" id="toc-memorization">Memorization</a></li>
-  <li><a href="#model" id="toc-model">Model</a></li>
-  <li><a href="#multimodal" id="toc-multimodal">Multimodal</a></li>
-  <li><a href="#nn" id="toc-nn">Neural Network</a></li>
-  <li><a href="#parameters" id="toc-parameters">Parameters</a></li>
-  <li><a href="#preprocessing" id="toc-preprocessing">Pre-Processing</a></li>
-  <li><a href="#pt-ft" id="toc-pt-ft">Pre-Training and Fine-Tuning</a></li>
-  <li><a href="#prompt" id="toc-prompt">Prompt</a></li>
-  <li><a href="#rl" id="toc-rl">Reinforcement Learning</a></li>
-  <li><a href="#regurgitation" id="toc-regurgitation">Regurgitation</a></li>
-  <li><a href="#sampling" id="toc-sampling">Sampling</a></li>
-  <li><a href="#scale" id="toc-scale">Scale</a></li>
-  <li><a href="#supply-chain" id="toc-supply-chain">Supply Chain</a></li>
-  <li><a href="#tokens" id="toc-tokens">Tokenization</a></li>
-  <li><a href="#transformer" id="toc-transformer">Transformer</a></li>
-  <li><a href="#training" id="toc-training">Training</a></li>
-  <li><a href="#vector" id="toc-vector">Vector Representation</a></li>
-  <li><a href="#web-crawl" id="toc-web-crawl">Web Crawl</a></li>
-  <li><a href="#weight" id="toc-weight">Weights</a></li>
-  </ul></li>
-  <li><a href="#app:os" id="toc-app:os">Open versus Closed</a>
-  <ul>
-  <li><a href="#closed-dataset" id="toc-closed-dataset">Closed Dataset</a></li>
-  <li><a href="#closed-model" id="toc-closed-model">Closed Model</a></li>
-  <li><a href="#closed-source" id="toc-closed-source">Closed Software</a></li>
-  <li><a href="#open-dataset" id="toc-open-dataset">Open Dataset</a></li>
-  <li><a href="#open-model" id="toc-open-model">Open Model</a></li>
-  <li><a href="#os" id="toc-os">Open Software</a></li>
-  </ul></li>
-  <li><a href="#gloss:legal-concepts" id="toc-gloss:legal-concepts">Legal Concepts in Intellectual Property and Software</a>
-  <ul>
-  <li><a href="#claims" id="toc-claims">Claims</a></li>
-  <li><a href="#copyright" id="toc-copyright">Copyright</a></li>
-  <li><a href="#infringe" id="toc-infringe">Copyright Infringement</a></li>
-  <li><a href="#damages" id="toc-damages">Damages</a></li>
-  <li><a href="#fair-use" id="toc-fair-use">Fair Use</a></li>
-  <li><a href="#ip" id="toc-ip">The Field of Intellectual Property (IP)</a></li>
-  <li><a href="#harm" id="toc-harm">Harm</a></li>
-  <li><a href="#idea-expression" id="toc-idea-expression">Idea vs. Expression</a></li>
-  <li><a href="#license" id="toc-license">License</a></li>
-  <li><a href="#non-expressive-or-non-consumptive" id="toc-non-expressive-or-non-consumptive">Non-Expressive or Non-Consumptive</a></li>
-  <li><a href="#patent" id="toc-patent">Patent</a></li>
-  <li><a href="#prior-art" id="toc-prior-art">Prior Art</a></li>
-  <li><a href="#tos" id="toc-tos">Terms of Service</a></li>
-  <li><a href="#transformative-use" id="toc-transformative-use">Transformative Use</a></li>
-  </ul></li>
-  <li><a href="#app:privacy" id="toc-app:privacy">Privacy</a>
-  <ul>
-  <li><a href="#anonymization" id="toc-anonymization">Anonymization</a></li>
-  <li><a href="#the-california-consumer-privacy-act" id="toc-the-california-consumer-privacy-act">The California Consumer Privacy Act (CCPA)</a></li>
-  <li><a href="#consent" id="toc-consent">Consent</a></li>
-  <li><a href="#differential-privacy" id="toc-differential-privacy">Differential Privacy</a></li>
-  <li><a href="#gdpr" id="toc-gdpr">The General Data Protection Regulation (GDPR)</a></li>
-  <li><a href="#pii" id="toc-pii">Personally Identifiable Information (PII)</a></li>
-  <li><a href="#privacy-policy" id="toc-privacy-policy">Privacy Policy</a></li>
-  <li><a href="#privacy-violation" id="toc-privacy-violation">Privacy Violation</a></li>
-  <li><a href="#the-right-to-be-forgotten" id="toc-the-right-to-be-forgotten">The Right to be Forgotten</a></li>
-  <li><a href="#tort" id="toc-tort">Tort</a></li>
-  </ul></li>
-  <li><a href="#app:metaphors" id="toc-app:metaphors">Metaphors</a>
-  <ul>
-  <li><a href="#models-are-trained." id="toc-models-are-trained.">Models are trained.</a></li>
-  <li><a href="#models-learn-like-children-do." id="toc-models-learn-like-children-do.">Models learn like children do.</a></li>
-  <li><a href="#generations-are-collages." id="toc-generations-are-collages.">Generations are collages.</a></li>
-  <li><a href="#language-models-are-stochastic-parrots." id="toc-language-models-are-stochastic-parrots.">Language models are stochastic parrots.</a></li>
-  <li><a href="#language-models-are-noisy-search-engines." id="toc-language-models-are-noisy-search-engines.">Language models are noisy search engines.</a></li>
-  <li><a href="#references" id="toc-references">References</a></li>
-  </ul></li>
-  </ul>
-</nav>
-
-
-<main id="main" class="">
-        <p style="text-align:right"><a href="https://genlaw.github.io/">Back to GenLaw ↩︎</a></p>
-  <p style="text-align:right">
-Also see the <a href="resources.html">resources</a>.
-</p>
-<p>We roughly divide our glossary into sections:</p>
-<ul>
-<li><a href="#gloss:machine-learning">Machine Learning and Generative AI</a></li>
-<li><a href="#app:os">Open versus Closed</a></li>
-<li><a href="#gloss:legal-concepts">Legal Concepts in Intellectual Property and Software</a></li>
-<li><a href="#app:privacy">Privacy</a></li>
-<li><a href="#app:metaphors">Metaphors</a></li>
-</ul>
-<h2 id="gloss:machine-learning">Machine Learning and Generative AI</h2>
-<h3 id="algorithm">Algorithm</h3>
-<p>An <strong>algorithm</strong> is a formal, step-by-step specification of a process. Machine learning uses algorithms for <a href="#training">training</a> <a href="#model">models</a> and for applying models (a process called <a href="#inference">inference</a>). In training, the algorithm takes a model <a href="#architecture">architecture</a>, <a href="#datasets">training data</a>, <a href="#hyperparameter">hyperparameters</a>, and a random seed (to enable random choices during statistical computations) to produce trained model <a href="#parameters">parameters</a>.</p>
-<p>In public discourse around social media, the term algorithm is often used to refer to methods for optimizing the probability that a user will engage with a post; however, it is important to note that algorithms describe many processes including, for example, the process of sorting social media posts by date.</p>
-<h3 id="alignment">Alignment</h3>
-<p><strong>Alignment</strong> refers to the process of taking a <a href="#pt-ft">pre-trained</a> <a href="#model">model</a> and further tuning it so that its outputs are <em>aligned</em> with a policy set forth by the model developer. Alignment can also refer to the <em>state of being aligned</em> — some academic papers might compare and contrast between an aligned and an unaligned model. The goals included in an alignment policy (sometimes called a constitution) vary from developer to developer, but common ones include:</p>
-<ul>
-<li>Following the intent of user-provided instructions;</li>
-<li>Abiding by human values (e.g., not emitting swear-words);</li>
-<li>Being polite, factual, or helpful;</li>
-<li>Avoiding generating copyrighted text.</li>
-</ul>
-<p>While the goals of alignment are vast and pluralistic, current techniques for achieving better alignment are broadly applicable across goals. These techniques include <a href="#rl">reinforcement learning</a> with human feedback and full model <a href="#pt-ft">fine-tuning</a> Specifying the desired properties of alignment often requires a special dataset. These datasets may include user-provided feedback, supplied through the user interface in a generative-AI product.</p>
-<h3 id="api">Application Programming Interface (API)</h3>
-<p>Companies choose between releasing generative-AI <a href="#model">model</a> functionality in a variety of ways: They can release the model directly by <a href="#open-model">open-sourcing</a> it; they can embed the model in a software system, which they release as a product; or, they can make the model (or the system its embedded in) available via an <strong>Application Programming Interface (API)</strong>. When a model is open-source, anyone can take the <a href="#checkpoint">checkpoint</a> and load it onto a personal computer in order to use it for <a href="#Generations">generation</a>. In contrast, when a company only makes their generative-AI model or system available via an API, that means that users access it in code. The user writes a query in a format specified by the company, then sends the query to the company’s server. The company then runs the model or system on their own computers, and provides a response to the user with the generated content. API access usually requires accepting the company’s <a href="#tos">Terms of Service</a>, and companies may add extra layers of security on top of the model (such as rejecting queries identified as being in violation of the ToS).</p>
-<h3 id="architecture">Architecture</h3>
-<p>The design of a <a href="#model">model</a> is called its <strong>architecture</strong>. For a <a href="#nn">neural network</a>, architectural decisions include the format of inputs that can be accepted (e.g., images with a certain number of pixels), the number of layers, how many <a href="#parameters">parameters</a> per layer, how the parameters in each layer are connected to each other, and how we represent the intermediate state of the model as each layer transforms input to output. The most common architecture for language tasks is called a Transformer <span class="citation" data-cites="vaswani2017attention">(Vaswani et al. 2017)</span>, for which there are many variations.</p>
-<p>Many contemporary models appear in <strong>model families</strong> that have similar architectures but different sizes, often differentiated by the total number of parameters in the model. For example, Meta originally released four sizes of the LLaMA family that had almost the exact same architectures, differing only in the number of layers and size of the intermediate <a href="#vector">vector representations</a>. More layers and wider internal representations can improve the capability of a model, but can also increase the amount of time it takes to <a href="#training">train</a> the model or to do <a href="#inference">inference</a>.</p>
-<h3 id="attention">Attention</h3>
-<p>An <strong>attention</strong> mechanism is a sub-component of a <a href="#transformer">transformer</a> architecture. This mechanism allows a <a href="#nn">neural network</a> to selectively focus on (i.e., <strong>attend</strong> to) specific tokens in the input sequence by assigning different attention weights to each token. Attention also refers to the influence an input token has on the token that is generated by the model.</p>
-<h3 id="base-model">Base Model</h3>
-<p>A <strong>base model</strong> (sometimes called a “<a href="#foundation">foundation</a>” or “pre-trained model”) is a <a href="#nn">neural network</a> that has been <a href="#pt-ft">pre-trained</a> on a large general-purpose dataset, such as a <a href="#web-crawl">web crawl</a>. Base models can be thought of as the first step of training and a good building block for other models. Thus, base models are not typically exposed to Generative AI users; instead they are adapted to be more usable either through <a href="#alignment">alignment</a> or <a href="#pt-ft">fine-tuning</a> or performing <a href="#in-context">in-context learning</a> for <em>specific</em> tasks. For example, OpenAI trained a base model called GPT-3 then adapted it to follow natural-language instructions from users to create a subsequent model called InstructGPT <span class="citation" data-cites="instructgpt">(OpenAI 2022)</span>.</p>
-<p>See also <a href="#pt-ft">pre-training and fine-tuning</a>.</p>
-<h3 id="checkpoint">Checkpoint</h3>
-<p>While a <a href="#model">model</a> is being trained, all of its <a href="#parameters">parameters</a> are stored in the computer’s memory, which gets reset if the program terminates or the computer turns off. To keep a model around long-term, it is written to long-term memory, i.e., a hard drive in a file called a <strong>checkpoint.</strong> Often, during training, checkpoints are written to disk every several thousand steps of training. The minimum bar for a model to be considered <a href="#open-model">open-source</a> is if there has been a public release of one of its checkpoints, as well as the code needed to load the checkpoint back into memory.</p>
-<h3 id="context">Context Window</h3>
-<p>Also called <strong>prompt length</strong>. Generative AI <a href="#prompt">prompts</a> typically have a fixed <strong>context window</strong>. This is the maximum accepted input length for the model and arises because models are trained with data examples that are no longer than this maximum context window. Inputs longer than this maximum context window may result in generations with performance degradations.</p>
-<h3 id="data-curation">Data Curation and Pre-Processing</h3>
-<p><strong>Data curation</strong> is the process of creating and curating a dataset for training a model. In the past, when datasets were smaller, they could be manually curated, with human annotators assessing the quality of each example. Today, the final datasets used to train generative machine learning models are typically automatically curated. For example, data examples identified as “toxic” or “low quality” may be removed. This filtering is done using an <a href="#algorithm">algorithm</a>. These algorithms may include heuristic rules (e.g., labeling examples containing forbidden words as toxic) or may use a different machine learning model trained to classify training examples as low-quality or toxic. Another common curation step is to deduplicate the dataset by identifying examples that are very similar to each other and removing all but one copy <span class="citation" data-cites="lee2022dedup">(Lee et al. 2022)</span>.</p>
-<p><strong>Data pre-processing</strong> involves transforming each example in the dataset to a format that is useful for the task we want our machine learning model to be able to do. For example, a web page downloaded from a <a href="#web-crawl">web crawl</a> might contain HTML markup and site navigation headers. We may want to remove these components and keep only the content text.</p>
-<p>Data curation and pre-processing happens directly to the data and are independent of any model. Different models can be trained on the same dataset. For more information about dataset curation and pre-processing, see <span class="citation" data-cites="lee2023explainers">Lee et al. (2023, chap. 1)</span></p>
-<h3 id="datasets">Datasets</h3>
-<p><strong>Datasets</strong> are collections of data <a href="#examples">examples</a>. Datasets are used to <a href="#training">train</a> machine-learning models. This means that the <a href="#parameters">parameters</a> of a machine learning model depend on the dataset. Different machine-learning models may require different types of data and thus different datasets. The choice of dataset depends on the task we want the machine learning model to be able to accomplish. For example, to train a model that can generate images from natural-language descriptions, we would need a dataset consisting of aligned image-text pairs.</p>
-<p>Datasets are often copied and reused for multiple projects because (a) they are expensive and time-consuming to create, and (b) reuse makes it easier to compare new models and algorithms to existing methods (a process called <strong>benchmarking</strong>). Datasets are usually divided into <a href="#training">training</a> and <strong>testing</strong> portions. The testing portion is not used during training, and is instead used to measure how well the resulting model <a href="#generalization">generalizes</a> to new data (how well the model performs on examples that look similar to the training data but were not actually used for training).</p>
-<p>Datasets can be either created directly from a raw source, such as Wikipedia or a <a href="#web-crawl">web crawl</a>, or they can be created by assembling together pre-existing datasets. Here are some popular “source” datasets used to train generative machine learning models:</p>
-<ul>
-<li><a href="https://huggingface.co/datasets/wikipedia"><em>Wikipedia</em></a></li>
-<li><a href="https://arxiv.org/abs/1812.08092v1"><em>Project Gutenberg</em></a></li>
-<li><a href="https://commoncrawl.org/"><em>Common Crawl</em></a></li>
-<li><a href="https://github.com/allenai/allennlp/discussions/5056"><em>C4</em></a></li>
-<li><a href="https://www.image-net.org/"><em>ImageNet</em></a></li>
-<li><a href="https://laion.ai/blog/laion-400-open-dataset/"><em>LAION-400M</em></a></li>
-<li><a href="https://huggingface.co/papers/2303.03915"><em>ROOTS</em></a></li>
-</ul>
-<p>Here are some popular datasets that were created by collecting together several pre-existing datasets:</p>
-<ul>
-<li>The Pile (The Pile was formerly listed online, but was removed following the Huckabee v. Meta Platforms, Inc., Bloomberg L.P., Bloomberg Finance, L.P., Microsoft Corporation, and The EleutherAI Institute class action complaint <span class="citation" data-cites="huckabee">(Huckabee v. Meta Platforms, Inc., Bloomberg L.P., Bloomberg Finance, L.P., Microsoft Corporation, and The EleutherAI Institute 2023)</span>. Notably, a de-duplicated version of the dataset is still available on HuggingFace via EleutherAI, as of the writing of this report <span class="citation" data-cites="deduppile">(EleutherAI 2023)</span>.)</li>
-<li><a href="https://blog.allenai.org/dolma-3-trillion-tokens-open-llm-corpus-9a0ff4b8da64"><em>Dolma</em></a></li>
-<li><a href="https://github.com/togethercomputer/RedPajama-Data"><em>RedPajama</em></a></li>
-</ul>
-<p>Collection-based datasets tend to have a separate license for each constituent dataset rather than a single overarching license.</p>
-<h3 id="decoding">Decoding</h3>
-<p>A <strong>decoding algorithm</strong> is used by a <a href="#lm">language model</a> to generate the next word given the previous words in a prompt. There are many different types of decoding algorithms including: greedy algorithm, beam-search, and top-k <span class="citation" data-cites="decoding">(Patrick von Platen 2020)</span>. For language models, the term <strong>decoding</strong> may be used interchangeably with <a href="#inference">inference</a>, <a href="#Generations">generation</a>, and <a href="#sampling">sampling</a>.</p>
-<h3 id="diffusion">Diffusion-Based Modeling</h3>
-<p><strong>Diffusion-based modeling</strong> is an algorithmic process for model training. Diffusion is <em>not</em> itself a <a href="#architecture">model architecture</a>, but describes a process for training a model architecture (typically, an underlying <a href="#nn">neural network</a>) <span class="citation" data-cites="sohldickstein2015dpm rombach2022diffusion ho2020denoising song2019grads">(Sohl-Dickstein et al. 2015; Rombach et al. 2022; Ho, Jain, and Abbeel 2020; Song and Ermon 2019)</span>. Diffusion-based models are commonly used for image generation, such as in the Stable Diffusion text-to-image models <span class="citation" data-cites="stable-diffusion">(Stability AI 2023)</span>.</p>
-<h3 id="embedding">Embedding</h3>
-<p>(Also called <strong>vector representation</strong>.) Embeddings are numerical representations of data. There are different types of embeddings such as word embeddings, sentence embeddings, image embeddings, etc. <span class="citation" data-cites="murphy2022mlintro">(Murphy 2022, 26, p. 703-10)</span>. Embeddings created with machine learning models seek to model statistical relationships between the data seen during training.</p>
-<p>“Common embedding strategies capture semantic similarity, where vectors with similar numerical representations (as measured by a chosen distance metric) reflect words with similar meanings.</p>
-<p>Needless to say, such quantified data are not identical to the entities they reflect, <em>however</em>, they can capture certain useful information about said entities” Quoted from <span class="citation" data-cites="lee2023talkin">Lee, Cooper, and Grimmelmann (2023, 7)</span>:</p>
-<h3 id="examples">Examples</h3>
-<p>An example is a self-contained piece of data. Examples are assembled into <a href="#datasets">datasets</a>. Depending on the dataset, an example can be an image, a piece of text (such as content of a web page), a sound snippet, a video, or some combination of these. Often times examples are <strong>labeled</strong>—they have an input component that can be passed into a machine learning model, and they have a target output, which is what we would like the model to predict when it sees the input. This format is usually referred to as an “input-output” or “input-target” pair. For example, an input-target example pair for training an image classification model would consist of an image as the input, and a label (e.g. whether this animal is a dog or a cat) as the target.</p>
-<h3 id="generalization">Generalization</h3>
-<p>Generalization in machine learning refers to a model’s ability to perform well on unseen data, i.e. data it was not exposed to during training. <strong>Generalization error</strong> is usually measured evaluating the model on <em>training</em> data and comparing it with the evaluation of the model on <em>test</em> data <span class="citation" data-cites="generalization">(Wikipedia Accessed October 2023)</span>. Generalization is</p>
-<h3 id="generation">Generation</h3>
-<p><strong>Generative models</strong> produce complex, human interpretable outputs such as full sentences or natural-looking images, called <strong>generations.</strong> Generation also refers to the process of applying the generative-AI model to an input and generating an output. The input to a generative model is often called a <a href="#prompt">prompt</a>. More traditional, machine learning models are limited to ranges of numeric outputs (<strong>regression</strong>) or discrete output labels like “cat” and “dog” (<strong>classification</strong>). More commonly the word <a href="#inference">inference</a> is used to describe applying a traditional machine learning model to inputs.</p>
-<p>Generative models could output many different generations for the same prompt prompt that may all be valid to a user. For example, there may be many different kinds of cats that would all look great wearing a hat. Thus, evaluating the performance of generative models can be challenging. Recent developments in generative AI have made these outputs look much better. The process of producing generations is much more difficult and even high-quality generations can reach an <strong>uncanny valley</strong> with subtly wrong details like seven-fingered hands.</p>
-<p>See also: <a href="#inference">inference</a>.</p>
-<h3 id="ft">Fine-Tuning</h3>
-<p>See description alongside <a href="#pt-ft">pre-training</a>.</p>
-<h3 id="foundation">Foundation Model</h3>
-<p><strong>Foundation model</strong> is a term coined by researchers at Stanford University <span class="citation" data-cites="bommasani2021foundation">(Bommasani et al. 2021)</span> to refer to neural networks that are trained on very large general-purpose datasets, after which they can be adapted to many different applications. Another commonly used word is “<a href="#base-model">base model</a>.”</p>
-<h3 id="hallucination">Hallucination</h3>
-<p>There are two definitions of the word <strong>hallucination</strong> <span class="citation" data-cites="hallucination">(Ben Zimmer 2023)</span>. First, a generation that does not accord with our understanding of reality may be termed a hallucination. For example, an image of a traffic light not connected to anything in response to the prompt: “a sunny street corner in San Francisco,” or “bibliographies” consisting of research papers that do not exist. These hallucinations may occur because generative models do not have explicit representations of facts or knowledge. Second, generations that have nothing to do with the input may also be termed a hallucination. For example, an image generated of a cat wearing a hat in response to the prompt “Science fiction from the 80s” may be termed a hallucination.</p>
-<h3 id="hyperparameter">Hyperparameter</h3>
-<p>Neural networks contain both <a href="#parameters">parameters</a> (or weights) and <strong>hyperparameters.</strong> <strong>Parameters</strong> are the numbers in a network network whose values are updated over and over again during training. Hyperparameters are settings for the model or training process that are manually specify these prior to training. These settings are often written as numbers (such as the number of layers in the neural network), but these are numbers that are <em>not</em> learned. Examples of hyperparameters for the model include: properties of the architecture, such as input sequence length, the number of model parameters per <strong>layer</strong>, and number of layers. Examples of hyperparameters that determine the behavior of the training algorithm include: the choice of optimization algorithm and the learning rate, which controls how much we update model parameters after each input/output training example. The process of picking hyperparameters is typically called <strong>hyperparameter optimization</strong>, which is its own field of research.</p>
-<h3 id="in-context">In-Context Learning (Zero-Shot / Few-shot)</h3>
-<p>A <a href="#base-model">base model</a> can be used directly without creating new <a href="#checkpoint">checkpoint</a> through <a href="#pt-ft">fine-tuning</a>. <strong>In-context learning</strong> is a method of adapting the model to a specific application by providing additional <a href="#context">context window</a>to the model through the <a href="#prompt">prompt</a>. This can be used instead of the more computationally expensive <a href="#pt-ft">fine-tuning</a> process, though it may not be as effective. In-context learning involves creating an input or <a href="#prompt">prompt</a> to a model in a way that constrains a desired output. Typically the input includes either <strong>instructions</strong> (zero-shot: a natural language description of the output) or a small number of <strong>examples</strong> of input-output pairs (few-shot). “<strong>Shot</strong>” refers to the number of examples provided.</p>
-<h3 id="inference">Inference</h3>
-<p>More traditional, machine learning (like <strong>regression</strong> and <strong>classification</strong>) may have used the word <strong>inference</strong> instead of <a href="#Generations">generation</a> to refer to the process of applying a trained model to input data. However, both <strong>inference</strong> and <strong>generation</strong> are used to describe the generation process for a generative-AI model.</p>
-<p>See also: <a href="#Generations">generation</a>.</p>
-<h3 id="lm">Language Model</h3>
-<p>A language model (LM) is a type of <a href="#model">model</a> that takes a sequence of text as input and returns a prediction for what the next word in the text sequence should be. This prediction is usually in the form of a probability distribution. For example, when passed the input “It is raining,” the language model might output that the probability of “outside” is 70%, and the probability of “inside” is 5%. Language models used to be entirely statistical; the probability of a “outside” coming next in the phrase would be computed by counting the number of times “outside” occurred after the sequence “It is raining” in their training <a href="#datasets">dataset</a>. Modern language models are implemented using neural networks, which have the key advantage that they can base their output probabilities on complex relationships between sequences in the training data, rather than just counting how often each possible sequence occurs. As an illustrative example, a neural network may be able to use information from a phrase like “It’s a monsoon outside” occurring in the training data to increase the probability of the word “outside.”</p>
-<p>A language model can be used for generation by employing an <a href="#algorithm">algorithm</a> that selects a word to generate given the probabilities outputted by the model for some prompt sequence. After each word is selected, the algorithm appends that word to the previous prompt to create a new prompt, which is then used to pick the next word, and so on. Such an algorithm is referred to as a <a href="#decoding">decoding algorithm</a>.</p>
-<p>Language model generation can be used to implement many tasks, including autocomplete (given the start of a sentence, how should the sentence be completed?) and translation (translate a sentence from English to Chinese). The probabilities outputted by the language model can also be used directly for tasks. For example, for a sentiment classification task, we might ask the language model whether “but” or “because” is a more probable next word given the prompt “the food was absolutely delicious.”</p>
-<p>For more information, see <span class="citation" data-cites="riedl2023transformers">Riedl (2023)</span>.</p>
-<h3 id="llm">Large Language Model (LLM)</h3>
-<p>This term has become popular as a way to distinguish older language models from more modern language models, which use the <a href="#transformer">transformer</a> architecture with many parameters and are trained on web-scale datasets. Older models may have used different <a href="#architecture">model architectures</a>, or may have used fewer <a href="#parameters">parameters</a> and were often trained on smaller, more narrowly scoped datasets. Consensus for what constitutes “large” has shifted over time as previous generations of large language models are replaced with models with even more parameters and trained for even more steps.</p>
-<h3 id="loss">Loss</h3>
-<p>Neural networks take an input and predict an output. The distance between this output and the output we <em>expect</em> the model to predict (i.e., the target) is called the loss. Neural networks are <a href="#pt-ft">trained</a> by an algorithm which repeatedly passes <a href="#examples">examples</a> into the the network, measures the loss compared to the expected output, and then updates the network’s <a href="#parameters">weights</a> so as to reduce the size of the loss on these examples. The goal of this training process is to minimizing the loss over all the exampling in the training dataset.</p>
-<p>Some research areas (for example, reinforcement learning) refer to “maximizing a reward” rather than “minimizing a loss.” These concepts are largely interchangeable; a loss can be turned into a reward by adding a negative sign to it.</p>
-<h3 id="memorization">Memorization</h3>
-<p>A training <a href="#examples">example</a> may be <strong>memorized</strong> by a model if information about that training example can be <strong>discovered</strong> inside the model through any means. A training example is said to be <strong>extracted</strong> from a model if the generative model can be prompted to generate an output that looks exactly or almost exactly the same as the training example. A training example may be <strong>regurgitated</strong> by the model if the generation looks very similar or almost exactly the same as the training example (with or without the user’s intention to extract that training example from the model). To use all these words together, a training example is <em>memorized</em> by a model and can be <em>regurgitated</em> in the generation process regardless of whether the intent is to <em>extract</em> the memorized example.</p>
-<p>The word memorization itself may be used to refer to other concepts that we may colloquially understand as “memorization.” For example, facts and style (artists style) may also be memorized, regurgitated, and extracted.</p>
-<h3 id="model">Model</h3>
-<p>The <strong>model</strong> is at the core of contemporary machine learning. A model is a mathematical tool that takes an <strong>input</strong> and produces an <strong>output</strong>. A simple example might be a model that tells you whether a temperature is above or below average for a specific geographic location. In this case the input is a number (temperature) and the output is binary (above/below).</p>
-<p>There could be many versions of this model depending on geographic location. The behavior of the model is defined by an internal <a href="#parameter">parameter</a> (or, <a href="#weights">weight</a>). In our temperature example, the model has one parameter, the average temperature for the location. The process for setting the value of the parameter for a specific version of the model is called <a href="#training">training</a>. In this case we might train a model for New York City by gathering historical temperature data and calculating the average. The process of gathering historical data is called <a href="#data-curation">data collection</a>. The process of training — in this case, calculating the average — is an <a href="#algorithm">algorithm</a>.</p>
-<p>A saved copy of a model’s trained parameters is called a <a href="#checkpoint">checkpoint</a>. We might save separate checkpoints for different cities or save new checkpoints for our New York City model if we retrain with new data. The process of applying the model to new inputs is called <a href="#inference">inference</a>. To create an output for a temperature, we also apply an algorithm: subtract the parameter from the input, and return “above” if the difference is positive.</p>
-<p>Our temperature example is a very simple model. In machine learning, models can be arbitrarily complex. A common type of model <a href="#architecture">architecture</a> is a <a href="#nn">neural network</a>, which (today) can have billions of parameters.</p>
-<p>It is important to note that models are often embedded within <strong>software systems</strong> that can get deployed to public-facing users. For example, GPT-4 is a generative-AI model that is embedded within the ChatGPT system, which also has a user interface, developer <a href="#api">APIs</a>, and other functionality, like <strong>input and output filters</strong>. The other components are not part of the model itself, but can work in concert with the model to provide overall functionality.</p>
-<h3 id="multimodal">Multimodal</h3>
-<p>Generative-AI models may generate content in one modality (text, images, audio, etc.) or in multiple modalities. For example, DALL-E is a multimodal model that transforms text to images.</p>
-<h3 id="nn">Neural Network</h3>
-<p>A neural network is a type of <a href="#architecture">model architecture</a>. Neural networks consist of <strong>layers</strong>, where the output of one layer is used as the input of the next layer. Each layer consists of a set of classifiers (<strong>neurons</strong>) that each performs a simple operation independently of one another. A neural-network model synthesizes multiple simple decisions by passing the input through a series of intermediate transformations. The outputs of all classifiers at layer <em>n</em> are then passed to each classifier in layer <em>n+1</em>, and so forth. Each classifier in each layer has <a href="#parameters">parameters</a> that define how it responds to input.</p>
-<h3 id="parameters">Parameters</h3>
-<p><strong>Parameters</strong> are numbers that define the specific behavior of a model. For example, in the linear equation model <span class="math inline">y=mx+b</span>, there are two parameters: the slope <span class="math inline">m</span> and the <strong>bias</strong> (or, <strong>intercept</strong>) <span class="math inline">b</span>. A more complex example might be a model that predicts the probability a person makes a bicycle trip given the current temperature and rainfall. This could have two parameters: one representing the effect of temperature and one representing the effect of rainfall. Contemporary <a href="#nn">neural network</a> models have millions to billions of parameters. Model parameters are often interchangeably referred to as model <a href="#weights">weights</a>. The values of parameters are saved in files called <a href="#checkpoint">checkpoint</a>.</p>
-<p>For more on the distinction between <strong>parameters</strong> and <strong>hyperparameters</strong>, see <a href="hyperparameter">hyperparameters</a>.</p>
-<h3 id="preprocessing">Pre-Processing</h3>
-<p>See <a href="#data-curation">data curation</a>.</p>
-<h3 id="pt-ft">Pre-Training and Fine-Tuning</h3>
-<p>Current protocols divide <a href="#training">training</a> into a common <strong>pre-training</strong> phase that results in a general-purpose or <a href="#base-model">base model</a> (sometimes called a foundation or pre-trained model) and an application-specific <strong>fine-tuning</strong> phase that adapts a pre-trained model <a href="#checkpoint">checkpoint</a> to perform a desired task using additional data. This paradigm has become common over the last five years, especially as model architectures have become larger and larger. This is because, relative to pre-training datasets, fine-tuning datasets are smaller making fine-tuning faster and less expensive: It is much cheaper to fine-tune an existing base model for a particular task than it is to train a new model from scratch.</p>
-<p>As a concrete example, fine-tuning models to “follow instructions” has become an important special case with the popularity of ChatGPT (this is called <strong>instruction tuning</strong>). Examples of interactions in which someone makes a request and someone else follows those instructions are relatively rare on the Internet compared to, for example, question / answer forums. As a result, such data sets are often constructed specifically for the purpose of language model fine-tuning, and may provide substantial practical benefits for commercial companies.</p>
-<p>Because pre-trained models are most useful if they provide a good basis for many distinct applications, model builders have a strong incentive to collect as much pre-training data from as many distinct sources as possible. Fine-tuning results in a completely new model checkpoint (potentially gigabytes of data that must be loaded and served separately from the original model), and requires hundreds to thousands of application-specific examples.</p>
-<p>However, the distinction between pre-training and fine-tuning is not well defined. Models are often trained with many (more than two) training stages. For example, the choice to call the first two of, say three, training stages pre-training and the last stage fine-tuning is simply a choice. Finally, pre-training should not be confused with <a href="#data-curation">data curation or pre-processing</a>.</p>
-<h3 id="prompt">Prompt</h3>
-<p>Most generative-AI systems take as input some text, which is then used to condition the output. This input text is called the <strong>prompt</strong>.</p>
-<h3 id="rl">Reinforcement Learning</h3>
-<p>Reinforcement learning (RL) is a method for incorporating feedback into systems. For generative models, RL is commonly used to incorporate <strong>human feedback</strong> (HF) about whether the generations were “good” or “useful” to improve future generations. For example, ChatGPT collects “thumbs-up” and “thumbs-down” feedback on interactions in the system. User feedback is just one way of collecting human feedback, model creators can also pay testers to rate generations as well.</p>
-<h3 id="regurgitation">Regurgitation</h3>
-<p>See <a href="#memorization">memorization</a>.</p>
-<h3 id="sampling">Sampling</h3>
-<h3 id="scale">Scale</h3>
-<p>Machine-learning practitioners use the term "scale" to refer to the <a href="#parameters">number of parameters</a> in their model, the size of their training data (commonly measured in terms of number of <a href="#examples">examples</a> or storage size on disk), or the computational requirements to train the model. The scale of the model’s parameter count and the training dataset size directly influence the computational requirements of training. The scale of computation needed for training can be measured in terms of the number of GPU-hours (on a given GPU type), the number of computers/GPUs involved in total, or the number of FLOPs (floating point operations).</p>
-<p>Machine-learning practitioners will sometimes talk about “scaling up” a model. This usually means figuring out a way to increase one of the properties listed above. It can also mean figuring out how to increase the fidelity of training examples–e.g. training on longer text sequences or on higher-resolution images.</p>
-<h3 id="supply-chain">Supply Chain</h3>
-<p>Generative-AI systems are created, deployed, and used in a variety of different ways. Other work has written about how it is useful to think of these systems in terms of a <strong>supply-chain</strong> that involves many different stages and actors. For more information about the generative-AI supply chain, please see <span class="citation" data-cites="lee2023talkin">Lee, Cooper, and Grimmelmann (2023)</span>.</p>
-<h3 id="tokens">Tokenization</h3>
-<p>For language models, a common pre-processing step is to break documents into segments called <strong>tokens</strong>. For example, the input “I like ice cream.” might be tokenized into <span class="math display">&quot;I&quot;, &quot;like&quot;, &quot;ice&quot;, &quot;cream&quot;, &quot;.&quot;</span>. The tokens can then be mapped to entries in a <strong>vocabulary</strong>. Each entry, or token, in the vocabulary is given an ID (a number representing that token). Each token in the vocabulary has a corresponding <a href="#embedding">embedding</a> that is a learned <a href="#parameters">parameter</a>. The embedding turns words into numeric representations that can be interpreted and modified by a model.</p>
-<p>Each model family tends to share a vocabulary, which is optimized to represent a particular training corpus. Most current models use <strong>subword tokenization</strong> to handle words that would otherwise not be recognized. Therefore, a rare or misspelled word might be represented by multiple tokens, for example <span class="math display">&quot;seren&quot;, &quot;dipity&quot;</span> for “serendipity.” The number of tokens used to represent an input is important because it determines how large the effective <a href="#context">context window</a> of a model is.</p>
-<p>Tokens are also used for other modalities, like music. Music tokens may be <strong>semantic tokens</strong> that may be created using yet another neural network.</p>
-<h3 id="transformer">Transformer</h3>
-<p>A <strong>transformer</strong> is a popular <a href="#architecture">model architecture</a> for image, text, and music applications, and the transformer architecture underlies models like ChatGPT, Bard, and MusicLM. An input (text or image) is broken into segments (word <a href="#tokens">tokens</a> or image patches) as a pre-processing step. These input segments are then passed through a series of layers that generate <a href="#embeddings">vector representations</a> of the segments. The model has trainable parameters that determine how much <a href="#attention">attention</a> is paid to parts of the input. Like many other generative-AI models, the transformer model is trained with a loss function that rewards reproducing a target training example.</p>
-<h3 id="training">Training</h3>
-<p>Machine-learning models all contain <a href="#parameters">parameters</a>. These parameters are initialized to random numbers when the network is first created. During a process called training, these parameters are repeatedly updated based on the training data that the model has seen. Each update is designed to increase the chance that when a model is provided some input, it outputs a value close to the target value we would like it to output. By presenting the model with all of the examples in a <a href="#dataset">dataset</a> and updating the parameters after each presentation, the model can become quite good at doing the task we want it to do.</p>
-<p>A common <a href="#algorithm">algorithm</a> for training neural network models is <strong>stochastic gradient descent,</strong> or SGD. Training data sets are often too large to process all at once, so SGD operates on small <strong>batches</strong> of dozens to hundreds of <strong>examples</strong> at a time. Upon seeing a training example, the algorithm generates the model’s output based on the current setting of the parameters and compares that output to the desired output from the training data (In the case of a language model, we might ask: did we correctly choose the next word?). If the output did not match, the algorithm works backwards through the model’s layers, modifying the model’s parameters so that the correct output becomes more likely. This process can be thought of as leaving “echoes” of the training examples encoded in the parameters of the model.</p>
-<h3 id="vector">Vector Representation</h3>
-<p>See <a href="#embedding">embedding</a>.</p>
-<h3 id="web-crawl">Web Crawl</h3>
-<p>A web crawl is a catalog of the web pages accessible on the internet. It is created by a web crawler, an <a href="#algorithm">algorithm</a> that systematically browses the Internet, trying to reach every single web page. For example, Google Search functions using a web crawl of the internet that can be efficiently queried and ranked. Web crawls are very expensive and compute-intensive to create, and so most companies keep their crawls private. However, there is one public web crawl, called <a href="https://commoncrawl.org/"><em>Common Crawl</em></a>. Most open-source (and many closed-source) language models are trained at least in part on data extracted from the Common Crawl.</p>
-<h3 id="weight">Weights</h3>
-<p>See <a href="#parameters">parameters</a>.</p>
-<h2 id="app:os">Open versus Closed</h2>
-<p>In general, an informational resource — such as software or data — is <strong>open</strong> when it is publicly available for free reuse by others and <strong>closed</strong> when it is not. Openness has both practical and legal dimensions. The practical dimension is that the information must actually be available to the public. For example, software is open in this sense when its source code is available to the public. The legal dimension is that the public must have the legal right to reuse the information. This legal dimension is typically ensured with an “open-source” or “public” license that provides any member of the public with the right to use the information.</p>
-<p>Open versus closed is not a binary distinction. For one thing, an informational artifact could be practically open but legally closed. For another, there are numerous different licenses, which provide users with different rights. Instead, it is always important to break down the specific ways in which information is open for reuse and the ways in which it is not. The relevant forms of openness are different for different types of information. In this section, we discuss some of the common variations on open and closed datasets, models, and software.</p>
-<h3 id="closed-dataset">Closed Dataset</h3>
-<p>Many <a href="#model">models</a>, including <a href="#open-model">open models</a>, have been trained on non-public <a href="#datasets">datasets</a>. Though a high-level description of the dataset may have been released and some portions of it may indeed be public (e.g. nearly all models are trained on Wikipedia), there is insufficient public information for the dataset to be fully reproduced. For example, there might be very little information available on the <a href="#data-curation">curation and pre-processing</a> techniques applied, or constituent datasets might be described in general terms such as “books” or “social media conversations” without any detail about the source of these datasets. GPT-4 and PaLM are both examples of models trained on non-public datasets.</p>
-<h3 id="closed-model">Closed Model</h3>
-<p>When a <a href="#model">model</a> is described as closed, it might mean one of three different things. First, a model might have been described in a technical report or paper, but there is no way for members of the public to access or use the model. This is the most closed a model can be. For example, DeepMind described the Chinchilla model in a blog post and paper but was never made accessible to the public <span class="citation" data-cites="hoffmann2022training">(Hoffmann et al. 2022)</span>. Second, a model’s <a href="#checkpoint">checkpoint</a> may not be publicly available, but the general public may be able to access the model in a limited way via an <a href="#api">API</a> or a web application (often for a fee and with the requirement they must sign a <a href="#tos">Terms of Service</a>). For example, OpenAI’s GPT-3 and GPT-4 have followed this paradigm. In this case, it might be possible for users to reconstruct some of the model’s characteristics, but just as with closed-source software they do not have access to the full details. Third, the model itself may have been publicly released for inspection, but without a license that allows others to make free use of it. Practically, the license restrictions may be unenforceable against individual users, but the lack of an open license effectively prevents others from building major products using the model.</p>
-<h3 id="closed-source">Closed Software</h3>
-<p>Closed-source software is any software where the source code has not been made available to the public for inspection, modification, or enhancement. It is worth noting that closed software can contain <a href="#os">open</a> components. For example, an overall system might be (semi-)closed if it releases its <a href="#open-model">model</a>, but does not disclose its <a href="#Closed-Dataset">dataset</a>. Many open-source licenses, which were developed before the advent of modern generative-AI systems, do not prevent open-source software from being combined with closed components in this way.</p>
-<h3 id="open-dataset">Open Dataset</h3>
-<p>Saying that a <a href="#datasets">dataset</a> is “open” or “open-source” can mean one of several things. At the most open end of the spectrum, it can mean that the dataset is broadly available to the public for download and that the code and experimental settings used to create it are entirely open-source. (This is the fullest expression of the idea that making a software artifact open requires providing access to the preferred form for studying and modifying it.) In some cases, a dataset is available for download but the code and exact experimental settings used to create it are not public. In both these situations, use of the dataset is normally governed by an open-source <a href="#license">license</a>. For example, one popular set of benchmark datasets for language models is called SuperGLUE. The licenses for its constituent datasets include <a href="https://people.ict.usc.edu/~gordon/copa.html"><em>BSD 2-Clause</em></a>, <a href="https://github.com/google-research-datasets/boolean-questions"><em>Creative Commons Share-Alike 3.0</em></a>, and the <a href="https://github.com/rudinger/winogender-schemas/tree/master"><em>MIT License</em></a>. In more restrictive cases, the dataset is public, but users must agree to contractual terms of service to access it — and those terms impose restrictions on how the dataset can be used. Finally, many datasets are public but cost money to access. For example, the <a href="https://www.ldc.upenn.edu/"><em>UPenn Linguistics Data Consortium</em></a> has a catalog of hundreds of high-quality datasets, but individuals need to be affiliated with a member institution of the consortium to access them.</p>
-<h3 id="open-model">Open Model</h3>
-<p>The machine learning community has described a <a href="#model">model</a> as “open-source” when a trained <a href="#checkpoint">checkpoint</a> has been released with a <a href="#license">license</a> allowing anyone to download and use it, and the software package needed to load the checkpoint and perform inference with it have also been open-sourced. A model can be open-sourced even in cases where details about how the model was developed have not been made public (sometimes, such models are referred to instead as <strong>semi-closed</strong>). For example, the model creators may not have open-sourced the software package for training the model — indeed, they may have not even publicly documented the training procedure in a technical report. Furthermore, a model being open-source does not necessarily mean the training <a href="#datasets">data</a> has been made public. However, various pre-existing open communities (including the Open Source Initiative, which maintains the canonical Open Source Definition) have objected to usage by the machine learning community, arguing that it does not capture several of the most important qualities of opennness as it has been understood by the software community for over two decades. These qualities include the freedom to inspect the software, the freedom to use the software for any purpose, and the ability to modifiy the software, and the freedom to distribute modifications to others.</p>
-<h3 id="os">Open Software</h3>
-<p>Open-source software is software with source code that anyone can inspect, modify, and enhance, for any purpose. Typically such software is licensed under a standardized open-source <a href="#license">license</a>, such as the <a href="https://opensource.org/license/mit/"><em>MIT License</em></a> or the <a href="https://opensource.org/license/apache-2-0/"><em>Apache license</em></a>. Machine-learning systems typically consist of several relatively independent pieces of software; there is the software that builds the <a href="#datasets">training dataset</a>, the software that <a href="#training">trains</a> the model, and the software that does <a href="#inference">inference</a> with the <a href="#model">model</a>. Each of these can be independently open-sourced.</p>
-<h2 id="gloss:legal-concepts">Legal Concepts in Intellectual Property and Software</h2>
-<h3 id="claims">Claims</h3>
-<p><a href="#patent">Patent</a> <strong>claims</strong> are extremely precise statements that define the scope of protection within the patent. Patent claims are carefully written to be broad enough to encompass potential variations of the invention and specific enough to distinguish the invention from prior art.</p>
-<h3 id="copyright">Copyright</h3>
-<p><strong>Copyright</strong> grants exclusive rights to creators of original works. For a work to be copyrightable, it must meet a certain criteria: (1) it must be original, and (2) it must possess a sufficient degree of creativity. Copyright does not protect facts or concepts, but expressions of those ideas fixed in a tangible medium (e.g., the idea for a movie, if not written down or recorded in some way, is typically not copyrightable; a screenplay is typically copyrightable). Copyright laws provide protections for various forms of creative expression, including, but not limited to, literary works, artistic works, musical composition, movies, and software <span class="citation" data-cites="copyright">(Legal Information Institute (Cornell) 2023a)</span>.</p>
-<h3 id="infringe">Copyright Infringement</h3>
-<p>Copyright infringement occurs when someone uses, reproduces, distributes, performs, or displays copyrighted materials without permission from the copyright owner. This act breaches the exclusive rights held by the copyright holder.</p>
-<h3 id="damages">Damages</h3>
-<p>In the context of <a href="#ip">IP</a>, <strong>damages</strong> refers to financial compensation awarded to the owner of IP for harms and losses sustained as a result of IP infringement. When IP rights such as <a href="#patent">patents</a>, <a href="#copyright">copyright</a>, or trademarks are violated, the owner of the IP may file a legal claim for damages. These can cover lost profits, reputational damage, or <a href="#license">licensing</a> fees.</p>
-<h3 id="fair-use">Fair Use</h3>
-<p><strong>Fair use</strong> is a legal concept that allows limited use of <a href="#copyright">copyrighted</a> materials without permission from the copyright owner <span class="citation" data-cites="fairuse">(Legal Information Institute (Cornell) 2023b)</span>. Typically, fair use applies to contexts such as teaching, research, and news reporting, and fair use analyses consider the purpose of use, scope, and the amount of material used.</p>
-<h3 id="ip">The Field of Intellectual Property (IP)</h3>
-<p>The <strong>field of Intellectual Property (IP)</strong> refers to a set of laws that grant exclusive rights for creative and inventive works. IP laws protect and promote ideas by providing incentives for innovation and protecting owners of inventions (e.g. written works, music, designs, among others). Intellectual property laws include copyright, patents, trademarks and trade dress, and trade secrets. Intellectual property law is often the first recourse for conflicts around emerging technologies where more specific legislation has not yet crystallized. Property law is well-developed, widely applicable, and carries significant penalties including fines and forced removal or destruction of work.</p>
-<h3 id="harm">Harm</h3>
-<p>Many areas of law only regulate actions that cause some identifiable <strong>harm</strong> to specific victims. For example, people who have not suffered individual harms may not have “standing” to bring a lawsuit in federal court. For another, damage awards and other remedies may be limited to the harms suffered by the plaintiffs, rather than dealing more broadly with the consequences of the defendant’s conduct. It is important to note that what counts as a cognizable harm is a legal question, and does not always correspond to people’s intuitive senses of when someone has suffered a harm. Physical injury is the most obvious and widely accepted type of legal harm; other widely recognized forms of harm include damage to property, economic losses, loss of liberty, restrictions on speech, and some kinds of privacy violations. But other cases have held that fear of future injury is not a present harm. Thus, having one’s personal information included in a data breach may not be a harm by itself — but out-of-pocket costs and hassle to cancel credit cards are recognized harms.</p>
-<h3 id="idea-expression">Idea vs. Expression</h3>
-<p>This <strong>idea vs. expression</strong> dichotomy gets at the distinction between underlying concepts (or ideas) conveyed by a work, and the specific, tangible manner in which those are expressed. An idea refers to an abstract concept or notion behind a creative work, and ideas are not subject to <a href="#copyright">copyright</a> protection. However, expressions, as tangible manifestations, are. Tangible fixed expressions of ideas include words, music, code, or art. It is important to note that within copyright law, rights are granted to expression of ideas, not ideas themselves.</p>
-<p>See <a href="#copyright">copyright</a>.</p>
-<h3 id="license">License</h3>
-<p>A <strong>license</strong> gives legal permission or authorization, granted by the rights holder to others. License agreements explicitly outline rights that are granted, as well as limitations, restrictions, and other provisions related to its scope, for example, duration. Licenses are common practice within the <a href="#ip">field of IP</a>, and are commonly used in software, music, and film industries.</p>
-<h3 id="non-expressive-or-non-consumptive">Non-Expressive or Non-Consumptive</h3>
-<p>Certain uses of <a href="#copyright">copyrighted</a> materials can be <strong>non-expressive</strong> or <strong>non-consumptive</strong>. In such cases, copyrighted material is used in a way that does not involve expressing or displaying original work to users. Some examples include text mining, building a search engine, or various forms of computational analyses.</p>
-<h3 id="patent">Patent</h3>
-<p>A <strong>patent</strong> confers exclusive rights to inventors, granting them the authority to prevent others from making, using, or selling their inventions without permission. Patents create incentives for innovation by providing inventors with a time-based protection from the filing date. To obtain a patent, inventions must be new, inventive, and industrially applicable. Creators apply for patents; their applications must contain <a href="#claims">claims</a> that describe what is novel in the work.</p>
-<h3 id="prior-art">Prior Art</h3>
-<p><strong>Prior art</strong> is evidence of existing knowledge or information that is publicly available before a certain date. Prior art is critical in adjudicating the novelty and nonobviousness of a new invention and may include other <a href="#patent">patents</a>. Patent examiners search for prior art to determine the patentability of the <a href="#claims">claimed</a> invention. Further, prior art informs the patent’s applicability and scope.</p>
-<h3 id="tos">Terms of Service</h3>
-<p><strong>Terms of service (ToS)</strong> refers to a contractual agreement between the IP owner and users of <a href="#license">licenses</a> that govern the use and access to the protected content. ToS outline rights, restrictions, and obligations involved. ToS may specify permitted uses, licensing terms, and how IP may be copied or distributed. ToS safeguard IP owners’ rights and ensure compliance with legal standards in the use of IP.</p>
-<h3 id="transformative-use">Transformative Use</h3>
-<p>Expression can build on prior expression. In some cases, a new piece of <a href="#copyright">copyrightable</a> material may borrow or re-purpose material from prior work. If this new material creates something inventive, new, and substantially different from the original work, then it can be considered <strong>transformative use</strong> of the original work, as opposed to <a href="#infringe">infringing</a> on the original copyright owner’s exclusive rights. The new material may also be copyright eligible. Parody is one common type of transformative use.</p>
-<h2 id="app:privacy">Privacy</h2>
-<h3 id="anonymization">Anonymization</h3>
-<p><strong>Anonymization</strong> is the process of removing or modifying personal data in a way that it cannot be attributed to an identifiable individual.</p>
-<h3 id="the-california-consumer-privacy-act">The California Consumer Privacy Act (CCPA)</h3>
-<p>The <strong>CCPA</strong> is a California state law that provides consumers with the right to know what personal information businesses collect about them, the right to request their personal information be deleted, and the right to opt-out of sales of their personal information. The CCPA applies to all businesses that operate in California, as well as those outside of California that may transfer or process the personal information of California residents.</p>
-<h3 id="consent">Consent</h3>
-<p><strong>Consent</strong> is the voluntary and informed agreement given by an individual for the collection, use, or disclosure of their personal information. In the context of data, consent often requires clear and specific communication about the purpose and use of collected data.</p>
-<h3 id="differential-privacy">Differential Privacy</h3>
-<p><strong>Differential privacy</strong> (DP) is an approach for modifying algorithms to protect the membership of a given <strong>record</strong> in a dataset <span class="citation" data-cites="dp">(Wikipedia Accessed October 2023)</span>. Informally, these guarantees are conferred by adding small amounts of <strong>noise</strong> to the individual data <a href="#examples">examples</a> in the dataset. Let us say that there are two version of a dataset, <span class="math inline">D</span> and <span class="math inline">D&#39;</span>, where the former contains an example <span class="math inline">E</span> and the latter does not. If we were to run differentially private algorithms to compute statistics on the datasets <span class="math inline">D</span> and <span class="math inline">D&#39;</span>, we would not be able to tell by those statistics which dataset contains <span class="math inline">E</span> and which does not. As a result, we can no longer use the computed statistics to infer whether or not the original training data contained the example <span class="math inline">E</span>.</p>
-<p>Differential privacy is a theoretical framework that encounters some challenges in practice. For example, the amount of noise one must add to data may impact the accuracy of statistics computed, or, when used for generative-AI models, may impact performance of the model. On the other hand, someone using a differentally private approach needs to add enough noise to ensure that the two datasets <span class="math inline">D</span> and <span class="math inline">D&#39;</span> cannot be differentiated through computed statistics. Finally, differential privacy was originally created for tabular data and encounters challenges adapting to the unstructured data commonly used for generative-AI models. For more on the challenges of applying differential privacy to language models, please see <span class="citation" data-cites="brown2022privacy">Brown et al. (2022)</span>.</p>
-<h3 id="gdpr">The General Data Protection Regulation (GDPR)</h3>
-<p><strong>GDPR</strong> is a comprehensive data protection law implemented by the European Union in 2018 <span class="citation" data-cites="gdpr">(GDPR.eu 2023)</span>. The GDPR governs the collection, use, storage, and protection of personal data for EU residents. The law sets out specific rights for individuals regarding their personal data, such as the right to access, rectify, and delete their data, as well as the right to know how their data is being processed. Further, the GDPR imposes obligations on organizations such as businesses that handle personal data to ensure that proper data protection measures are in place and that consent is obtained for data processing. Non-compliance results in fines and penalties.</p>
-<h3 id="pii">Personally Identifiable Information (PII)</h3>
-<p><strong>Personally Identifiable Information (PII)</strong> refers to data that can be used to identify an individual. PII can include names, addresses, phone numbers, social security numbers, email addresses, financial information, and biometric data. PII is sensitive, and organizations that collect PII are required to implement appropriate measures, adhering to relevant data protection laws (such as the GDPR) to safeguard its confidentiality and integrity.</p>
-<h3 id="privacy-policy">Privacy Policy</h3>
-<p>A <strong>privacy policy</strong> consists of documents that outline how organizations collect, use, store, and protect personal information. Privacy policies are meant to inform individuals about their rights and the organization’s data processing practices.</p>
-<h3 id="privacy-violation">Privacy Violation</h3>
-<p>A <strong>privacy violation</strong> involves unauthorized or inappropriate intrusion into an individual’s personal information or activities. Privacy violations may occur in various forms from data breaches, surveillance, identity theft, or sharing personal or sensitive information without consent. These violations may lead to significant harm such as the loss of personal autonomy, reputational damage, or financial loss.</p>
-<h3 id="the-right-to-be-forgotten">The Right to be Forgotten</h3>
-<p>Some countries’ legal systems recognize a <strong>right to be forgotten</strong> that grants individuals the ability to request the removal of their personal information from online platforms or search-engine results. The idea is that the legitimate public interest in knowing about other people’s past conduct can be outweighed when the information about it is out-of-date or misleading. The European Union’s <a href="#gdpr">GDPR</a> includes a form of the right to be forgotten.</p>
-<h3 id="tort">Tort</h3>
-<p>A <strong>tort</strong> is a civil wrongdoing that causes harm or injury to another person or their property. Tort law provides remedies and compensation to individuals who suffer harm as a result of someone else’s actions or negligence.</p>
-<h1 id="app:metaphors">Metaphors</h1>
-<p>We briefly discuss several metaphors for Generative AI that came up in the GenLaw discussions. It is worth considering why these metaphors are helpful and where they start to break down.</p>
-<h3 id="models-are-trained.">Models are trained.</h3>
-<p>Machine learning practitioners will often say they “train” models. Training brings to mind teaching a dog to perform tricks by enforcing good behavior with treats. Each time the dog performs the desired behavior, they get a treat. As the dog masters one skill it may move onto another. Model training is similar in the sense that models are optimized to maximize some reward<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">Maximizing a reward is exactly equivalent to minimizing a loss (except for the extra minus sign), but due to historical reasons, machine learning practitioners use the latter phrasing more often.<br />
-<br />
-</span></span>. This “reward” is computed based on how similar the model’s outputs are to desired outputs from the model.</p>
-<p>However, unlike training a dog, model training does not typically have a curriculum;<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">Curriculum learning is an entire field of research in machine learning, but it is not currently standard to use a curriculum.<br />
-<br />
-</span></span> there is no progression of easier to harder skills to learn, and the formula for computing the reward remains the same throughout model training.</p>
-<h3 id="models-learn-like-children-do.">Models learn like children do.</h3>
-<p>“Learning” is the active verb we use to describe what a model does as it is being <em>trained</em>— a model is <em>trained</em>, and during this process it <em>learns</em>. Model learning is the most common anthropomorphic metaphor applied to machine learning models. The use of the word “learning” by machine learning practitioners has naturally led to comparisons between how models learn and how human children do. Both children and machine learning models “skilled imitators,” acquiring knowledge of the world by learning to imitate provided exemplars However, human children and Generative AI obviously use very different mechanisms to learn. Techniques that help generative-AI systems to learn better, such as increasing model size, have no parallels in child development, and mechanisms children use to “extract novel and abstract structures from the environment beyond statistical patterns” have no machine learning comparisons <span class="citation" data-cites="yiu2023imitation">(Yiu, Kosoy, and Gopnik 2023)</span>.</p>
-<h3 id="generations-are-collages.">Generations are collages.</h3>
-<p>Quoted from <span class="citation" data-cites="lee2023talkin">Lee, Cooper, and Grimmelmann (2023, 58)</span>:</p>
-<p>It also may seem intuitively attractive to consider generations to be analogous to collages. However, while this may seem like a useful metaphor, it can be misleading in several ways. For one, an artist may make a collage by taking several works and splicing them together to form another work. In this sense, a generation is not a collage: a generative-AI system does not take several works and splice them together. Instead, as we have described above, generative-AI systems are built with models trained on many data examples. Moreover, those data examples are not explicitly referred back to during the generation process. Instead, the extent that a generation resembles specific data examples is dependent on the model encoding in its parameters what the specific data examples look like, and then effectively recreating them. Ultimately, it is nevertheless possible for a generation to look like a collage of several different data examples; however, it is debatable whether the the process that produced this appearance meets the definition for a collage. There is no author “select[ing], coordinat[ing], or arrang[ing]”<span class="sidenote-wrapper"><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote">§ 101 (definition of “compilation”).<br />
-<br />
-</span></span> training examples to produce the resulting generation.</p>
-<h3 id="language-models-are-stochastic-parrots.">Language models are stochastic parrots.</h3>
-<p><span class="citation" data-cites="bender2021parrots">Bender et al. (2021)</span> describe a language model as a stochastic parrot, a “system for haphazardly stitching together sequences of linguistic forms it has observed in its vast training data, according to probabilistic information about how they combine, but without any reference to meaning.” Like parrots mimicking the sounds they hear around them, language models repeat the phrases they are exposed to, but have no conception of the human meaning behind these phrases. This analogy is useful because it references the very real problem of machine learning models simply outputting their most frequent training data. Critics of the stochastic parrot analogy say that it undervalues the competencies that state-of-the-art language models have. Some critics take this further and say that these competencies imply models understand meaning in a human-like way <span class="citation" data-cites="piantadosi2022meaning">(Piantadosi and Hill 2022)</span>.<span class="sidenote-wrapper"><label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote">Whether models are human-like, or the outputs are simply “really good” is less pertinent for how generations and inputs should be regulated.<br />
-<br />
-</span></span> For example, proponents of this analogy might argue that Generative AI passing a difficult standardized exam (such as the Bar Exam <span class="citation" data-cites="katz2023gpt">(Katz et al. 2023)</span> or the GRE <span class="citation" data-cites="gpt4">(OpenAI 2023)</span>) is more about parroting training data than human-like skill.</p>
-<h3 id="language-models-are-noisy-search-engines.">Language models are noisy search engines.</h3>
-<p>A search engine allows users to search for information within a large database using natural language queries. Like a search engine, language models also return information in response to a natural language query. However, while a search engine queries the entries in its database and returns the most appropriate ones, a language model does not have direct access to its training data and can only make predictions based on the information stored in the model weights.<span class="sidenote-wrapper"><label for="sn-4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-4" class="margin-toggle"/><span class="sidenote">The training data is seen during training, but models are used separately from the training data.<br />
-<br />
-</span></span> Most often the output will be a mixture of information contained in many database entries. Some model outputs may quote directly from relevant entries in the database (in the case of <a href="#memorization">memorization</a>), but this is not reflective of the most typical outputs.</p>
-<p>Sometimes generations from a language model will convey similar information that one might learn from running a search; however, sometimes it will not because the underlying <a href="#algorithm">algorithm</a> is different. Thus, while some generations answer the prompt in a similar way to a search, we can more generally think of generative-model outputs as a noisy version of what is actually in the database. Currently, such outputs also tend to lack attribution to the original data entries, and sometimes are incorrect.</p>
-<h2 class="unnumbered" id="references">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-hallucination" class="csl-entry" role="listitem">
-Ben Zimmer. 2023. <span>“<span class="nocase">’Hallucination’: When Chatbots (and People) See What Isn’t There</span>.”</span> <a href="https://www.wsj.com/articles/hallucination-when-chatbots-and-people-see-what-isnt-there-91c6c88b?st=wns4rqlp2dl1ly5\&amp;reflink=desktopwebshare_permalink">https://www.wsj.com/articles/hallucination-when-chatbots-and-people-see-what-isnt-there-91c6c88b?st=wns4rqlp2dl1ly5\&amp;reflink=desktopwebshare_permalink</a>.
-</div>
-<div id="ref-bender2021parrots" class="csl-entry" role="listitem">
-Bender, Emily M., Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell. 2021. <span>“<span class="nocase">On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?</span>”</span> In <em>Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency</em>, 610–23. FAccT ’21. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3442188.3445922">https://doi.org/10.1145/3442188.3445922</a>.
-</div>
-<div id="ref-bommasani2021foundation" class="csl-entry" role="listitem">
-Bommasani, Rishi, Drew A Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael S Bernstein, et al. 2021. <span>“On the Opportunities and Risks of Foundation Models.”</span> <em>arXiv Preprint arXiv:2108.07258</em>. <a href="https://fsi.stanford.edu/publication/opportunities-and-risks-foundation-models">https://fsi.stanford.edu/publication/opportunities-and-risks-foundation-models</a>.
-</div>
-<div id="ref-brown2022privacy" class="csl-entry" role="listitem">
-Brown, Hannah, Katherine Lee, Fatemehsadat Mireshghallah, Reza Shokri, and Florian Tramèr. 2022. <span>“<span class="nocase">What Does It Mean for a Language Model to Preserve Privacy?</span>”</span> In <em>Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency</em>, 2280–92. FAccT ’22. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3531146.3534642">https://doi.org/10.1145/3531146.3534642</a>.
-</div>
-<div id="ref-deduppile" class="csl-entry" role="listitem">
-EleutherAI. 2023. <span>“<span class="nocase">the_pile_deduplicated</span>.”</span> <a href="https://huggingface.co/datasets/EleutherAI/the_pile_deduplicated">https://huggingface.co/datasets/EleutherAI/the_pile_deduplicated</a>.
-</div>
-<div id="ref-gdpr" class="csl-entry" role="listitem">
-GDPR.eu. 2023. <span>“<span>General Data Protection Regulation (GDPR)</span>.”</span> <a href="https://gdpr.eu/tag/gdpr/">https://gdpr.eu/tag/gdpr/</a>.
-</div>
-<div id="ref-ho2020denoising" class="csl-entry" role="listitem">
-Ho, Jonathan, Ajay Jain, and Pieter Abbeel. 2020. <span>“<span>Denoising Diffusion Probabilistic Models</span>.”</span> In <em>Advances in Neural Information Processing Systems</em>. Vol. 33.
-</div>
-<div id="ref-hoffmann2022training" class="csl-entry" role="listitem">
-Hoffmann, Jordan, Sebastian Borgeaud, Arthur Mensch, Elena Buchatskaya, Trevor Cai, Eliza Rutherford, Diego de Las Casas, et al. 2022. <span>“<span>Training Compute-Optimal Large Language Models</span>.”</span> <a href="https://arxiv.org/abs/2203.15556">https://arxiv.org/abs/2203.15556</a>.
-</div>
-<div id="ref-huckabee" class="csl-entry" role="listitem">
-Huckabee v. Meta Platforms, Inc., Bloomberg L.P., Bloomberg Finance, L.P., Microsoft Corporation, and The EleutherAI Institute. 2023.
-</div>
-<div id="ref-katz2023gpt" class="csl-entry" role="listitem">
-Katz, Daniel Martin, Michael James Bommarito, Shang Gao, and Pablo Arredondo. 2023. <span>“GPT-4 Passes the Bar Exam.”</span> <em>Social Science Research Network 4389233</em>.
-</div>
-<div id="ref-lee2023talkin" class="csl-entry" role="listitem">
-Lee, Katherine, A. Feder Cooper, and James Grimmelmann. 2023. <span>“<span class="nocase">Talkin’ ’Bout AI Generation: Copyright and the Generative-AI Supply Chain</span>.”</span> <em>arXiv Preprint arXiv:2309.08133</em>.
-</div>
-<div id="ref-lee2023explainers" class="csl-entry" role="listitem">
-Lee, Katherine, A. Feder Cooper, James Grimmelmann, and Daphne Ippolito. 2023. <span>“<span class="nocase">AI and Law: The Next Generation</span>.”</span> <a href="http://dx.doi.org/10.2139/ssrn.4580739 ">http://dx.doi.org/10.2139/ssrn.4580739 </a>.
-</div>
-<div id="ref-lee2022dedup" class="csl-entry" role="listitem">
-Lee, Katherine, Daphne Ippolito, Andrew Nystrom, Chiyuan Zhang, Douglas Eck, Chris Callison-Burch, and Nicholas Carlini. 2022. <span>“<span>Deduplicating Training Data Makes Language Models Better</span>.”</span> In <em>Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics</em>, 1:8424–45.
-</div>
-<div id="ref-copyright" class="csl-entry" role="listitem">
-Legal Information Institute (Cornell). 2023a. <span>“<span class="nocase">17 U.S. Code § 102 - Subject matter of copyright: In general</span>.”</span> <a href="https://www.law.cornell.edu/uscode/text/17/102">https://www.law.cornell.edu/uscode/text/17/102</a>.
-</div>
-<div id="ref-fairuse" class="csl-entry" role="listitem">
-———. 2023b. <span>“<span class="nocase">17 U.S. Code § 107 - Limitations on exclusive rights: Fair use</span>.”</span> <a href="https://www.law.cornell.edu/uscode/text/17/107">https://www.law.cornell.edu/uscode/text/17/107</a>.
-</div>
-<div id="ref-murphy2022mlintro" class="csl-entry" role="listitem">
-Murphy, Kevin P. 2022. <em>Probabilistic Machine Learning: An Introduction</em>. The MIT Press.
-</div>
-<div id="ref-instructgpt" class="csl-entry" role="listitem">
-OpenAI. 2022. <span>“<span class="nocase">Aligning language models to follow instructions</span>.”</span> <a href="https://openai.com/research/instruction-following">https://openai.com/research/instruction-following</a>.
-</div>
-<div id="ref-gpt4" class="csl-entry" role="listitem">
-OpenAI. 2023. <span>“GPT-4 Technical Report.”</span> <em>arXiv Preprint arXiv:2303.08774</em>.
-</div>
-<div id="ref-decoding" class="csl-entry" role="listitem">
-Patrick von Platen. 2020. <span>“<span class="nocase">How to generate text: using different decoding methods for language generation with Transformers</span>.”</span> <a href="https://huggingface.co/blog/how-to-generate">https://huggingface.co/blog/how-to-generate</a>.
-</div>
-<div id="ref-piantadosi2022meaning" class="csl-entry" role="listitem">
-Piantadosi, Steven T, and Felix Hill. 2022. <span>“Meaning Without Reference in Large Language Models.”</span> <em>arXiv Preprint arXiv:2208.02957</em>.
-</div>
-<div id="ref-riedl2023transformers" class="csl-entry" role="listitem">
-Riedl, Mark. 2023. <span>“<span class="nocase">A Very Gentle Introduction to Large Language Models without the Hype</span>.”</span> <a href="https://rb.gy/tkfw5">https://rb.gy/tkfw5</a>.
-</div>
-<div id="ref-rombach2022diffusion" class="csl-entry" role="listitem">
-Rombach, Robin, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Björn Ommer. 2022. <span>“<span class="nocase">High-Resolution Image Synthesis with Latent Diffusion Models</span>.”</span> In <em>2022 IEEE Conference on Computer Vision and Pattern Recognition</em>.
-</div>
-<div id="ref-sohldickstein2015dpm" class="csl-entry" role="listitem">
-Sohl-Dickstein, Jascha, Eric Weiss, Niru Maheswaranathany, and Surya Ganguli. 2015. <span>“<span class="nocase">Deep Unsupervised Learning using Nonequilibrium Thermodynamics</span>.”</span> In <em>Proceedings of the 32nd International Conference on Machine Learning</em>.
-</div>
-<div id="ref-song2019grads" class="csl-entry" role="listitem">
-Song, Yang, and Stefano Ermon. 2019. <span>“<span class="nocase">Generative Modeling by Estimating Gradients of the Data Distribution</span>.”</span> In <em>Advances in Neural Information Processing Systems</em>. Vol. 32.
-</div>
-<div id="ref-stable-diffusion" class="csl-entry" role="listitem">
-Stability AI. 2023. <a href="https://stability.ai/stable-diffusion">https://stability.ai/stable-diffusion</a>.
-</div>
-<div id="ref-vaswani2017attention" class="csl-entry" role="listitem">
-Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkorei, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and llia Polosukhin. 2017. <span>“<span>Attention Is All You Need</span>.”</span> In <em>Advances Neural Information Processing Systems</em>. Vol. 30.
-</div>
-<div id="ref-dp" class="csl-entry" role="listitem">
-Wikipedia. Accessed October 2023. <span>“<span class="nocase">Differential privacy</span>.”</span> <a href="https://en.wikipedia.org/wiki/Differential_privacy">https://en.wikipedia.org/wiki/Differential_privacy</a>.
-</div>
-<div id="ref-generalization" class="csl-entry" role="listitem">
-———. Accessed October 2023. <span>“<span class="nocase">Generalization error</span>.”</span> <a href="https://en.wikipedia.org/wiki/Generalization_error">https://en.wikipedia.org/wiki/Generalization_error</a>.
-</div>
-<div id="ref-yiu2023imitation" class="csl-entry" role="listitem">
-Yiu, Eunice, Eliza Kosoy, and Alison Gopnik. 2023. <span>“Imitation Versus Innovation: What Children Can Do That Large Language and Language-and-Vision Models Cannot (Yet)?”</span> <em>arXiv Preprint arXiv:2305.07666</em>.
-</div>
-</div>
-</main>
-
-<footer>
-<p class="signoff">
-  <a href="https://genlaw.github.io/">← GenLaw</a>
-</p>
-</footer>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    // Non-essential if user has JavaScript off. Just hides TOC button on scroll.
-    const nav = document.querySelector("nav");
-    let lastScrollTop = 0;
-    const min_diff_px = 32;
-    
-    function didScroll() {
-        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (currentScrollTop < lastScrollTop) {
-            nav.classList.add("scrolled-up");
-            nav.classList.remove("scrolled-down");
-            lastScrollTop = currentScrollTop;
-        } else if (currentScrollTop > lastScrollTop + min_diff_px) {
-            nav.classList.remove("scrolled-up");
-            nav.classList.add("scrolled-down");
-            lastScrollTop = currentScrollTop;
-        }
-    }
-
-    window.addEventListener("scroll", didScroll);
-});
-  
-document.addEventListener("DOMContentLoaded", function () {
-    const headings = document.querySelectorAll('main h1, main h2, main h3, main h4');
-
-    function handleIntersection(entries) {
-        //  IntersectionObserver's entries are ordered by their position in the DOM tree
-        const topmostEntry = entries.find(entry => entry.isIntersecting);
-        console.log(topmostEntry)
-        if (!topmostEntry) return;
-
-        const tocElementId = 'toc-' + topmostEntry.target.id;
-        const tocElement = document.getElementById(tocElementId);
-        if (!tocElement) return;
-
-        const otherTocElements = document.querySelectorAll('.active');
-        otherTocElements.forEach(el => el.classList.remove('active'));
-        tocElement.classList.add('active');
-    }
-
-    // root: null -> entire browser viewport
-    const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.8
-    };
-    const observer = new IntersectionObserver(handleIntersection, options);
-
-    headings.forEach(heading => {
-        observer.observe(heading);
-    });
-
-    // Manually trigger the IntersectionObserver callback for the initial state
-    const initialEntries = Array.from(headings).map(heading => ({
-        isIntersecting: heading.getBoundingClientRect().top < window.innerHeight && heading.getBoundingClientRect().bottom > 0,
-        target: heading
-    }));
-    handleIntersection(initialEntries);
-});
-document.addEventListener('DOMContentLoaded', function() {
-    const nav_anchors = document.querySelectorAll('nav a');
-    const contents_checkbox = document.getElementById('contents');
-  
-    nav_anchors.forEach(anchor => {
-      anchor.addEventListener('click', function(event) {
-        // Do not stop normal functionality of the anchor tag
-        // event.preventDefault();
-  
-        // Uncheck the input with id "contents"
-        if (contents_checkbox && contents_checkbox.type === 'checkbox') {
-          contents_checkbox.checked = false;
-        }
-      });
-    });
-  });
-  
-document.addEventListener('DOMContentLoaded', () => {
-  const headings = document.querySelectorAll('main h1[id], main h2[id], main h3[id], main h4[id], main h5[id], main h6[id]');
-
-  headings.forEach(heading => {
-    heading.addEventListener('click', event => {
-      const target = event.target;
-
-      if (target.tagName.toLowerCase().startsWith('h') && target.hasAttribute('id')) {
-        const headingId = target.getAttribute('id');
-        const url = new URL(window.location.href);
-        url.hash = headingId;
-
-        navigator.clipboard.writeText(url.toString())
-          .then(() => {
-            console.log('Heading URL copied to clipboard:', url.toString());
-            target.classList.add('copy-success');
-            target.setAttribute('title', 'Copied URL to clipboard! ✅');
-            setTimeout(() => {
-              target.classList.remove('copy-success');
-              target.removeAttribute('title');
-            }, 3000);
-
-          })
-          .catch(err => {
-            console.error('Failed to copy the heading URL:', err);
-            target.classList.add('copy-error');
-            target.setAttribute('title', 'Failed to copy URL! ❌');
-            setTimeout(() => {
-              target.classList.remove('copy-error');
-              target.removeAttribute('title');
-            }, 3000);
-
-          });
-      }
-    });
-  });
-});
-</script>
-
+               const triangle = document.createElement('span');
+               triangle.classList.add('triangle');
+               triangle.innerHTML = '&#9658;';
+               triangle.onclick = () => {
+                   if (child_ul.style.display == 'none') {
+                       child_ul.style.display = 'block';
+                       triangle.innerHTML = '&#9660;';
+                   } else {
+                       child_ul.style.display = 'none';
+                       triangle.innerHTML = '&#9658;';
+                   }
+               };
+               li.prepend(triangle);
+           });
+        });
+    </script>
 </body>
 </html>
