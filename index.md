@@ -18,7 +18,11 @@ return-footer: false
     </td>
 
     <td style="border: none; font-size: 100%;">
-      A home for research on system evaluations centering policy considerations, and policy that emphasizes strong evaluations
+      A home for education and research on system evaluations centering policy considerations
+
+      The GenLaw Center directly addresses technical and social challenges raised by generative-AI systems. We craft meaningful metrics and measurement methodologies that scale reliably to the magnitude of current and future systems. Our work provides a grounded scientific basis for understanding the behavior of generative-AI models and, in turn, suggests tunable dials for instructing models to align their behaviors with desired outcomes. To achieve this vision, The GenLaw Center fosters close collaborations between computer scientists, legal scholars, and civil society.
+
+      Our team has done groundbreaking in the creation of generative-AI models, development of the field of AI security, and the design of scalable machine-learning algorithms and metrics. Together, we have founded a new research field: Generative AI and Law. The GenLaw Center is committed to supporting the growth and development of this field through public education and academic mentorship, as well as hosting workshops and directly supporting researchers.
 
       [[Twitter](https://twitter.com/genlawcenter)]
     </td>
