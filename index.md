@@ -4,7 +4,7 @@ subtitle: "The GenLaw Center"
 lang: en-US
 main-id: index
 toc-title: ""
-toc: false
+toc: true
 return-genlaw: false
 return-footer: false
 ---
@@ -30,20 +30,35 @@ return-footer: false
 </table>
 
 
-### Writing
+# Workshop: [Evaluating Generative AI Systems](https://dc-workshop.genlaw.org/)
+
+"Evaluating Generative AI Systems: the Good, the Bad, and the Hype"
+
+The GenLaw Center is co-hosting a workshop in DC ([livestreamed](https://dc-workshop.genlaw.org/livestream) and recorded) on evaluating generative AI systems on Monday, April 15th.
+We will discuss the misconceptions between the technical capabilities of evaluating generative AI, and what policymakers and civil society want. Topics covered include:
+1) training-data attribution 
+2) privacy 
+3) data provenance & watermarks 
+4) trust & safety.
+
+This event is generously sponsored by the [The K&L Gates Initiative in Ethics and Computational Technologies at CMU](https://www.cmu.edu/ethics-ai/), and co-hosted with the K&L Gates Initiative, [Georgetown Institute for Technology Law & Policy](https://www.law.georgetown.edu/tech-institute/), and [Center for Democracy and Technology](https://cdt.org/).
+
+[[Website](https://dc-workshop.genlaw.org/)]
+
+# Writing
 
 - "Report of the 1st Workshop on Generative AI and Law" [[blog](2023-report.html)][[full report](2023-full-report.html)]
 - "The Devil is in the Training Data" [[blog](explainers/training-data.html)] (an [explainer](explainers/index.html) series)
 - "Talkin' 'Bout AI Generation: Copyright and the Generative-AI Supply Chain" July 2023. (law review article, to appear at the  *[Journal of the Copyright Society](https://copyrightsociety.org/journal-entries/)*) [[blog](https://genlaw.github.io/explainers/talkin.html)][[ssrn](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551)]
 
-### ICML 2023 Workshop
+# ICML 2023 Workshop
 
 - [Website](2023-workshop.html)
 - [Livestream](https://www.youtube.com/watch?v=5j4U2UzJWfI)
 - [Liveblog](https://3d.laboratorium.net/2023-07-29-genlaw)  
 - [Accepted Papers](papers.html)
     
-### Resources
+# Resources
 - [Glossary](glossary.html)
 - [Metaphors](metaphors.html)
 - [Suggested reading](resources.html)
