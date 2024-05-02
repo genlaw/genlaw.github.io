@@ -76,3 +76,12 @@ source_path="/Users/katherine/Projects/pandoc-markdown-css-theme/src/training-da
 destination_path="/Users/katherine/Projects/genlaw.github.io/references.bib"
 cp "$source_path" "$destination_path" && echo "Copied: references.bib"
 
+## GenLaw 2024 ICML
+
+source_path="/Users/katherine/Projects/pandoc-markdown-css-theme/docs/training-data/2024-icml-cfp.html"
+destination_path="/Users/katherine/Projects/genlaw.github.io/2024-icml/cfp.html"
+cp "$source_path" "$destination_path" && echo "Copied: 2024-icml-cfp.html"
+
+source_path="/Users/katherine/Projects/pandoc-markdown-css-theme/src/training-data/2024-icml-cfp.md"
+destination_path="/Users/katherine/Projects/genlaw.github.io/2024-icml/cfp.md"
+cp "$source_path" "$destination_path" && echo "Copied: 2024-icml-cfp.md"

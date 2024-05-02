@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc-markdown-css-theme" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2024-07-01" />
+  <title>The Files are in the Computer: Copyright, Memorization, and Generative-AI Systems (blog)</title>
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/skylighting-paper-theme.css" />
+  <link rel="stylesheet" href="../css/theme-additions.css" />
+<!-- Google Analytics tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W2ZW2ZM1M6"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W2ZW2ZM1M6');
+</script>
+</head>
+<body>
+
+<header>
+  <h1 class="title">The Files are in the Computer: Copyright, Memorization, and Generative-AI Systems (blog)</h1>
+<div class="metadata">
+<div class="author">
+  <span class="label">Authors</span>
+            <a href="https://afedercooper.info/">A. Feder Cooper*</a>
+                    <a href="https://james.grimmelmann.net/">James Grimmelmann*</a>
+          </div>
+<div class="date">
+  <span class="label">Published</span>
+  <time datetime="July 1, 2024">July 1, 2024</time>
+</div>
+<div class="citation">
+  <div>
+    A. Feder Cooper and James Grimmelmann. “<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4883146">The Files are in the Computer: Copyright, Memorization, and Generative-AI Systems</a>”. July 2024. arXiv preprint arXiv:2404.12590, 2024.
+  </div>
+</div>
+
+</div>
+
+</header>
+
+
+
+<main id="main" class="">
+        <p style="text-align:right"><a href="https://genlaw.github.io/">Back to GenLaw ↩︎</a></p>
+  <p>A central issue in copyright lawsuits against companies that produce generative-AI systems is the degree to which a generative-AI model does or does not “memorize” the data it was trained on. Unfortunately, the debate has been clouded by ambiguity over what “memorization” is, leading to legal debates in which participants often talk past one another.</p>
+<p>In our forthcoming paper at Chicago-Kent Law Review, we attempt to bring clarity to the conversation over memorization and its relationship to copying that is cognizable by U.S. copyright law.<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">When we began writing, we thought it would be quick work to pick up from where we left off in our prior work, <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551"><em>Talkin’</em></a>—that there wasn’t much more to say than what we already did in that piece. The goal, it seemed, was to extract (bad pun intended) our prior points in a short format, to make sure that they didn’t get lost in our very (very) long article about the supply chain. This made it a seemingly perfect fit for a symposium essay. But as with all things Generative AI, it turned out there was a web of complexity under the hood. We decided to take this complexity seriously—to address it carefully and head-on. Unfortunately, that means our short symposium piece is not so short<br />
+<br />
+</span></span> In this blog post, we summarize the key takeaways of our new piece. The main point that we want to make clear is that, when a model memorizes some of its training data, those training data <strong>are in the model</strong>: they are copies that copyright law cares about, meaning that models are copies (in the copyright sense) of those training data. This doesn’t mean that these copies are infringing. We take no position on that in general, nor specifically with respect to current lawsuits: doing so would involve a lot of questions that are out of our wheelhouse—things that courts will need to decide. Our goal is merely to describe how these systems work so that copyright scholars can develop their theories of Generative AI on a firm technical foundation. We seek clarity, precision, and technical accuracy.</p>
+<blockquote>
+<p><strong>Matilda</strong>: Did you find the files? </br> <strong>Hansel</strong>: I don’t even know what they—what do they look like?</br> <strong>Matilda</strong>: They’re in the computer.</br> <strong>Hansel</strong>: They’re in the computer?</br> <strong>Matilda</strong>: Yes, they’re definitely in there, I just don’t know how he labeled them.</br> <strong>Hansel</strong>: I got it. IN the computer. It’s so simple.</p>
+</blockquote>
+<figure style="text-align:center" id="fig:zoolander">
+<img src="images/zoolander.jpg" alt="Hansel and Derek from Zoolander" />
+<figcaption>
+<strong>Figure 1</strong>: A screenshot from the movie <em>Zoolander</em>, where Hansel and Derek are looking at an iMac computer, apparently confused by Matilda’s claim that there are files <em>in</em> the computer. Quote and screenshot from <em>Zoolander</em> (Paramount Pictures 2001)
+</figcaption>
+</figure>
+<p>The week between Christmas and New Year’s Eve is usually a slow news week, but not in 2023, the year that <a href="https://chatgptiseatingtheworld.com/">ChatGPT ate the world</a>. On December 27, <em>The New York Times</em> filed a massive copyright-infringement lawsuit against Microsoft and OpenAI, alleging that Bing Copilot and ChatGPT constituted ``massive copyright infringement.’’<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">Complaint at ¶ 74, N.Y. Times Co. v. Microsoft, No. 2:24-cv-00711 (C.D. Cal. Dec. 27, 2023).<br />
+<br />
+</span></span> In particular, the <em>Times</em> alleged that the generative-AI models in these systems had “memorized” large quantities of <em>Times</em> articles. When prompted with some prefix of text from a <em>Times</em> article,<span class="sidenote-wrapper"><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote">The prompts ranged in length from a sentence to several paragraphs. See Exhibit J.<br />
+<br />
+</span></span> ChatGPT would output a lengthy, corresponding suffix that copied passages from the article—hundreds of words, varying only in a few scattered portions.<span class="sidenote-wrapper"><label for="sn-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-3" class="margin-toggle"/><span class="sidenote">We are deliberately providing only a high-level intuition for the type of memorization with which we engage in our paper, and we do so by drawing on an example from a current lawsuit. We provide more rigorous definitions of memorization in Part III.A of our longer paper.<br />
+<br />
+</span></span> (See Figure <a href="#fig:nyt">2</a>.)</p>
+<figure style="text-align:center" id="fig:nyt">
+<img src="images/nyt.PNG" alt="Examples of memorization of Times articles in ChatGPT." />
+<figcaption>
+<strong>Figure 1:</strong> Memorized output from ChatGPT’s GPT-4 endpoint (left) of a <em>New York Times</em> article (right)
+</figcaption>
+</figure>
+<p>To the <em>Times</em> and its lawyers, these examples of “memorization” were blatant copyright infringement. But to OpenAI and its defenders, there was nothing to see here. OpenAI responded, both in court and online, that these examples were “adversarial, not normal usage patterns.” On this view, any copying (and thus any resulting infringement) resulted from the prompts the <em>Times</em> used. If the <em>Times</em> had not specifically manipulated ChatGPT into generating <em>Times</em> articles, there would have been no copying, and no copyright infringement. As economist <a href="https://marginalrevolution.com/marginalrevolution/2023/12/toothpick-producers-violate-nyt-copyright.html">Tyler Cowen put it</a>, in mocking the <em>Times</em>’s argument, one could equally well say that a toothpick infringes:</p>
+<blockquote>
+<p>If you stare at just the exact right part of the toothpick, and measure the length from the tip, expressed in terms of the appropriate unit and converted into binary, and then translated into English, you can find any message you want. You just have to pinpoint your gaze very very exactly (I call this “a prompt”).</p>
+<p>In fact, on your toothpick you can find the lead article from today’s <em>New York Times</em>. With enough squinting, measuring, and translating.</p>
+<p>By producing the toothpick, they put the message there and thus they gave you NYT access, even though you are not a paid subscriber. You simply need to know how to stare (and translate), or in other words how to prompt.</p>
+<p>So let’s sue the toothpick company!</p>
+</blockquote>
+<p>Implicit in this view is that memorization and the copying it involves take place only at <em>generation time</em>: when a generative-AI system responds to a user’s prompt with an output. The system itself is a neutral, general-purpose tool. Some users may use it to infringe, but other users will not.</p>
+<p>This view treats the machine-learned model (or models) at the heart of a generative-AI system as a black box. Training data is used to design and construct the box, but the box itself contains only abstracted statistical patterns of the training data. Those patterns either contain no expression at all, or if they do, they are represented in a way that is fundamentally uninterpretable. The box is a machine that transforms prompts into outputs. Thus, if there is infringing expression in the output, it must be because the user prompted it in a targeted (i.e., “adversarial” or “abnormal”) way to elicit that infringement.</p>
+<p>This view refuses to consider what happens inside the box—the specifics of <em>how</em> statistical learning about the training data enables generative-AI systems to do what they do. It avoids engaging with the actual representation of information about training data in a model’s parameters. In legal writing, this has involved gesturing at these representations with high-level terms like “features,” “patterns,” or “statistical correlations.” These terms suggest that while there may be some underlying math going on, the details can be sidestepped for simplicity, because they are irrelevant to the legal treatment of Generative AI.</p>
+<p>This way of thinking about memorization<span class="sidenote-wrapper"><label for="sn-4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-4" class="margin-toggle"/><span class="sidenote">For now, we continue to limit our use of the term “memorization” to the intuition provided in the (near-)verbatim copying demonstrated in Figure <a href="#fig:nyt">2</a>.<br />
+<br />
+</span></span> has significant copyright consequences. It suggests that memorization is primarily about <em>prompting</em> rather than <em>training</em>. Outputs may contain infringing expression, but the model that generates them does not. A model itself is a neutral tool, equally good at producing infringing and non-infringing outputs. It follows that users bear most or all of the responsibility for misusing a generative-AI system to elicit memorized content, and the creators of the system in which the model is deployed bear little or none.<span class="sidenote-wrapper"><label for="sn-5" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-5" class="margin-toggle"/><span class="sidenote">The distinction between a <em>model</em> and the larger <em>system</em> in which it is embedded is important to keep in mind. We discuss the technical difference in Part II.B and the legal consequences in Part III.H of the full paper.<br />
+<br />
+</span></span></p>
+<p>With respect, we believe that this approach to making sense of memorization misdescribes how generative-AI systems work. If a generative-AI model memorizes its training data, the training data is <em>in the model</em>. This should not be surprising. Models are not inert tools that have no relationship with their training data. The power of a model is precisely that it encodes relevant features of the training data in a way that enables prompting to generate outputs that are based on the training data. This is why capital-G Generative AI is such a big deal. All useful models learn something about their training data. Memorization is simply a difference in degree: it is an encoded feature <em>in the model</em>; whether it is a desired feature or not is another matter entirely.</p>
+<p>It follows that memorization in Generative AI cannot be neatly confined to generation time—to how the system behaves when adversarial users provide adversarial prompts. If a generative-AI model has memorized copyrighted works, the memorized aspects of those works are present <em>in the model itself</em>, not just in the model’s generated outputs. The model can possibly generate copies of those works on demand for any user,<span class="sidenote-wrapper"><label for="sn-6" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-6" class="margin-toggle"/><span class="sidenote">With some probability.<br />
+<br />
+</span></span> not just for users who have a suitably nefarious intent. The system’s creator may have various options to limit infringing outputs—for example, by refusing to generate outputs for certain prompts, or by checking outputs against a database of copyrighted works before returning them to the user. But one of these options is always to <em>change the model</em>: to train or retrain it in a way that attempts to limit the model’s memorization of training data. Whether this is trivially easy or impractically hard depends on the details of the model architecture, the choice of training data, the training algorithm, and much more. But the model’s internals must always be part of the technical picture, because they are highly relevant to what a model has memorized and what it can do.</p>
+<p>In the longer paper, we take no position on what the most appropriate copyright regimes for generative-AI systems should be, and we express no opinion on how pending copyright lawsuits should be decided. These cases raise difficult doctrinal issues that run almost the entire gamut of copyright law, which we address in detail in <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551"><em>Talkin’</em></a>. Our goal is merely to describe how these systems work so that copyright scholars can develop their theories of Generative AI on a firm technical foundation. We focus on a few threshold issues—particularly the Copyright Act’s definition of “copies”—where the technical details are particularly salient. We seek clarity, precision, and technical accuracy.</p>
+<p>Along these lines, in Part II of our article, we provide some brief, level-setting background on how generative-AI models work, and the systems and supply chains within which they are embedded. For much more detail on this topic, please refer to Part I of <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551">our prior work on the generative-AI supply chain</a>.</p>
+<p>In Part III, the heart of the paper, we describe how to think clearly about memorization in generative-AI systems, and show how several common arguments about copyright and Generative AI are built on a mistaken view of what memorization consists of and how it is surfaced to end users. In brief:</p>
+<ul>
+<li><p>We begin in Part III.A by defining <em>memorization</em> and distinguishing it from related terms: <em>regurgitation</em>, <em>extraction</em>, and <em>reconstruction</em>. Even the initial step of clarifying definitions has important implications. In particular, generation-time regurgitation implies that memorization has taken place during the training process.</p></li>
+<li><p>Next, in Part III.B we discuss in detail how memorized training data is within models in terms of the ``pattern’’ that models learn during training. Here, we engage with copyright law, and show that memorization in a model constitutes a “reproduction” of the memorized data.</p></li>
+<li><p>Part III.C uses this understanding of memorization to explore two common metaphors for how generative-AI models work: that they learn only “patterns” in their training data and that they “compress” their training data. Both metaphors have a kernel of truth, but neither should be taken as a guide for how a model works in all cases.</p></li>
+<li><p>From this basis, in Part III.D we dig into the state-of-the-art understanding of <em>how much</em> models memorize in practice.</p></li>
+<li><p>Of course, generative-AI models typically do more than just memorize their training data, so we bring in relevant details of learning and <em>generalization</em> in Part III.E.</p></li>
+<li><p>Then, we consider the implications of the fact that a generative-AI model both memorizes <em>and</em> generalizes. In Part III.F, we consider the analogy between a generative-AI model and other “dual-use” technologies, such as VCRs (we discuss the <em>Sony</em> doctrine here). In our view, the analogy fails in important ways; VCRs do not contain the works they can be used to infringe in the same way that memorizing models do.<span class="sidenote-wrapper"><label for="sn-7" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-7" class="margin-toggle"/><span class="sidenote">VCRs are not themselves copies of the tapes they produce, whereas models are copies of the training data they memorize. We are using the word “copy” in the way that U.S. copyright law means it, which differs from everyday use. We explain this further in the full paper.<br />
+<br />
+</span></span></p></li>
+<li><p>In Part III.G, we return to the figure of the “adversarial” user invoked by defendants in current copyright lawsuits. Not every user is adversarial, nevertheless, we argue that the users who are cannot simply be waved away as pesky exceptions.</p></li>
+<li><p>Finally, in Part III.H, we step back from models to look at system design. Memorization in a model does not mean that a system necessarily has to produce copies of that memorized data in its generations; the model is just one of many pieces that system builders can adjust to tune the system’s overall outputs. There are several other places where system builders can attempt to limit how much memorization gets surfaced to end users.</p></li>
+</ul>
+<p>Part IV offers a brief conclusion, with some historical reflections. We turn to comments made by computer scientist Allen Newell (a Turing Award winner and AI pioneer) nearly four decades ago. Newell warned legal scholars that they were building their theories about intellectual property and software on a foundation of sand:</p>
+<blockquote>
+<p>My point is precisely to the contrary. Regardless how the <em>Benson</em> case was decided—whether that algorithm or any other was held patentable or not patentable—confusion would have ensued. The confusions that bedevil algorithms and patentability arise from the basic conceptual models that we use to think about algorithms and their use.</p>
+</blockquote>
+<p>His point was not that their policy arguments for and against IP protections were wrong: indeed, he expressed “no opinion” on the patentability of algorithms.<span class="sidenote-wrapper"><label for="sn-8" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-8" class="margin-toggle"/><span class="sidenote">Allen Newell, <em>Response: The Models Are Broken; The Models Are Broken</em>, 47 U. Pitt. L. Rev. 1023, 1023 (1986)<br />
+<br />
+</span></span> Instead, his point was far more fundamental: “The models we have for understanding the entire arena of the patentability of algorithms are inadequate—not just somewhat inadequate, but fundamentally so. They are broken.”</p>
+<p>Newell’s warning has renewed force today. Courts, regulators, and scholars who are grappling with how to apply existing laws to Generative AI—or formulate new ones—must build their theories atop a foundation of conceptual models of how generative-AI systems work, with respect to memorization and much else. If they do not, faulty technical assumptions will lead to ungrounded legal claims—not necessarily wrong, but with no reliable connection to the underlying systems they purport to describe. They need, in short, a good model of models.</p>
+</main>
+
+<footer>
+<p class="signoff">
+  <a href="https://genlaw.github.io/">← GenLaw</a>
+</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Non-essential if user has JavaScript off. Just hides TOC button on scroll.
+    const nav = document.querySelector("nav");
+    let lastScrollTop = 0;
+    const min_diff_px = 32;
+    
+    function didScroll() {
+        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (currentScrollTop < lastScrollTop) {
+            nav.classList.add("scrolled-up");
+            nav.classList.remove("scrolled-down");
+            lastScrollTop = currentScrollTop;
+        } else if (currentScrollTop > lastScrollTop + min_diff_px) {
+            nav.classList.remove("scrolled-up");
+            nav.classList.add("scrolled-down");
+            lastScrollTop = currentScrollTop;
+        }
+    }
+
+    window.addEventListener("scroll", didScroll);
+});
+  
+document.addEventListener("DOMContentLoaded", function () {
+    const headings = document.querySelectorAll('main h1, main h2, main h3, main h4');
+
+    function handleIntersection(entries) {
+        //  IntersectionObserver's entries are ordered by their position in the DOM tree
+        const topmostEntry = entries.find(entry => entry.isIntersecting);
+        console.log(topmostEntry)
+        if (!topmostEntry) return;
+
+        const tocElementId = 'toc-' + topmostEntry.target.id;
+        const tocElement = document.getElementById(tocElementId);
+        if (!tocElement) return;
+
+        const otherTocElements = document.querySelectorAll('.active');
+        otherTocElements.forEach(el => el.classList.remove('active'));
+        tocElement.classList.add('active');
+    }
+
+    // root: null -> entire browser viewport
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.8
+    };
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    headings.forEach(heading => {
+        observer.observe(heading);
+    });
+
+    // Manually trigger the IntersectionObserver callback for the initial state
+    const initialEntries = Array.from(headings).map(heading => ({
+        isIntersecting: heading.getBoundingClientRect().top < window.innerHeight && heading.getBoundingClientRect().bottom > 0,
+        target: heading
+    }));
+    handleIntersection(initialEntries);
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const nav_anchors = document.querySelectorAll('nav a');
+    const contents_checkbox = document.getElementById('contents');
+  
+    nav_anchors.forEach(anchor => {
+      anchor.addEventListener('click', function(event) {
+        // Do not stop normal functionality of the anchor tag
+        // event.preventDefault();
+  
+        // Uncheck the input with id "contents"
+        if (contents_checkbox && contents_checkbox.type === 'checkbox') {
+          contents_checkbox.checked = false;
+        }
+      });
+    });
+  });
+  
+document.addEventListener('DOMContentLoaded', () => {
+  const headings = document.querySelectorAll('main h1[id], main h2[id], main h3[id], main h4[id], main h5[id], main h6[id]');
+
+  headings.forEach(heading => {
+    heading.addEventListener('click', event => {
+      const target = event.target;
+
+      if (target.tagName.toLowerCase().startsWith('h') && target.hasAttribute('id')) {
+        const headingId = target.getAttribute('id');
+        const url = new URL(window.location.href);
+        url.hash = headingId;
+
+        navigator.clipboard.writeText(url.toString())
+          .then(() => {
+            console.log('Heading URL copied to clipboard:', url.toString());
+            target.classList.add('copy-success');
+            target.setAttribute('title', 'Copied URL to clipboard! ✅');
+            setTimeout(() => {
+              target.classList.remove('copy-success');
+              target.removeAttribute('title');
+            }, 3000);
+
+          })
+          .catch(err => {
+            console.error('Failed to copy the heading URL:', err);
+            target.classList.add('copy-error');
+            target.setAttribute('title', 'Failed to copy URL! ❌');
+            setTimeout(() => {
+              target.classList.remove('copy-error');
+              target.removeAttribute('title');
+            }, 3000);
+
+          });
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>
