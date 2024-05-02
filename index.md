@@ -29,6 +29,9 @@ return-footer: false
   </tr>
 </table>
 
+# ICML 2024 Workshop
+
+- [Website](2024-icml.html)
 
 # Workshop: [Evaluating Generative AI Systems](https://dc-workshop.genlaw.org/)
 
