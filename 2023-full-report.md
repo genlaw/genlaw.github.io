@@ -324,7 +324,7 @@ In response to these takeaways, we are growing GenLaw into a nonprofit[^30] home
 
 [^4]: And many have, arguably for thousands of years, which is why we do not attempt a definition of privacy in the [glossary](glossary.html).
 
-[^5]: See <https://genlaw.github.io/glossary.html>.
+[^5]: See <https://blog.genlaw.org/glossary.html>.
 
 [^6]: Some differentiate "memorization" and "regurgitation," with regurgitation referring to a model's ability to output its training data (via generation) and memorization referring to a model *containing* a perfect copy of its training data (regardless of whether or not it is regurgitated). In practice, the two terms are commonly used interchangeably.
 
@@ -376,5 +376,5 @@ In response to these takeaways, we are growing GenLaw into a nonprofit[^30] home
 
 [^30]: GenLaw is in the process of obtaining 501(c)(3) status.
 
-[^31]: <https://genlaw.github.io> 
+[^31]: <https://genlaw.org> 
 
