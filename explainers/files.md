@@ -48,7 +48,7 @@ When prompted with some prefix of text from a *Times* article,^[The prompts rang
 (See Figure [2](#fig:nyt).)
 
 <figure style="text-align:center" id="fig:nyt">
-  <img src="images/nyt.PNG" alt="Examples of memorization of Times articles in ChatGPT." />
+  <img src="images/nyt.png" alt="Examples of memorization of Times articles in ChatGPT." />
   <figcaption>**Figure 1:** Memorized output from ChatGPT's GPT-4 endpoint (left) of a *New York Times* article (right)</figcaption>
 </figure>
 

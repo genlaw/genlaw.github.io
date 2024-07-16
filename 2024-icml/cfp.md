@@ -16,6 +16,8 @@ The 2nd Workshop on Generative AI and Law (GenLaw) is soliciting 1-2 page abstra
 > Deadline: **10 June 2024, AoE.**
 > 
 > Notification: **17 June 2024. **
+> 
+> Camera Ready Deadline: **24 June 2024. **
 
 ### Potential, non-exhaustive topics:
 
@@ -51,28 +53,6 @@ Please see our [reviewer guidelines](#reviewer-guidelines) for more information.
 Accepted papers will present posters in-person or on Zoom. We will also accept other presentation formats, since scholarship from some disciplines may not be well-suited to posters. Additionally, some submissions will be accepted for a 3-minute spotlight. This workshop is non-archival to allow for future submission to other venues (any/all archival and non-archival workshops, journals, conferences, etc.). We will host all accepted papers on the website, unless requested not to do so by the authors.
 
 Accepted papers may also optionally expand to 4-8 pages for camera ready.
-
-<!-- ## Camera-ready and attendance instructions {#camera}
-
-**Camera Ready Deadline**: July 7th, AoE on [CMT](https://cmt3.research.microsoft.com/GenLaw2023/Submission/Index)
-
-**ICML Workshops Registration**: All attendees must register for ICML workshops. Please register on this [page](https://icml.cc/Register2), where there are both in-person and virtual options at checkout.
-
-All papers should use this LaTeX [template](https://www.overleaf.com/latex/templates/genlaw-workshop-icml-2023/fgqdwhyjcsfy) on Overleaf. If you are new to LaTeX or Overleaf and  run into issues using this template to prepare your final paper, please reach out to <a class="email" href="mailto:genlaw.org@gmail.com">genlaw.org@gmail.com</a> for assistance.
-
-Please incorporate the feedback from reviewers (and, if provided, meta-reviewers) in final paper versions. **We will allow one additional page of main text (3 pages total)** to accommodate these changes and author names. If you would like to include a 4th page of main text, please email the organizers to ask. We also allow for unlimited pages for citations and (optionally) an appendix. Please consult the [template](https://www.overleaf.com/latex/templates/genlaw-workshop-icml-2023/fgqdwhyjcsfy) for additional information.
-
-Please submit your camera-ready paper on CMT by July 7, AoE as a zip file containing  all related submission files (images, LaTeX files), including a PDF. 
-
-### Online paper hosting
-
-We are going to host the PDFs on the workshop website, and will also include a web-friendly HTML version (We will convert the raw LaTeX files to html). If authors do not wish for their paper to be included on the website, please email <a class="email" href="mailto:genlaw.org@gmail.com">genlaw.org@gmail.com</a> with: "Please do not host paper {Paper #} on the GenLaw website."
-
-### Poster session
-
-All accepted papers will be required to present at the workshop poster session. Since this is an interdisciplinary workshop, we are flexible on the format for poster presentation. 
-
-The main ICML conference offers a printing service at the venue for workshop posters. Unfortunately, the poster deadline for printing through the conference venue is July 23, 2023. Please see the ICML poster printing [page](https://icml.cc/posterprinting/) for more information. There will be other vendors in Honolulu who can print posters. Alternatively, posters could be printed in advance before you travel and brought to ICML. -->
 
 ## Reviewer Guidelines
 
@@ -137,4 +117,7 @@ We are going to host the PDFs on the workshop website. If authors do not wish fo
 
 All accepted papers will be required to present at a workshop poster session. Since this is an interdisciplinary workshop, we are flexible on the format for poster presentation. There will be two sessions, which will not conflict: the in-person poster session at the workshop, and a virtual poster session (date and time to be announced soon). 
 
-The main ICML conference offers a printing service at the venue for in-person workshop posters. Please see the ICML poster printing [page](https://icml.cc/posterprinting/) for more information. There will be other vendors in Vienna who can print posters. Alternatively, posters could be printed in advance before you travel and brought to ICML.
+To gather some information about in-person vs. virtual attendance and paper hosting on the GenLaw website, we would greatly appreciate if you could please fill out this brief [Google form](https://docs.google.com/forms/d/e/1FAIpQLSfoykezy5A61Du963kCiBGws2aCERbeJvh-s7ne6qq1XiRXHA/viewform) (This form can be filled out multiple times, in the event that you have multiple accepted papers).
+
+In accordance with ICML instructions, workshop posters "must be portrait and not exceed: 36in (H) x 24in (W) or 91cm (H) x 61cm (W). ... Workshop posters must be in portrait format."
+There will be other vendors in Vienna who can print posters. Alternatively, posters could be printed in advance before you travel and brought to ICML.
